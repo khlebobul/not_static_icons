@@ -19,10 +19,7 @@ class AArrowUpIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
   }) {
-    return AArrowUpPainter(
-      color: color,
-      arrowOffset: animationValue * 1.5, // Reduced from 4.0 to 1.5 pixels
-    );
+    return AArrowUpPainter(color: color, arrowOffset: animationValue * 1.5);
   }
 }
 
@@ -37,7 +34,7 @@ class AArrowUpPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 3.0
+      ..strokeWidth = 2.0
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -49,10 +46,7 @@ class AArrowUpPainter extends CustomPainter {
     }
 
     Offset scalePointWithArrowOffset(double x, double y) {
-      return Offset(
-        x * scale,
-        (y - arrowOffset) * scale,
-      ); // Note: minus for up movement
+      return Offset(x * scale, (y - arrowOffset) * scale);
     }
 
     // ========== STATIC PART - LETTER "A" ==========

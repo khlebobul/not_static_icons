@@ -19,10 +19,7 @@ class AArrowDownIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
   }) {
-    return AArrowDownPainter(
-      color: color,
-      arrowOffset: animationValue * 1.5, // Reduced from 4.0 to 1.5 pixels
-    );
+    return AArrowDownPainter(color: color, arrowOffset: animationValue * 1.5);
   }
 }
 
@@ -37,7 +34,7 @@ class AArrowDownPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 3.0
+      ..strokeWidth = 2.0
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;

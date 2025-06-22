@@ -3,7 +3,7 @@ import '../core/animated_svg_icon_base.dart';
 
 /*
  * TEMPLATE FOR CREATING NEW ANIMATED ICONS
- * 
+ *
  * Instructions:
  * 1. Copy this template
  * 2. Replace "Template" with your icon name
@@ -52,7 +52,6 @@ class TemplatePainter extends CustomPainter {
 
     final scaleFactor = size.width / 24.0; // SVG is usually 24x24
 
-    // TODO: Implement your SVG icon drawing here
     // Use animationValue (0.0 - 1.0) for animation
 
     // Examples of different animation types:
