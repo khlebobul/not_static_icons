@@ -15,7 +15,7 @@ class AnimatedIconsDemo extends StatefulWidget {
 
 class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
   static const String _installCommand = 'flutter pub add not_static_icons';
-  static const double _gridMaxCrossAxisExtent = 120.0;
+  static const double _gridMaxCrossAxisExtent = 170.0;
   static const double _gridSpacing = 16.0;
 
   final TextEditingController _searchController = TextEditingController();
@@ -81,7 +81,10 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
             _buildDescriptionSection(),
             const SizedBox(height: 24),
             _buildInstallationSection(),
-            const SizedBox(height: 32),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: Divider(color: Colors.grey.shade200),
+            ),
             _buildSearchSection(),
             const SizedBox(height: 16),
             _buildIconsGrid(),
