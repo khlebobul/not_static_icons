@@ -15,8 +15,7 @@ class AnimatedIconsDemo extends StatefulWidget {
 
 class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
   static const String _installCommand = 'flutter pub add not_static_icons';
-  static const int _gridCrossAxisCount = 6;
-  static const double _gridChildAspectRatio = 1.7;
+  static const double _gridMaxCrossAxisExtent = 120.0;
   static const double _gridSpacing = 16.0;
 
   final TextEditingController _searchController = TextEditingController();
@@ -59,7 +58,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Copied to clipboard: $text',
+            'copied to clipboard: $text',
             style: const TextStyle(fontFamily: 'JetBrainsMono'),
           ),
           duration: const Duration(seconds: 2),
@@ -100,7 +99,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       centerTitle: false,
       title: const Text(
         'not_static_icons',
-        style: TextStyle(fontSize: 24, fontFamily: 'JetBrainsMono'),
+        style: TextStyle(fontSize: 18, fontFamily: 'JetBrainsMono'),
       ),
       actions: [
         Padding(
@@ -152,7 +151,10 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
   }
 
   Widget _buildCreditsRow() {
-    return Row(
+    return Wrap(
+      crossAxisAlignment: WrapCrossAlignment.center,
+      spacing: 4.0,
+      runSpacing: 4.0,
       children: [
         _buildDescriptionText('made with '),
         _buildTextLinkContainer('flutter', 'https://flutter.dev'),
@@ -166,46 +168,36 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
 
   Widget _buildInstallationSection() {
     return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       decoration: BoxDecoration(
         color: Colors.grey.shade50,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(8),
         border: Border.all(color: Colors.grey.shade200),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: Row(
         children: [
-          Row(
-            children: [
-              Expanded(
-                child: Text(
-                  _installCommand,
-                  style: const TextStyle(
-                    fontSize: 14,
-                    color: Colors.black54,
-                    fontFamily: 'JetBrainsMono',
-                  ),
-                ),
+          InkWell(
+            onTap: () => _copyToClipboard(_installCommand),
+            child: SvgPicture.asset(
+              'assets/icons/copy.svg',
+              width: 16,
+              height: 16,
+              colorFilter: ColorFilter.mode(
+                Colors.grey.shade700,
+                BlendMode.srcIn,
               ),
-              const SizedBox(width: 8),
-              InkWell(
-                onTap: () => _copyToClipboard(_installCommand),
-                borderRadius: BorderRadius.circular(4),
-                child: Padding(
-                  padding: const EdgeInsets.all(4),
-                  child: SvgPicture.asset(
-                    'assets/icons/copy.svg',
-                    width: 16,
-                    height: 16,
-                    colorFilter: ColorFilter.mode(
-                      Colors.grey.shade700,
-                      BlendMode.srcIn,
-                    ),
-                  ),
-                ),
+            ),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Text(
+              _installCommand,
+              style: const TextStyle(
+                fontSize: 14,
+                color: Colors.black54,
+                fontFamily: 'JetBrainsMono',
               ),
-            ],
+            ),
           ),
         ],
       ),
@@ -214,7 +206,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
 
   Widget _buildSearchSection() {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+      padding: const EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
         color: Colors.grey.shade50,
         borderRadius: BorderRadius.circular(12),
@@ -267,20 +259,16 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       return _buildEmptyState();
     }
 
-    return GridView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: _gridCrossAxisCount,
-        childAspectRatio: _gridChildAspectRatio,
-        crossAxisSpacing: _gridSpacing,
-        mainAxisSpacing: _gridSpacing,
-      ),
-      itemCount: _filteredIcons.length,
-      itemBuilder: (context, index) {
-        final icon = _filteredIcons[index];
-        return IconCard(name: icon.name, iconWidget: icon.widget);
-      },
+    return Wrap(
+      spacing: _gridSpacing,
+      runSpacing: _gridSpacing,
+      children: _filteredIcons.map((icon) {
+        return SizedBox(
+          width: _gridMaxCrossAxisExtent,
+          height: _gridMaxCrossAxisExtent,
+          child: IconCard(name: icon.name, iconWidget: icon.widget),
+        );
+      }).toList(),
     );
   }
 
@@ -290,22 +278,11 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
         padding: const EdgeInsets.all(48.0),
         child: Column(
           children: [
-            Icon(Icons.search_off, size: 48, color: Colors.grey.shade400),
-            const SizedBox(height: 16),
             Text(
-              'No icons found',
+              'no icons found',
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.grey.shade600,
-                fontFamily: 'JetBrainsMono',
-              ),
-            ),
-            const SizedBox(height: 8),
-            Text(
-              'Try adjusting your search term',
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.grey.shade500,
                 fontFamily: 'JetBrainsMono',
               ),
             ),
