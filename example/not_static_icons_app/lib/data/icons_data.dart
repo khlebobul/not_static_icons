@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../icons/a_arrow_down_icon.dart';
 import '../icons/a_arrow_up_icon.dart';
+import '../icons/a_large_small_icon.dart';
 
 class IconData {
   final String name;
@@ -13,4 +14,5 @@ class IconData {
 final List<IconData> icons = [
   IconData(name: 'a-arrow-down', widget: AArrowDownIcon(size: 32)),
   IconData(name: 'a-arrow-up', widget: AArrowUpIcon(size: 32)),
+  IconData(name: 'a-large-small', widget: ALargeSmallIcon(size: 32)),
 ];
