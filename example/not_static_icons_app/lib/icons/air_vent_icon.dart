@@ -71,7 +71,6 @@ class AirVentPainter extends CustomPainter {
 
     // ========== ANIMATED PART - VENTS ==========
 
-    // Left Vent Animation (M6.6 15.572A2 2 0 1 0 10 17v-5)
     final leftPath = Path()
       ..moveTo(10 * scale, 12 * scale)
       ..lineTo(10 * scale, 17 * scale)
@@ -82,28 +81,35 @@ class AirVentPainter extends CustomPainter {
         clockwise: true,
       );
 
-    final leftProgress = (animationValue * 2).clamp(0.0, 1.0);
-    for (final metric in leftPath.computeMetrics()) {
-      final extract = metric.extractPath(0, metric.length * leftProgress);
-      canvas.drawPath(extract, paint);
-    }
+    final rightPath = Path()
+      ..moveTo(14 * scale, 12 * scale)
+      ..lineTo(14 * scale, 19.53 * scale)
+      ..arcToPoint(
+        p(18, 17.5),
+        radius: Radius.circular(2.5 * scale),
+        largeArc: true,
+        clockwise: false,
+      );
 
-    // Right Vent Animation (M18 17.5a2.5 2.5 0 1 1-4 2.03V12)
-    if (animationValue > 0.5) {
-      final rightPath = Path()
-        ..moveTo(14 * scale, 12 * scale)
-        ..lineTo(14 * scale, 19.53 * scale)
-        ..arcToPoint(
-          p(18, 17.5),
-          radius: Radius.circular(2.5 * scale),
-          largeArc: true,
-          clockwise: false,
-        );
-
-      final rightProgress = ((animationValue - 0.5) * 2).clamp(0.0, 1.0);
-      for (final metric in rightPath.computeMetrics()) {
-        final extract = metric.extractPath(0, metric.length * rightProgress);
+    // If not animating, draw the complete icon. Otherwise, run animation.
+    if (animationValue == 0.0) {
+      canvas.drawPath(leftPath, paint);
+      canvas.drawPath(rightPath, paint);
+    } else {
+      // Left Vent Animation
+      final leftProgress = (animationValue * 2).clamp(0.0, 1.0);
+      for (final metric in leftPath.computeMetrics()) {
+        final extract = metric.extractPath(0, metric.length * leftProgress);
         canvas.drawPath(extract, paint);
+      }
+
+      // Right Vent Animation
+      if (animationValue > 0.5) {
+        final rightProgress = ((animationValue - 0.5) * 2).clamp(0.0, 1.0);
+        for (final metric in rightPath.computeMetrics()) {
+          final extract = metric.extractPath(0, metric.length * rightProgress);
+          canvas.drawPath(extract, paint);
+        }
       }
     }
   }
