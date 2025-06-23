@@ -11,7 +11,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Animated SVG Icons Demo',
+      title:
+          'not_static_icons | simple flutter package for adding animated icons into your project',
       debugShowCheckedModeBanner: false,
       home: AnimatedIconsDemo(),
     );
