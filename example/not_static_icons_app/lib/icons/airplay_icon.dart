@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:ui';
 import '../core/animated_svg_icon_base.dart';
 
 /// Animated Airplay Icon - Triangle is drawn line by line.

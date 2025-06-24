@@ -56,18 +56,11 @@ class AnimatedSVGIconState extends State<AnimatedSVGIcon>
   }
 
   void _startAnimation() {
-    _controller.forward().then((_) {
-      if (_isHovered) {
-        _controller.reverse().then((_) {
-          if (_isHovered) _startAnimation();
-        });
-      }
-    });
+    _controller.forward();
   }
 
   void _stopAnimation() {
-    _controller.stop();
-    _controller.reset();
+    _controller.reverse();
   }
 
   @override
