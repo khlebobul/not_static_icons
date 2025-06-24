@@ -19,7 +19,7 @@ class AArrowDownIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
   }) {
-    return AArrowDownPainter(color: color, arrowOffset: animationValue * 1.5);
+    return AArrowDownPainter(color: color, arrowOffset: animationValue * 3);
   }
 }
 
