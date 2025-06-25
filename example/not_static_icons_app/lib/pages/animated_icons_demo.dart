@@ -231,7 +231,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
             child: TextField(
               controller: _searchController,
               decoration: InputDecoration(
-                hintText: 'search icons',
+                hintText: 'search ${icons_data.icons.length} icons',
                 hintStyle: TextStyle(
                   color: Colors.grey.shade500,
                   fontFamily: 'JetBrainsMono',
