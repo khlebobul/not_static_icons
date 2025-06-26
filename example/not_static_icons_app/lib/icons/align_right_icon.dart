@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../core/animated_svg_icon_base.dart';
 
 class AlignRightIcon extends AnimatedSVGIcon {
-  const AlignRightIcon({super.key, required double size}) : super(size: size);
+  const AlignRightIcon({super.key, required super.size});
 
   @override
   CustomPainter createPainter({

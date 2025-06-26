@@ -1,9 +1,8 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 import '../core/animated_svg_icon_base.dart';
 
 class AlignJustifyIcon extends AnimatedSVGIcon {
-  const AlignJustifyIcon({super.key, required double size}) : super(size: size);
+  const AlignJustifyIcon({super.key, required super.size});
 
   @override
   CustomPainter createPainter({
@@ -15,7 +14,7 @@ class AlignJustifyIcon extends AnimatedSVGIcon {
 
   @override
   String get animationDescription =>
-      'Middle line shakes horizontally while other lines remain static';
+      'Lines draw sequentially from left to right, starting from top';
 }
 
 class AlignJustifyPainter extends CustomPainter {
@@ -36,31 +35,72 @@ class AlignJustifyPainter extends CustomPainter {
 
     final scale = size.width / 24;
 
-    // Calculate horizontal shake offset for middle line only
-    final maxShakeOffset = size.width * 0.03; // Small shake movement
-    final shakeOffset =
-        sin(animationValue * 8 * pi) * maxShakeOffset; // Fast shake
+    final leftX = 3 * scale;
+    final rightX = 21 * scale;
 
-    // Top line: static (M3 6h18)
-    canvas.drawLine(
-      Offset(3 * scale, 6 * scale),
-      Offset(21 * scale, 6 * scale),
-      paint,
-    );
+    if (animationValue == 0.0) {
+      // Static state: show original full lines
+      canvas.drawLine(
+        Offset(leftX, 6 * scale),
+        Offset(rightX, 6 * scale),
+        paint,
+      );
+      canvas.drawLine(
+        Offset(leftX, 12 * scale),
+        Offset(rightX, 12 * scale),
+        paint,
+      );
+      canvas.drawLine(
+        Offset(leftX, 18 * scale),
+        Offset(rightX, 18 * scale),
+        paint,
+      );
+    } else {
+      // Animation state: lines draw sequentially from left to right
 
-    // Middle line: shaking (M3 12h18)
-    canvas.drawLine(
-      Offset((3 * scale) + shakeOffset, 12 * scale),
-      Offset((21 * scale) + shakeOffset, 12 * scale),
-      paint,
-    );
+      // Top line: draws first (0.0 - 0.33)
+      final topProgress = (animationValue * 3).clamp(0.0, 1.0);
+      final topRightX = Tween<double>(
+        begin: leftX,
+        end: rightX,
+      ).transform(topProgress);
 
-    // Bottom line: static (M3 18h18)
-    canvas.drawLine(
-      Offset(3 * scale, 18 * scale),
-      Offset(21 * scale, 18 * scale),
-      paint,
-    );
+      canvas.drawLine(
+        Offset(leftX, 6 * scale),
+        Offset(topRightX, 6 * scale),
+        paint,
+      );
+
+      // Middle line: draws second (0.33 - 0.66)
+      if (animationValue > 0.33) {
+        final middleProgress = ((animationValue - 0.33) * 3).clamp(0.0, 1.0);
+        final middleRightX = Tween<double>(
+          begin: leftX,
+          end: rightX,
+        ).transform(middleProgress);
+
+        canvas.drawLine(
+          Offset(leftX, 12 * scale),
+          Offset(middleRightX, 12 * scale),
+          paint,
+        );
+      }
+
+      // Bottom line: draws third (0.66 - 1.0)
+      if (animationValue > 0.66) {
+        final bottomProgress = ((animationValue - 0.66) * 3).clamp(0.0, 1.0);
+        final bottomRightX = Tween<double>(
+          begin: leftX,
+          end: rightX,
+        ).transform(bottomProgress);
+
+        canvas.drawLine(
+          Offset(leftX, 18 * scale),
+          Offset(bottomRightX, 18 * scale),
+          paint,
+        );
+      }
+    }
   }
 
   @override
