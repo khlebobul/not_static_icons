@@ -11,6 +11,9 @@ import '../icons/alarm_clock_minus_icon.dart';
 import '../icons/alarm_clock_plus_icon.dart';
 import '../icons/alarm_smoke_icon.dart';
 import '../icons/album_icon.dart';
+import '../icons/align_left_icon.dart';
+import '../icons/align_right_icon.dart';
+import '../icons/align_justify_icon.dart';
 
 class IconData {
   final String name;
@@ -33,4 +36,7 @@ final List<IconData> icons = [
   IconData(name: 'alarm-clock-plus', widget: AlarmClockPlusIcon(size: 40)),
   IconData(name: 'alarm-smoke', widget: AlarmSmokeIcon(size: 40)),
   IconData(name: 'album', widget: AlbumIcon(size: 40)),
+  IconData(name: 'align-left', widget: AlignLeftIcon(size: 40)),
+  IconData(name: 'align-right', widget: AlignRightIcon(size: 40)),
+  IconData(name: 'align-justify', widget: AlignJustifyIcon(size: 40)),
 ];
