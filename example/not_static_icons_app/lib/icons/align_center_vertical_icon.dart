@@ -36,7 +36,7 @@ class _AlignCenterVerticalIconPainter extends CustomPainter {
     final s = size.width / 24.0;
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2 * s
+      ..strokeWidth = 2.0
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round;

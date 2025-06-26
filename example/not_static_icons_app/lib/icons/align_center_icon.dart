@@ -28,9 +28,7 @@ class AlignCenterPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth =
-          size.width *
-          0.083 // 2/24
+      ..strokeWidth = 2.0
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
 
