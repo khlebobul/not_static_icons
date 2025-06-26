@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:not_static_icons_app/icons/align_center_horizontal_icon.dart';
+import 'package:not_static_icons_app/icons/align_center_vertical_icon.dart';
 import '../icons/a_arrow_down_icon.dart';
 import '../icons/a_arrow_up_icon.dart';
 import '../icons/a_large_small_icon.dart';
@@ -41,4 +43,12 @@ final List<IconData> icons = [
   IconData(name: 'align-left', widget: AlignLeftIcon(size: 40)),
   IconData(name: 'align-right', widget: AlignRightIcon(size: 40)),
   IconData(name: 'align-justify', widget: AlignJustifyIcon(size: 40)),
+  IconData(
+    name: 'align-center-horizontal',
+    widget: AlignCenterHorizontalIcon(size: 40),
+  ),
+  IconData(
+    name: 'align-center-vertical',
+    widget: AlignCenterVerticalIcon(size: 40),
+  ),
 ];
