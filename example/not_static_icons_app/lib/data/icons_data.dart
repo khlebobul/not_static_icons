@@ -17,6 +17,10 @@ import '../icons/align_center_icon.dart';
 import '../icons/align_left_icon.dart';
 import '../icons/align_right_icon.dart';
 import '../icons/align_justify_icon.dart';
+import '../icons/align_end_horizontal_icon.dart';
+import '../icons/align_end_vertical_icon.dart';
+import '../icons/align_start_horizontal_icon.dart';
+import '../icons/align_start_vertical_icon.dart';
 
 class IconData {
   final String name;
@@ -50,5 +54,18 @@ final List<IconData> icons = [
   IconData(
     name: 'align-center-vertical',
     widget: AlignCenterVerticalIcon(size: 40),
+  ),
+  IconData(
+    name: 'align-end-horizontal',
+    widget: AlignEndHorizontalIcon(size: 40),
+  ),
+  IconData(name: 'align-end-vertical', widget: AlignEndVerticalIcon(size: 40)),
+  IconData(
+    name: 'align-start-horizontal',
+    widget: AlignStartHorizontalIcon(size: 40),
+  ),
+  IconData(
+    name: 'align-start-vertical',
+    widget: AlignStartVerticalIcon(size: 40),
   ),
 ];

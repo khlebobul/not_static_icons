@@ -127,3 +127,4 @@ class _AlignCenterVerticalIconPainter extends CustomPainter {
         oldDelegate.color != color;
   }
 }
+ 
