@@ -60,11 +60,18 @@ class _AlignHorizontalDistributeEndPainter extends CustomPainter {
         5.0 * scale +
         (rect1OriginalHeight - rect1Height) / 2; // Center vertically
 
-    final rect1Rect = RRect.fromRectAndRadius(
-      Rect.fromLTWH(4.0 * scale, rect1Top, 6.0 * scale, rect1Height),
-      Radius.circular(2.0 * scale),
-    );
-    canvas.drawRRect(rect1Rect, paint);
+    // First rectangle with rounded left corners only (right edge is straight for end alignment)
+    final rect1Path = Path()
+      ..addRRect(
+        RRect.fromRectAndCorners(
+          Rect.fromLTWH(4.0 * scale, rect1Top, 6.0 * scale, rect1Height),
+          topLeft: Radius.circular(2.0 * scale),
+          bottomLeft: Radius.circular(2.0 * scale),
+          topRight: Radius.zero,
+          bottomRight: Radius.zero,
+        ),
+      );
+    canvas.drawPath(rect1Path, paint);
 
     // Second rectangle - gets bigger during animation
     final rect2OriginalHeight = 10.0 * scale;
@@ -75,11 +82,18 @@ class _AlignHorizontalDistributeEndPainter extends CustomPainter {
         7.0 * scale -
         (rect2Height - rect2OriginalHeight) / 2; // Center vertically
 
-    final rect2Rect = RRect.fromRectAndRadius(
-      Rect.fromLTWH(14.0 * scale, rect2Top, 6.0 * scale, rect2Height),
-      Radius.circular(2.0 * scale),
-    );
-    canvas.drawRRect(rect2Rect, paint);
+    // Second rectangle with rounded left corners only (right edge is straight for end alignment)
+    final rect2Path = Path()
+      ..addRRect(
+        RRect.fromRectAndCorners(
+          Rect.fromLTWH(14.0 * scale, rect2Top, 6.0 * scale, rect2Height),
+          topLeft: Radius.circular(2.0 * scale),
+          bottomLeft: Radius.circular(2.0 * scale),
+          topRight: Radius.zero,
+          bottomRight: Radius.zero,
+        ),
+      );
+    canvas.drawPath(rect2Path, paint);
 
     // Guide lines - animate with rectangles (end distribution - right edges)
     // Left rectangle guide line at x=10 (right edge: 4+6)
