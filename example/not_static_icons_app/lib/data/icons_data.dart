@@ -31,6 +31,8 @@ import '../icons/align_horizontal_justify_end_icon.dart';
 import '../icons/align_horizontal_justify_start_icon.dart';
 import '../icons/align_vertical_justify_end_icon.dart';
 import '../icons/align_vertical_justify_start_icon.dart';
+import '../icons/align_vertical_space_around_icon.dart';
+import '../icons/align_horizontal_space_around_icon.dart';
 
 class IconData {
   final String name;
@@ -117,5 +119,13 @@ final List<IconData> icons = [
   IconData(
     name: 'align-vertical-justify-start',
     widget: AlignVerticalJustifyStartIcon(size: 40),
+  ),
+  IconData(
+    name: 'align-vertical-space-around',
+    widget: AlignVerticalSpaceAroundIcon(size: 40),
+  ),
+  IconData(
+    name: 'align-horizontal-space-around',
+    widget: AlignHorizontalSpaceAroundIcon(size: 40),
   ),
 ];
