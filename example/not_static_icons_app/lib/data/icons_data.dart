@@ -27,6 +27,10 @@ import '../icons/align_horizontal_distribute_start_icon.dart';
 import '../icons/align_horizontal_distribute_end_icon.dart';
 import '../icons/align_vertical_distribute_start_icon.dart';
 import '../icons/align_vertical_distribute_end_icon.dart';
+import '../icons/align_horizontal_justify_end_icon.dart';
+import '../icons/align_horizontal_justify_start_icon.dart';
+import '../icons/align_vertical_justify_end_icon.dart';
+import '../icons/align_vertical_justify_start_icon.dart';
 
 class IconData {
   final String name;
@@ -97,5 +101,21 @@ final List<IconData> icons = [
   IconData(
     name: 'align-vertical-distribute-end',
     widget: AlignVerticalDistributeEndIcon(size: 40),
+  ),
+  IconData(
+    name: 'align-horizontal-justify-end',
+    widget: AlignHorizontalJustifyEndIcon(size: 40),
+  ),
+  IconData(
+    name: 'align-horizontal-justify-start',
+    widget: AlignHorizontalJustifyStartIcon(size: 40),
+  ),
+  IconData(
+    name: 'align-vertical-justify-end',
+    widget: AlignVerticalJustifyEndIcon(size: 40),
+  ),
+  IconData(
+    name: 'align-vertical-justify-start',
+    widget: AlignVerticalJustifyStartIcon(size: 40),
   ),
 ];
