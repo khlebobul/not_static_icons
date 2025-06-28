@@ -4,6 +4,7 @@ import 'package:not_static_icons_app/icons/align_center_vertical_icon.dart';
 import '../icons/a_arrow_down_icon.dart';
 import '../icons/a_arrow_up_icon.dart';
 import '../icons/a_large_small_icon.dart';
+import '../icons/accessibility_icon.dart';
 import '../icons/activity_icon.dart';
 import '../icons/air_vent_icon.dart';
 import '../icons/airplay_icon.dart';
@@ -11,6 +12,7 @@ import '../icons/alarm_clock_icon.dart';
 import '../icons/alarm_clock_check_icon.dart';
 import '../icons/alarm_clock_minus_icon.dart';
 import '../icons/alarm_clock_plus_icon.dart';
+import '../icons/alarm_clock_off_icon.dart';
 import '../icons/alarm_smoke_icon.dart';
 import '../icons/album_icon.dart';
 import '../icons/align_center_icon.dart';
@@ -48,12 +50,14 @@ final List<IconData> icons = [
   IconData(name: 'a-arrow-down', widget: AArrowDownIcon(size: 40)),
   IconData(name: 'a-arrow-up', widget: AArrowUpIcon(size: 40)),
   IconData(name: 'a-large-small', widget: ALargeSmallIcon(size: 40)),
+  IconData(name: 'accessibility', widget: AccessibilityIcon(size: 40)),
   IconData(name: 'activity', widget: ActivityIcon(size: 40)),
   IconData(name: 'air-vent', widget: AirVentIcon(size: 40)),
   IconData(name: 'airplay', widget: AirplayIcon(size: 40)),
   IconData(name: 'alarm-clock', widget: AlarmClockIcon(size: 40)),
   IconData(name: 'alarm-clock-check', widget: AlarmClockCheckIcon(size: 40)),
   IconData(name: 'alarm-clock-minus', widget: AlarmClockMinusIcon(size: 40)),
+  IconData(name: 'alarm-clock-off', widget: AlarmClockOffIcon(size: 40)),
   IconData(name: 'alarm-clock-plus', widget: AlarmClockPlusIcon(size: 40)),
   IconData(name: 'alarm-smoke', widget: AlarmSmokeIcon(size: 40)),
   IconData(name: 'album', widget: AlbumIcon(size: 40)),
