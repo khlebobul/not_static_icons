@@ -60,8 +60,7 @@ class AnimatedSVGIconState extends State<AnimatedSVGIcon>
   }
 
   void _stopAnimation() {
-    _controller.stop();
-    _controller.reset();
+    _controller.reverse();
   }
 
   @override

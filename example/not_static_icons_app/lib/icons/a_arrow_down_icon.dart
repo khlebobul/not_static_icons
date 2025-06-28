@@ -12,14 +12,17 @@ class AArrowDownIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Arrow moves up and down";
+  String get animationDescription =>
+      "Arrow moves down and returns to original position";
 
   @override
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
   }) {
-    return AArrowDownPainter(color: color, arrowOffset: animationValue * 3);
+    // Create oscillating motion: goes from 0 to max and back to 0
+    final oscillation = 4 * animationValue * (1 - animationValue);
+    return AArrowDownPainter(color: color, arrowOffset: oscillation * 3);
   }
 }
 

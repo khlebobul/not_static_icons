@@ -45,7 +45,7 @@ class IconData {
   const IconData({required this.name, required this.widget});
 }
 
-// Icons data
+// Icons data - automatically sorted alphabetically in UI
 final List<IconData> icons = [
   IconData(name: 'a-arrow-down', widget: AArrowDownIcon(size: 40)),
   IconData(name: 'a-arrow-up', widget: AArrowUpIcon(size: 40)),

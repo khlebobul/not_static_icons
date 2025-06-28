@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:not_static_icons_app/data/app_consts.dart';
 import 'package:not_static_icons_app/data/icons_data.dart' as icons_data;
 import 'package:url_launcher/url_launcher.dart';
 import '../widgets/icon_card.dart';
 
-/// Demo page showcasing animated SVG icons
 class AnimatedIconsDemo extends StatefulWidget {
   const AnimatedIconsDemo({super.key});
 
@@ -14,17 +14,22 @@ class AnimatedIconsDemo extends StatefulWidget {
 }
 
 class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
-  static const String _installCommand = 'flutter pub add not_static_icons';
   static const double _gridMaxCrossAxisExtent = 170.0;
   static const double _gridSpacing = 16.0;
 
   final TextEditingController _searchController = TextEditingController();
   List<icons_data.IconData> _filteredIcons = [];
 
+  List<icons_data.IconData> get _sortedIcons {
+    final sorted = List<icons_data.IconData>.from(icons_data.icons);
+    sorted.sort((a, b) => a.name.compareTo(b.name));
+    return sorted;
+  }
+
   @override
   void initState() {
     super.initState();
-    _filteredIcons = icons_data.icons;
+    _filteredIcons = _sortedIcons;
     _searchController.addListener(_filterIcons);
   }
 
@@ -37,9 +42,9 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
   void _filterIcons() {
     final query = _searchController.text.toLowerCase();
     setState(() {
-      _filteredIcons = icons_data.icons.where((icon) {
-        return icon.name.toLowerCase().contains(query);
-      }).toList();
+      _filteredIcons = _sortedIcons
+          .where((icon) => icon.name.toLowerCase().contains(query))
+          .toList();
     });
   }
 
@@ -58,8 +63,8 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'copied to clipboard: $text',
-            style: const TextStyle(fontFamily: 'JetBrainsMono'),
+            '${AnimatedIconsStrings.copiedToClipboardPrefix}$text',
+            style: const TextStyle(fontFamily: AnimatedIconsStrings.fontFamily),
           ),
           duration: const Duration(seconds: 2),
           backgroundColor: Colors.black87,
@@ -101,25 +106,29 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       elevation: 0,
       centerTitle: false,
       title: const Text(
-        'not_static_icons',
-        style: TextStyle(fontSize: 18, fontFamily: 'JetBrainsMono'),
+        AnimatedIconsStrings.appBarTitle,
+        style: TextStyle(
+          fontSize: 18,
+          fontFamily: AnimatedIconsStrings.fontFamily,
+        ),
       ),
       actions: [
         Padding(
           padding: const EdgeInsets.only(right: 16.0),
           child: Row(
-            spacing: 10,
-            mainAxisSize: MainAxisSize.min,
             children: [
               _buildTextLinkContainer(
-                'pub.dev',
-                'https://pub.dev/packages/not_static_icons',
+                AnimatedIconsStrings.pubDevLabel,
+                AnimatedIconsStrings.pubDevUrl,
               ),
               _buildTextLinkContainer(
-                'github',
-                'https://github.com/khlebobul/not_static_icons',
+                AnimatedIconsStrings.githubLabel,
+                AnimatedIconsStrings.githubUrl,
               ),
-              _buildTextLinkContainer('support', 'https://t.me/khlebobul_dev'),
+              _buildTextLinkContainer(
+                AnimatedIconsStrings.supportLabel,
+                AnimatedIconsStrings.supportUrl,
+              ),
             ],
           ),
         ),
@@ -131,11 +140,9 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _buildDescriptionText(
-          'simple flutter package for adding animated icons into your project',
-        ),
+        _buildDescriptionText(AnimatedIconsStrings.description1),
         const SizedBox(height: 12),
-        _buildDescriptionText('let\'s make this library awesome together'),
+        _buildDescriptionText(AnimatedIconsStrings.description2),
         const SizedBox(height: 12),
         _buildCreditsRow(),
       ],
@@ -148,7 +155,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       style: const TextStyle(
         fontSize: 14,
         color: Colors.black54,
-        fontFamily: 'JetBrainsMono',
+        fontFamily: AnimatedIconsStrings.fontFamily,
       ),
     );
   }
@@ -159,12 +166,21 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       spacing: 4.0,
       runSpacing: 4.0,
       children: [
-        _buildDescriptionText('made with '),
-        _buildTextLinkContainer('flutter', 'https://flutter.dev'),
-        _buildDescriptionText(' and '),
-        _buildTextLinkContainer('lucide icons', 'https://lucide.dev'),
-        _buildDescriptionText(' inspired by '),
-        _buildTextLinkContainer('pqoqubbw/icons', 'https://icons.pqoqubbw.dev'),
+        _buildDescriptionText(AnimatedIconsStrings.madeWith),
+        _buildTextLinkContainer(
+          AnimatedIconsStrings.flutterLabel,
+          AnimatedIconsStrings.flutterUrl,
+        ),
+        _buildDescriptionText(AnimatedIconsStrings.and),
+        _buildTextLinkContainer(
+          AnimatedIconsStrings.lucideLabel,
+          AnimatedIconsStrings.lucideUrl,
+        ),
+        _buildDescriptionText(AnimatedIconsStrings.inspiredBy),
+        _buildTextLinkContainer(
+          AnimatedIconsStrings.pqoqubbwLabel,
+          AnimatedIconsStrings.pqoqubbwUrl,
+        ),
       ],
     );
   }
@@ -180,7 +196,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       child: Row(
         children: [
           InkWell(
-            onTap: () => _copyToClipboard(_installCommand),
+            onTap: () => _copyToClipboard(AnimatedIconsStrings.installCommand),
             child: SvgPicture.asset(
               'assets/icons/copy.svg',
               width: 16,
@@ -194,11 +210,11 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
           const SizedBox(width: 12),
           Expanded(
             child: Text(
-              _installCommand,
+              AnimatedIconsStrings.installCommand,
               style: const TextStyle(
                 fontSize: 14,
                 color: Colors.black54,
-                fontFamily: 'JetBrainsMono',
+                fontFamily: AnimatedIconsStrings.fontFamily,
               ),
             ),
           ),
@@ -231,16 +247,20 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
             child: TextField(
               controller: _searchController,
               decoration: InputDecoration(
-                hintText: 'search ${icons_data.icons.length} icons',
+                hintText:
+                    '${AnimatedIconsStrings.searchHintPrefix} ${icons_data.icons.length} icons',
                 hintStyle: TextStyle(
                   color: Colors.grey.shade500,
-                  fontFamily: 'JetBrainsMono',
+                  fontFamily: AnimatedIconsStrings.fontFamily,
                   fontSize: 14,
                 ),
                 border: InputBorder.none,
                 contentPadding: EdgeInsets.zero,
               ),
-              style: const TextStyle(fontFamily: 'JetBrainsMono', fontSize: 14),
+              style: const TextStyle(
+                fontFamily: AnimatedIconsStrings.fontFamily,
+                fontSize: 14,
+              ),
             ),
           ),
           if (_searchController.text.isNotEmpty)
@@ -262,16 +282,28 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       return _buildEmptyState();
     }
 
-    return Wrap(
-      spacing: _gridSpacing,
-      runSpacing: _gridSpacing,
-      children: _filteredIcons.map((icon) {
-        return SizedBox(
-          width: _gridMaxCrossAxisExtent,
-          height: _gridMaxCrossAxisExtent,
-          child: IconCard(name: icon.name, iconWidget: icon.widget),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final crossAxisCount = (constraints.maxWidth / _gridMaxCrossAxisExtent)
+            .floor()
+            .clamp(1, 10);
+
+        return GridView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: crossAxisCount,
+            crossAxisSpacing: _gridSpacing,
+            mainAxisSpacing: _gridSpacing,
+            childAspectRatio: 1.0,
+          ),
+          itemCount: _filteredIcons.length,
+          itemBuilder: (context, index) {
+            final icon = _filteredIcons[index];
+            return IconCard(name: icon.name, iconWidget: icon.widget);
+          },
         );
-      }).toList(),
+      },
     );
   }
 
@@ -282,11 +314,11 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
         child: Column(
           children: [
             Text(
-              'no icons found',
+              AnimatedIconsStrings.noIconsFound,
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.grey.shade600,
-                fontFamily: 'JetBrainsMono',
+                fontFamily: AnimatedIconsStrings.fontFamily,
               ),
             ),
           ],
@@ -300,6 +332,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       onTap: () => _launchUrl(url),
       borderRadius: BorderRadius.circular(6),
       child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 4),
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
         decoration: BoxDecoration(
           color: Colors.grey.shade50,
@@ -311,7 +344,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
           style: const TextStyle(
             fontSize: 14,
             color: Colors.black,
-            fontFamily: 'JetBrainsMono',
+            fontFamily: AnimatedIconsStrings.fontFamily,
           ),
         ),
       ),
