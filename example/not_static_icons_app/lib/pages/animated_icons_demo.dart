@@ -103,6 +103,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
   PreferredSizeWidget _buildAppBar() {
     return AppBar(
       backgroundColor: Colors.white,
+      surfaceTintColor: Colors.grey,
       elevation: 0,
       centerTitle: false,
       title: const Text(
