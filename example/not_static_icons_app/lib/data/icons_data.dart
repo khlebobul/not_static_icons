@@ -40,6 +40,7 @@ import '../icons/align_horizontal_space_between_icon.dart';
 import '../icons/align_vertical_space_between_icon.dart';
 import '../icons/align_horizontal_justify_center_icon.dart';
 import '../icons/align_vertical_justify_center_icon.dart';
+import '../icons/ampersand_icon.dart';
 
 class IconData {
   final String name;
@@ -65,6 +66,7 @@ final List<IconData> icons = [
   IconData(name: 'alarm-smoke', widget: AlarmSmokeIcon(size: 40)),
   IconData(name: 'album', widget: AlbumIcon(size: 40)),
   IconData(name: 'ambulance', widget: AmbulanceIcon(size: 40)),
+  IconData(name: 'ampersand', widget: AmpersandIcon(size: 40)),
   IconData(name: 'align-center', widget: AlignCenterIcon(size: 40)),
   IconData(name: 'align-left', widget: AlignLeftIcon(size: 40)),
   IconData(name: 'align-right', widget: AlignRightIcon(size: 40)),
