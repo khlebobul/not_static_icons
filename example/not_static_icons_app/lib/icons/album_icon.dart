@@ -76,4 +76,3 @@ class AlbumPainter extends CustomPainter {
         oldDelegate.animationValue != animationValue;
   }
 }
- 

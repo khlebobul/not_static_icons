@@ -131,4 +131,3 @@ class _AlignCenterHorizontalIconPainter extends CustomPainter {
         oldDelegate.color != color;
   }
 }
- 

@@ -132,4 +132,3 @@ class ALargeSmallPainter extends CustomPainter {
         oldDelegate.animationValue != animationValue;
   }
 }
- 

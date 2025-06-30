@@ -45,9 +45,14 @@ class AlarmClockMinusPainter extends CustomPainter {
 
     // Calculate shake offset
     final shakeIntensity = 1.0 * scale;
-    final shakeX = sin(animationValue * 4 * 2 * pi) * shakeIntensity * animationValue;
-    final shakeY = cos(animationValue * 6 * 2 * pi) * shakeIntensity * 0.5 * animationValue;
-    
+    final shakeX =
+        sin(animationValue * 4 * 2 * pi) * shakeIntensity * animationValue;
+    final shakeY =
+        cos(animationValue * 6 * 2 * pi) *
+        shakeIntensity *
+        0.5 *
+        animationValue;
+
     canvas.save();
     canvas.translate(shakeX, shakeY);
 
@@ -77,4 +82,4 @@ class AlarmClockMinusPainter extends CustomPainter {
     return oldDelegate.color != color ||
         oldDelegate.animationValue != animationValue;
   }
-} 
+}
