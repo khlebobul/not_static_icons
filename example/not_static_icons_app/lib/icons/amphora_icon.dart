@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../core/animated_svg_icon_base.dart';
 
@@ -155,7 +154,7 @@ class AmphoraPainter extends CustomPainter {
     final fadeOutOpacity = (1 - (animationValue / 0.2)).clamp(0.0, 1.0);
     if (fadeOutOpacity > 0) {
       final fadePaint = Paint()
-        ..color = color.withOpacity(fadeOutOpacity)
+        ..color = color.withValues(alpha: fadeOutOpacity)
         ..strokeWidth = 2.0
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round

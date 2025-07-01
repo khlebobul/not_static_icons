@@ -44,6 +44,7 @@ import '../icons/ampersand_icon.dart';
 import '../icons/ampersands_icon.dart';
 import '../icons/amphora_icon.dart';
 import '../icons/anchor_icon.dart';
+import '../icons/angry_icon.dart';
 
 class IconData {
   final String name;
@@ -73,6 +74,7 @@ final List<IconData> icons = [
   IconData(name: 'ampersands', widget: AmpersandsIcon(size: 40)),
   IconData(name: 'amphora', widget: AmphoraIcon(size: 40)),
   IconData(name: 'anchor', widget: AnchorIcon(size: 40)),
+  IconData(name: 'angry', widget: AngryIcon(size: 40)),
   IconData(name: 'align-center', widget: AlignCenterIcon(size: 40)),
   IconData(name: 'align-left', widget: AlignLeftIcon(size: 40)),
   IconData(name: 'align-right', widget: AlignRightIcon(size: 40)),
