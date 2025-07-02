@@ -54,6 +54,7 @@ import '../icons/app_window_icon.dart';
 import '../icons/apple_icon.dart';
 import '../icons/archive_icon.dart';
 import '../icons/archive_restore_icon.dart';
+import '../icons/archive_x_icon.dart';
 import '../icons/armchair_icon.dart';
 
 class IconData {
@@ -93,6 +94,7 @@ final List<IconData> icons = [
   IconData(name: 'app-window-mac', widget: AppWindowMacIcon(size: 40)),
   IconData(name: 'archive', widget: ArchiveIcon(size: 40)),
   IconData(name: 'archive-restore', widget: ArchiveRestoreIcon(size: 40)),
+  IconData(name: 'archive-x', widget: ArchiveXIcon(size: 40)),
   IconData(name: 'armchair', widget: ArmchairIcon(size: 40)),
   IconData(name: 'app-window', widget: AppWindowIcon(size: 40)),
   IconData(name: 'align-center', widget: AlignCenterIcon(size: 40)),
