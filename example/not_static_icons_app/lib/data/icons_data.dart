@@ -51,6 +51,7 @@ import '../icons/anvil_icon.dart';
 import '../icons/aperture_icon.dart';
 import '../icons/app_window_mac_icon.dart';
 import '../icons/app_window_icon.dart';
+import '../icons/apple_icon.dart';
 
 class IconData {
   final String name;
@@ -85,6 +86,7 @@ final List<IconData> icons = [
   IconData(name: 'antenna', widget: AntennaIcon(size: 40)),
   IconData(name: 'anvil', widget: AnvilIcon(size: 40)),
   IconData(name: 'aperture', widget: ApertureIcon(size: 40)),
+  IconData(name: 'apple', widget: AppleIcon(size: 40)),
   IconData(name: 'app-window-mac', widget: AppWindowMacIcon(size: 40)),
   IconData(name: 'app-window', widget: AppWindowIcon(size: 40)),
   IconData(name: 'align-center', widget: AlignCenterIcon(size: 40)),
