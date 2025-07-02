@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title:
-          'not_static_icons | simple flutter package for adding animated icons into your project',
+          'not_static_icons | beautifully crafted animated icons for Flutter',
       debugShowCheckedModeBanner: false,
       home: AnimatedIconsDemo(),
     );
