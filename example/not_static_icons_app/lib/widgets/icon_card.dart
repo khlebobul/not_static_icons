@@ -5,8 +5,14 @@ import 'package:not_static_icons_app/data/app_consts.dart';
 class IconCard extends StatelessWidget {
   final String name;
   final Widget iconWidget;
+  final VoidCallback? onViewCode;
 
-  const IconCard({super.key, required this.name, required this.iconWidget});
+  const IconCard({
+    super.key,
+    required this.name,
+    required this.iconWidget,
+    this.onViewCode,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -73,8 +79,11 @@ class IconCard extends StatelessWidget {
                     ),
                   ),
                   onTap: () {
-                    // TODO: Implement view code functionality
-                    debugPrint('View code for $name');
+                    if (onViewCode != null) {
+                      onViewCode!();
+                    } else {
+                      debugPrint('View code for $name');
+                    }
                   },
                 ),
               ),

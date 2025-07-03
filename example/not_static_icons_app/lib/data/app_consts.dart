@@ -7,6 +7,9 @@ class AnimatedIconsStrings {
   static const githubLabel = 'github';
   static const githubUrl = 'https://github.com/khlebobul/not_static_icons';
 
+  static const githubIconsBaseUrl =
+      'https://github.com/khlebobul/not_static_icons/blob/main/example/not_static_icons_app/lib/icons/';
+
   static const supportLabel = 'support';
   static const supportUrl = 'https://t.me/khlebobul_dev';
 

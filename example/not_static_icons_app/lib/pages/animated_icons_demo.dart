@@ -73,6 +73,16 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
     }
   }
 
+  String _generateIconCodeUrl(String iconName) {
+    final fileName = '${iconName.replaceAll('-', '_')}_icon.dart';
+    return '${AnimatedIconsStrings.githubIconsBaseUrl}$fileName';
+  }
+
+  Future<void> _openIconCode(String iconName) async {
+    final url = _generateIconCodeUrl(iconName);
+    await _launchUrl(url);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -301,7 +311,11 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
           itemCount: _filteredIcons.length,
           itemBuilder: (context, index) {
             final icon = _filteredIcons[index];
-            return IconCard(name: icon.name, iconWidget: icon.widget);
+            return IconCard(
+              name: icon.name,
+              iconWidget: icon.widget,
+              onViewCode: () => _openIconCode(icon.name),
+            );
           },
         );
       },
