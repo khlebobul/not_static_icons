@@ -1,0 +1,95 @@
+import 'package:flutter/material.dart';
+import '../core/animated_svg_icon_base.dart';
+
+class ArrowUpDownIcon extends AnimatedSVGIcon {
+  const ArrowUpDownIcon({
+    super.key,
+    super.size = 24,
+    super.color = Colors.black,
+    super.animationDuration = const Duration(milliseconds: 1500),
+  });
+
+  @override
+  CustomPainter createPainter({
+    required Color color,
+    required double animationValue,
+  }) {
+    return _ArrowUpDownPainter(color: color, animationValue: animationValue);
+  }
+
+  @override
+  String get animationDescription =>
+      'Two arrows moving up and down in opposite directions';
+}
+
+class _ArrowUpDownPainter extends CustomPainter {
+  final Color color;
+  final double animationValue;
+
+  _ArrowUpDownPainter({required this.color, required this.animationValue});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = color
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.0
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round;
+
+    final scaleX = size.width / 24;
+    final scaleY = size.height / 24;
+    canvas.scale(scaleX, scaleY);
+
+    // Calculate movement animation
+    double offsetY = 0.0;
+    if (animationValue <= 0.5) {
+      // Move in opposite directions
+      offsetY = 2.0 * (animationValue * 2);
+    } else {
+      // Move back to start
+      offsetY = 2.0 * (2 - animationValue * 2);
+    }
+
+    // Right arrow (moving down)
+    canvas.save();
+    canvas.translate(0, offsetY);
+
+    // Right arrow head (down)
+    final rightArrowHeadPath = Path();
+    rightArrowHeadPath.moveTo(13, 16);
+    rightArrowHeadPath.lineTo(17, 20);
+    rightArrowHeadPath.lineTo(21, 16);
+    canvas.drawPath(rightArrowHeadPath, paint);
+
+    // Right arrow vertical line
+    final rightArrowLinePath = Path();
+    rightArrowLinePath.moveTo(17, 20);
+    rightArrowLinePath.lineTo(17, 4);
+    canvas.drawPath(rightArrowLinePath, paint);
+
+    canvas.restore();
+
+    // Left arrow (moving up)
+    canvas.save();
+    canvas.translate(0, -offsetY);
+
+    // Left arrow head (up)
+    final leftArrowHeadPath = Path();
+    leftArrowHeadPath.moveTo(3, 8);
+    leftArrowHeadPath.lineTo(7, 4);
+    leftArrowHeadPath.lineTo(11, 8);
+    canvas.drawPath(leftArrowHeadPath, paint);
+
+    // Left arrow vertical line
+    final leftArrowLinePath = Path();
+    leftArrowLinePath.moveTo(7, 4);
+    leftArrowLinePath.lineTo(7, 20);
+    canvas.drawPath(leftArrowLinePath, paint);
+
+    canvas.restore();
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+}
