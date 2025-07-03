@@ -1,77 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:not_static_icons_app/icons/align_center_horizontal_icon.dart';
-import 'package:not_static_icons_app/icons/align_center_vertical_icon.dart';
-import '../icons/a_arrow_down_icon.dart';
-import '../icons/a_arrow_up_icon.dart';
-import '../icons/a_large_small_icon.dart';
-import '../icons/accessibility_icon.dart';
-import '../icons/activity_icon.dart';
-import '../icons/air_vent_icon.dart';
-import '../icons/airplay_icon.dart';
-import '../icons/alarm_clock_icon.dart';
-import '../icons/alarm_clock_check_icon.dart';
-import '../icons/alarm_clock_minus_icon.dart';
-import '../icons/alarm_clock_plus_icon.dart';
-import '../icons/alarm_clock_off_icon.dart';
-import '../icons/alarm_smoke_icon.dart';
-import '../icons/album_icon.dart';
-import '../icons/ambulance_icon.dart';
-import '../icons/align_center_icon.dart';
-import '../icons/align_left_icon.dart';
-import '../icons/align_right_icon.dart';
-import '../icons/align_justify_icon.dart';
-import '../icons/align_end_horizontal_icon.dart';
-import '../icons/align_end_vertical_icon.dart';
-import '../icons/align_start_horizontal_icon.dart';
-import '../icons/align_start_vertical_icon.dart';
-import '../icons/align_horizontal_distribute_center_icon.dart';
-import '../icons/align_vertical_distribute_center_icon.dart';
-import '../icons/align_horizontal_distribute_start_icon.dart';
-import '../icons/align_horizontal_distribute_end_icon.dart';
-import '../icons/align_vertical_distribute_start_icon.dart';
-import '../icons/align_vertical_distribute_end_icon.dart';
-import '../icons/align_horizontal_justify_end_icon.dart';
-import '../icons/align_horizontal_justify_start_icon.dart';
-import '../icons/align_vertical_justify_end_icon.dart';
-import '../icons/align_vertical_justify_start_icon.dart';
-import '../icons/align_vertical_space_around_icon.dart';
-import '../icons/align_horizontal_space_around_icon.dart';
-import '../icons/align_horizontal_space_between_icon.dart';
-import '../icons/align_vertical_space_between_icon.dart';
-import '../icons/align_horizontal_justify_center_icon.dart';
-import '../icons/align_vertical_justify_center_icon.dart';
-import '../icons/ampersand_icon.dart';
-import '../icons/ampersands_icon.dart';
-import '../icons/amphora_icon.dart';
-import '../icons/anchor_icon.dart';
-import '../icons/angry_icon.dart';
-import '../icons/annoyed_icon.dart';
-import '../icons/antenna_icon.dart';
-import '../icons/anvil_icon.dart';
-import '../icons/aperture_icon.dart';
-import '../icons/app_window_mac_icon.dart';
-import '../icons/app_window_icon.dart';
-import '../icons/apple_icon.dart';
-import '../icons/archive_icon.dart';
-import '../icons/archive_restore_icon.dart';
-import '../icons/archive_x_icon.dart';
-import '../icons/armchair_icon.dart';
-import '../icons/arrow_big_down_dash_icon.dart';
-import '../icons/arrow_big_down_icon.dart';
-import '../icons/arrow_big_left_dash_icon.dart';
-import '../icons/arrow_big_left_icon.dart';
-import '../icons/arrow_big_right_dash_icon.dart';
-import '../icons/arrow_big_right_icon.dart';
-import '../icons/arrow_big_up_dash_icon.dart';
-import '../icons/arrow_big_up_icon.dart';
-import '../icons/arrow_down_left_icon.dart';
-import '../icons/arrow_down_right_icon.dart';
-import '../icons/arrow_down_icon.dart';
-import '../icons/arrow_left_icon.dart';
-import '../icons/arrow_right_icon.dart';
-import '../icons/arrow_up_left_icon.dart';
-import '../icons/arrow_up_right_icon.dart';
-import '../icons/arrow_up_icon.dart';
+import 'all_icons.dart';
 
 class IconData {
   final String name;
@@ -124,13 +52,33 @@ final List<IconData> icons = [
   IconData(name: 'arrow-big-up', widget: ArrowBigUpIcon(size: 40)),
   IconData(name: 'arrow-big-up-dash', widget: ArrowBigUpDashIcon(size: 40)),
   IconData(name: 'arrow-down', widget: ArrowDownIcon(size: 40)),
+  IconData(
+    name: 'arrow-down-from-line',
+    widget: ArrowDownFromLineIcon(size: 40),
+  ),
   IconData(name: 'arrow-down-left', widget: ArrowDownLeftIcon(size: 40)),
   IconData(name: 'arrow-down-right', widget: ArrowDownRightIcon(size: 40)),
+  IconData(name: 'arrow-down-to-dot', widget: ArrowDownToDotIcon(size: 40)),
+  IconData(name: 'arrow-down-to-line', widget: ArrowDownToLineIcon(size: 40)),
   IconData(name: 'arrow-left', widget: ArrowLeftIcon(size: 40)),
+  IconData(
+    name: 'arrow-left-from-line',
+    widget: ArrowLeftFromLineIcon(size: 40),
+  ),
+  IconData(name: 'arrow-left-to-line', widget: ArrowLeftToLineIcon(size: 40)),
   IconData(name: 'arrow-right', widget: ArrowRightIcon(size: 40)),
+  IconData(
+    name: 'arrow-right-from-line',
+    widget: ArrowRightFromLineIcon(size: 40),
+  ),
+  IconData(name: 'arrow-right-to-line', widget: ArrowRightToLineIcon(size: 40)),
   IconData(name: 'arrow-up', widget: ArrowUpIcon(size: 40)),
+  IconData(name: 'arrow-up-from-dot', widget: ArrowUpFromDotIcon(size: 40)),
+  IconData(name: 'arrow-up-from-line', widget: ArrowUpFromLineIcon(size: 40)),
   IconData(name: 'arrow-up-left', widget: ArrowUpLeftIcon(size: 40)),
   IconData(name: 'arrow-up-right', widget: ArrowUpRightIcon(size: 40)),
+  IconData(name: 'arrow-up-to-line', widget: ArrowUpToLineIcon(size: 40)),
+  IconData(name: 'arrows-up-from-line', widget: ArrowsUpFromLineIcon(size: 40)),
   IconData(name: 'app-window', widget: AppWindowIcon(size: 40)),
   IconData(name: 'align-center', widget: AlignCenterIcon(size: 40)),
   IconData(name: 'align-left', widget: AlignLeftIcon(size: 40)),
