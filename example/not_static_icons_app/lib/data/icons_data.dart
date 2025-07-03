@@ -64,6 +64,14 @@ import '../icons/arrow_big_right_dash_icon.dart';
 import '../icons/arrow_big_right_icon.dart';
 import '../icons/arrow_big_up_dash_icon.dart';
 import '../icons/arrow_big_up_icon.dart';
+import '../icons/arrow_down_left_icon.dart';
+import '../icons/arrow_down_right_icon.dart';
+import '../icons/arrow_down_icon.dart';
+import '../icons/arrow_left_icon.dart';
+import '../icons/arrow_right_icon.dart';
+import '../icons/arrow_up_left_icon.dart';
+import '../icons/arrow_up_right_icon.dart';
+import '../icons/arrow_up_icon.dart';
 
 class IconData {
   final String name;
@@ -115,6 +123,14 @@ final List<IconData> icons = [
   ),
   IconData(name: 'arrow-big-up', widget: ArrowBigUpIcon(size: 40)),
   IconData(name: 'arrow-big-up-dash', widget: ArrowBigUpDashIcon(size: 40)),
+  IconData(name: 'arrow-down', widget: ArrowDownIcon(size: 40)),
+  IconData(name: 'arrow-down-left', widget: ArrowDownLeftIcon(size: 40)),
+  IconData(name: 'arrow-down-right', widget: ArrowDownRightIcon(size: 40)),
+  IconData(name: 'arrow-left', widget: ArrowLeftIcon(size: 40)),
+  IconData(name: 'arrow-right', widget: ArrowRightIcon(size: 40)),
+  IconData(name: 'arrow-up', widget: ArrowUpIcon(size: 40)),
+  IconData(name: 'arrow-up-left', widget: ArrowUpLeftIcon(size: 40)),
+  IconData(name: 'arrow-up-right', widget: ArrowUpRightIcon(size: 40)),
   IconData(name: 'app-window', widget: AppWindowIcon(size: 40)),
   IconData(name: 'align-center', widget: AlignCenterIcon(size: 40)),
   IconData(name: 'align-left', widget: AlignLeftIcon(size: 40)),
