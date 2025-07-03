@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:not_static_icons_app/data/app_consts.dart';
 
 class IconCard extends StatelessWidget {
   final String name;
@@ -26,7 +27,7 @@ class IconCard extends StatelessWidget {
             name,
             style: TextStyle(
               fontSize: 12,
-              fontFamily: 'JetBrainsMono',
+              fontFamily: AnimatedIconsStrings.fontFamily,
               color: Colors.grey.shade600,
             ),
             textAlign: TextAlign.center,
@@ -43,7 +44,7 @@ class IconCard extends StatelessWidget {
                 message: 'Copy',
                 child: _buildActionButton(
                   icon: SvgPicture.asset(
-                    'assets/icons/copy.svg',
+                    AnimatedIconsStrings.copyIconPath,
                     width: 16,
                     height: 16,
                     colorFilter: ColorFilter.mode(
@@ -63,7 +64,7 @@ class IconCard extends StatelessWidget {
                 message: 'View code',
                 child: _buildActionButton(
                   icon: SvgPicture.asset(
-                    'assets/icons/code.svg',
+                    AnimatedIconsStrings.codeIconPath,
                     width: 16,
                     height: 16,
                     colorFilter: ColorFilter.mode(

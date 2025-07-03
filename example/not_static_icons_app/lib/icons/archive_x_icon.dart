@@ -98,7 +98,7 @@ class ArchiveXPainter extends CustomPainter {
 
     // Draw blinking X with opacity
     final xPaint = Paint()
-      ..color = color.withOpacity(xOpacity)
+      ..color = color.withValues(alpha: xOpacity)
       ..strokeWidth = paint
           .strokeWidth // Same thickness as other elements
       ..strokeCap = StrokeCap.round

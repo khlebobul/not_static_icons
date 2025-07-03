@@ -56,6 +56,14 @@ import '../icons/archive_icon.dart';
 import '../icons/archive_restore_icon.dart';
 import '../icons/archive_x_icon.dart';
 import '../icons/armchair_icon.dart';
+import '../icons/arrow_big_down_dash_icon.dart';
+import '../icons/arrow_big_down_icon.dart';
+import '../icons/arrow_big_left_dash_icon.dart';
+import '../icons/arrow_big_left_icon.dart';
+import '../icons/arrow_big_right_dash_icon.dart';
+import '../icons/arrow_big_right_icon.dart';
+import '../icons/arrow_big_up_dash_icon.dart';
+import '../icons/arrow_big_up_icon.dart';
 
 class IconData {
   final String name;
@@ -96,6 +104,17 @@ final List<IconData> icons = [
   IconData(name: 'archive-restore', widget: ArchiveRestoreIcon(size: 40)),
   IconData(name: 'archive-x', widget: ArchiveXIcon(size: 40)),
   IconData(name: 'armchair', widget: ArmchairIcon(size: 40)),
+  IconData(name: 'arrow-big-down', widget: ArrowBigDownIcon(size: 40)),
+  IconData(name: 'arrow-big-down-dash', widget: ArrowBigDownDashIcon(size: 40)),
+  IconData(name: 'arrow-big-left', widget: ArrowBigLeftIcon(size: 40)),
+  IconData(name: 'arrow-big-left-dash', widget: ArrowBigLeftDashIcon(size: 40)),
+  IconData(name: 'arrow-big-right', widget: ArrowBigRightIcon(size: 40)),
+  IconData(
+    name: 'arrow-big-right-dash',
+    widget: ArrowBigRightDashIcon(size: 40),
+  ),
+  IconData(name: 'arrow-big-up', widget: ArrowBigUpIcon(size: 40)),
+  IconData(name: 'arrow-big-up-dash', widget: ArrowBigUpDashIcon(size: 40)),
   IconData(name: 'app-window', widget: AppWindowIcon(size: 40)),
   IconData(name: 'align-center', widget: AlignCenterIcon(size: 40)),
   IconData(name: 'align-left', widget: AlignLeftIcon(size: 40)),

@@ -199,7 +199,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
           InkWell(
             onTap: () => _copyToClipboard(AnimatedIconsStrings.installCommand),
             child: SvgPicture.asset(
-              'assets/icons/copy.svg',
+              AnimatedIconsStrings.searchIconPath,
               width: 16,
               height: 16,
               colorFilter: ColorFilter.mode(
@@ -235,7 +235,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       child: Row(
         children: [
           SvgPicture.asset(
-            'assets/icons/search.svg',
+            AnimatedIconsStrings.searchIconPath,
             width: 16,
             height: 16,
             colorFilter: ColorFilter.mode(
@@ -287,7 +287,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       builder: (context, constraints) {
         final crossAxisCount = (constraints.maxWidth / _gridMaxCrossAxisExtent)
             .floor()
-            .clamp(1, 10);
+            .clamp(1, 7);
 
         return GridView.builder(
           shrinkWrap: true,

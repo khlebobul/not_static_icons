@@ -32,4 +32,8 @@ class AnimatedIconsStrings {
   static const noIconsFound = 'no icons found';
 
   static const fontFamily = 'JetBrainsMono';
+
+  static const searchIconPath = 'assets/icons/search.svg';
+  static const copyIconPath = 'assets/icons/copy.svg';
+  static const codeIconPath = 'assets/icons/code.svg';
 }
