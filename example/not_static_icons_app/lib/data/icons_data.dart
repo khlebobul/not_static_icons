@@ -189,4 +189,8 @@ final List<IconData> icons = [
     name: 'align-vertical-justify-center',
     widget: AlignVerticalJustifyCenterIcon(size: 40),
   ),
+  IconData(name: 'arrow-down-a-z', widget: ArrowDownAZIcon(size: 40)),
+  IconData(name: 'arrow-down-z-a', widget: ArrowDownZAIcon(size: 40)),
+  IconData(name: 'arrow-up-a-z', widget: ArrowUpAZIcon(size: 40)),
+  IconData(name: 'arrow-up-z-a', widget: ArrowUpZAIcon(size: 40)),
 ];
