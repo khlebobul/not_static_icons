@@ -10,7 +10,7 @@ abstract class AnimatedSVGIcon extends StatefulWidget {
 
   const AnimatedSVGIcon({
     super.key,
-    this.size = 100.0,
+    this.size = 40.0,
     this.color,
     this.hoverColor,
     this.animationDuration = const Duration(milliseconds: 600),

@@ -4,7 +4,7 @@ import '../core/animated_svg_icon_base.dart';
 class ArrowDownFromLineIcon extends AnimatedSVGIcon {
   const ArrowDownFromLineIcon({
     super.key,
-    super.size = 24,
+    super.size = 40,
     super.color = Colors.black,
     super.animationDuration = const Duration(milliseconds: 1500),
     super.strokeWidth = 2.0,

@@ -4,7 +4,7 @@ import '../core/animated_svg_icon_base.dart';
 class AlignVerticalSpaceAroundIcon extends AnimatedSVGIcon {
   const AlignVerticalSpaceAroundIcon({
     super.key,
-    super.size = 24.0,
+    super.size = 40.0,
     super.color = Colors.black,
     super.animationDuration = const Duration(milliseconds: 600),
     super.strokeWidth = 2.0,

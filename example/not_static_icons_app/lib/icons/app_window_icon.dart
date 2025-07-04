@@ -6,7 +6,7 @@ import '../core/animated_svg_icon_base.dart';
 class AppWindowIcon extends AnimatedSVGIcon {
   const AppWindowIcon({
     super.key,
-    super.size = 100.0,
+    super.size = 40.0,
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 800),
