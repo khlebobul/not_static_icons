@@ -193,4 +193,8 @@ final List<IconData> icons = [
   IconData(name: 'arrow-down-z-a', widget: ArrowDownZAIcon(size: 40)),
   IconData(name: 'arrow-up-a-z', widget: ArrowUpAZIcon(size: 40)),
   IconData(name: 'arrow-up-z-a', widget: ArrowUpZAIcon(size: 40)),
+  IconData(name: 'arrow-down-0-1', widget: ArrowDown01Icon(size: 40)),
+  IconData(name: 'arrow-down-1-0', widget: ArrowDown10Icon(size: 40)),
+  IconData(name: 'arrow-up-0-1', widget: ArrowUp01Icon(size: 40)),
+  IconData(name: 'arrow-up-1-0', widget: ArrowUp10Icon(size: 40)),
 ];
