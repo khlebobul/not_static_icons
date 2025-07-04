@@ -79,10 +79,26 @@ final List<IconData> icons = [
   IconData(name: 'arrow-up-right', widget: ArrowUpRightIcon(size: 40)),
   IconData(name: 'arrow-up-to-line', widget: ArrowUpToLineIcon(size: 40)),
   IconData(name: 'arrows-up-from-line', widget: ArrowsUpFromLineIcon(size: 40)),
+  IconData(
+    name: 'arrow-down-narrow-wide',
+    widget: ArrowDownNarrowWideIcon(size: 40),
+  ),
   IconData(name: 'arrow-down-up', widget: ArrowDownUpIcon(size: 40)),
+  IconData(
+    name: 'arrow-down-wide-narrow',
+    widget: ArrowDownWideNarrowIcon(size: 40),
+  ),
   IconData(name: 'arrow-left-right', widget: ArrowLeftRightIcon(size: 40)),
   IconData(name: 'arrow-right-left', widget: ArrowRightLeftIcon(size: 40)),
   IconData(name: 'arrow-up-down', widget: ArrowUpDownIcon(size: 40)),
+  IconData(
+    name: 'arrow-up-narrow-wide',
+    widget: ArrowUpNarrowWideIcon(size: 40),
+  ),
+  IconData(
+    name: 'arrow-up-wide-narrow',
+    widget: ArrowUpWideNarrowIcon(size: 40),
+  ),
   IconData(name: 'app-window', widget: AppWindowIcon(size: 40)),
   IconData(name: 'align-center', widget: AlignCenterIcon(size: 40)),
   IconData(name: 'align-left', widget: AlignLeftIcon(size: 40)),
