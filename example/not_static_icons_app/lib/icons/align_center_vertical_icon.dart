@@ -4,7 +4,14 @@ import 'dart:math';
 import '../core/animated_svg_icon_base.dart';
 
 class AlignCenterVerticalIcon extends AnimatedSVGIcon {
-  const AlignCenterVerticalIcon({super.key, required super.size});
+  const AlignCenterVerticalIcon({
+    super.key,
+    super.size = 100.0,
+    super.color,
+    super.hoverColor,
+    super.animationDuration = const Duration(milliseconds: 600),
+    super.strokeWidth = 2.0,
+  });
 
   @override
   String get animationDescription =>
@@ -14,10 +21,12 @@ class AlignCenterVerticalIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
     return _AlignCenterVerticalIconPainter(
       color: color,
       animationValue: animationValue,
+      strokeWidth: strokeWidth,
     );
   }
 }
@@ -26,17 +35,19 @@ class _AlignCenterVerticalIconPainter extends CustomPainter {
   _AlignCenterVerticalIconPainter({
     required this.color,
     required this.animationValue,
+    required this.strokeWidth,
   });
 
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
   @override
   void paint(Canvas canvas, Size size) {
     final s = size.width / 24.0;
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round;
@@ -124,6 +135,7 @@ class _AlignCenterVerticalIconPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant _AlignCenterVerticalIconPainter oldDelegate) {
     return oldDelegate.animationValue != animationValue ||
-        oldDelegate.color != color;
+        oldDelegate.color != color ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

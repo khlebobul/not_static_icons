@@ -3,16 +3,25 @@ import 'package:flutter/material.dart';
 import '../core/animated_svg_icon_base.dart';
 
 class AlignStartHorizontalIcon extends AnimatedSVGIcon {
-  const AlignStartHorizontalIcon({super.key, required super.size});
+  const AlignStartHorizontalIcon({
+    super.key,
+    super.size = 100.0,
+    super.color,
+    super.hoverColor,
+    super.animationDuration = const Duration(milliseconds: 600),
+    super.strokeWidth = 2.0,
+  });
 
   @override
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
     return AlignStartHorizontalPainter(
       color: color,
       animationValue: animationValue,
+      strokeWidth: strokeWidth,
     );
   }
 
@@ -24,17 +33,19 @@ class AlignStartHorizontalIcon extends AnimatedSVGIcon {
 class AlignStartHorizontalPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
   AlignStartHorizontalPainter({
     required this.color,
     required this.animationValue,
+    required this.strokeWidth,
   });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round;

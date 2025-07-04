@@ -9,6 +9,7 @@ class AirplayIcon extends AnimatedSVGIcon {
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 800),
+    super.strokeWidth = 2.0,
   });
 
   @override
@@ -18,8 +19,13 @@ class AirplayIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return AirplayPainter(color: color, animationValue: animationValue);
+    return AirplayPainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
@@ -27,14 +33,19 @@ class AirplayIcon extends AnimatedSVGIcon {
 class AirplayPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  AirplayPainter({required this.color, required this.animationValue});
+  AirplayPainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -96,6 +107,7 @@ class AirplayPainter extends CustomPainter {
   @override
   bool shouldRepaint(AirplayPainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

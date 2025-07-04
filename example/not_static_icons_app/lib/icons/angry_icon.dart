@@ -10,6 +10,7 @@ class AngryIcon extends AnimatedSVGIcon {
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 600),
+    super.strokeWidth = 2.0,
   });
 
   @override
@@ -19,8 +20,13 @@ class AngryIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return AngryPainter(color: color, animationValue: animationValue);
+    return AngryPainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
@@ -28,14 +34,19 @@ class AngryIcon extends AnimatedSVGIcon {
 class AngryPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  AngryPainter({required this.color, required this.animationValue});
+  AngryPainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -98,6 +109,7 @@ class AngryPainter extends CustomPainter {
   @override
   bool shouldRepaint(AngryPainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

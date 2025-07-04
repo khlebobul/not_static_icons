@@ -7,16 +7,19 @@ class ArrowBigRightDashIcon extends AnimatedSVGIcon {
     super.size = 24,
     super.color = Colors.black,
     super.animationDuration = const Duration(milliseconds: 1500),
+    super.strokeWidth = 2.0,
   });
 
   @override
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
     return _ArrowBigRightDashPainter(
       color: color,
       animationValue: animationValue,
+      strokeWidth: strokeWidth,
     );
   }
 
@@ -27,10 +30,12 @@ class ArrowBigRightDashIcon extends AnimatedSVGIcon {
 class _ArrowBigRightDashPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
   _ArrowBigRightDashPainter({
     required this.color,
     required this.animationValue,
+    required this.strokeWidth,
   });
 
   @override
@@ -38,7 +43,7 @@ class _ArrowBigRightDashPainter extends CustomPainter {
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.0
+      ..strokeWidth = strokeWidth / 1.7
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round;
 
@@ -78,5 +83,9 @@ class _ArrowBigRightDashPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+  bool shouldRepaint(covariant _ArrowBigRightDashPainter oldDelegate) {
+    return oldDelegate.color != color ||
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
+  }
 }

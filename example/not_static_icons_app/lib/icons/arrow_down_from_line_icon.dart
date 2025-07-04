@@ -7,16 +7,19 @@ class ArrowDownFromLineIcon extends AnimatedSVGIcon {
     super.size = 24,
     super.color = Colors.black,
     super.animationDuration = const Duration(milliseconds: 1500),
+    super.strokeWidth = 2.0,
   });
 
   @override
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
     return _ArrowDownFromLinePainter(
       color: color,
       animationValue: animationValue,
+      strokeWidth: strokeWidth,
     );
   }
 
@@ -28,10 +31,12 @@ class ArrowDownFromLineIcon extends AnimatedSVGIcon {
 class _ArrowDownFromLinePainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
   _ArrowDownFromLinePainter({
     required this.color,
     required this.animationValue,
+    required this.strokeWidth,
   });
 
   @override
@@ -39,7 +44,7 @@ class _ArrowDownFromLinePainter extends CustomPainter {
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.0
+      ..strokeWidth = strokeWidth / 1.7
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round;
 
@@ -83,5 +88,9 @@ class _ArrowDownFromLinePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+  bool shouldRepaint(covariant _ArrowDownFromLinePainter oldDelegate) {
+    return oldDelegate.color != color ||
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
+  }
 }

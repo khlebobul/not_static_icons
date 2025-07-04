@@ -7,6 +7,7 @@ class AmpersandsIcon extends AnimatedSVGIcon {
     super.size,
     super.color,
     super.animationDuration = const Duration(milliseconds: 1200),
+    super.strokeWidth = 2.0,
   });
 
   @override
@@ -17,16 +18,26 @@ class AmpersandsIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return AmpersandsPainter(color: color, animationValue: animationValue);
+    return AmpersandsPainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
 class AmpersandsPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  AmpersandsPainter({required this.color, required this.animationValue});
+  AmpersandsPainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   Path _createPath1(double scale) {
     final path = Path();
@@ -130,7 +141,7 @@ class AmpersandsPainter extends CustomPainter {
     if (fadeOutOpacity > 0) {
       final fadePaint = Paint()
         ..color = color.withValues(alpha: fadeOutOpacity)
-        ..strokeWidth = 2.0
+        ..strokeWidth = strokeWidth
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round
         ..strokeJoin = StrokeJoin.round;
@@ -145,7 +156,7 @@ class AmpersandsPainter extends CustomPainter {
 
       final paint = Paint()
         ..color = color
-        ..strokeWidth = 2.0
+        ..strokeWidth = strokeWidth
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round
         ..strokeJoin = StrokeJoin.round;
@@ -172,6 +183,7 @@ class AmpersandsPainter extends CustomPainter {
   @override
   bool shouldRepaint(AmpersandsPainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

@@ -7,15 +7,18 @@ class AlignVerticalSpaceBetweenIcon extends AnimatedSVGIcon {
     super.size = 24.0,
     super.color = Colors.black,
     super.animationDuration = const Duration(milliseconds: 600),
+    super.strokeWidth = 2.0,
   });
 
   @override
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) => _AlignVerticalSpaceBetweenPainter(
     color: color,
     animationValue: animationValue,
+    strokeWidth: strokeWidth,
   );
 
   @override
@@ -26,17 +29,19 @@ class AlignVerticalSpaceBetweenIcon extends AnimatedSVGIcon {
 class _AlignVerticalSpaceBetweenPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
   _AlignVerticalSpaceBetweenPainter({
     required this.color,
     required this.animationValue,
+    required this.strokeWidth,
   });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round;
@@ -104,5 +109,10 @@ class _AlignVerticalSpaceBetweenPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return oldDelegate is _AlignVerticalSpaceBetweenPainter &&
+        (oldDelegate.color != color ||
+            oldDelegate.animationValue != animationValue ||
+            oldDelegate.strokeWidth != strokeWidth);
+  }
 }

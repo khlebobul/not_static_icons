@@ -10,6 +10,7 @@ class AccessibilityIcon extends AnimatedSVGIcon {
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 800),
+    super.strokeWidth = 2.0,
   });
 
   @override
@@ -19,8 +20,13 @@ class AccessibilityIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return AccessibilityPainter(color: color, animationValue: animationValue);
+    return AccessibilityPainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
@@ -28,14 +34,19 @@ class AccessibilityIcon extends AnimatedSVGIcon {
 class AccessibilityPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  AccessibilityPainter({required this.color, required this.animationValue});
+  AccessibilityPainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -99,6 +110,7 @@ class AccessibilityPainter extends CustomPainter {
   @override
   bool shouldRepaint(AccessibilityPainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

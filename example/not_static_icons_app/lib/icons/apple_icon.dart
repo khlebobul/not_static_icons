@@ -10,6 +10,7 @@ class AppleIcon extends AnimatedSVGIcon {
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 2000),
+    super.strokeWidth = 2.0,
   });
 
   @override
@@ -19,8 +20,13 @@ class AppleIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return ApplePainter(color: color, animationValue: animationValue);
+    return ApplePainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
@@ -28,14 +34,19 @@ class AppleIcon extends AnimatedSVGIcon {
 class ApplePainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  ApplePainter({required this.color, required this.animationValue});
+  ApplePainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -146,6 +157,7 @@ class ApplePainter extends CustomPainter {
   @override
   bool shouldRepaint(ApplePainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

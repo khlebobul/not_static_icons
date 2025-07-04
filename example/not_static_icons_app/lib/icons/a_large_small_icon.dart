@@ -10,6 +10,7 @@ class ALargeSmallIcon extends AnimatedSVGIcon {
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 1200),
+    super.strokeWidth = 2.0,
   });
 
   @override
@@ -19,8 +20,13 @@ class ALargeSmallIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return ALargeSmallPainter(color: color, animationValue: animationValue);
+    return ALargeSmallPainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
@@ -28,14 +34,19 @@ class ALargeSmallIcon extends AnimatedSVGIcon {
 class ALargeSmallPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  ALargeSmallPainter({required this.color, required this.animationValue});
+  ALargeSmallPainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -129,6 +140,7 @@ class ALargeSmallPainter extends CustomPainter {
   @override
   bool shouldRepaint(ALargeSmallPainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

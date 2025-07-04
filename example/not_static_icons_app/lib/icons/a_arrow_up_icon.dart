@@ -9,6 +9,7 @@ class AArrowUpIcon extends AnimatedSVGIcon {
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 600),
+    super.strokeWidth = 2.0,
   });
 
   @override
@@ -19,10 +20,15 @@ class AArrowUpIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
     // Create oscillating motion: goes from 0 to max and back to 0
     final oscillation = 4 * animationValue * (1 - animationValue);
-    return AArrowUpPainter(color: color, arrowOffset: oscillation * 3);
+    return AArrowUpPainter(
+      color: color,
+      arrowOffset: oscillation * 3,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
@@ -30,14 +36,19 @@ class AArrowUpIcon extends AnimatedSVGIcon {
 class AArrowUpPainter extends CustomPainter {
   final Color color;
   final double arrowOffset;
+  final double strokeWidth;
 
-  AArrowUpPainter({required this.color, required this.arrowOffset});
+  AArrowUpPainter({
+    required this.color,
+    required this.arrowOffset,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -89,6 +100,8 @@ class AArrowUpPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(AArrowUpPainter oldDelegate) {
-    return oldDelegate.color != color || oldDelegate.arrowOffset != arrowOffset;
+    return oldDelegate.color != color ||
+        oldDelegate.arrowOffset != arrowOffset ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

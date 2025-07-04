@@ -7,14 +7,20 @@ class ArrowDownLeftIcon extends AnimatedSVGIcon {
     super.size = 24,
     super.color = Colors.black,
     super.animationDuration = const Duration(milliseconds: 1500),
+    super.strokeWidth = 2.0,
   });
 
   @override
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return _ArrowDownLeftPainter(color: color, animationValue: animationValue);
+    return _ArrowDownLeftPainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 
   @override
@@ -24,15 +30,20 @@ class ArrowDownLeftIcon extends AnimatedSVGIcon {
 class _ArrowDownLeftPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  _ArrowDownLeftPainter({required this.color, required this.animationValue});
+  _ArrowDownLeftPainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.0
+      ..strokeWidth = strokeWidth / 1.7
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round;
 
@@ -70,5 +81,9 @@ class _ArrowDownLeftPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+  bool shouldRepaint(covariant _ArrowDownLeftPainter oldDelegate) {
+    return oldDelegate.color != color ||
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
+  }
 }

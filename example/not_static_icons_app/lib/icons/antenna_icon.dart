@@ -10,6 +10,7 @@ class AntennaIcon extends AnimatedSVGIcon {
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 1200),
+    super.strokeWidth = 2.0,
   });
 
   @override
@@ -19,8 +20,13 @@ class AntennaIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return AntennaPainter(color: color, animationValue: animationValue);
+    return AntennaPainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
@@ -28,14 +34,19 @@ class AntennaIcon extends AnimatedSVGIcon {
 class AntennaPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  AntennaPainter({required this.color, required this.animationValue});
+  AntennaPainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -76,6 +87,7 @@ class AntennaPainter extends CustomPainter {
   @override
   bool shouldRepaint(AntennaPainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

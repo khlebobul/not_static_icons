@@ -7,16 +7,19 @@ class ArrowDownWideNarrowIcon extends AnimatedSVGIcon {
     super.size = 24,
     super.color = Colors.black,
     super.animationDuration = const Duration(milliseconds: 1500),
+    super.strokeWidth = 2.0,
   });
 
   @override
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
     return _ArrowDownWideNarrowPainter(
       color: color,
       animationValue: animationValue,
+      strokeWidth: strokeWidth,
     );
   }
 
@@ -28,10 +31,12 @@ class ArrowDownWideNarrowIcon extends AnimatedSVGIcon {
 class _ArrowDownWideNarrowPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
   _ArrowDownWideNarrowPainter({
     required this.color,
     required this.animationValue,
+    required this.strokeWidth,
   });
 
   @override
@@ -39,7 +44,7 @@ class _ArrowDownWideNarrowPainter extends CustomPainter {
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.0
+      ..strokeWidth = strokeWidth / 1.7
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round;
 
@@ -91,7 +96,7 @@ class _ArrowDownWideNarrowPainter extends CustomPainter {
     final paint1 = Paint()
       ..color = color.withValues(alpha: opacity1)
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.0
+      ..strokeWidth = strokeWidth / 1.7
       ..strokeCap = StrokeCap.round;
 
     final line1Path = Path();
@@ -103,7 +108,7 @@ class _ArrowDownWideNarrowPainter extends CustomPainter {
     final paint2 = Paint()
       ..color = color.withValues(alpha: opacity2)
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.0
+      ..strokeWidth = strokeWidth / 1.7
       ..strokeCap = StrokeCap.round;
 
     final line2Path = Path();
@@ -115,7 +120,7 @@ class _ArrowDownWideNarrowPainter extends CustomPainter {
     final paint3 = Paint()
       ..color = color.withValues(alpha: opacity3)
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.0
+      ..strokeWidth = strokeWidth / 1.7
       ..strokeCap = StrokeCap.round;
 
     final line3Path = Path();
@@ -125,5 +130,9 @@ class _ArrowDownWideNarrowPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+  bool shouldRepaint(covariant _ArrowDownWideNarrowPainter oldDelegate) {
+    return oldDelegate.color != color ||
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
+  }
 }

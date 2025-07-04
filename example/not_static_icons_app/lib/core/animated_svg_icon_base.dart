@@ -6,6 +6,7 @@ abstract class AnimatedSVGIcon extends StatefulWidget {
   final Color? color;
   final Color? hoverColor;
   final Duration animationDuration;
+  final double strokeWidth;
 
   const AnimatedSVGIcon({
     super.key,
@@ -13,12 +14,14 @@ abstract class AnimatedSVGIcon extends StatefulWidget {
     this.color,
     this.hoverColor,
     this.animationDuration = const Duration(milliseconds: 600),
+    this.strokeWidth = 2.0,
   });
 
   /// Method to create custom painter
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   });
 
   /// Animation description (for debugging)
@@ -90,6 +93,7 @@ class AnimatedSVGIconState extends State<AnimatedSVGIcon>
             painter: widget.createPainter(
               color: _isHovered ? effectiveHoverColor : effectiveColor,
               animationValue: _animation.value,
+              strokeWidth: widget.strokeWidth,
             ),
           );
         },

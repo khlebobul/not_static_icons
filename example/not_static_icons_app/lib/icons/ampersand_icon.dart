@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import '../core/animated_svg_icon_base.dart';
 
 class AmpersandIcon extends AnimatedSVGIcon {
-  const AmpersandIcon({super.key, super.size, super.color});
+  const AmpersandIcon({
+    super.key,
+    super.size,
+    super.color,
+    super.strokeWidth = 2.0,
+  });
 
   @override
   String get animationDescription =>
@@ -12,16 +17,26 @@ class AmpersandIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return AmpersandPainter(color: color, animationValue: animationValue);
+    return AmpersandPainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
 class AmpersandPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  AmpersandPainter({required this.color, required this.animationValue});
+  AmpersandPainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -79,7 +94,7 @@ class AmpersandPainter extends CustomPainter {
     if (fadeOutOpacity > 0) {
       final fadePaint = Paint()
         ..color = color.withValues(alpha: fadeOutOpacity)
-        ..strokeWidth = 2.0
+        ..strokeWidth = strokeWidth
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round
         ..strokeJoin = StrokeJoin.round;
@@ -94,7 +109,7 @@ class AmpersandPainter extends CustomPainter {
 
       final paint = Paint()
         ..color = color
-        ..strokeWidth = 2.0
+        ..strokeWidth = strokeWidth
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round
         ..strokeJoin = StrokeJoin.round;
@@ -121,6 +136,7 @@ class AmpersandPainter extends CustomPainter {
   @override
   bool shouldRepaint(AmpersandPainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

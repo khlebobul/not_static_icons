@@ -10,6 +10,7 @@ class ArchiveRestoreIcon extends AnimatedSVGIcon {
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 1500),
+    super.strokeWidth = 2.0,
   });
 
   @override
@@ -20,8 +21,13 @@ class ArchiveRestoreIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return ArchiveRestorePainter(color: color, animationValue: animationValue);
+    return ArchiveRestorePainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
@@ -29,14 +35,19 @@ class ArchiveRestoreIcon extends AnimatedSVGIcon {
 class ArchiveRestorePainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  ArchiveRestorePainter({required this.color, required this.animationValue});
+  ArchiveRestorePainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -125,6 +136,7 @@ class ArchiveRestorePainter extends CustomPainter {
   @override
   bool shouldRepaint(ArchiveRestorePainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

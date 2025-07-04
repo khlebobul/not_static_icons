@@ -10,6 +10,7 @@ class ArchiveXIcon extends AnimatedSVGIcon {
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 1500),
+    super.strokeWidth = 2.0,
   });
 
   @override
@@ -20,8 +21,13 @@ class ArchiveXIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return ArchiveXPainter(color: color, animationValue: animationValue);
+    return ArchiveXPainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
@@ -29,14 +35,19 @@ class ArchiveXIcon extends AnimatedSVGIcon {
 class ArchiveXPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  ArchiveXPainter({required this.color, required this.animationValue});
+  ArchiveXPainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -99,8 +110,8 @@ class ArchiveXPainter extends CustomPainter {
     // Draw blinking X with opacity
     final xPaint = Paint()
       ..color = color.withValues(alpha: xOpacity)
-      ..strokeWidth = paint
-          .strokeWidth // Same thickness as other elements
+      ..strokeWidth =
+          strokeWidth // Same thickness as other elements
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -121,6 +132,7 @@ class ArchiveXPainter extends CustomPainter {
   @override
   bool shouldRepaint(ArchiveXPainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }

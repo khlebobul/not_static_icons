@@ -20,6 +20,7 @@ class AnimatedTemplateIcon extends AnimatedSVGIcon {
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 600),
+    super.strokeWidth = 3.0,
   });
 
   @override
@@ -29,8 +30,13 @@ class AnimatedTemplateIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return TemplatePainter(color: color, animationValue: animationValue);
+    return TemplatePainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
@@ -38,14 +44,19 @@ class AnimatedTemplateIcon extends AnimatedSVGIcon {
 class TemplatePainter extends CustomPainter {
   final Color color;
   final double animationValue; // 0.0 to 1.0
+  final double strokeWidth;
 
-  TemplatePainter({required this.color, required this.animationValue});
+  TemplatePainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 3.0
+      ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -80,7 +91,7 @@ class TemplatePainter extends CustomPainter {
     // 4. Opacity/Color changes:
     // final animatedPaint = Paint()
     //   ..color = color.withOpacity(0.5 + animationValue * 0.5)
-    //   ..strokeWidth = 3.0;
+    //   ..strokeWidth = strokeWidth;
 
     // Example static drawing:
     canvas.drawLine(
@@ -93,7 +104,8 @@ class TemplatePainter extends CustomPainter {
   @override
   bool shouldRepaint(TemplatePainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }
 

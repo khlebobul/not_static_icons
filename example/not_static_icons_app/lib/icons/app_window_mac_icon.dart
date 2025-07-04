@@ -10,6 +10,7 @@ class AppWindowMacIcon extends AnimatedSVGIcon {
     super.color,
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 1000),
+    super.strokeWidth = 2.0,
   });
 
   @override
@@ -20,8 +21,13 @@ class AppWindowMacIcon extends AnimatedSVGIcon {
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
+    required double strokeWidth,
   }) {
-    return AppWindowMacPainter(color: color, animationValue: animationValue);
+    return AppWindowMacPainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
   }
 }
 
@@ -29,14 +35,19 @@ class AppWindowMacIcon extends AnimatedSVGIcon {
 class AppWindowMacPainter extends CustomPainter {
   final Color color;
   final double animationValue;
+  final double strokeWidth;
 
-  AppWindowMacPainter({required this.color, required this.animationValue});
+  AppWindowMacPainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 2.0
+      ..strokeWidth = strokeWidth
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round;
@@ -126,6 +137,7 @@ class AppWindowMacPainter extends CustomPainter {
   @override
   bool shouldRepaint(AppWindowMacPainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.animationValue != animationValue;
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }
