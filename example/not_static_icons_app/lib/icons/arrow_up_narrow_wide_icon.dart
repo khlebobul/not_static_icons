@@ -70,17 +70,14 @@ class _ArrowUpNarrowWidePainter extends CustomPainter {
       double fadeOut = 1.0 - (animationValue / 0.2);
       opacity1 = opacity2 = opacity3 = fadeOut;
     } else if (animationValue <= 0.8) {
-      // Lines appear in order: shortest -> medium -> longest (upward direction)
+      // Lines grow from bottom to top: longest (bottom) -> medium -> shortest (top)
       double progress = (animationValue - 0.2) / 0.6;
-      opacity1 = (progress * 3).clamp(0.0, 1.0); // Shortest appears first
-      opacity2 = ((progress - 0.33) * 3).clamp(
+      opacity3 = (progress * 3).clamp(0.0, 1.0); // Longest (bottom) grows first
+      opacity2 = ((progress - 0.33) * 3).clamp(0.0, 1.0); // Medium grows second
+      opacity1 = ((progress - 0.66) * 3).clamp(
         0.0,
         1.0,
-      ); // Medium appears second
-      opacity3 = ((progress - 0.66) * 3).clamp(
-        0.0,
-        1.0,
-      ); // Longest appears last
+      ); // Shortest (top) grows last
     } else {
       // Fade back to all visible
       double fadeIn = (animationValue - 0.8) / 0.2;
