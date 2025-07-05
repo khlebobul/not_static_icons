@@ -10,6 +10,8 @@ class AlarmSmokeIcon extends AnimatedSVGIcon {
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 1000),
     super.strokeWidth = 2.0,
+    super.reverseOnExit = false,
+    super.enableTouchInteraction = true,
   });
 
   @override

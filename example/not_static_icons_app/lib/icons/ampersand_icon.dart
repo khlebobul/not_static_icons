@@ -7,6 +7,8 @@ class AmpersandIcon extends AnimatedSVGIcon {
     super.size,
     super.color,
     super.strokeWidth = 2.0,
+    super.reverseOnExit = false,
+    super.enableTouchInteraction = true,
   });
 
   @override

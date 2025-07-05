@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 
 /// Base class for animated SVG icons
 abstract class AnimatedSVGIcon extends StatefulWidget {
-  final double size;
-  final Color? color;
-  final Color? hoverColor;
-  final Duration animationDuration;
-  final double strokeWidth;
+  final double size; // Icon size
+  final Color? color; // Icon color
+  final Color? hoverColor; // Hover color
+  final Duration animationDuration; // Animation duration
+  final double strokeWidth; // Stroke width
+  final bool reverseOnExit; // Reverse animation on exit
+  final bool enableTouchInteraction; // Enable touch interaction
 
   const AnimatedSVGIcon({
     super.key,
@@ -15,6 +17,8 @@ abstract class AnimatedSVGIcon extends StatefulWidget {
     this.hoverColor,
     this.animationDuration = const Duration(milliseconds: 600),
     this.strokeWidth = 2.0,
+    this.reverseOnExit = false,
+    this.enableTouchInteraction = true,
   });
 
   /// Method to create custom painter
@@ -36,6 +40,7 @@ class AnimatedSVGIconState extends State<AnimatedSVGIcon>
   late AnimationController _controller;
   late Animation<double> _animation;
   bool _isHovered = false;
+  bool _isPressed = false;
 
   @override
   void initState() {
@@ -59,11 +64,59 @@ class AnimatedSVGIconState extends State<AnimatedSVGIcon>
   }
 
   void _startAnimation() {
+    _controller.reset();
     _controller.forward();
   }
 
   void _stopAnimation() {
-    _controller.reverse();
+    if (widget.reverseOnExit) {
+      _controller.reverse();
+    }
+  }
+
+  void _onTapDown() {
+    setState(() {
+      _isPressed = true;
+    });
+    _startAnimation();
+  }
+
+  void _onTapUp() {
+    setState(() {
+      _isPressed = false;
+    });
+    if (widget.reverseOnExit) {
+      _controller.reverse();
+    }
+  }
+
+  void _onTapCancel() {
+    setState(() {
+      _isPressed = false;
+    });
+    if (widget.reverseOnExit) {
+      _controller.reverse();
+    }
+  }
+
+  void _onMouseEnter() {
+    if (!_isPressed) {
+      // Only start if not already pressed
+      setState(() {
+        _isHovered = true;
+      });
+      _startAnimation();
+    }
+  }
+
+  void _onMouseExit() {
+    setState(() {
+      _isHovered = false;
+    });
+    if (!_isPressed) {
+      // Only stop if not pressed
+      _stopAnimation();
+    }
   }
 
   @override
@@ -72,32 +125,37 @@ class AnimatedSVGIconState extends State<AnimatedSVGIcon>
         widget.color ?? Theme.of(context).iconTheme.color ?? Colors.black87;
     final effectiveHoverColor = widget.hoverColor ?? Colors.grey;
 
-    return MouseRegion(
-      onEnter: (_) {
-        setState(() {
-          _isHovered = true;
-        });
-        _startAnimation();
+    Widget child = AnimatedBuilder(
+      animation: _animation,
+      builder: (context, child) {
+        return CustomPaint(
+          size: Size(widget.size, widget.size),
+          painter: widget.createPainter(
+            color: (_isHovered || _isPressed)
+                ? effectiveHoverColor
+                : effectiveColor,
+            animationValue: _animation.value,
+            strokeWidth: widget.strokeWidth,
+          ),
+        );
       },
-      onExit: (_) {
-        setState(() {
-          _isHovered = false;
-        });
-        _stopAnimation();
-      },
-      child: AnimatedBuilder(
-        animation: _animation,
-        builder: (context, child) {
-          return CustomPaint(
-            size: Size(widget.size, widget.size),
-            painter: widget.createPainter(
-              color: _isHovered ? effectiveHoverColor : effectiveColor,
-              animationValue: _animation.value,
-              strokeWidth: widget.strokeWidth,
-            ),
-          );
-        },
-      ),
     );
+
+    if (widget.enableTouchInteraction) {
+      child = GestureDetector(
+        onTapDown: (_) => _onTapDown(),
+        onTapUp: (_) => _onTapUp(),
+        onTapCancel: () => _onTapCancel(),
+        child: child,
+      );
+    }
+
+    child = MouseRegion(
+      onEnter: (_) => _onMouseEnter(),
+      onExit: (_) => _onMouseExit(),
+      child: child,
+    );
+
+    return child;
   }
 }

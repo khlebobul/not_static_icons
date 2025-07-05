@@ -8,6 +8,8 @@ class AlignVerticalSpaceAroundIcon extends AnimatedSVGIcon {
     super.color = Colors.black,
     super.animationDuration = const Duration(milliseconds: 600),
     super.strokeWidth = 2.0,
+    super.reverseOnExit = false,
+    super.enableTouchInteraction = true,
   });
 
   @override

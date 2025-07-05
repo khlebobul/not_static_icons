@@ -21,6 +21,10 @@ class AnimatedTemplateIcon extends AnimatedSVGIcon {
     super.hoverColor,
     super.animationDuration = const Duration(milliseconds: 600),
     super.strokeWidth = 3.0,
+    super.reverseOnExit =
+        false, // Set to true if you want animation to reverse when hover/touch ends
+    super.enableTouchInteraction =
+        true, // Set to false to disable touch interaction
   });
 
   @override

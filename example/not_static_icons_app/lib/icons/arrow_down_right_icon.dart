@@ -8,6 +8,8 @@ class ArrowDownRightIcon extends AnimatedSVGIcon {
     super.color = Colors.black,
     super.animationDuration = const Duration(milliseconds: 1500),
     super.strokeWidth = 2.0,
+    super.reverseOnExit = false,
+    super.enableTouchInteraction = true,
   });
 
   @override
