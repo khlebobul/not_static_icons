@@ -62,10 +62,14 @@ class ArchiveXPainter extends CustomPainter {
         -sin(animationValue * pi) *
         0.08; // 0 to -4.6 degrees opening (upward only)
 
-    // Calculate X blinking opacity
-    final xOpacity =
-        (sin(animationValue * 2 * pi) + 1) /
-        2; // Blinks 1 time during animation
+    // Calculate X blinking opacity - simple disappear and reappear
+    final xOpacity = animationValue == 0
+        ? 1.0 // Full opacity at rest
+        : animationValue < 0.3
+        ? 1.0 // Visible at start
+        : animationValue < 0.7
+        ? 0.0 // Hidden in middle
+        : 1.0; // Visible again at end
 
     // Draw the animated lid with opening effect
     canvas.save();
