@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![LICENCE - MIT](https://img.shields.io/badge/LICENCE-MIT-414141?style=for-the-badge&logo=Licence&logoColor=414141)](https://github.com/khlebobul/not_static_icons/blob/main/LICENSE) [![pub package](https://img.shields.io/pub/v/use_scramble.svg?style=for-the-badge&color=414141)](https://pub.dartlang.org/packages/not_static_icons)
+[![LICENCE - MIT](https://img.shields.io/badge/LICENCE-MIT-414141?style=for-the-badge&logo=Licence&logoColor=414141)](https://github.com/khlebobul/not_static_icons/blob/main/LICENSE) [![pub package](https://img.shields.io/pub/v/not_static_icons.svg?style=for-the-badge&color=414141)](https://pub.dartlang.org/packages/not_static_icons)
 
 Beautifully crafted animated icons for Flutter. Made with [Lucide icons](https://lucide.dev/) inspired by [pqoqubbw/icons](https://icons.pqoqubbw.dev/).
 
