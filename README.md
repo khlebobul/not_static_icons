@@ -1,12 +1,20 @@
 # not_static_icons
 
-// TODO: badges
+<div align="center">
+
+[![LICENCE - MIT](https://img.shields.io/badge/LICENCE-MIT-F4F0D9?style=for-the-badge&logo=Licence&logoColor=F4F0D9)](https://github.com/khlebobul/use_scramble/blob/main/LICENSE) [![pub package](https://img.shields.io/pub/v/use_scramble.svg?style=for-the-badge&color=F4F0D9)](https://pub.dartlang.org/packages/use_scramble)
+
+</div>
 
 Beautifully crafted animated icons for Flutter. Made with [Lucide icons](https://lucide.dev/) ispired by [pqoqubbw/icons](https://icons.pqoqubbw.dev/).
 
-// TODO: image
+<div align="center">
 
-// TODO: web demo badge
+<a href="https://not-static-icons.vercel.app/">
+  <img src="https://github.com/khlebobul/not_static_icons/raw/main/screenshots/web_demo.png" width="550px">
+</a>
+
+</div>
 
 ## Features
 
@@ -74,7 +82,7 @@ ActivityIcon(
 
 ## Available Icons
 
-// TODO: demo page link
+[![CONTRIBUTING.md](https://img.shields.io/badge/CONTRIBUTING.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/board_buddy/blob/main/CONTRIBUTING.md)
 
 ## Animation Types
 
@@ -90,7 +98,15 @@ Each icon has its own unique animation:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-// TODO: add Code of Conduct and Contributing bagdes
+[![CONTRIBUTING.md](https://img.shields.io/badge/CONTRIBUTING.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/board_buddy/blob/main/CONTRIBUTING.md) [![CODE_OF_CONDUCT.md](https://img.shields.io/badge/CODE_OF_CONDUCT.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/board_buddy/blob/main/CODE_OF_CONDUCT.md)
+
+## Project support
+
+[![Support - Stars](https://img.shields.io/badge/Support-Stars-414141?style=for-the-badge&logo=Telegram&logoColor=F1F1F1)](https://t.me/khlebobul_dev) [![Support - YooMoney](https://img.shields.io/badge/Support-YooMoney-414141?style=for-the-badge&logo=YooMoney&logoColor=F1F1F1)](https://yoomoney.ru/to/4100118234947004)
+
+## Contacts
+
+[![@khlebobul](https://img.shields.io/badge/@khlebobul-414141?style=for-the-badge&logo=X&logoColor=F1F1F1)](https://x.com/khlebobul) [![Email - khlebobul@gmail.com](https://img.shields.io/badge/Email-khlebobul%40gmail.com-414141?style=for-the-badge&logo=Email&logoColor=F1F1F1)](mailto:khlebobul@gmail.com) [![@khlebobul](https://img.shields.io/badge/%40khlebobul-414141?style=for-the-badge&logo=Telegram&logoColor=F1F1F1)](https://t.me/khlebobul) [![Personal - Website](https://img.shields.io/badge/Personal-Website-414141?style=for-the-badge&logo=Personal&logoColor=F1F1F1)](https://khlebobul.github.io/)
 
 ## License
 
