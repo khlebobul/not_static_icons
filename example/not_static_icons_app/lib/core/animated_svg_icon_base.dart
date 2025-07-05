@@ -9,6 +9,7 @@ abstract class AnimatedSVGIcon extends StatefulWidget {
   final double strokeWidth; // Stroke width
   final bool reverseOnExit; // Reverse animation on exit
   final bool enableTouchInteraction; // Enable touch interaction
+  final bool infiniteLoop; // Enable infinite loop animation
 
   const AnimatedSVGIcon({
     super.key,
@@ -19,6 +20,7 @@ abstract class AnimatedSVGIcon extends StatefulWidget {
     this.strokeWidth = 2.0,
     this.reverseOnExit = false,
     this.enableTouchInteraction = true,
+    this.infiniteLoop = false,
   });
 
   /// Method to create custom painter
@@ -64,12 +66,19 @@ class AnimatedSVGIconState extends State<AnimatedSVGIcon>
   }
 
   void _startAnimation() {
-    _controller.reset();
-    _controller.forward();
+    if (widget.infiniteLoop) {
+      _controller.repeat();
+    } else {
+      _controller.reset();
+      _controller.forward();
+    }
   }
 
   void _stopAnimation() {
-    if (widget.reverseOnExit) {
+    if (widget.infiniteLoop) {
+      _controller.stop();
+      _controller.reset();
+    } else if (widget.reverseOnExit) {
       _controller.reverse();
     }
   }
@@ -85,18 +94,14 @@ class AnimatedSVGIconState extends State<AnimatedSVGIcon>
     setState(() {
       _isPressed = false;
     });
-    if (widget.reverseOnExit) {
-      _controller.reverse();
-    }
+    _stopAnimation();
   }
 
   void _onTapCancel() {
     setState(() {
       _isPressed = false;
     });
-    if (widget.reverseOnExit) {
-      _controller.reverse();
-    }
+    _stopAnimation();
   }
 
   void _onMouseEnter() {

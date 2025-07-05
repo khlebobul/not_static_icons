@@ -11,6 +11,7 @@ class AlignHorizontalJustifyStartIcon extends AnimatedSVGIcon {
     super.strokeWidth = 2.0,
     super.reverseOnExit = false,
     super.enableTouchInteraction = true,
+    super.infiniteLoop = false,
   });
 
   @override

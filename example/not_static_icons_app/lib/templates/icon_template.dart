@@ -25,6 +25,8 @@ class AnimatedTemplateIcon extends AnimatedSVGIcon {
         false, // Set to true if you want animation to reverse when hover/touch ends
     super.enableTouchInteraction =
         true, // Set to false to disable touch interaction
+    super.infiniteLoop =
+        false, // Set to true for infinite loop animation during hover/touch
   });
 
   @override
