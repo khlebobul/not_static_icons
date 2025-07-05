@@ -1,39 +1,101 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# not_static_icons
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+// TODO: badges
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+Beautifully crafted animated icons for Flutter. Made with [Lucide icons](https://lucide.dev/) ispired by [pqoqubbw/icons](https://icons.pqoqubbw.dev/).
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+// TODO: image
+
+// TODO: web demo badge
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- **100+ Animated Icons**: Based on popular Lucide icon set
+- **Interactive Animations**: Hover and touch effects
+- **Customizable**: Size, color, animation duration, stroke width
+- **Performance**: Efficient CustomPainter implementation
+- **Easy to Use**: Simple widget API
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+### Basic Usage
 
 ```dart
-const like = 'sample';
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Simple icon usage
+              AirplayIcon(),
+              SizedBox(height: 20),
+
+              // Customized icon
+              AArrowDownIcon(
+                size: 45,
+                color: Colors.blue,
+                animationDuration: Duration(milliseconds: 800),
+                strokeWidth: 3.0,
+                hoverColor: Colors.red,
+                enableTouchInteraction: true,
+                infiniteLoop: false,
+                reverseOnExit: false,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
 ```
 
-## Additional information
+### Advanced Configuration
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+ActivityIcon(
+  size: 48.0, // Icon size
+  color: Colors.black87, // Default color
+  hoverColor: Colors.blue, // Hover color
+  animationDuration: Duration(milliseconds: 600), // Animation duration
+  strokeWidth: 2.0, // Stroke width
+  reverseOnExit: true, // Reverse animation on exit
+  enableTouchInteraction: true, // Enable touch interaction
+  infiniteLoop: false, // Enable infinite loop
+)
+```
+
+## Available Icons
+
+// TODO: demo page link
+
+## Animation Types
+
+Each icon has its own unique animation:
+- **Rotation**: Icons rotate around their center
+- **Scale**: Icons scale up/down
+- **Path Drawing**: Icons draw their paths progressively
+- **Morphing**: Icons transform between states
+
+// TODO: add medium article
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+// TODO: add Code of Conduct and Contributing bagdes
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Credits
+
+Icons based on [Lucide Icons](https://lucide.dev/) inspired by [pqoqubbw/icons](https://icons.pqoqubbw.dev/)

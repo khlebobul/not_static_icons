@@ -1,5 +1,7 @@
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+library not_static_icons;
+
+// Export the base class for animated SVG icons
+export 'src/core/animated_svg_icon_base.dart';
+
+// Export all icons
+export 'src/all_icons.dart';
