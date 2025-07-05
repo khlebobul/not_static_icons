@@ -1,10 +1,15 @@
+## 0.0.5
+
+* Updated README.md.
+* Updated pubspec.yaml description.
+
 ## 0.0.4
 
-* Update README.md.
+* Updated README.md.
 
 ## 0.0.3
 
-* Update README.md.
+* Updated README.md.
 
 ## 0.0.2
 
@@ -16,7 +21,7 @@
 #### Package updates
 
 * Updated the blinking effect of the "X" mark in the archive icon to a more distinct disappear/reappear pattern.
-* Update README.md
+* Updated README.md
 
 ## 0.0.1
 
