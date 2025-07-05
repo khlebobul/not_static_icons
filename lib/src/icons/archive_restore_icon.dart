@@ -58,14 +58,12 @@ class ArchiveRestorePainter extends CustomPainter {
     final scale = size.width / 24.0;
 
     // Calculate arrow movement - up and down (smaller movement)
-    final arrowOffset =
-        sin(animationValue * pi) *
+    final arrowOffset = sin(animationValue * pi) *
         0.8 *
         scale; // 0 to +0.8 units movement upward
 
     // Calculate lid opening angle - only upward opening, then closing
-    final openAngle =
-        -sin(animationValue * pi) *
+    final openAngle = -sin(animationValue * pi) *
         0.08; // 0 to -4.6 degrees opening (upward only)
 
     // Draw the animated lid with opening effect

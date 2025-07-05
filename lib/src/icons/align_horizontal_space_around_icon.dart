@@ -19,11 +19,12 @@ class AlignHorizontalSpaceAroundIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _AlignHorizontalSpaceAroundPainter(
-    color: color,
-    animationValue: animationValue,
-    strokeWidth: strokeWidth,
-  );
+  }) =>
+      _AlignHorizontalSpaceAroundPainter(
+        color: color,
+        animationValue: animationValue,
+        strokeWidth: strokeWidth,
+      );
 
   @override
   String get animationDescription =>

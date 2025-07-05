@@ -18,11 +18,12 @@ class AlignVerticalSpaceAroundIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _AlignVerticalSpaceAroundPainter(
-    color: color,
-    animationValue: animationValue,
-    strokeWidth: strokeWidth,
-  );
+  }) =>
+      _AlignVerticalSpaceAroundPainter(
+        color: color,
+        animationValue: animationValue,
+        strokeWidth: strokeWidth,
+      );
 
   @override
   String get animationDescription =>

@@ -19,11 +19,12 @@ class AlignHorizontalJustifyCenterIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _AlignHorizontalJustifyCenterPainter(
-    color: color,
-    animationValue: animationValue,
-    strokeWidth: strokeWidth,
-  );
+  }) =>
+      _AlignHorizontalJustifyCenterPainter(
+        color: color,
+        animationValue: animationValue,
+        strokeWidth: strokeWidth,
+      );
 
   @override
   String get animationDescription =>
@@ -65,8 +66,7 @@ class _AlignHorizontalJustifyCenterPainter extends CustomPainter {
     final rect1MaxHeight = 18.0 * scale; // Grow bigger
     final rect1Height =
         rect1OriginalHeight + (rect1MaxHeight - rect1OriginalHeight) * animT;
-    final rect1Top =
-        5.0 * scale -
+    final rect1Top = 5.0 * scale -
         (rect1Height - rect1OriginalHeight) / 2; // Center vertically
 
     final rect1Rect = RRect.fromRectAndRadius(
@@ -80,8 +80,7 @@ class _AlignHorizontalJustifyCenterPainter extends CustomPainter {
     final rect2MinHeight = 6.0 * scale; // Shrink smaller
     final rect2Height =
         rect2OriginalHeight - (rect2OriginalHeight - rect2MinHeight) * animT;
-    final rect2Top =
-        7.0 * scale +
+    final rect2Top = 7.0 * scale +
         (rect2OriginalHeight - rect2Height) / 2; // Center vertically
 
     final rect2Rect = RRect.fromRectAndRadius(

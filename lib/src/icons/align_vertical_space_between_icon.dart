@@ -18,11 +18,12 @@ class AlignVerticalSpaceBetweenIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _AlignVerticalSpaceBetweenPainter(
-    color: color,
-    animationValue: animationValue,
-    strokeWidth: strokeWidth,
-  );
+  }) =>
+      _AlignVerticalSpaceBetweenPainter(
+        color: color,
+        animationValue: animationValue,
+        strokeWidth: strokeWidth,
+      );
 
   @override
   String get animationDescription =>
@@ -64,8 +65,7 @@ class _AlignVerticalSpaceBetweenPainter extends CustomPainter {
     final rect1MaxWidth = 14.0 * scale; // Bigger width
     final rect1Width =
         rect1OriginalWidth + (rect1MaxWidth - rect1OriginalWidth) * animT;
-    final rect1Left =
-        7.0 * scale -
+    final rect1Left = 7.0 * scale -
         (rect1Width - rect1OriginalWidth) / 2; // Center horizontally
 
     final rect1Path = Path()
@@ -82,8 +82,7 @@ class _AlignVerticalSpaceBetweenPainter extends CustomPainter {
     final rect2MinWidth = 10.0 * scale; // Smaller width
     final rect2Width =
         rect2OriginalWidth - (rect2OriginalWidth - rect2MinWidth) * animT;
-    final rect2Left =
-        5.0 * scale +
+    final rect2Left = 5.0 * scale +
         (rect2OriginalWidth - rect2Width) / 2; // Center horizontally
 
     final rect2Path = Path()

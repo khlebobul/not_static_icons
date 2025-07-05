@@ -19,11 +19,12 @@ class AlignHorizontalJustifyStartIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _AlignHorizontalJustifyStartPainter(
-    color: color,
-    animationValue: animationValue,
-    strokeWidth: strokeWidth,
-  );
+  }) =>
+      _AlignHorizontalJustifyStartPainter(
+        color: color,
+        animationValue: animationValue,
+        strokeWidth: strokeWidth,
+      );
 
   @override
   String get animationDescription => 'Rectangles move closer to start line';

@@ -19,11 +19,12 @@ class AlignHorizontalSpaceBetweenIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _AlignHorizontalSpaceBetweenPainter(
-    color: color,
-    animationValue: animationValue,
-    strokeWidth: strokeWidth,
-  );
+  }) =>
+      _AlignHorizontalSpaceBetweenPainter(
+        color: color,
+        animationValue: animationValue,
+        strokeWidth: strokeWidth,
+      );
 
   @override
   String get animationDescription =>
@@ -65,8 +66,7 @@ class _AlignHorizontalSpaceBetweenPainter extends CustomPainter {
     final rect1MaxHeight = 18.0 * scale; // Bigger height
     final rect1Height =
         rect1OriginalHeight + (rect1MaxHeight - rect1OriginalHeight) * animT;
-    final rect1Top =
-        5.0 * scale -
+    final rect1Top = 5.0 * scale -
         (rect1Height - rect1OriginalHeight) / 2; // Center vertically
 
     final rect1Path = Path()
@@ -83,8 +83,7 @@ class _AlignHorizontalSpaceBetweenPainter extends CustomPainter {
     final rect2MinHeight = 6.0 * scale; // Smaller height
     final rect2Height =
         rect2OriginalHeight - (rect2OriginalHeight - rect2MinHeight) * animT;
-    final rect2Top =
-        7.0 * scale +
+    final rect2Top = 7.0 * scale +
         (rect2OriginalHeight - rect2Height) / 2; // Center vertically
 
     final rect2Path = Path()

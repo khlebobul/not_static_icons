@@ -57,8 +57,7 @@ class ArchivePainter extends CustomPainter {
     final scale = size.width / 24.0;
 
     // Calculate lid opening angle - only upward opening, then closing
-    final openAngle =
-        -sin(animationValue * pi) *
+    final openAngle = -sin(animationValue * pi) *
         0.08; // 0 to -4.6 degrees opening (upward only)
 
     // Draw the archive box body: M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8

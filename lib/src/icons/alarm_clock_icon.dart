@@ -61,8 +61,7 @@ class AlarmClockPainter extends CustomPainter {
     final shakeIntensity = 1.0 * scale;
     final shakeX =
         sin(animationValue * 4 * 2 * pi) * shakeIntensity * animationValue;
-    final shakeY =
-        cos(animationValue * 6 * 2 * pi) *
+    final shakeY = cos(animationValue * 6 * 2 * pi) *
         shakeIntensity *
         0.5 *
         animationValue;

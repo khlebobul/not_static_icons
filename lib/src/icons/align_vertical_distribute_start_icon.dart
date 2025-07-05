@@ -19,11 +19,12 @@ class AlignVerticalDistributeStartIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _AlignVerticalDistributeStartPainter(
-    color: color,
-    animationValue: animationValue,
-    strokeWidth: strokeWidth,
-  );
+  }) =>
+      _AlignVerticalDistributeStartPainter(
+        color: color,
+        animationValue: animationValue,
+        strokeWidth: strokeWidth,
+      );
 
   @override
   String get animationDescription =>
@@ -65,8 +66,7 @@ class _AlignVerticalDistributeStartPainter extends CustomPainter {
     final rect1MinWidth = 6.0 * scale; // Smaller width
     final rect1Width =
         rect1OriginalWidth - (rect1OriginalWidth - rect1MinWidth) * animT;
-    final rect1Left =
-        7.0 * scale +
+    final rect1Left = 7.0 * scale +
         (rect1OriginalWidth - rect1Width) / 2; // Center horizontally
 
     // First rectangle with rounded bottom corners only (top edge is straight for start alignment)
@@ -87,8 +87,7 @@ class _AlignVerticalDistributeStartPainter extends CustomPainter {
     final rect2MaxWidth = 18.0 * scale; // Bigger width
     final rect2Width =
         rect2OriginalWidth + (rect2MaxWidth - rect2OriginalWidth) * animT;
-    final rect2Left =
-        5.0 * scale -
+    final rect2Left = 5.0 * scale -
         (rect2Width - rect2OriginalWidth) / 2; // Center horizontally
 
     // Second rectangle with rounded bottom corners only (top edge is straight for start alignment)

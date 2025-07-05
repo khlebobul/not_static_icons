@@ -19,11 +19,12 @@ class AlignHorizontalDistributeEndIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _AlignHorizontalDistributeEndPainter(
-    color: color,
-    animationValue: animationValue,
-    strokeWidth: strokeWidth,
-  );
+  }) =>
+      _AlignHorizontalDistributeEndPainter(
+        color: color,
+        animationValue: animationValue,
+        strokeWidth: strokeWidth,
+      );
 
   @override
   String get animationDescription =>
@@ -65,8 +66,7 @@ class _AlignHorizontalDistributeEndPainter extends CustomPainter {
     final rect1MinHeight = 8.0 * scale; // Smaller height
     final rect1Height =
         rect1OriginalHeight - (rect1OriginalHeight - rect1MinHeight) * animT;
-    final rect1Top =
-        5.0 * scale +
+    final rect1Top = 5.0 * scale +
         (rect1OriginalHeight - rect1Height) / 2; // Center vertically
 
     // First rectangle with rounded left corners only (right edge is straight for end alignment)
@@ -87,8 +87,7 @@ class _AlignHorizontalDistributeEndPainter extends CustomPainter {
     final rect2MaxHeight = 16.0 * scale; // Bigger height
     final rect2Height =
         rect2OriginalHeight + (rect2MaxHeight - rect2OriginalHeight) * animT;
-    final rect2Top =
-        7.0 * scale -
+    final rect2Top = 7.0 * scale -
         (rect2Height - rect2OriginalHeight) / 2; // Center vertically
 
     // Second rectangle with rounded left corners only (right edge is straight for end alignment)

@@ -19,11 +19,12 @@ class AlignHorizontalDistributeCenterIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _AlignHorizontalDistributeCenterPainter(
-    color: color,
-    animationValue: animationValue,
-    strokeWidth: strokeWidth,
-  );
+  }) =>
+      _AlignHorizontalDistributeCenterPainter(
+        color: color,
+        animationValue: animationValue,
+        strokeWidth: strokeWidth,
+      );
 
   @override
   String get animationDescription =>
@@ -65,8 +66,7 @@ class _AlignHorizontalDistributeCenterPainter extends CustomPainter {
     final rect1MinHeight = 8.0 * scale; // Smaller height
     final rect1Height =
         rect1OriginalHeight - (rect1OriginalHeight - rect1MinHeight) * animT;
-    final rect1Top =
-        5.0 * scale +
+    final rect1Top = 5.0 * scale +
         (rect1OriginalHeight - rect1Height) / 2; // Center vertically
 
     final rect1Rect = RRect.fromRectAndRadius(
@@ -80,8 +80,7 @@ class _AlignHorizontalDistributeCenterPainter extends CustomPainter {
     final rect2MaxHeight = 16.0 * scale; // Bigger height
     final rect2Height =
         rect2OriginalHeight + (rect2MaxHeight - rect2OriginalHeight) * animT;
-    final rect2Top =
-        7.0 * scale -
+    final rect2Top = 7.0 * scale -
         (rect2Height - rect2OriginalHeight) / 2; // Center vertically
 
     final rect2Rect = RRect.fromRectAndRadius(

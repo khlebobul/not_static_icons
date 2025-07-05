@@ -19,11 +19,12 @@ class AlignVerticalJustifyCenterIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _AlignVerticalJustifyCenterPainter(
-    color: color,
-    animationValue: animationValue,
-    strokeWidth: strokeWidth,
-  );
+  }) =>
+      _AlignVerticalJustifyCenterPainter(
+        color: color,
+        animationValue: animationValue,
+        strokeWidth: strokeWidth,
+      );
 
   @override
   String get animationDescription =>
@@ -65,8 +66,7 @@ class _AlignVerticalJustifyCenterPainter extends CustomPainter {
     final rect1MaxWidth = 18.0 * scale; // Grow bigger
     final rect1Width =
         rect1OriginalWidth + (rect1MaxWidth - rect1OriginalWidth) * animT;
-    final rect1Left =
-        5.0 * scale -
+    final rect1Left = 5.0 * scale -
         (rect1Width - rect1OriginalWidth) / 2; // Center horizontally
 
     final rect1Rect = RRect.fromRectAndRadius(
@@ -80,8 +80,7 @@ class _AlignVerticalJustifyCenterPainter extends CustomPainter {
     final rect2MinWidth = 6.0 * scale; // Shrink smaller
     final rect2Width =
         rect2OriginalWidth - (rect2OriginalWidth - rect2MinWidth) * animT;
-    final rect2Left =
-        7.0 * scale +
+    final rect2Left = 7.0 * scale +
         (rect2OriginalWidth - rect2Width) / 2; // Center horizontally
 
     final rect2Rect = RRect.fromRectAndRadius(
