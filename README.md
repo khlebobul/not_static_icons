@@ -7,7 +7,7 @@
 Beautifully crafted animated icons for Flutter. Made with [Lucide icons](https://lucide.dev/) inspired by [pqoqubbw/icons](https://icons.pqoqubbw.dev/).
 
 <a href="https://not-static-icons.vercel.app/">
-  <img src="screenshots/web_demo.png" width="650px">
+  <img src="https://github.com/khlebobul/not_static_icons/raw/main/screenshots/web_demo.png" width="650px">
 </a>
 
 </div>
