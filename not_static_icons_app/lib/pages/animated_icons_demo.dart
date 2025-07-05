@@ -127,7 +127,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       surfaceTintColor: Colors.grey,
       elevation: 0,
       centerTitle: false,
-      title: const Text(
+      title: const SelectableText(
         AnimatedIconsStrings.appBarTitle,
         style: TextStyle(
           fontSize: 18,
@@ -172,7 +172,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
   }
 
   Widget _buildDescriptionText(String text) {
-    return Text(
+    return SelectableText(
       text,
       style: const TextStyle(
         fontSize: 14,

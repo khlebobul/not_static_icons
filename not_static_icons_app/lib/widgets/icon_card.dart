@@ -31,7 +31,7 @@ class IconCard extends StatelessWidget {
           Expanded(child: Center(child: iconWidget)),
 
           // Icon name
-          Text(
+          SelectableText(
             name,
             style: TextStyle(
               fontSize: 12,
