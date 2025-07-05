@@ -83,6 +83,17 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
     await _launchUrl(url);
   }
 
+  String _convertToIconClassName(String kebabCaseName) {
+    // Convert kebab-case to PascalCase and add 'Icon' suffix
+    // e.g., 'activity' -> 'ActivityIcon', 'a-arrow-down' -> 'AArrowDownIcon'
+    return '${kebabCaseName.split('-').map((word) => word.isEmpty ? '' : word[0].toUpperCase() + word.substring(1)).join('')}Icon';
+  }
+
+  Future<void> _copyIconCode(String iconName) async {
+    final className = _convertToIconClassName(iconName);
+    await _copyToClipboard('$className()');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -315,6 +326,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
               name: icon.name,
               iconWidget: icon.widget,
               onViewCode: () => _openIconCode(icon.name),
+              onCopy: () => _copyIconCode(icon.name),
             );
           },
         );
