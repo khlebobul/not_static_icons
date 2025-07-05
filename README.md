@@ -1,12 +1,16 @@
 # not_static_icons
 
-// TODO: badges
+<div align="center">
 
-Beautifully crafted animated icons for Flutter. Made with [Lucide icons](https://lucide.dev/) ispired by [pqoqubbw/icons](https://icons.pqoqubbw.dev/).
+[![LICENCE - MIT](https://img.shields.io/badge/LICENCE-MIT-414141?style=for-the-badge&logo=Licence&logoColor=414141)](https://github.com/khlebobul/not_static_icons/blob/main/LICENSE) [![pub package](https://img.shields.io/pub/v/use_scramble.svg?style=for-the-badge&color=414141)](https://pub.dartlang.org/packages/not_static_icons)
 
-// TODO: image
+Beautifully crafted animated icons for Flutter. Made with [Lucide icons](https://lucide.dev/) inspired by [pqoqubbw/icons](https://icons.pqoqubbw.dev/).
 
-// TODO: web demo badge
+<a href="https://not-static-icons.vercel.app/">
+  <img src="screenshots/web_demo.png" width="650px">
+</a>
+
+</div>
 
 ## Features
 
@@ -74,7 +78,7 @@ ActivityIcon(
 
 ## Available Icons
 
-// TODO: demo page link
+[![Web demo](https://img.shields.io/badge/WEB_DEMO-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://not-static-icons.vercel.app/)
 
 ## Animation Types
 
@@ -84,17 +88,23 @@ Each icon has its own unique animation:
 - **Path Drawing**: Icons draw their paths progressively
 - **Morphing**: Icons transform between states
 
-// TODO: add medium article
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-// TODO: add Code of Conduct and Contributing bagdes
+[![CONTRIBUTING.md](https://img.shields.io/badge/CONTRIBUTING.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/CONTRIBUTING.md) [![CODE_OF_CONDUCT.md](https://img.shields.io/badge/CODE_OF_CONDUCT.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/CODE_OF_CONDUCT.md)
+
+## Project support
+
+[![Support - Stars](https://img.shields.io/badge/Support-Stars-414141?style=for-the-badge&logo=Telegram&logoColor=F1F1F1)](https://t.me/khlebobul_dev) [![Support - YooMoney](https://img.shields.io/badge/Support-YooMoney-414141?style=for-the-badge&logo=YooMoney&logoColor=F1F1F1)](https://yoomoney.ru/to/4100118234947004)
+
+## Contacts
+
+[![@khlebobul](https://img.shields.io/badge/@khlebobul-414141?style=for-the-badge&logo=X&logoColor=F1F1F1)](https://x.com/khlebobul) [![Email - khlebobul@gmail.com](https://img.shields.io/badge/Email-khlebobul%40gmail.com-414141?style=for-the-badge&logo=Email&logoColor=F1F1F1)](mailto:khlebobul@gmail.com) [![@khlebobul](https://img.shields.io/badge/%40khlebobul-414141?style=for-the-badge&logo=Telegram&logoColor=F1F1F1)](https://t.me/khlebobul) [![Personal - Website](https://img.shields.io/badge/Personal-Website-414141?style=for-the-badge&logo=Personal&logoColor=F1F1F1)](https://khlebobul.github.io/)
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+[![LICENCE - MIT](https://img.shields.io/badge/LICENCE-MIT-414141?style=for-the-badge&logo=Licence&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/LICENSE)
 
 ## Credits
 

@@ -11,7 +11,11 @@ class AnimatedIconsStrings {
       'https://github.com/khlebobul/not_static_icons/blob/main/example/not_static_icons_app/lib/icons/';
 
   static const supportLabel = 'support';
-  static const supportUrl = 'https://t.me/khlebobul_dev';
+
+  static const telegramLabel = 'telegram';
+  static const telegramUrl = 'https://t.me/khlebobul_dev';
+  static const yoomoneyLabel = 'yoomoney';
+  static const yoomoneyUrl = 'https://yoomoney.ru/to/4100118234947004';
 
   static const description1 =
       'simple flutter package for adding animated icons into your project';

@@ -6,12 +6,14 @@ class IconCard extends StatelessWidget {
   final String name;
   final Widget iconWidget;
   final VoidCallback? onViewCode;
+  final VoidCallback? onCopy;
 
   const IconCard({
     super.key,
     required this.name,
     required this.iconWidget,
     this.onViewCode,
+    this.onCopy,
   });
 
   @override
@@ -29,7 +31,7 @@ class IconCard extends StatelessWidget {
           Expanded(child: Center(child: iconWidget)),
 
           // Icon name
-          Text(
+          SelectableText(
             name,
             style: TextStyle(
               fontSize: 12,
@@ -59,8 +61,9 @@ class IconCard extends StatelessWidget {
                     ),
                   ),
                   onTap: () {
-                    // TODO: Implement copy functionality
-                    debugPrint('Copying $name');
+                    if (onCopy != null) {
+                      onCopy!();
+                    }
                   },
                 ),
               ),

@@ -19,6 +19,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
 
   final TextEditingController _searchController = TextEditingController();
   List<icons_data.IconData> _filteredIcons = [];
+  bool _showSupportDropdown = false;
 
   List<icons_data.IconData> get _sortedIcons {
     final sorted = List<icons_data.IconData>.from(icons_data.icons);
@@ -83,30 +84,55 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
     await _launchUrl(url);
   }
 
+  String _convertToIconClassName(String kebabCaseName) {
+    // Convert kebab-case to PascalCase and add 'Icon' suffix
+    // e.g., 'activity' -> 'ActivityIcon', 'a-arrow-down' -> 'AArrowDownIcon'
+    return '${kebabCaseName.split('-').map((word) => word.isEmpty ? '' : word[0].toUpperCase() + word.substring(1)).join('')}Icon';
+  }
+
+  Future<void> _copyIconCode(String iconName) async {
+    final className = _convertToIconClassName(iconName);
+    await _copyToClipboard('$className()');
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: _buildAppBar(),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            _buildDescriptionSection(),
-            const SizedBox(height: 24),
-            _buildInstallationSection(),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16),
-              child: Divider(color: Colors.grey.shade200),
+    return Stack(
+      children: [
+        Scaffold(
+          backgroundColor: Colors.white,
+          appBar: _buildAppBar(),
+          body: GestureDetector(
+            onTap: () {
+              if (_showSupportDropdown) {
+                setState(() {
+                  _showSupportDropdown = false;
+                });
+              }
+            },
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _buildDescriptionSection(),
+                  const SizedBox(height: 24),
+                  _buildInstallationSection(),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Divider(color: Colors.grey.shade200),
+                  ),
+                  _buildSearchSection(),
+                  const SizedBox(height: 16),
+                  _buildIconsGrid(),
+                  const SizedBox(height: 40),
+                ],
+              ),
             ),
-            _buildSearchSection(),
-            const SizedBox(height: 16),
-            _buildIconsGrid(),
-            const SizedBox(height: 40),
-          ],
+          ),
         ),
-      ),
+        _buildSupportDropdown(),
+      ],
     );
   }
 
@@ -116,7 +142,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       surfaceTintColor: Colors.grey,
       elevation: 0,
       centerTitle: false,
-      title: const Text(
+      title: const SelectableText(
         AnimatedIconsStrings.appBarTitle,
         style: TextStyle(
           fontSize: 18,
@@ -136,10 +162,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
                 AnimatedIconsStrings.githubLabel,
                 AnimatedIconsStrings.githubUrl,
               ),
-              _buildTextLinkContainer(
-                AnimatedIconsStrings.supportLabel,
-                AnimatedIconsStrings.supportUrl,
-              ),
+              _buildSupportButton(),
             ],
           ),
         ),
@@ -161,7 +184,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
   }
 
   Widget _buildDescriptionText(String text) {
-    return Text(
+    return SelectableText(
       text,
       style: const TextStyle(
         fontSize: 14,
@@ -315,6 +338,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
               name: icon.name,
               iconWidget: icon.widget,
               onViewCode: () => _openIconCode(icon.name),
+              onCopy: () => _copyIconCode(icon.name),
             );
           },
         );
@@ -354,6 +378,118 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
           borderRadius: BorderRadius.circular(6),
           border: Border.all(color: Colors.grey),
         ),
+        child: Text(
+          text,
+          style: const TextStyle(
+            fontSize: 14,
+            color: Colors.black,
+            fontFamily: AnimatedIconsStrings.fontFamily,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSupportButton() {
+    return InkWell(
+      onTap: () {
+        setState(() {
+          _showSupportDropdown = !_showSupportDropdown;
+        });
+      },
+      borderRadius: BorderRadius.circular(6),
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 4),
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+        decoration: BoxDecoration(
+          color: _showSupportDropdown
+              ? Colors.grey.shade200
+              : Colors.grey.shade50,
+          borderRadius: BorderRadius.circular(6),
+          border: Border.all(color: Colors.grey),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text(
+              AnimatedIconsStrings.supportLabel,
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.black,
+                fontFamily: AnimatedIconsStrings.fontFamily,
+              ),
+            ),
+            const SizedBox(width: 4),
+            Icon(
+              _showSupportDropdown
+                  ? Icons.keyboard_arrow_up
+                  : Icons.keyboard_arrow_down,
+              size: 16,
+              color: Colors.grey.shade600,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSupportDropdown() {
+    if (!_showSupportDropdown) return const SizedBox.shrink();
+
+    return Positioned(
+      top: kToolbarHeight,
+      right: 16,
+      child: Material(
+        elevation: 4,
+        borderRadius: BorderRadius.circular(8),
+        child: Container(
+          width: 120,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(color: Colors.grey.shade200),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              _buildSupportDropdownItem(
+                AnimatedIconsStrings.telegramLabel,
+                AnimatedIconsStrings.telegramUrl,
+                isFirst: true,
+              ),
+              Divider(height: 1, color: Colors.grey.shade200),
+              _buildSupportDropdownItem(
+                AnimatedIconsStrings.yoomoneyLabel,
+                AnimatedIconsStrings.yoomoneyUrl,
+                isLast: true,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSupportDropdownItem(
+    String text,
+    String url, {
+    bool isFirst = false,
+    bool isLast = false,
+  }) {
+    return InkWell(
+      onTap: () {
+        _launchUrl(url);
+        setState(() {
+          _showSupportDropdown = false;
+        });
+      },
+      borderRadius: BorderRadius.vertical(
+        top: isFirst ? const Radius.circular(8) : Radius.zero,
+        bottom: isLast ? const Radius.circular(8) : Radius.zero,
+      ),
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         child: Text(
           text,
           style: const TextStyle(
