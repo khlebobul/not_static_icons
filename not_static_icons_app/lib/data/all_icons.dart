@@ -100,3 +100,4 @@ export '../icons/archive_icon.dart';
 export '../icons/archive_restore_icon.dart';
 export '../icons/archive_x_icon.dart';
 export '../icons/armchair_icon.dart';
+export '../icons/asterisk_icon.dart';

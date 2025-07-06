@@ -40,6 +40,7 @@ final List<IconData> icons = [
   IconData(name: 'archive-restore', widget: ArchiveRestoreIcon(size: 40)),
   IconData(name: 'archive-x', widget: ArchiveXIcon(size: 40)),
   IconData(name: 'armchair', widget: ArmchairIcon(size: 40)),
+  IconData(name: 'asterisk', widget: AsteriskIcon(size: 40)),
   IconData(name: 'arrow-big-down', widget: ArrowBigDownIcon(size: 40)),
   IconData(name: 'arrow-big-down-dash', widget: ArrowBigDownDashIcon(size: 40)),
   IconData(name: 'arrow-big-left', widget: ArrowBigLeftIcon(size: 40)),
