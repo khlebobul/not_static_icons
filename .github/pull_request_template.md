@@ -4,10 +4,6 @@
 
 // TODO
 
-### Demo video with icons web
-
-// TODO
-
-### Demo video with icons mobile
+### Demo video with icons
 
 // TODO
