@@ -76,7 +76,7 @@ ActivityIcon(
 
 ## Available Icons
 
-[![Web demo](https://img.shields.io/badge/WEB_DEMO-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://not-static-icons.vercel.app/)
+[![Web demo](https://img.shields.io/badge/WEB_DEMO-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://not-static-icons.vercel.app/) [![MEDIUM ARTICLE](https://img.shields.io/badge/MEDIUM_ARTICLE-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://medium.com/@khlebobul/animating-svgs-in-flutter-without-rive-or-lottie-the-story-behind-my-animated-icon-package-c3808d2931cf)
 
 ## Animation Types
 
