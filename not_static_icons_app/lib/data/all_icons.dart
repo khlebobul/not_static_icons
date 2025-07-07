@@ -1,5 +1,3 @@
-// import '../icons/';
-
 export '../icons/arrow_down_icon.dart';
 export '../icons/arrow_left_icon.dart';
 export '../icons/arrow_right_icon.dart';
