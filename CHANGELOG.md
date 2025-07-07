@@ -1,3 +1,13 @@
+## 0.1.0
+
+#### New icons
+
+* Added a new animated asterisk icon.
+
+#### Chores
+
+* Corrected the GitHub base URL for icons in the app constants.
+
 ## 0.0.5
 
 * Updated README.md.

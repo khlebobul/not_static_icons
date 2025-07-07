@@ -1,5 +1,3 @@
-// import '../icons/';
-
 export '../icons/arrow_down_icon.dart';
 export '../icons/arrow_left_icon.dart';
 export '../icons/arrow_right_icon.dart';
@@ -100,3 +98,4 @@ export '../icons/archive_icon.dart';
 export '../icons/archive_restore_icon.dart';
 export '../icons/archive_x_icon.dart';
 export '../icons/armchair_icon.dart';
+export '../icons/asterisk_icon.dart';
