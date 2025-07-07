@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:not_static_icons_app/icons/a_arrow_down_icon.dart';
-import 'package:not_static_icons_app/icons/airplay_icon.dart';
+import 'package:not_static_icons/not_static_icons.dart';
 
 void main() {
   runApp(const MyApp());

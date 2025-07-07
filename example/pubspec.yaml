@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  not_static_icons:
+    path: ../
   url_launcher: ^6.3.1
   flutter_svg: ^2.2.0
 
