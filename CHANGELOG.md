@@ -1,3 +1,8 @@
+## 0.1.1
+
+* Removed files with duplicate code for package and demo app.
+
+
 ## 0.1.0
 
 #### New icons

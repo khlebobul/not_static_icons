@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../core/animated_svg_icon_base.dart';
+import 'package:not_static_icons/not_static_icons.dart';
 
 /*
  * TEMPLATE FOR CREATING NEW ANIMATED ICONS

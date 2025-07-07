@@ -1,5 +1,5 @@
 name: not_static_icons_app
-description: "A new Flutter project."
+description: "beautifully crafted animated icons for Flutter"
 publish_to: 'none'
 version: 0.1.0
 
@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  not_static_icons:
+    path: ../
   url_launcher: ^6.3.1
   flutter_svg: ^2.2.0
 

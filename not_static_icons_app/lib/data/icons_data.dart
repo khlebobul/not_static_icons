@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'all_icons.dart';
+import 'package:not_static_icons/not_static_icons.dart';
 
 class IconData {
   final String name;

@@ -1,11 +1,11 @@
 {
-    "name": "not_static_icons_app",
-    "short_name": "not_static_icons_app",
+    "name": "not_static_icons",
+    "short_name": "not_static_icons",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "beautifully crafted animated icons for Flutter",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

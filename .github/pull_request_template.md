@@ -1,8 +1,8 @@
-## Checklist
+### Change type
 
-### New icons list
-
-// TODO
+- [ ] bugfix
+- [ ] new icon / icon update
+- [ ] other
 
 ### Demo video with icons
 

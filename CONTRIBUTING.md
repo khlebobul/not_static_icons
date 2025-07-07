@@ -18,15 +18,19 @@ not_static_icons/
 │       │   ├── arrow_down_icon.dart
 │       │   └── ...
 │       └── all_icons.dart         # Exports all icons
-└── example/
-    └── not_static_icons_app/      # Demo application
-        ├── lib/
-        │   ├── main.dart          # Demo app entry point
-        │   ├── pages/             # Demo pages
-        │   ├── widgets/           # Demo-specific widgets
-        │   ├── data/              # Demo data and icon registry
-        │   └── templates/         # Icon development templates
-        └── assets/                # Demo assets (SVG files, etc.)
+├── example/                       # Simple example app
+│   ├── lib/
+│   │   └── main.dart              # Basic usage example
+│   └── pubspec.yaml               # Uses not_static_icons as dependency
+└── not_static_icons_app/          # Full demo application
+    ├── lib/
+    │   ├── main.dart              # Demo app entry point
+    │   ├── pages/                 # Demo pages
+    │   ├── widgets/               # Demo-specific widgets
+    │   ├── data/                  # Demo data and icon registry
+    │   └── templates/             # Icon development templates
+    ├── assets/                    # Demo assets (SVG files, etc.)
+    └── pubspec.yaml               # Uses not_static_icons as dependency
 ```
 
 ## Quick Start
@@ -41,18 +45,29 @@ not_static_icons/
 
 2. **Install Dependencies**:
    ```bash
-   # Install package dependencies
+   # Install main package dependencies
    flutter pub get
    
-   # Install demo app dependencies
-   cd example/not_static_icons_app
+   # Install simple example dependencies
+   cd example
    flutter pub get
-   cd ../..
+   cd ..
+   
+   # Install demo app dependencies
+   cd not_static_icons_app
+   flutter pub get
+   cd ..
    ```
 
-3. **Run Demo App**:
+3. **Run Demo Apps**:
    ```bash
-   cd example/not_static_icons_app
+   # Run simple example
+   cd example
+   flutter run
+   cd ..
+   
+   # Run full demo app
+   cd not_static_icons_app
    flutter run
    ```
 
@@ -63,8 +78,8 @@ not_static_icons/
 
 ### Step 1: Create the Icon Implementation
 
-1. **Use the Template**: Copy `example/not_static_icons_app/lib/templates/icon_template.dart`
-2. **Create Icon File**: Add your icon to `lib/src/icons/your_icon_name_icon.dart`
+1. **Use the Template**: Copy `not_static_icons_app/lib/templates/icon_template.dart`
+2. **Create Icon File**: Add your icon to `lib/src/icons/lucide_icon_name_icon.dart`
 3. **Follow Naming Convention**: 
    - File: `snake_case_icon.dart`
    - Class: `SnakeCaseIcon` 
@@ -120,17 +135,19 @@ export 'icons/heart_icon.dart';
 
 ### Step 3: Add to Demo App
 
-1. **Register Icon**: Add to `example/not_static_icons_app/lib/data/icons_data.dart`:
+1. **Register Icon**: Add to `not_static_icons_app/lib/data/icons_data.dart`:
    ```dart
    IconData(name: 'heart', widget: HeartIcon(size: 40)),
    ```
 
-2. **Add SVG Reference**: Place the original SVG in `example/not_static_icons_app/assets/lucide_icons/heart.svg` (for reference)
+2. **Add SVG Reference**: Place the original SVG in `not_static_icons_app/assets/lucide_icons/heart.svg` (for reference)
 
 ### Step 4: Test Your Icon
 
 ```bash
-cd example/not_static_icons_app
+
+# Test in full demo app
+cd not_static_icons_app
 flutter run
 ```
 
@@ -145,16 +162,16 @@ Navigate to your icon in the demo app and verify:
 
 ### Bug Fixes
 - **Location**: Usually in `lib/src/core/` or specific icon files
-- **Testing**: Ensure fix works in demo app
+- **Testing**: Ensure fix works in both example apps
 - **Documentation**: Update comments if behavior changes
 
 ### New Features
 - **Core Features**: Add to `lib/src/core/`
 - **Icon Features**: Enhance base `AnimatedSVGIcon` class
-- **Demo Features**: Add to `example/not_static_icons_app/
+- **Demo Features**: Add to `not_static_icons_app/`
 
 ### Demo App Improvements
-- **Location**: `example/not_static_icons_app/`
+- **Location**: `not_static_icons_app/`
 - **Ideas**: 
   - New demo pages
   - Better icon organization
@@ -169,6 +186,11 @@ Navigate to your icon in the demo app and verify:
 - Use `flutter format .` before committing
 - Add meaningful comments for complex animations
 - Keep file and class names consistent with existing patterns
+
+### Important Notes
+
+> [!IMPORTANT]
+> No Code Duplication: Both `example/` and `not_static_icons_app/` use the main package as a dependency
 
 ## Getting Help
 
