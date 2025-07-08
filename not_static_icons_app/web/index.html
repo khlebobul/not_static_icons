@@ -19,6 +19,11 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
+  
+  <!-- Cache control meta tags -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -31,6 +36,21 @@
 
   <title>not_static_icons_app</title>
   <link rel="manifest" href="manifest.json">
+  
+  <script>
+    // Force cache busting for critical resources
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add timestamp to prevent caching of critical files
+      var timestamp = new Date().getTime();
+      var links = document.querySelectorAll('link[rel="manifest"]');
+      links.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href && !href.includes('?')) {
+          link.setAttribute('href', href + '?v=' + timestamp);
+        }
+      });
+    });
+  </script>
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
