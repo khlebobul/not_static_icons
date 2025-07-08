@@ -90,7 +90,7 @@ Each icon has its own unique animation:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-[![CONTRIBUTING.md](https://img.shields.io/badge/CONTRIBUTING.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/CONTRIBUTING.md) [![CODE_OF_CONDUCT.md](https://img.shields.io/badge/CODE_OF_CONDUCT.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/CODE_OF_CONDUCT.md)
+[![CONTRIBUTING.md](https://img.shields.io/badge/CONTRIBUTING.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/CONTRIBUTING.md) [![CODE_OF_CONDUCT.md](https://img.shields.io/badge/CODE_OF_CONDUCT.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/CODE_OF_CONDUCT.md) [![ICON_CHECKLIST.md](https://img.shields.io/badge/ICON_CHECKLIST.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/ICON_CHECKLIST.md)
 
 ## Project support
 

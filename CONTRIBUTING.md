@@ -76,6 +76,8 @@ not_static_icons/
 > [!IMPORTANT]
 > Before implementing a new icon, please [open an issue](https://github.com/khlebobul/not_static_icons/issues/new) to discuss it. This ensures the icon fits the library's scope and avoids duplicate work.
 
+[![ICON_CHECKLIST.md](https://img.shields.io/badge/ICON_CHECKLIST.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/ICON_CHECKLIST.md)
+
 ### Step 1: Create the Icon Implementation
 
 1. **Use the Template**: Copy `not_static_icons_app/lib/templates/icon_template.dart`
