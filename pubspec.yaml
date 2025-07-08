@@ -1,6 +1,6 @@
 name: not_static_icons
 description: "Beautifully crafted animated icons for Flutter, crafted with Lucide — no Rive or Lottie required."
-version: 0.1.1
+version: 0.1.2
 homepage: https://github.com/khlebobul/not_static_icons
 
 environment:
@@ -15,3 +15,4 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  path: ^1.9.0

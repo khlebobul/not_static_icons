@@ -1,7 +1,10 @@
 ## 0.1.1
 
-* Removed files with duplicate code for package and demo app.
+* Implemented a script to generate and update the icon checklist automatically
 
+## 0.1.1
+
+* Removed files with duplicate code for package and demo app.
 
 ## 0.1.0
 
