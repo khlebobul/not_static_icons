@@ -232,7 +232,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
           InkWell(
             onTap: () => _copyToClipboard(AnimatedIconsStrings.installCommand),
             child: SvgPicture.asset(
-              AnimatedIconsStrings.searchIconPath,
+              AnimatedIconsStrings.copyIconPath,
               width: 16,
               height: 16,
               colorFilter: ColorFilter.mode(
