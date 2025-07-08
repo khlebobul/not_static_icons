@@ -1,4 +1,4 @@
-## 0.1.1
+## 0.1.2
 
 * Implemented a script to generate and update the icon checklist automatically
 
