@@ -8,7 +8,7 @@ class AsteriskIcon extends AnimatedSVGIcon {
     super.size = 40,
     super.color = Colors.black,
     super.animationDuration = const Duration(milliseconds: 1000),
-    super.strokeWidth = 2.0,
+    super.strokeWidth = 1.3,
     super.reverseOnExit = false,
     super.enableTouchInteraction = true,
     super.infiniteLoop = false,
