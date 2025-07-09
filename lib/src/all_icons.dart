@@ -99,3 +99,4 @@ export "icons/arrow_up_wide_narrow_icon.dart";
 export "icons/arrow_up_z_a_icon.dart";
 export "icons/arrows_up_from_line_icon.dart";
 export 'icons/asterisk_icon.dart';
+export 'icons/at_sign_icon.dart';
