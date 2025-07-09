@@ -102,3 +102,4 @@ export 'icons/asterisk_icon.dart';
 export 'icons/at_sign_icon.dart';
 export 'icons/atom_icon.dart';
 export 'icons/audio_lines_icon.dart';
+export 'icons/audio_waveform_icon.dart';
