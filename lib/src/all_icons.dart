@@ -101,3 +101,4 @@ export "icons/arrows_up_from_line_icon.dart";
 export 'icons/asterisk_icon.dart';
 export 'icons/at_sign_icon.dart';
 export 'icons/atom_icon.dart';
+export 'icons/audio_lines_icon.dart';
