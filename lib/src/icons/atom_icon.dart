@@ -90,7 +90,7 @@ class AtomPainter extends CustomPainter {
     canvas.restore();
   }
 
-    // Smooth ease in-out function for fluid animation
+  // Smooth ease in-out function for fluid animation
   double _smoothEaseInOut(double t) {
     // Cubic ease-in-out for smooth acceleration and deceleration
     if (t < 0.5) {

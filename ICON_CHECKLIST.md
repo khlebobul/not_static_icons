@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-07-07T14:31:56.347244Z UTC.
+Generated on 2025-07-10T11:19:07.294758Z UTC.
 
-## ✅ Existing Icons (101)
+## ✅ Existing Icons (108)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -103,15 +103,15 @@ Generated on 2025-07-07T14:31:56.347244Z UTC.
 - [x] `arrow-up-z-a`
 - [x] `arrows-up-from-line`
 - [x] `asterisk`
+- [x] `at-sign`
+- [x] `atom`
+- [x] `audio-lines`
+- [x] `audio-waveform`
+- [x] `award`
+- [x] `axe`
+- [x] `axis-3d`
 
-## ➕ New Icons to Add (1513)
-- [ ] `at-sign`
-- [ ] `atom`
-- [ ] `audio-lines`
-- [ ] `audio-waveform`
-- [ ] `award`
-- [ ] `axe`
-- [ ] `axis-3d`
+## ➕ New Icons to Add (1506)
 - [ ] `baby`
 - [ ] `backpack`
 - [ ] `badge`

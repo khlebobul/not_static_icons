@@ -1,47 +1,48 @@
+// ignore_for_file: avoid_print
+
 import 'dart:io';
-import 'package:flutter/material.dart';
 import 'package:path/path.dart' as p;
 
 void main(List<String> args) {
   if (args.isEmpty) {
-    debugPrint('Usage: dart run tool/check_lucide_icons.dart <path_to_lucide_repo>');
+    print('Usage: dart run tool/check_lucide_icons.dart <path_to_lucide_repo>');
     exit(1);
   }
 
   final lucideRepoPath = args[0];
   final lucideIconsDir = Directory(p.join(lucideRepoPath, 'icons'));
   if (!lucideIconsDir.existsSync()) {
-    debugPrint('Error: Lucide icons directory not found at ${lucideIconsDir.path}');
-    debugPrint('Please make sure you point to the root of the lucide repository.');
+    print('Error: Lucide icons directory not found at ${lucideIconsDir.path}');
+    print('Please make sure you point to the root of the lucide repository.');
     exit(1);
   }
 
   final projectIconsDir = Directory('lib/src/icons');
   if (!projectIconsDir.existsSync()) {
-    debugPrint(
+    print(
         'Error: Project icons directory not found at ${projectIconsDir.path}');
     exit(1);
   }
 
-  debugPrint('Scanning for Lucide icons...');
+  print('Scanning for Lucide icons...');
   final lucideIcons = _getLucideIcons(lucideIconsDir);
-  debugPrint('Found ${lucideIcons.length} Lucide icons.');
+  print('Found ${lucideIcons.length} Lucide icons.');
 
-  debugPrint('Scanning for project icons...');
+  print('Scanning for project icons...');
   final projectIcons = _getProjectIcons(projectIconsDir);
-  debugPrint('Found ${projectIcons.length} project icons.');
+  print('Found ${projectIcons.length} project icons.');
 
   final existingIcons = projectIcons.intersection(lucideIcons);
   final newIcons = lucideIcons.difference(projectIcons);
   final removedIcons = projectIcons.difference(lucideIcons);
 
-  debugPrint('Generating checklist...');
+  print('Generating checklist...');
   _generateChecklist(existingIcons, newIcons, removedIcons);
 
-  debugPrint('\nICON_CHECKLIST.md generated successfully.');
-  debugPrint(' - ${existingIcons.length} existing icons.');
-  debugPrint(' - ${newIcons.length} new icons to add.');
-  debugPrint(' - ${removedIcons.length} potentially removed icons.');
+  print('\nICON_CHECKLIST.md generated successfully.');
+  print(' - ${existingIcons.length} existing icons.');
+  print(' - ${newIcons.length} new icons to add.');
+  print(' - ${removedIcons.length} potentially removed icons.');
 }
 
 Set<String> _getLucideIcons(Directory dir) {
