@@ -1,3 +1,14 @@
+## 0.2.0
+
+#### New icons
+
+* Added seven new animated icons: at-sign, atom, audio-lines, audio-waveform, award, axe, and axis-3d.
+
+#### Improvements
+
+* Adjusted the default stroke width for the asterisk icon for improved appearance.
+* Updated the checklist and icon data to reflect the new icons.
+
 ## 0.1.2
 
 * Implemented a script to generate and update the icon checklist automatically
