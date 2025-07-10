@@ -105,3 +105,4 @@ export 'icons/audio_lines_icon.dart';
 export 'icons/audio_waveform_icon.dart';
 export 'icons/award_icon.dart';
 export 'icons/axe_icon.dart';
+export 'icons/axis_3d_icon.dart';

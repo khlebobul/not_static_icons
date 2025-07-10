@@ -204,4 +204,5 @@ final List<IconData> icons = [
   IconData(name: 'audio-waveform', widget: AudioWaveformIcon(size: 40)),
   IconData(name: 'award', widget: AwardIcon(size: 40)),
   IconData(name: 'axe', widget: AxeIcon(size: 40)),
+  IconData(name: 'axis-3d', widget: Axis3DIcon(size: 40)),
 ];
