@@ -370,6 +370,11 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
     return InkWell(
       onTap: () => _launchUrl(url),
       borderRadius: BorderRadius.circular(6),
+      hoverColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      focusColor: Colors.transparent,
+      splashColor: Colors.transparent,
+      overlayColor: WidgetStateProperty.all(Colors.transparent),
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 4),
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),

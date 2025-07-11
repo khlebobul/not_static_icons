@@ -21,15 +21,15 @@ class AnimatedIconsStrings {
       'simple flutter package for adding animated icons into your project';
   static const description2 = 'let\'s make this library awesome together';
 
-  static const madeWith = 'made with ';
+  static const madeWith = 'made with';
   static const flutterLabel = 'flutter';
   static const flutterUrl = 'https://flutter.dev';
 
-  static const and = ' and ';
+  static const and = 'and';
   static const lucideLabel = 'lucide icons';
   static const lucideUrl = 'https://lucide.dev';
 
-  static const inspiredBy = ' inspired by ';
+  static const inspiredBy = 'inspired by';
   static const pqoqubbwLabel = 'pqoqubbw/icons';
   static const pqoqubbwUrl = 'https://icons.pqoqubbw.dev';
 
