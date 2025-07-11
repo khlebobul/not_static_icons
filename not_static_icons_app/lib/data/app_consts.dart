@@ -6,6 +6,7 @@ class AnimatedIconsStrings {
 
   static const githubLabel = 'github';
   static const githubUrl = 'https://github.com/khlebobul/not_static_icons';
+  static const githubIconPath = 'assets/icons/github.svg';
 
   static const githubIconsBaseUrl =
       'https://github.com/khlebobul/not_static_icons/blob/main/not_static_icons_app/lib/icons/';
