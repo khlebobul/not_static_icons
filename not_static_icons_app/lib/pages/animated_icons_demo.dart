@@ -142,12 +142,14 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       surfaceTintColor: Colors.grey,
       elevation: 0,
       centerTitle: false,
-      title: const SelectableText(
+      title: Text(
         AnimatedIconsStrings.appBarTitle,
-        style: TextStyle(
-          fontSize: 18,
+        style: const TextStyle(
+          fontSize: 14,
           fontFamily: AnimatedIconsStrings.fontFamily,
+          overflow: TextOverflow.ellipsis,
         ),
+        maxLines: 1,
       ),
       actions: [
         Padding(
@@ -155,12 +157,13 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
           child: Row(
             children: [
               _buildTextLinkContainer(
-                AnimatedIconsStrings.pubDevLabel,
-                AnimatedIconsStrings.pubDevUrl,
-              ),
-              _buildTextLinkContainer(
                 AnimatedIconsStrings.githubLabel,
                 AnimatedIconsStrings.githubUrl,
+                iconPath: AnimatedIconsStrings.githubIconPath,
+              ),
+              _buildTextLinkContainer(
+                AnimatedIconsStrings.pubDevLabel,
+                AnimatedIconsStrings.pubDevUrl,
               ),
               _buildSupportButton(),
             ],
@@ -366,10 +369,15 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
     );
   }
 
-  Widget _buildTextLinkContainer(String text, String url) {
+  Widget _buildTextLinkContainer(String text, String url, {String? iconPath}) {
     return InkWell(
       onTap: () => _launchUrl(url),
       borderRadius: BorderRadius.circular(6),
+      hoverColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      focusColor: Colors.transparent,
+      splashColor: Colors.transparent,
+      overlayColor: WidgetStateProperty.all(Colors.transparent),
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 4),
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
@@ -378,13 +386,28 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
           borderRadius: BorderRadius.circular(6),
           border: Border.all(color: Colors.grey),
         ),
-        child: Text(
-          text,
-          style: const TextStyle(
-            fontSize: 14,
-            color: Colors.black,
-            fontFamily: AnimatedIconsStrings.fontFamily,
-          ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            iconPath != null
+                ? SvgPicture.asset(
+                    iconPath,
+                    width: 19,
+                    height: 19,
+                    colorFilter: ColorFilter.mode(
+                      Colors.grey.shade700,
+                      BlendMode.srcIn,
+                    ),
+                  )
+                : Text(
+                    text,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      color: Colors.black,
+                      fontFamily: AnimatedIconsStrings.fontFamily,
+                    ),
+                  ),
+          ],
         ),
       ),
     );
