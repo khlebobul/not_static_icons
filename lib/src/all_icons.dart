@@ -107,3 +107,4 @@ export 'icons/award_icon.dart';
 export 'icons/axe_icon.dart';
 export 'icons/axis_3d_icon.dart';
 export 'icons/baby_icon.dart';
+export 'icons/backpack_icon.dart';
