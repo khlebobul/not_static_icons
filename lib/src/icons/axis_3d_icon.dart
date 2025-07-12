@@ -8,7 +8,7 @@ class Axis3DIcon extends AnimatedSVGIcon {
     super.size = 40.0,
     super.color,
     super.hoverColor,
-    super.animationDuration = const Duration(milliseconds: 1500),
+    super.animationDuration = const Duration(milliseconds: 700),
     super.strokeWidth = 2.0,
     super.reverseOnExit = false,
     super.enableTouchInteraction = true,
