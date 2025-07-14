@@ -177,3 +177,4 @@ class AwardPainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
+ 

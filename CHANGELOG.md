@@ -1,12 +1,22 @@
+## 0.3.0
+
+#### New icons
+
+* Introduced 21 new animated `badge` icons, including `baby`, `backpack`, and various currency and symbol badges (e.g., `alert`, `cent`, `check`, `dollar`, `euro`, `rupee`, `yen`, `percent`, `plus`, `pound`, `question mark`, `ruble`, `franc`, `lira`, and `x`).
+
+#### Improvements
+
+* Reduced animation duration for the `axis-3d` icon for a snappier effect.
+
 ## 0.2.0
 
 #### New icons
 
-* Added seven new animated icons: at-sign, atom, audio-lines, audio-waveform, award, axe, and axis-3d.
+* Added seven new animated icons: `at-sign`, `atom`, `audio-lines`, `audio-waveform`, `award`, `axe`, and `axis-3d`.
 
 #### Improvements
 
-* Adjusted the default stroke width for the asterisk icon for improved appearance.
+* Adjusted the default stroke width for the `asterisk` icon for improved appearance.
 * Updated the checklist and icon data to reflect the new icons.
 
 ## 0.1.2
