@@ -126,3 +126,5 @@ export 'icons/badge_russian_ruble_icon.dart';
 export 'icons/badge_swiss_franc_icon.dart';
 export 'icons/badge_turkish_lira_icon.dart';
 export 'icons/badge_x_icon.dart';
+export "icons/baggage_claim_icon.dart";
+export 'icons/ban_icon.dart';
