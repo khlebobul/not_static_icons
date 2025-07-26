@@ -236,6 +236,6 @@ final List<IconData> icons = [
   IconData(name: 'arrow-down-1-0', widget: ArrowDown10Icon(size: 40)),
   IconData(name: 'arrow-up-0-1', widget: ArrowUp01Icon(size: 40)),
   IconData(name: 'arrow-up-1-0', widget: ArrowUp10Icon(size: 40)),
-  IconData(name: 'ban', widget: BanIcon()),
+  IconData(name: 'ban', widget: BanIcon(size: 40)),
   IconData(name: 'bandage', widget: BandageIcon(size: 40)),
 ];

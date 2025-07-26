@@ -1,3 +1,13 @@
+## 0.4.0
+
+#### New icons
+
+* Added four new animated icons: `banana`, `baggage claim`, `ban`, and `bandage`
+
+### Others
+
+* Introduced a Makefile to automate common project tasks.
+
 ## 0.3.0
 
 #### New icons
