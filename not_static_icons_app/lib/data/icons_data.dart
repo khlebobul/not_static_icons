@@ -50,6 +50,7 @@ final List<IconData> icons = [
   IconData(name: 'axis-3d', widget: Axis3DIcon(size: 40)),
   IconData(name: 'baby', widget: BabyIcon(size: 40)),
   IconData(name: 'backpack', widget: BackpackIcon(size: 40)),
+  IconData(name: 'banana', widget: BananaIcon(size: 40)),
   IconData(name: 'badge', widget: BadgeIcon(size: 40)),
   IconData(name: 'badge-alert', widget: BadgeAlertIcon(size: 40)),
   IconData(name: 'badge-cent', widget: BadgeCentIcon(size: 40)),
@@ -78,6 +79,7 @@ final List<IconData> icons = [
   IconData(name: 'badge-turkish-lira', widget: BadgeTurkishLiraIcon(size: 40)),
   IconData(name: 'badge-x', widget: BadgeXIcon(size: 40)),
   IconData(name: 'arrow-big-down', widget: ArrowBigDownIcon(size: 40)),
+  IconData(name: 'baggage-claim', widget: BaggageClaimIcon(size: 40)),
   IconData(name: 'arrow-big-down-dash', widget: ArrowBigDownDashIcon(size: 40)),
   IconData(name: 'arrow-big-left', widget: ArrowBigLeftIcon(size: 40)),
   IconData(name: 'arrow-big-left-dash', widget: ArrowBigLeftDashIcon(size: 40)),
@@ -234,4 +236,6 @@ final List<IconData> icons = [
   IconData(name: 'arrow-down-1-0', widget: ArrowDown10Icon(size: 40)),
   IconData(name: 'arrow-up-0-1', widget: ArrowUp01Icon(size: 40)),
   IconData(name: 'arrow-up-1-0', widget: ArrowUp10Icon(size: 40)),
+  IconData(name: 'ban', widget: BanIcon(size: 40)),
+  IconData(name: 'bandage', widget: BandageIcon(size: 40)),
 ];

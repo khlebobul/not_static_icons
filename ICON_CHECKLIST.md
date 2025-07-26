@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-07-10T11:19:07.294758Z UTC.
+Generated on 2025-07-26T16:21:15.548544Z UTC.
 
-## ✅ Existing Icons (108)
+## ✅ Existing Icons (132)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -110,32 +110,32 @@ Generated on 2025-07-10T11:19:07.294758Z UTC.
 - [x] `award`
 - [x] `axe`
 - [x] `axis-3d`
+- [x] `baby`
+- [x] `backpack`
+- [x] `badge`
+- [x] `badge-alert`
+- [x] `badge-cent`
+- [x] `badge-check`
+- [x] `badge-dollar-sign`
+- [x] `badge-euro`
+- [x] `badge-indian-rupee`
+- [x] `badge-info`
+- [x] `badge-japanese-yen`
+- [x] `badge-minus`
+- [x] `badge-percent`
+- [x] `badge-plus`
+- [x] `badge-pound-sterling`
+- [x] `badge-question-mark`
+- [x] `badge-russian-ruble`
+- [x] `badge-swiss-franc`
+- [x] `badge-turkish-lira`
+- [x] `badge-x`
+- [x] `baggage-claim`
+- [x] `ban`
+- [x] `banana`
+- [x] `bandage`
 
-## ➕ New Icons to Add (1506)
-- [ ] `baby`
-- [ ] `backpack`
-- [ ] `badge`
-- [ ] `badge-alert`
-- [ ] `badge-cent`
-- [ ] `badge-check`
-- [ ] `badge-dollar-sign`
-- [ ] `badge-euro`
-- [ ] `badge-indian-rupee`
-- [ ] `badge-info`
-- [ ] `badge-japanese-yen`
-- [ ] `badge-minus`
-- [ ] `badge-percent`
-- [ ] `badge-plus`
-- [ ] `badge-pound-sterling`
-- [ ] `badge-question-mark`
-- [ ] `badge-russian-ruble`
-- [ ] `badge-swiss-franc`
-- [ ] `badge-turkish-lira`
-- [ ] `badge-x`
-- [ ] `baggage-claim`
-- [ ] `ban`
-- [ ] `banana`
-- [ ] `bandage`
+## ➕ New Icons to Add (1482)
 - [ ] `banknote`
 - [ ] `banknote-arrow-down`
 - [ ] `banknote-arrow-up`
