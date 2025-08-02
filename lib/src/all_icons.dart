@@ -130,3 +130,7 @@ export 'icons/badge_x_icon.dart';
 export "icons/baggage_claim_icon.dart";
 export 'icons/ban_icon.dart';
 export 'icons/bandage_icon.dart';
+export 'icons/banknote_icon.dart';
+export 'icons/banknote_arrow_down_icon.dart';
+export 'icons/banknote_arrow_up_icon.dart';
+export 'icons/banknote_x_icon.dart';
