@@ -238,4 +238,11 @@ final List<IconData> icons = [
   IconData(name: 'arrow-up-1-0', widget: ArrowUp10Icon(size: 40)),
   IconData(name: 'ban', widget: BanIcon(size: 40)),
   IconData(name: 'bandage', widget: BandageIcon(size: 40)),
+  IconData(name: 'banknote', widget: BanknoteIcon(size: 40)),
+  IconData(
+    name: 'banknote-arrow-down',
+    widget: BanknoteArrowDownIcon(size: 40),
+  ),
+  IconData(name: 'banknote-arrow-up', widget: BanknoteArrowUpIcon(size: 40)),
+  IconData(name: 'banknote-x', widget: BanknoteXIcon(size: 40)),
 ];
