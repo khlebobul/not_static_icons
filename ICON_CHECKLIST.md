@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-07-29T06:08:09.592801Z UTC.
+Generated on 2025-08-02T02:43:48.977334Z UTC.
 
-## ✅ Existing Icons (132)
+## ✅ Existing Icons (136)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -134,12 +134,12 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [x] `ban`
 - [x] `banana`
 - [x] `bandage`
+- [x] `banknote`
+- [x] `banknote-arrow-down`
+- [x] `banknote-arrow-up`
+- [x] `banknote-x`
 
-## ➕ New Icons to Add (1482)
-- [ ] `banknote`
-- [ ] `banknote-arrow-down`
-- [ ] `banknote-arrow-up`
-- [ ] `banknote-x`
+## ➕ New Icons to Add (1488)
 - [ ] `barcode`
 - [ ] `barrel`
 - [ ] `baseline`
@@ -393,6 +393,7 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `clapperboard`
 - [ ] `clipboard`
 - [ ] `clipboard-check`
+- [ ] `clipboard-clock`
 - [ ] `clipboard-copy`
 - [ ] `clipboard-list`
 - [ ] `clipboard-minus`
@@ -420,6 +421,7 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `clock-arrow-up`
 - [ ] `clock-fading`
 - [ ] `clock-plus`
+- [ ] `closed-caption`
 - [ ] `cloud`
 - [ ] `cloud-alert`
 - [ ] `cloud-check`
@@ -607,6 +609,7 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `file-output`
 - [ ] `file-pen`
 - [ ] `file-pen-line`
+- [ ] `file-play`
 - [ ] `file-plus`
 - [ ] `file-plus-2`
 - [ ] `file-question-mark`
@@ -623,8 +626,7 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `file-type-2`
 - [ ] `file-up`
 - [ ] `file-user`
-- [ ] `file-video`
-- [ ] `file-video-2`
+- [ ] `file-video-camera`
 - [ ] `file-volume`
 - [ ] `file-volume-2`
 - [ ] `file-warning`
@@ -758,12 +760,14 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `hand-helping`
 - [ ] `hand-metal`
 - [ ] `hand-platter`
+- [ ] `handbag`
 - [ ] `handshake`
 - [ ] `hard-drive`
 - [ ] `hard-drive-download`
 - [ ] `hard-drive-upload`
 - [ ] `hard-hat`
 - [ ] `hash`
+- [ ] `hat-glasses`
 - [ ] `haze`
 - [ ] `hdmi-port`
 - [ ] `heading`
@@ -891,7 +895,6 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `locate`
 - [ ] `locate-fixed`
 - [ ] `locate-off`
-- [ ] `location-edit`
 - [ ] `lock`
 - [ ] `lock-keyhole`
 - [ ] `lock-keyhole-open`
@@ -914,6 +917,7 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `mailbox`
 - [ ] `mails`
 - [ ] `map`
+- [ ] `map-minus`
 - [ ] `map-pin`
 - [ ] `map-pin-check`
 - [ ] `map-pin-check-inside`
@@ -921,6 +925,7 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `map-pin-minus`
 - [ ] `map-pin-minus-inside`
 - [ ] `map-pin-off`
+- [ ] `map-pin-pen`
 - [ ] `map-pin-plus`
 - [ ] `map-pin-plus-inside`
 - [ ] `map-pin-x`
@@ -1327,6 +1332,7 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `spline-pointer`
 - [ ] `split`
 - [ ] `spool`
+- [ ] `spotlight`
 - [ ] `spray-can`
 - [ ] `sprout`
 - [ ] `square`
@@ -1371,6 +1377,7 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `square-mouse-pointer`
 - [ ] `square-parking`
 - [ ] `square-parking-off`
+- [ ] `square-pause`
 - [ ] `square-pen`
 - [ ] `square-percent`
 - [ ] `square-pi`
@@ -1387,6 +1394,7 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `square-split-vertical`
 - [ ] `square-square`
 - [ ] `square-stack`
+- [ ] `square-stop`
 - [ ] `square-terminal`
 - [ ] `square-user`
 - [ ] `square-user-round`
@@ -1551,6 +1559,7 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `user-round-search`
 - [ ] `user-round-x`
 - [ ] `user-search`
+- [ ] `user-star`
 - [ ] `user-x`
 - [ ] `users`
 - [ ] `users-round`
@@ -1603,6 +1612,7 @@ Generated on 2025-07-29T06:08:09.592801Z UTC.
 - [ ] `wifi-low`
 - [ ] `wifi-off`
 - [ ] `wifi-pen`
+- [ ] `wifi-sync`
 - [ ] `wifi-zero`
 - [ ] `wind`
 - [ ] `wind-arrow-down`
