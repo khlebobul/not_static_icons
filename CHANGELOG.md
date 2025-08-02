@@ -1,3 +1,9 @@
+## 0.5.0
+
+#### New icons
+
+* Added two new animated icons: `banknote`, '`banknote-arrow-down`, `banknote-x` and `banknote-arrow-up`.
+
 ## 0.4.1
 
 #### Improvements
