@@ -13,6 +13,7 @@ class BanknoteArrowDownIcon extends AnimatedSVGIcon {
     super.reverseOnExit = false,
     super.enableTouchInteraction = true,
     super.infiniteLoop = false,
+    super.resetToStartOnComplete = true,
   });
 
   @override

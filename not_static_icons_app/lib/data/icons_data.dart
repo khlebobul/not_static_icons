@@ -245,4 +245,11 @@ final List<IconData> icons = [
   ),
   IconData(name: 'banknote-arrow-up', widget: BanknoteArrowUpIcon(size: 40)),
   IconData(name: 'banknote-x', widget: BanknoteXIcon(size: 40)),
+  IconData(name: 'battery', widget: BatteryIcon(size: 40)),
+  IconData(name: 'battery-charging', widget: BatteryChargingIcon(size: 40)),
+  IconData(name: 'battery-full', widget: BatteryFullIcon(size: 40)),
+  IconData(name: 'battery-low', widget: BatteryLowIcon(size: 40)),
+  IconData(name: 'battery-medium', widget: BatteryMediumIcon(size: 40)),
+  IconData(name: 'battery-plus', widget: BatteryPlusIcon(size: 40)),
+  IconData(name: 'battery-warning', widget: BatteryWarningIcon(size: 40)),
 ];
