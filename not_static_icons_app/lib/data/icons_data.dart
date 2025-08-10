@@ -254,6 +254,7 @@ final List<IconData> icons = [
   IconData(name: 'bed-single', widget: BedSingleIcon(size: 40)),
   IconData(name: 'bed-double', widget: BedDoubleIcon(size: 40)),
   IconData(name: 'bath', widget: BathIcon(size: 40)),
+  IconData(name: 'beaker', widget: BeakerIcon(size: 40)),
   IconData(name: 'battery', widget: BatteryIcon(size: 40)),
   IconData(name: 'battery-charging', widget: BatteryChargingIcon(size: 40)),
   IconData(name: 'battery-full', widget: BatteryFullIcon(size: 40)),
