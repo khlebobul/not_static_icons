@@ -245,6 +245,7 @@ final List<IconData> icons = [
   ),
   IconData(name: 'banknote-arrow-up', widget: BanknoteArrowUpIcon(size: 40)),
   IconData(name: 'banknote-x', widget: BanknoteXIcon(size: 40)),
+  IconData(name: 'barrel', widget: BarrelIcon(size: 40)),
   IconData(name: 'battery', widget: BatteryIcon(size: 40)),
   IconData(name: 'battery-charging', widget: BatteryChargingIcon(size: 40)),
   IconData(name: 'battery-full', widget: BatteryFullIcon(size: 40)),

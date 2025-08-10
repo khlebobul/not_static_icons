@@ -141,3 +141,4 @@ export 'icons/battery_low_icon.dart';
 export 'icons/battery_medium_icon.dart';
 export 'icons/battery_plus_icon.dart';
 export 'icons/battery_warning_icon.dart';
+export 'icons/barrel_icon.dart';
