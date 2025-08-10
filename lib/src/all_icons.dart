@@ -146,3 +146,6 @@ export 'icons/baseline_icon.dart';
 export 'icons/barcode_icon.dart';
 export 'icons/bean_icon.dart';
 export 'icons/bean_off_icon.dart';
+export 'icons/bed_icon.dart';
+export 'icons/bed_single_icon.dart';
+export 'icons/bed_double_icon.dart';
