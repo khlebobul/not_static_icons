@@ -248,6 +248,8 @@ final List<IconData> icons = [
   IconData(name: 'barrel', widget: BarrelIcon(size: 40)),
   IconData(name: 'baseline', widget: BaselineIcon(size: 40)),
   IconData(name: 'barcode', widget: BarcodeIcon(size: 40)),
+  IconData(name: 'bean', widget: BeanIcon(size: 40)),
+  IconData(name: 'bean-off', widget: BeanOffIcon(size: 40)),
   IconData(name: 'battery', widget: BatteryIcon(size: 40)),
   IconData(name: 'battery-charging', widget: BatteryChargingIcon(size: 40)),
   IconData(name: 'battery-full', widget: BatteryFullIcon(size: 40)),

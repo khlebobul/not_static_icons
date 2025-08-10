@@ -144,3 +144,5 @@ export 'icons/battery_warning_icon.dart';
 export 'icons/barrel_icon.dart';
 export 'icons/baseline_icon.dart';
 export 'icons/barcode_icon.dart';
+export 'icons/bean_icon.dart';
+export 'icons/bean_off_icon.dart';
