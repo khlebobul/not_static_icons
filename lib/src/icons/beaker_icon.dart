@@ -100,7 +100,7 @@ class _BeakerPainter extends CustomPainter {
     final wavelength = (x2 - x1) / 2.0; // two crests across width
     final phase = 2 * math.pi * t;
 
-    final steps = 16;
+    const steps = 16;
     final dx = (x2 - x1) / steps;
     final wave = Path()..moveTo(x1, yBase);
     for (int i = 0; i <= steps; i++) {
