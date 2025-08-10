@@ -68,24 +68,33 @@ class _BedSinglePainter extends CustomPainter {
       ..lineTo(21 * scale, 20 * scale);
     canvas.drawPath(base, paint);
 
-    // Top frame (pillow) bounce
-    final dy = -1.2 *
-        scale *
-        (animationValue == 0.0
-            ? 0.0
-            : (animationValue < 0.5
-                ? (animationValue / 0.5)
-                : (1 - (animationValue - 0.5) / 0.5)));
+    // Top frame (pillow) squish + slight tilt around its center
     final top = Path()
       ..moveTo(5 * scale, 10 * scale)
-      ..lineTo(5 * scale, (6 * scale) + dy)
-      ..arcToPoint(Offset(7 * scale, (4 * scale) + dy),
+      ..lineTo(5 * scale, 6 * scale)
+      ..arcToPoint(Offset(7 * scale, 4 * scale),
           radius: Radius.circular(2 * scale), clockwise: true)
-      ..lineTo(17 * scale, (4 * scale) + dy)
-      ..arcToPoint(Offset(19 * scale, (6 * scale) + dy),
+      ..lineTo(17 * scale, 4 * scale)
+      ..arcToPoint(Offset(19 * scale, 6 * scale),
           radius: Radius.circular(2 * scale), clockwise: true)
       ..lineTo(19 * scale, 10 * scale);
-    canvas.drawPath(top, paint);
+    if (animationValue == 0.0) {
+      canvas.drawPath(top, paint);
+    } else {
+      final s = (animationValue < 0.5)
+          ? (animationValue / 0.5)
+          : (1 - (animationValue - 0.5) / 0.5);
+      final pivot = Offset(12 * scale, 6 * scale);
+      final angle = 0.08 * s; // ~4.6 degrees max
+      final scaleY = 1.0 - 0.08 * s;
+      canvas.save();
+      canvas.translate(pivot.dx, pivot.dy);
+      canvas.rotate(angle);
+      canvas.scale(1.0, scaleY);
+      canvas.translate(-pivot.dx, -pivot.dy);
+      canvas.drawPath(top, paint);
+      canvas.restore();
+    }
 
     // Bottom line: M3 18 h18
     canvas.drawLine(
