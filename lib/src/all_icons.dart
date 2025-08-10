@@ -149,3 +149,4 @@ export 'icons/bean_off_icon.dart';
 export 'icons/bed_icon.dart';
 export 'icons/bed_single_icon.dart';
 export 'icons/bed_double_icon.dart';
+export 'icons/bath_icon.dart';
