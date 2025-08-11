@@ -1,3 +1,14 @@
+## 0.6.0
+
+#### New icons
+
+* Added 17 animated icons: `barcode`, `barrel`, `baseline`, `bath`, `beaker`, `bean`, `bean-off`, `bed`, `bed-single`, `bed-double`, and `battery` variants (`battery`, `charging`, `full`, `low`, `medium`, `plus`, `warning`).
+
+#### Improvements
+
+* Introduced an option to reset animations to the start on completion; enabled by default for select icons, improving loop behavior.
+* Updated `README`: animated icons count increased to 150+.
+
 ## 0.5.0
 
 #### New icons
