@@ -133,7 +133,7 @@ class BanknotePainter extends CustomPainter {
     // Circle
     canvas.drawCircle(Offset(12 * scale, 12 * scale), 2 * scale, paint);
 
-    // Lines (M6 12h.01M18 12h.01)
+    // Lines
     canvas.drawLine(
       Offset(6 * scale, 12 * scale),
       Offset(6.01 * scale, 12 * scale),

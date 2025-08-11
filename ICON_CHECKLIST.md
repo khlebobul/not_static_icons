@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-08-02T02:43:48.977334Z UTC.
+Generated on 2025-08-11T04:46:54.529063Z UTC.
 
-## ✅ Existing Icons (136)
+## ✅ Existing Icons (153)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -138,25 +138,25 @@ Generated on 2025-08-02T02:43:48.977334Z UTC.
 - [x] `banknote-arrow-down`
 - [x] `banknote-arrow-up`
 - [x] `banknote-x`
+- [x] `barcode`
+- [x] `barrel`
+- [x] `baseline`
+- [x] `bath`
+- [x] `battery`
+- [x] `battery-charging`
+- [x] `battery-full`
+- [x] `battery-low`
+- [x] `battery-medium`
+- [x] `battery-plus`
+- [x] `battery-warning`
+- [x] `beaker`
+- [x] `bean`
+- [x] `bean-off`
+- [x] `bed`
+- [x] `bed-double`
+- [x] `bed-single`
 
-## ➕ New Icons to Add (1488)
-- [ ] `barcode`
-- [ ] `barrel`
-- [ ] `baseline`
-- [ ] `bath`
-- [ ] `battery`
-- [ ] `battery-charging`
-- [ ] `battery-full`
-- [ ] `battery-low`
-- [ ] `battery-medium`
-- [ ] `battery-plus`
-- [ ] `battery-warning`
-- [ ] `beaker`
-- [ ] `bean`
-- [ ] `bean-off`
-- [ ] `bed`
-- [ ] `bed-double`
-- [ ] `bed-single`
+## ➕ New Icons to Add (1471)
 - [ ] `beef`
 - [ ] `beer`
 - [ ] `beer-off`
