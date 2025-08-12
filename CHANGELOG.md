@@ -1,3 +1,8 @@
+## 0.7.0
+
+#### New icons
+* Added 10 animated icons: `bell`, `bell-off`, `bell-plus`, `bell-minus`, `bell-dot`, `bell-ring`, `bell-electric`, `beer`, `beer-off`, and `beef`.
+
 ## 0.6.0
 
 #### New icons
