@@ -262,4 +262,11 @@ final List<IconData> icons = [
   IconData(name: 'battery-medium', widget: BatteryMediumIcon(size: 40)),
   IconData(name: 'battery-plus', widget: BatteryPlusIcon(size: 40)),
   IconData(name: 'battery-warning', widget: BatteryWarningIcon(size: 40)),
+  IconData(name: 'bell-dot', widget: BellDotIcon(size: 40)),
+  IconData(name: 'bell', widget: BellIcon(size: 40)),
+  IconData(name: 'bell-minus', widget: BellMinusIcon(size: 40)),
+  IconData(name: 'bell-off', widget: BellOffIcon(size: 40)),
+  IconData(name: 'bell-plus', widget: BellPlusIcon(size: 40)),
+  IconData(name: 'bell-ring', widget: BellRingIcon(size: 40)),
+  IconData(name: 'bell-electric', widget: BellElectricIcon(size: 40)),
 ];
