@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-08-11T04:46:54.529063Z UTC.
+Generated on 2025-08-12T15:21:42.957492Z UTC.
 
-## ✅ Existing Icons (153)
+## ✅ Existing Icons (163)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -155,18 +155,18 @@ Generated on 2025-08-11T04:46:54.529063Z UTC.
 - [x] `bed`
 - [x] `bed-double`
 - [x] `bed-single`
+- [x] `beef`
+- [x] `beer`
+- [x] `beer-off`
+- [x] `bell`
+- [x] `bell-dot`
+- [x] `bell-electric`
+- [x] `bell-minus`
+- [x] `bell-off`
+- [x] `bell-plus`
+- [x] `bell-ring`
 
-## ➕ New Icons to Add (1471)
-- [ ] `beef`
-- [ ] `beer`
-- [ ] `beer-off`
-- [ ] `bell`
-- [ ] `bell-dot`
-- [ ] `bell-electric`
-- [ ] `bell-minus`
-- [ ] `bell-off`
-- [ ] `bell-plus`
-- [ ] `bell-ring`
+## ➕ New Icons to Add (1467)
 - [ ] `between-horizontal-end`
 - [ ] `between-horizontal-start`
 - [ ] `between-vertical-end`
@@ -234,6 +234,7 @@ Generated on 2025-08-11T04:46:54.529063Z UTC.
 - [ ] `brain-cog`
 - [ ] `brick-wall`
 - [ ] `brick-wall-fire`
+- [ ] `brick-wall-shield`
 - [ ] `briefcase`
 - [ ] `briefcase-business`
 - [ ] `briefcase-conveyor-belt`
@@ -384,6 +385,7 @@ Generated on 2025-08-11T04:46:54.529063Z UTC.
 - [ ] `circle-slash`
 - [ ] `circle-slash-2`
 - [ ] `circle-small`
+- [ ] `circle-star`
 - [ ] `circle-stop`
 - [ ] `circle-user`
 - [ ] `circle-user-round`
@@ -737,7 +739,6 @@ Generated on 2025-08-11T04:46:54.529063Z UTC.
 - [ ] `globe-lock`
 - [ ] `goal`
 - [ ] `gpu`
-- [ ] `grab`
 - [ ] `graduation-cap`
 - [ ] `grape`
 - [ ] `grid-2x2`
@@ -756,6 +757,8 @@ Generated on 2025-08-11T04:46:54.529063Z UTC.
 - [ ] `hammer`
 - [ ] `hand`
 - [ ] `hand-coins`
+- [ ] `hand-fist`
+- [ ] `hand-grab`
 - [ ] `hand-heart`
 - [ ] `hand-helping`
 - [ ] `hand-metal`
@@ -828,6 +831,7 @@ Generated on 2025-08-11T04:46:54.529063Z UTC.
 - [ ] `japanese-yen`
 - [ ] `joystick`
 - [ ] `kanban`
+- [ ] `kayak`
 - [ ] `key`
 - [ ] `key-round`
 - [ ] `key-square`
@@ -1394,6 +1398,7 @@ Generated on 2025-08-11T04:46:54.529063Z UTC.
 - [ ] `square-split-vertical`
 - [ ] `square-square`
 - [ ] `square-stack`
+- [ ] `square-star`
 - [ ] `square-stop`
 - [ ] `square-terminal`
 - [ ] `square-user`
@@ -1520,6 +1525,7 @@ Generated on 2025-08-11T04:46:54.529063Z UTC.
 - [ ] `truck`
 - [ ] `truck-electric`
 - [ ] `turkish-lira`
+- [ ] `turntable`
 - [ ] `turtle`
 - [ ] `tv`
 - [ ] `tv-minimal`
