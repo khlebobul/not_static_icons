@@ -269,4 +269,6 @@ final List<IconData> icons = [
   IconData(name: 'bell-plus', widget: BellPlusIcon(size: 40)),
   IconData(name: 'bell-ring', widget: BellRingIcon(size: 40)),
   IconData(name: 'bell-electric', widget: BellElectricIcon(size: 40)),
+  IconData(name: 'beer', widget: BeerIcon(size: 40)),
+  IconData(name: 'beer-off', widget: BeerOffIcon(size: 40)),
 ];
