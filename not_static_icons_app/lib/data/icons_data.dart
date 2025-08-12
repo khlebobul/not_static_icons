@@ -263,6 +263,22 @@ final List<IconData> icons = [
   IconData(name: 'battery-plus', widget: BatteryPlusIcon(size: 40)),
   IconData(name: 'battery-warning', widget: BatteryWarningIcon(size: 40)),
   IconData(name: 'bell-dot', widget: BellDotIcon(size: 40)),
+  IconData(
+    name: 'between-horizontal-end',
+    widget: BetweenHorizontalEndIcon(size: 40),
+  ),
+  IconData(
+    name: 'between-horizontal-start',
+    widget: BetweenHorizontalStartIcon(size: 40),
+  ),
+  IconData(
+    name: 'between-vertical-end',
+    widget: BetweenVerticalEndIcon(size: 40),
+  ),
+  IconData(
+    name: 'between-vertical-start',
+    widget: BetweenVerticalStartIcon(size: 40),
+  ),
   IconData(name: 'bell', widget: BellIcon(size: 40)),
   IconData(name: 'bell-minus', widget: BellMinusIcon(size: 40)),
   IconData(name: 'bell-off', widget: BellOffIcon(size: 40)),
