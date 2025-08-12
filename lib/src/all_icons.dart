@@ -160,3 +160,4 @@ export 'icons/bell_ring_icon.dart';
 export 'icons/bell_electric_icon.dart';
 export 'icons/beer_icon.dart';
 export 'icons/beer_off_icon.dart';
+export 'icons/beef_icon.dart';
