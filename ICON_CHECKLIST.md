@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-08-12T15:21:42.957492Z UTC.
+Generated on 2025-08-13T04:42:20.587648Z UTC.
 
-## ✅ Existing Icons (163)
+## ✅ Existing Icons (170)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -165,15 +165,15 @@ Generated on 2025-08-12T15:21:42.957492Z UTC.
 - [x] `bell-off`
 - [x] `bell-plus`
 - [x] `bell-ring`
+- [x] `between-horizontal-end`
+- [x] `between-horizontal-start`
+- [x] `between-vertical-end`
+- [x] `between-vertical-start`
+- [x] `biceps-flexed`
+- [x] `bike`
+- [x] `binary`
 
-## ➕ New Icons to Add (1467)
-- [ ] `between-horizontal-end`
-- [ ] `between-horizontal-start`
-- [ ] `between-vertical-end`
-- [ ] `between-vertical-start`
-- [ ] `biceps-flexed`
-- [ ] `bike`
-- [ ] `binary`
+## ➕ New Icons to Add (1460)
 - [ ] `binoculars`
 - [ ] `biohazard`
 - [ ] `bird`

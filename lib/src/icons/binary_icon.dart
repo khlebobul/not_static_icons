@@ -123,4 +123,3 @@ class _BinaryPainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
-

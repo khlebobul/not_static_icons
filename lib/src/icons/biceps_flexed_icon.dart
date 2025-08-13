@@ -116,4 +116,3 @@ class _BicepsFlexedPainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
-
