@@ -1,3 +1,8 @@
+## 0.8.0
+
+#### New icons
+* Added 7 animated icons: `between-horizontal-end`, `between-horizontal-start`, `between-vertical-end`, `between-vertical-start`, `biceps-flexed`, `bike`, and `binary`.
+
 ## 0.7.0
 
 #### New icons
