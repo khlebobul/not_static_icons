@@ -159,6 +159,7 @@ export 'icons/between_vertical_start_icon.dart';
 export 'icons/binary_icon.dart';
 export 'icons/bike_icon.dart';
 export 'icons/biceps_flexed_icon.dart';
+export 'icons/binoculars_icon.dart';
 export 'icons/bell_icon.dart';
 export 'icons/bell_minus_icon.dart';
 export 'icons/bell_off_icon.dart';
