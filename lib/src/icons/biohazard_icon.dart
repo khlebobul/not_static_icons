@@ -61,136 +61,126 @@ class _BiohazardPainter extends CustomPainter {
       return;
     }
 
-    // Progressive redrawing animation
-    final redrawProgress = animationValue;
+    // Animation: stroke-reveal drawing
+    final double t = animationValue.clamp(0.0, 1.0);
+    if (t == 0.0) {
+      // Initial: full icon matches SVG
+      _drawCompleteIcon(canvas, paint, scale);
+      return;
+    }
 
+    Path extractPortion(Path path, double fraction) {
+      fraction = fraction.clamp(0.0, 1.0);
+      final Path out = Path();
+      for (final metric in path.computeMetrics(forceClosed: false)) {
+        final double len = metric.length;
+        if (len <= 0) continue;
+        final double end = len * fraction;
+        if (end > 0) {
+          out.addPath(metric.extractPath(0, end), Offset.zero);
+        }
+      }
+      return out;
+    }
+
+    double mapSegment(double x, double a, double b) {
+      if (x <= a) return 0.0;
+      if (x >= b) return 1.0;
+      return (x - a) / (b - a);
+    }
+
+    // Create paths for animation
     // Center circle: cx="12" cy="11.9" r="2"
-    final centerCircle = Path()
+    final centerCirclePath = Path()
       ..addOval(Rect.fromCircle(
           center: Offset(12 * scale, 11.9 * scale), radius: 2 * scale));
-    canvas.drawPath(centerCircle, paint);
 
     // Top left curved line: M6.7 3.4c-.9 2.5 0 5.2 2.2 6.7C6.5 9 3.7 9.6 2 11.6
-    _drawCurvedLineAnimated(
-        canvas,
-        paint,
-        [
-          Offset(6.7 * scale, 3.4 * scale),
-          Offset(5.8 * scale, 5.9 * scale),
-          Offset(5.8 * scale, 8.6 * scale),
-          Offset(8.0 * scale, 10.1 * scale),
-          Offset(6.5 * scale, 9.0 * scale),
-          Offset(3.7 * scale, 9.6 * scale),
-          Offset(2.0 * scale, 11.6 * scale),
-        ],
-        redrawProgress * 0.8);
+    final topLeftPath = Path()
+      ..moveTo(6.7 * scale, 3.4 * scale)
+      ..relativeCubicTo(
+          -0.9 * scale, 2.5 * scale, 0, 5.2 * scale, 2.2 * scale, 6.7 * scale)
+      ..relativeCubicTo(-1.5 * scale, -1.7 * scale, -4.3 * scale, -1.1 * scale,
+          -6.0 * scale, 0.9 * scale);
 
     // Top right curved line: M17.3 3.4c.9 2.5 0 5.2-2.2 6.7 2.4-1.2 5.2-.6 6.9 1.5
-    _drawCurvedLineAnimated(
-        canvas,
-        paint,
-        [
-          Offset(17.3 * scale, 3.4 * scale),
-          Offset(18.2 * scale, 5.9 * scale),
-          Offset(18.2 * scale, 8.6 * scale),
-          Offset(16.0 * scale, 10.1 * scale),
-          Offset(18.4 * scale, 8.9 * scale),
-          Offset(21.2 * scale, 9.3 * scale),
-          Offset(22.9 * scale, 11.3 * scale),
-        ],
-        redrawProgress * 0.8);
+    final topRightPath = Path()
+      ..moveTo(17.3 * scale, 3.4 * scale)
+      ..relativeCubicTo(
+          0.9 * scale, 2.5 * scale, 0, 5.2 * scale, -2.2 * scale, 6.7 * scale)
+      ..relativeCubicTo(2.4 * scale, -1.2 * scale, 5.2 * scale, -0.6 * scale,
+          6.9 * scale, 1.5 * scale);
 
     // Bottom curved line: M16.7 20.8c-2.6-.4-4.6-2.6-4.7-5.3-.2 2.6-2.1 4.8-4.7 5.2
-    _drawCurvedLineAnimated(
-        canvas,
-        paint,
-        [
-          Offset(16.7 * scale, 20.8 * scale),
-          Offset(14.1 * scale, 20.4 * scale),
-          Offset(11.5 * scale, 18.2 * scale),
-          Offset(11.4 * scale, 15.5 * scale),
-          Offset(11.2 * scale, 18.1 * scale),
-          Offset(9.1 * scale, 20.3 * scale),
-          Offset(6.5 * scale, 20.7 * scale),
-        ],
-        redrawProgress * 0.8);
+    final bottomPath = Path()
+      ..moveTo(16.7 * scale, 20.8 * scale)
+      ..relativeCubicTo(-2.6 * scale, -0.4 * scale, -4.6 * scale, -2.6 * scale,
+          -4.7 * scale, -5.3 * scale)
+      ..relativeCubicTo(-0.2 * scale, 2.6 * scale, -2.1 * scale, 4.8 * scale,
+          -4.7 * scale, 5.2 * scale);
 
-    // Small connecting lines (appear later)
-    if (redrawProgress > 0.6) {
-      final smallLinesProgress = (redrawProgress - 0.6) / 0.4;
+    // Small connecting lines
+    final smallLinesPath = Path()
+      ..moveTo(8.9 * scale, 10.1 * scale)
+      ..lineTo(10.3 * scale, 10.9 * scale)
+      ..moveTo(15.1 * scale, 10.1 * scale)
+      ..lineTo(13.7 * scale, 10.9 * scale)
+      ..moveTo(12 * scale, 13.9 * scale)
+      ..lineTo(12 * scale, 15.5 * scale);
 
-      // m8.9 10.1 1.4.8
-      _drawLineAnimated(canvas, paint,
-          start: Offset(8.9 * scale, 10.1 * scale),
-          end: Offset(10.3 * scale, 10.9 * scale),
-          progress: smallLinesProgress);
+    // Top curve: M13.5 5.4c-1-.2-2-.2-3 0
+    final topCurvePath = Path()
+      ..moveTo(13.5 * scale, 5.4 * scale)
+      ..relativeCubicTo(
+          -1 * scale, -0.2 * scale, -2 * scale, -0.2 * scale, -3 * scale, 0);
 
-      // m15.1 10.1-1.4.8
-      _drawLineAnimated(canvas, paint,
-          start: Offset(15.1 * scale, 10.1 * scale),
-          end: Offset(13.7 * scale, 10.9 * scale),
-          progress: smallLinesProgress);
+    // Right curve: M17 16.4c.7-.7 1.2-1.6 1.5-2.5
+    final rightCurvePath = Path()
+      ..moveTo(17 * scale, 16.4 * scale)
+      ..relativeCubicTo(0.7 * scale, -0.7 * scale, 1.2 * scale, -1.6 * scale,
+          1.5 * scale, -2.5 * scale);
 
-      // M12 13.9v1.6
-      _drawLineAnimated(canvas, paint,
-          start: Offset(12 * scale, 13.9 * scale),
-          end: Offset(12 * scale, 15.5 * scale),
-          progress: smallLinesProgress);
+    // Left curve: M5.5 13.9c.3.9.8 1.8 1.5 2.5
+    final leftCurvePath = Path()
+      ..moveTo(5.5 * scale, 13.9 * scale)
+      ..relativeCubicTo(0.3 * scale, 0.9 * scale, 0.8 * scale, 1.8 * scale,
+          1.5 * scale, 2.5 * scale);
 
-      // M13.5 5.4c-1-.2-2-.2-3 0
-      _drawCurvedLineAnimated(
-          canvas,
-          paint,
-          [
-            Offset(13.5 * scale, 5.4 * scale),
-            Offset(12.5 * scale, 5.2 * scale),
-            Offset(11.5 * scale, 5.2 * scale),
-            Offset(10.5 * scale, 5.4 * scale),
-          ],
-          smallLinesProgress);
+    // Timeline: main curves (0..0.6), small lines (0.6..0.8), details (0.8..1)
+    final double f1 = mapSegment(t, 0.0, 0.6);
+    final double f2 = mapSegment(t, 0.6, 0.8);
+    final double f3 = mapSegment(t, 0.8, 1.0);
 
-      // M17 16.4c.7-.7 1.2-1.6 1.5-2.5
-      _drawCurvedLineAnimated(
-          canvas,
-          paint,
-          [
-            Offset(17 * scale, 16.4 * scale),
-            Offset(17.7 * scale, 15.7 * scale),
-            Offset(18.2 * scale, 14.8 * scale),
-            Offset(18.5 * scale, 13.9 * scale),
-          ],
-          smallLinesProgress);
-
-      // M5.5 13.9c.3.9.8 1.8 1.5 2.5
-      _drawCurvedLineAnimated(
-          canvas,
-          paint,
-          [
-            Offset(5.5 * scale, 13.9 * scale),
-            Offset(5.8 * scale, 14.8 * scale),
-            Offset(6.3 * scale, 15.7 * scale),
-            Offset(7.0 * scale, 16.4 * scale),
-          ],
-          smallLinesProgress);
-    }
-  }
-
-  void _drawCurvedLineAnimated(
-      Canvas canvas, Paint paint, List<Offset> points, double progress) {
-    if (progress == 0.0) return;
-
-    final path = Path();
-    path.moveTo(points[0].dx, points[0].dy);
-
-    for (int i = 1; i < points.length; i++) {
-      final t = (progress * points.length - i + 1).clamp(0.0, 1.0);
-      if (t > 0) {
-        final currentPoint = Offset.lerp(points[i - 1], points[i], t)!;
-        path.lineTo(currentPoint.dx, currentPoint.dy);
-      }
+    // Draw main curves
+    if (f1 > 0) {
+      canvas.drawPath(
+          f1 < 1.0 ? extractPortion(topLeftPath, f1) : topLeftPath, paint);
+      canvas.drawPath(
+          f1 < 1.0 ? extractPortion(topRightPath, f1) : topRightPath, paint);
+      canvas.drawPath(
+          f1 < 1.0 ? extractPortion(bottomPath, f1) : bottomPath, paint);
     }
 
-    canvas.drawPath(path, paint);
+    // Draw small lines
+    if (f2 > 0) {
+      canvas.drawPath(
+          f2 < 1.0 ? extractPortion(smallLinesPath, f2) : smallLinesPath,
+          paint);
+    }
+
+    // Draw details
+    if (f3 > 0) {
+      canvas.drawPath(
+          f3 < 1.0 ? extractPortion(topCurvePath, f3) : topCurvePath, paint);
+      canvas.drawPath(
+          f3 < 1.0 ? extractPortion(rightCurvePath, f3) : rightCurvePath,
+          paint);
+      canvas.drawPath(
+          f3 < 1.0 ? extractPortion(leftCurvePath, f3) : leftCurvePath, paint);
+      canvas.drawPath(
+          f3 < 1.0 ? extractPortion(centerCirclePath, f3) : centerCirclePath,
+          paint);
+    }
   }
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
@@ -260,13 +250,6 @@ class _BiohazardPainter extends CustomPainter {
       ..relativeCubicTo(0.3 * scale, 0.9 * scale, 0.8 * scale, 1.8 * scale,
           1.5 * scale, 2.5 * scale);
     canvas.drawPath(leftCurve, paint);
-  }
-
-  void _drawLineAnimated(Canvas canvas, Paint paint,
-      {required Offset start, required Offset end, required double progress}) {
-    if (progress == 0.0) return;
-    final current = Offset.lerp(start, end, progress)!;
-    canvas.drawLine(start, current, paint);
   }
 
   @override
