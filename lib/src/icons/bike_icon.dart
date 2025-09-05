@@ -102,3 +102,4 @@ class _BikePainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
+

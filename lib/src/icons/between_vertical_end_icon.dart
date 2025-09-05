@@ -89,3 +89,4 @@ class _BetweenVerticalEndPainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
+

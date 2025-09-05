@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-08-13T04:42:20.587648Z UTC.
+Generated on 2025-09-05T19:41:11.469460Z UTC.
 
-## ✅ Existing Icons (170)
+## ✅ Existing Icons (177)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -172,15 +172,15 @@ Generated on 2025-08-13T04:42:20.587648Z UTC.
 - [x] `biceps-flexed`
 - [x] `bike`
 - [x] `binary`
+- [x] `binoculars`
+- [x] `biohazard`
+- [x] `bird`
+- [x] `bitcoin`
+- [x] `blend`
+- [x] `blinds`
+- [x] `blocks`
 
-## ➕ New Icons to Add (1460)
-- [ ] `binoculars`
-- [ ] `biohazard`
-- [ ] `bird`
-- [ ] `bitcoin`
-- [ ] `blend`
-- [ ] `blinds`
-- [ ] `blocks`
+## ➕ New Icons to Add (1453)
 - [ ] `bluetooth`
 - [ ] `bluetooth-connected`
 - [ ] `bluetooth-off`
