@@ -161,6 +161,7 @@ export 'icons/bike_icon.dart';
 export 'icons/biceps_flexed_icon.dart';
 export 'icons/biohazard_icon.dart';
 export 'icons/bird_icon.dart';
+export 'icons/bitcoin_icon.dart';
 export 'icons/binoculars_icon.dart';
 export 'icons/bell_icon.dart';
 export 'icons/bell_minus_icon.dart';
