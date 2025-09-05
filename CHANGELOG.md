@@ -1,3 +1,8 @@
+## 0.9.0
+
+#### New icons
+* Added seven animated icons: `biohazard`, `bird`, `bitcoin`, `blend`, `blinds`, `blocks`, and `binoculars`.
+
 ## 0.8.0
 
 #### New icons
