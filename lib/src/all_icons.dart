@@ -163,6 +163,7 @@ export 'icons/biohazard_icon.dart';
 export 'icons/bird_icon.dart';
 export 'icons/bitcoin_icon.dart';
 export 'icons/blend_icon.dart';
+export 'icons/blinds_icon.dart';
 export 'icons/blocks_icon.dart';
 export 'icons/binoculars_icon.dart';
 export 'icons/bell_icon.dart';
