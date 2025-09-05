@@ -89,4 +89,3 @@ class _BetweenHorizontalStartPainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
-
