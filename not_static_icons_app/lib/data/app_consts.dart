@@ -9,7 +9,7 @@ class AnimatedIconsStrings {
   static const githubIconPath = 'assets/icons/github.svg';
 
   static const githubIconsBaseUrl =
-      'https://github.com/khlebobul/not_static_icons/blob/main/not_static_icons_app/lib/icons/';
+      'https://github.com/khlebobul/not_static_icons/blob/main/lib/src/icons/';
 
   static const supportLabel = 'support';
 

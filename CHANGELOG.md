@@ -1,3 +1,8 @@
+## 0.9.1
+
+#### Improvements
+* Updated icon source URL to ensure icons load correctly from the new repository path.
+
 ## 0.9.0
 
 #### New icons
