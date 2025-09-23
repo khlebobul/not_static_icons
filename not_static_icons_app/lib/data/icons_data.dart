@@ -264,6 +264,16 @@ final List<IconData> icons = [
   IconData(name: 'blend', widget: BlendIcon(size: 40)),
   IconData(name: 'blinds', widget: BlindsIcon(size: 40)),
   IconData(name: 'blocks', widget: BlocksIcon(size: 40)),
+  IconData(name: 'bluetooth', widget: BluetoothIcon(size: 40)),
+  IconData(
+    name: 'bluetooth-connected',
+    widget: BluetoothConnectedIcon(size: 40),
+  ),
+  IconData(name: 'bluetooth-off', widget: BluetoothOffIcon(size: 40)),
+  IconData(
+    name: 'bluetooth-searching',
+    widget: BluetoothSearchingIcon(size: 40),
+  ),
   IconData(name: 'binoculars', widget: BinocularsIcon(size: 40)),
   IconData(name: 'battery', widget: BatteryIcon(size: 40)),
   IconData(name: 'battery-charging', widget: BatteryChargingIcon(size: 40)),
