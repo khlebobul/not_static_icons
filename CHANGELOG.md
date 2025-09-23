@@ -1,3 +1,6 @@
+## 0.10.0
+* Added bluetooth animated icons.
+
 ## 0.9.1
 
 #### Improvements
