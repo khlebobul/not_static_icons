@@ -82,11 +82,11 @@ class _BoldPainter extends CustomPainter {
     // Line to H7 (horizontal to x=7)
     boldPath.lineTo(7 * scale, 20 * scale);
 
-    // Arc a1 1 0 0 1-1-1 (bottom left corner)
+    // Arc a1 1 0 0 1-1-1 (bottom left corner) - relative arc -1,-1
     boldPath.arcToPoint(
       Offset(6 * scale, 19 * scale),
       radius: Radius.circular(1 * scale),
-      clockwise: false,
+      clockwise: true,
     );
 
     // Vertical line to V5
@@ -146,11 +146,11 @@ class _BoldPainter extends CustomPainter {
     // Line to H7 (horizontal to x=7)
     animatedPath.lineTo(7 * scale, 20 * scale);
 
-    // Arc a1 1 0 0 1-1-1 (bottom left corner)
+    // Arc a1 1 0 0 1-1-1 (bottom left corner) - relative arc -1,-1
     animatedPath.arcToPoint(
       Offset(6 * scale, 19 * scale),
       radius: Radius.circular(1 * scale),
-      clockwise: false,
+      clockwise: true,
     );
 
     // Vertical line to V5
