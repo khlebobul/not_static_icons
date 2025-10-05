@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-09-23T14:41:02.377742Z UTC.
+Generated on 2025-10-05T05:21:51.005115Z UTC.
 
-## ✅ Existing Icons (181)
+## ✅ Existing Icons (185)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -183,12 +183,12 @@ Generated on 2025-09-23T14:41:02.377742Z UTC.
 - [x] `bluetooth-connected`
 - [x] `bluetooth-off`
 - [x] `bluetooth-searching`
+- [x] `bold`
+- [x] `bolt`
+- [x] `bomb`
+- [x] `bone`
 
-## ➕ New Icons to Add (1449)
-- [ ] `bold`
-- [ ] `bolt`
-- [ ] `bomb`
-- [ ] `bone`
+## ➕ New Icons to Add (1445)
 - [ ] `book`
 - [ ] `book-a`
 - [ ] `book-alert`
