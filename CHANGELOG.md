@@ -1,4 +1,11 @@
+## 0.11.0
+
+#### New icons
+* Added 4 animated icons: `bold`, `bolt`, `bomb`, and `bone`.
+
 ## 0.10.0
+
+#### New icons
 * Added bluetooth animated icons.
 
 ## 0.9.1
