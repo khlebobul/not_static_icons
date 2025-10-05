@@ -172,6 +172,7 @@ export 'icons/bluetooth_off_icon.dart';
 export 'icons/bluetooth_searching_icon.dart';
 export 'icons/bold_icon.dart';
 export 'icons/bolt_icon.dart';
+export 'icons/bomb_icon.dart';
 export 'icons/bell_icon.dart';
 export 'icons/bell_minus_icon.dart';
 export 'icons/bell_off_icon.dart';
