@@ -64,17 +64,22 @@ class _BookTypePainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookOutline(canvas, paint, scale);
-    
+
     // Top horizontal: M16 8V6H8v2
-    canvas.drawLine(Offset(16 * scale, 6 * scale), Offset(8 * scale, 6 * scale), paint);
-    canvas.drawLine(Offset(16 * scale, 6 * scale), Offset(16 * scale, 8 * scale), paint);
-    canvas.drawLine(Offset(8 * scale, 6 * scale), Offset(8 * scale, 8 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(16 * scale, 6 * scale), Offset(8 * scale, 6 * scale), paint);
+    canvas.drawLine(
+        Offset(16 * scale, 6 * scale), Offset(16 * scale, 8 * scale), paint);
+    canvas.drawLine(
+        Offset(8 * scale, 6 * scale), Offset(8 * scale, 8 * scale), paint);
+
     // Vertical stem: M12 6v7
-    canvas.drawLine(Offset(12 * scale, 6 * scale), Offset(12 * scale, 13 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(12 * scale, 6 * scale), Offset(12 * scale, 13 * scale), paint);
+
     // Bottom horizontal: M10 13h4
-    canvas.drawLine(Offset(10 * scale, 13 * scale), Offset(14 * scale, 13 * scale), paint);
+    canvas.drawLine(
+        Offset(10 * scale, 13 * scale), Offset(14 * scale, 13 * scale), paint);
   }
 
   void _drawBookOutline(Canvas canvas, Paint paint, double scale) {
@@ -116,7 +121,7 @@ class _BookTypePainter extends CustomPainter {
     // Phase 1: Top horizontal bar (0.0 - 0.3)
     if (progress > 0.0) {
       final topProgress = (progress / 0.3).clamp(0.0, 1.0);
-      
+
       // Draw top horizontal from center outwards
       final leftEnd = Offset.lerp(
         Offset(12 * scale, 6 * scale),
@@ -128,12 +133,14 @@ class _BookTypePainter extends CustomPainter {
         Offset(16 * scale, 6 * scale),
         topProgress,
       )!;
-      
+
       canvas.drawLine(leftEnd, rightEnd, paint);
-      
+
       // Side verticals
-      canvas.drawLine(Offset(16 * scale, 6 * scale), Offset(16 * scale, 6 * scale + 2 * scale * topProgress), paint);
-      canvas.drawLine(Offset(8 * scale, 6 * scale), Offset(8 * scale, 6 * scale + 2 * scale * topProgress), paint);
+      canvas.drawLine(Offset(16 * scale, 6 * scale),
+          Offset(16 * scale, 6 * scale + 2 * scale * topProgress), paint);
+      canvas.drawLine(Offset(8 * scale, 6 * scale),
+          Offset(8 * scale, 6 * scale + 2 * scale * topProgress), paint);
     }
 
     // Phase 2: Vertical stem (0.3 - 0.7)
@@ -144,14 +151,14 @@ class _BookTypePainter extends CustomPainter {
         Offset(12 * scale, 13 * scale),
         stemProgress,
       )!;
-      
+
       canvas.drawLine(Offset(12 * scale, 6 * scale), stemEnd, paint);
     }
 
     // Phase 3: Bottom horizontal (0.7 - 1.0)
     if (progress > 0.7) {
       final bottomProgress = ((progress - 0.7) / 0.3).clamp(0.0, 1.0);
-      
+
       final leftEnd = Offset.lerp(
         Offset(12 * scale, 13 * scale),
         Offset(10 * scale, 13 * scale),
@@ -162,7 +169,7 @@ class _BookTypePainter extends CustomPainter {
         Offset(14 * scale, 13 * scale),
         bottomProgress,
       )!;
-      
+
       canvas.drawLine(leftEnd, rightEnd, paint);
     }
   }

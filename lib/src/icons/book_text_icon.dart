@@ -64,14 +64,14 @@ class _BookTextPainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookOutline(canvas, paint, scale);
-    
+
     // Top line: M8 7h6
     canvas.drawLine(
       Offset(8 * scale, 7 * scale),
       Offset(14 * scale, 7 * scale),
       paint,
     );
-    
+
     // Bottom line: M8 11h8
     canvas.drawLine(
       Offset(8 * scale, 11 * scale),
@@ -124,7 +124,7 @@ class _BookTextPainter extends CustomPainter {
         Offset(14 * scale, 7 * scale),
         topProgress,
       )!;
-      
+
       canvas.drawLine(
         Offset(8 * scale, 7 * scale),
         topEnd,
@@ -140,7 +140,7 @@ class _BookTextPainter extends CustomPainter {
         Offset(16 * scale, 11 * scale),
         bottomProgress,
       )!;
-      
+
       canvas.drawLine(
         Offset(8 * scale, 11 * scale),
         bottomEnd,

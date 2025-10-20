@@ -64,7 +64,7 @@ class _BookMinusPainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookOutline(canvas, paint, scale);
-    
+
     // Draw complete minus: M9 10h6
     canvas.drawLine(
       Offset(9 * scale, 10 * scale),
@@ -114,11 +114,11 @@ class _BookMinusPainter extends CustomPainter {
     final start = Offset(9 * scale, 10 * scale);
     final end = Offset(15 * scale, 10 * scale);
     final center = Offset(12 * scale, 10 * scale);
-    
+
     // Expand from center to both sides
     final currentStart = Offset.lerp(center, start, progress)!;
     final currentEnd = Offset.lerp(center, end, progress)!;
-    
+
     canvas.drawLine(currentStart, currentEnd, paint);
   }
 

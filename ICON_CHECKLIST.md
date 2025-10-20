@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-10-05T05:21:51.005115Z UTC.
+Generated on 2025-10-20T08:30:38.165988Z UTC.
 
-## ✅ Existing Icons (185)
+## ✅ Existing Icons (206)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -16,7 +16,6 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [x] `alarm-clock-plus`
 - [x] `alarm-smoke`
 - [x] `album`
-- [x] `align-center`
 - [x] `align-center-horizontal`
 - [x] `align-center-vertical`
 - [x] `align-end-horizontal`
@@ -29,9 +28,6 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [x] `align-horizontal-justify-start`
 - [x] `align-horizontal-space-around`
 - [x] `align-horizontal-space-between`
-- [x] `align-justify`
-- [x] `align-left`
-- [x] `align-right`
 - [x] `align-start-horizontal`
 - [x] `align-start-vertical`
 - [x] `align-vertical-distribute-center`
@@ -187,33 +183,33 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [x] `bolt`
 - [x] `bomb`
 - [x] `bone`
+- [x] `book`
+- [x] `book-a`
+- [x] `book-alert`
+- [x] `book-audio`
+- [x] `book-check`
+- [x] `book-copy`
+- [x] `book-dashed`
+- [x] `book-down`
+- [x] `book-headphones`
+- [x] `book-heart`
+- [x] `book-image`
+- [x] `book-key`
+- [x] `book-lock`
+- [x] `book-marked`
+- [x] `book-minus`
+- [x] `book-open`
+- [x] `book-open-check`
+- [x] `book-open-text`
+- [x] `book-plus`
+- [x] `book-text`
+- [x] `book-type`
+- [x] `book-up`
+- [x] `book-up-2`
+- [x] `book-user`
+- [x] `book-x`
 
-## ➕ New Icons to Add (1445)
-- [ ] `book`
-- [ ] `book-a`
-- [ ] `book-alert`
-- [ ] `book-audio`
-- [ ] `book-check`
-- [ ] `book-copy`
-- [ ] `book-dashed`
-- [ ] `book-down`
-- [ ] `book-headphones`
-- [ ] `book-heart`
-- [ ] `book-image`
-- [ ] `book-key`
-- [ ] `book-lock`
-- [ ] `book-marked`
-- [ ] `book-minus`
-- [ ] `book-open`
-- [ ] `book-open-check`
-- [ ] `book-open-text`
-- [ ] `book-plus`
-- [ ] `book-text`
-- [ ] `book-type`
-- [ ] `book-up`
-- [ ] `book-up-2`
-- [ ] `book-user`
-- [ ] `book-x`
+## ➕ New Icons to Add (1432)
 - [ ] `bookmark`
 - [ ] `bookmark-check`
 - [ ] `bookmark-minus`
@@ -341,7 +337,7 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `chevrons-right-left`
 - [ ] `chevrons-up`
 - [ ] `chevrons-up-down`
-- [ ] `chrome`
+- [ ] `chromium`
 - [ ] `church`
 - [ ] `cigarette`
 - [ ] `cigarette-off`
@@ -562,6 +558,7 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `eraser`
 - [ ] `ethernet-port`
 - [ ] `euro`
+- [ ] `ev-charger`
 - [ ] `expand`
 - [ ] `external-link`
 - [ ] `eye`
@@ -800,6 +797,7 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `hotel`
 - [ ] `hourglass`
 - [ ] `house`
+- [ ] `house-heart`
 - [ ] `house-plug`
 - [ ] `house-plus`
 - [ ] `house-wifi`
@@ -818,8 +816,6 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `images`
 - [ ] `import`
 - [ ] `inbox`
-- [ ] `indent-decrease`
-- [ ] `indent-increase`
 - [ ] `indian-rupee`
 - [ ] `infinity`
 - [ ] `info`
@@ -864,7 +860,6 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `leaf`
 - [ ] `leafy-green`
 - [ ] `lectern`
-- [ ] `letter-text`
 - [ ] `library`
 - [ ] `library-big`
 - [ ] `life-buoy`
@@ -879,10 +874,14 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `list`
 - [ ] `list-check`
 - [ ] `list-checks`
+- [ ] `list-chevrons-down-up`
+- [ ] `list-chevrons-up-down`
 - [ ] `list-collapse`
 - [ ] `list-end`
 - [ ] `list-filter`
 - [ ] `list-filter-plus`
+- [ ] `list-indent-decrease`
+- [ ] `list-indent-increase`
 - [ ] `list-minus`
 - [ ] `list-music`
 - [ ] `list-ordered`
@@ -990,6 +989,7 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `minus`
 - [ ] `monitor`
 - [ ] `monitor-check`
+- [ ] `monitor-cloud`
 - [ ] `monitor-cog`
 - [ ] `monitor-dot`
 - [ ] `monitor-down`
@@ -1003,6 +1003,7 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `monitor-x`
 - [ ] `moon`
 - [ ] `moon-star`
+- [ ] `motorbike`
 - [ ] `mountain`
 - [ ] `mountain-snow`
 - [ ] `mouse`
@@ -1076,11 +1077,13 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `panel-left-close`
 - [ ] `panel-left-dashed`
 - [ ] `panel-left-open`
+- [ ] `panel-left-right-dashed`
 - [ ] `panel-right`
 - [ ] `panel-right-close`
 - [ ] `panel-right-dashed`
 - [ ] `panel-right-open`
 - [ ] `panel-top`
+- [ ] `panel-top-bottom-dashed`
 - [ ] `panel-top-close`
 - [ ] `panel-top-dashed`
 - [ ] `panel-top-open`
@@ -1205,6 +1208,7 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `rocket`
 - [ ] `rocking-chair`
 - [ ] `roller-coaster`
+- [ ] `rose`
 - [ ] `rotate-3d`
 - [ ] `rotate-ccw`
 - [ ] `rotate-ccw-key`
@@ -1466,12 +1470,17 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `test-tube`
 - [ ] `test-tube-diagonal`
 - [ ] `test-tubes`
-- [ ] `text`
+- [ ] `text-align-center`
+- [ ] `text-align-end`
+- [ ] `text-align-justify`
+- [ ] `text-align-start`
 - [ ] `text-cursor`
 - [ ] `text-cursor-input`
+- [ ] `text-initial`
 - [ ] `text-quote`
 - [ ] `text-search`
 - [ ] `text-select`
+- [ ] `text-wrap`
 - [ ] `theater`
 - [ ] `thermometer`
 - [ ] `thermometer-snowflake`
@@ -1626,7 +1635,6 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `wine-off`
 - [ ] `workflow`
 - [ ] `worm`
-- [ ] `wrap-text`
 - [ ] `wrench`
 - [ ] `x`
 - [ ] `youtube`
@@ -1635,5 +1643,9 @@ Generated on 2025-10-05T05:21:51.005115Z UTC.
 - [ ] `zoom-in`
 - [ ] `zoom-out`
 
-## ➖ Potentially Removed Icons (0)
+## ➖ Potentially Removed Icons (4)
+- [ ] `align-center`
+- [ ] `align-justify`
+- [ ] `align-left`
+- [ ] `align-right`
 

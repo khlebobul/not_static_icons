@@ -68,20 +68,20 @@ class _BookPainter extends CustomPainter {
 
   void _drawAnimatedBook(Canvas canvas, Paint paint, double scale) {
     final progress = animationValue;
-    
+
     // Subtle scale animation (breathing effect)
     final scaleValue = 1.0 + math.sin(progress * math.pi * 2) * 0.03;
-    
+
     _drawBook(canvas, paint, scale, scaleValue);
   }
 
   void _drawBook(Canvas canvas, Paint paint, double scale, double scaleValue) {
     canvas.save();
-    
+
     // Scale from center
     final centerX = 12 * scale;
     final centerY = 12 * scale;
-    
+
     canvas.translate(centerX, centerY);
     canvas.scale(scaleValue, scaleValue);
     canvas.translate(-centerX, -centerY);

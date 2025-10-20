@@ -65,7 +65,7 @@ class _BookUp2Painter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookOutline(canvas, paint, scale);
-    
+
     // Vertical line: M12 13V7
     canvas.drawLine(
       Offset(12 * scale, 13 * scale),
@@ -126,12 +126,11 @@ class _BookUp2Painter extends CustomPainter {
 
   void _drawAnimatedArrows(Canvas canvas, Paint paint, double scale) {
     final progress = animationValue;
-    
+
     // Sequential animation: upper arrow then lower arrow
-    final upperJump = progress < 0.5
-        ? math.sin(progress * 2 * math.pi) * -1.5 * scale
-        : 0.0;
-    
+    final upperJump =
+        progress < 0.5 ? math.sin(progress * 2 * math.pi) * -1.5 * scale : 0.0;
+
     final lowerJump = progress > 0.4
         ? math.sin((progress - 0.4) / 0.6 * math.pi) * -1.5 * scale
         : 0.0;

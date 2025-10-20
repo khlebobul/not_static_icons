@@ -101,16 +101,16 @@ class _BookKeyPainter extends CustomPainter {
 
   void _drawAnimatedKey(Canvas canvas, Paint paint, double scale) {
     final progress = animationValue;
-    
+
     // Rotation angle: 0 to 45 degrees
     final rotation = progress * math.pi / 4;
-    
+
     _drawKey(canvas, paint, scale, rotation);
   }
 
   void _drawKey(Canvas canvas, Paint paint, double scale, double rotation) {
     canvas.save();
-    
+
     // Rotate around the key circle center (14, 8)
     canvas.translate(14 * scale, 8 * scale);
     canvas.rotate(rotation);

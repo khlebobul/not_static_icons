@@ -103,10 +103,10 @@ class _BookUpPainter extends CustomPainter {
 
   void _drawAnimatedArrow(Canvas canvas, Paint paint, double scale) {
     final progress = animationValue;
-    
+
     // Jump up and return
     final jumpOffset = math.sin(progress * math.pi) * -2 * scale;
-    
+
     _drawArrow(canvas, paint, scale, jumpOffset);
   }
 

@@ -17,7 +17,8 @@ class BookImageIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => 'BookImage: image elements drawing animation';
+  String get animationDescription =>
+      'BookImage: image elements drawing animation';
 
   @override
   CustomPainter createPainter({
@@ -64,14 +65,14 @@ class _BookImagePainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookOutline(canvas, paint, scale);
-    
+
     // Draw circle: cx="10" cy="8" r="2"
     canvas.drawCircle(
       Offset(10 * scale, 8 * scale),
       2 * scale,
       paint,
     );
-    
+
     // Draw image path: m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17
     final imagePath = Path();
     imagePath.moveTo(20 * scale, 13.7 * scale);
@@ -135,9 +136,10 @@ class _BookImagePainter extends CustomPainter {
     }
   }
 
-  void _drawCircleProgress(Canvas canvas, Paint paint, double scale, double progress) {
+  void _drawCircleProgress(
+      Canvas canvas, Paint paint, double scale, double progress) {
     final sweepAngle = progress * 2 * 3.14159;
-    
+
     canvas.drawArc(
       Rect.fromCircle(
         center: Offset(10 * scale, 8 * scale),
@@ -150,7 +152,8 @@ class _BookImagePainter extends CustomPainter {
     );
   }
 
-  void _drawImageLineProgress(Canvas canvas, Paint paint, double scale, double progress) {
+  void _drawImageLineProgress(
+      Canvas canvas, Paint paint, double scale, double progress) {
     // Path: m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17
     final fullPath = Path();
     fullPath.moveTo(20 * scale, 13.7 * scale);

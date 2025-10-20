@@ -64,14 +64,14 @@ class _BookUserPainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookOutline(canvas, paint, scale);
-    
+
     // Circle: cx="12" cy="8" r="2"
     canvas.drawCircle(
       Offset(12 * scale, 8 * scale),
       2 * scale,
       paint,
     );
-    
+
     // Arc: M15 13a3 3 0 1 0-6 0
     final arcPath = Path();
     arcPath.moveTo(15 * scale, 13 * scale);
@@ -124,7 +124,7 @@ class _BookUserPainter extends CustomPainter {
     if (progress > 0.0) {
       final circleProgress = (progress / 0.5).clamp(0.0, 1.0);
       final sweepAngle = circleProgress * 2 * 3.14159;
-      
+
       canvas.drawArc(
         Rect.fromCircle(
           center: Offset(12 * scale, 8 * scale),
@@ -140,7 +140,7 @@ class _BookUserPainter extends CustomPainter {
     // Phase 2: Draw arc (shoulders) (0.5 - 1.0)
     if (progress > 0.5) {
       final arcProgress = ((progress - 0.5) / 0.5).clamp(0.0, 1.0);
-      
+
       final arcPath = Path();
       arcPath.moveTo(15 * scale, 13 * scale);
       arcPath.arcToPoint(

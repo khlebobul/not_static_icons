@@ -103,30 +103,30 @@ class _BookHeartPainter extends CustomPainter {
 
   void _drawAnimatedHeart(Canvas canvas, Paint paint, double scale) {
     final progress = animationValue;
-    
+
     // Pulsing effect: 3 beats
     final pulse = math.sin(progress * math.pi * 6) * 0.15 + 1.0;
-    
+
     _drawHeart(canvas, paint, scale, pulse);
   }
 
   void _drawHeart(Canvas canvas, Paint paint, double scale, double pulseScale) {
     canvas.save();
-    
+
     // Center of heart is approximately at (12, 10)
     final centerX = 12 * scale;
     final centerY = 10 * scale;
-    
+
     canvas.translate(centerX, centerY);
     canvas.scale(pulseScale, pulseScale);
     canvas.translate(-centerX, -centerY);
 
     // Path: M8.62 9.8A2.25 2.25 0 1 1 12 6.836a2.25 2.25 0 1 1 3.38 2.966l-2.626 2.856a.998.998 0 0 1-1.507 0z
     final heartPath = Path();
-    
+
     // Start at M8.62 9.8
     heartPath.moveTo(8.62 * scale, 9.8 * scale);
-    
+
     // A2.25 2.25 0 1 1 12 6.836 (left arc - large arc, clockwise)
     heartPath.arcToPoint(
       Offset(12 * scale, 6.836 * scale),
@@ -134,7 +134,7 @@ class _BookHeartPainter extends CustomPainter {
       clockwise: true,
       largeArc: true,
     );
-    
+
     // a2.25 2.25 0 1 1 3.38 2.966 (right arc - relative, large arc, clockwise)
     heartPath.relativeArcToPoint(
       Offset(3.38 * scale, 2.966 * scale),
@@ -142,17 +142,17 @@ class _BookHeartPainter extends CustomPainter {
       clockwise: true,
       largeArc: true,
     );
-    
+
     // l-2.626 2.856 (line to bottom point)
     heartPath.relativeLineTo(-2.626 * scale, 2.856 * scale);
-    
+
     // a.998.998 0 0 1-1.507 0 (small arc at bottom)
     heartPath.relativeArcToPoint(
       Offset(-1.507 * scale, 0),
       radius: Radius.circular(0.998 * scale),
       clockwise: true,
     );
-    
+
     // z (close path)
     heartPath.close();
 

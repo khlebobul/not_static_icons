@@ -17,7 +17,8 @@ class BookOpenCheckIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => 'BookOpenCheck: checkmark drawing animation';
+  String get animationDescription =>
+      'BookOpenCheck: checkmark drawing animation';
 
   @override
   CustomPainter createPainter({
@@ -64,7 +65,7 @@ class _BookOpenCheckPainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookOutline(canvas, paint, scale);
-    
+
     // Draw complete checkmark: m16 12 2 2 4-4
     final checkPath = Path();
     checkPath.moveTo(16 * scale, 12 * scale);
@@ -83,7 +84,7 @@ class _BookOpenCheckPainter extends CustomPainter {
 
     // Path: M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3
     final bookPath = Path();
-    
+
     // Right side
     bookPath.moveTo(22 * scale, 6 * scale);
     bookPath.lineTo(22 * scale, 4 * scale);
@@ -98,7 +99,7 @@ class _BookOpenCheckPainter extends CustomPainter {
       radius: Radius.circular(4 * scale),
       clockwise: false,
     );
-    
+
     // Left top
     bookPath.arcToPoint(
       Offset(8 * scale, 3 * scale),
@@ -123,7 +124,7 @@ class _BookOpenCheckPainter extends CustomPainter {
       radius: Radius.circular(3 * scale),
       clockwise: true,
     );
-    
+
     // Bottom right
     bookPath.arcToPoint(
       Offset(15 * scale, 18 * scale),
@@ -151,7 +152,7 @@ class _BookOpenCheckPainter extends CustomPainter {
       final start = Offset(16 * scale, 12 * scale);
       final mid = Offset(18 * scale, 14 * scale);
       final current = Offset.lerp(start, mid, firstProgress)!;
-      
+
       canvas.drawLine(start, current, paint);
     }
 
@@ -161,7 +162,7 @@ class _BookOpenCheckPainter extends CustomPainter {
       final mid = Offset(18 * scale, 14 * scale);
       final end = Offset(22 * scale, 10 * scale);
       final current = Offset.lerp(mid, end, secondProgress)!;
-      
+
       canvas.drawLine(mid, current, paint);
     }
   }

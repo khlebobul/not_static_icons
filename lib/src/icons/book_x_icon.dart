@@ -64,14 +64,14 @@ class _BookXPainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookOutline(canvas, paint, scale);
-    
+
     // First diagonal: m14.5 7-5 5
     canvas.drawLine(
       Offset(14.5 * scale, 7 * scale),
       Offset(9.5 * scale, 12 * scale),
       paint,
     );
-    
+
     // Second diagonal: m9.5 7 5 5
     canvas.drawLine(
       Offset(9.5 * scale, 7 * scale),
@@ -122,7 +122,7 @@ class _BookXPainter extends CustomPainter {
       final start = Offset(14.5 * scale, 7 * scale);
       final end = Offset(9.5 * scale, 12 * scale);
       final current = Offset.lerp(start, end, firstProgress)!;
-      
+
       canvas.drawLine(start, current, paint);
     }
 
@@ -132,7 +132,7 @@ class _BookXPainter extends CustomPainter {
       final start = Offset(9.5 * scale, 7 * scale);
       final end = Offset(14.5 * scale, 12 * scale);
       final current = Offset.lerp(start, end, secondProgress)!;
-      
+
       canvas.drawLine(start, current, paint);
     }
   }

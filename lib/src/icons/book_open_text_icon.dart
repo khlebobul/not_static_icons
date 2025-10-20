@@ -17,7 +17,8 @@ class BookOpenTextIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => 'BookOpenText: text lines appearing animation';
+  String get animationDescription =>
+      'BookOpenText: text lines appearing animation';
 
   @override
   CustomPainter createPainter({
@@ -64,15 +65,19 @@ class _BookOpenTextPainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookOutline(canvas, paint, scale);
-    
+
     // Draw all text lines
     // Left page lines
-    canvas.drawLine(Offset(6 * scale, 8 * scale), Offset(8 * scale, 8 * scale), paint);
-    canvas.drawLine(Offset(6 * scale, 12 * scale), Offset(8 * scale, 12 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(6 * scale, 8 * scale), Offset(8 * scale, 8 * scale), paint);
+    canvas.drawLine(
+        Offset(6 * scale, 12 * scale), Offset(8 * scale, 12 * scale), paint);
+
     // Right page lines
-    canvas.drawLine(Offset(16 * scale, 8 * scale), Offset(18 * scale, 8 * scale), paint);
-    canvas.drawLine(Offset(16 * scale, 12 * scale), Offset(18 * scale, 12 * scale), paint);
+    canvas.drawLine(
+        Offset(16 * scale, 8 * scale), Offset(18 * scale, 8 * scale), paint);
+    canvas.drawLine(
+        Offset(16 * scale, 12 * scale), Offset(18 * scale, 12 * scale), paint);
   }
 
   void _drawBookOutline(Canvas canvas, Paint paint, double scale) {
@@ -85,7 +90,7 @@ class _BookOpenTextPainter extends CustomPainter {
 
     // Path: M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z
     final bookPath = Path();
-    
+
     bookPath.moveTo(3 * scale, 18 * scale);
     bookPath.arcToPoint(
       Offset(2 * scale, 17 * scale),
@@ -104,7 +109,7 @@ class _BookOpenTextPainter extends CustomPainter {
       radius: Radius.circular(4 * scale),
       clockwise: true,
     );
-    
+
     bookPath.arcToPoint(
       Offset(16 * scale, 3 * scale),
       radius: Radius.circular(4 * scale),
@@ -128,7 +133,7 @@ class _BookOpenTextPainter extends CustomPainter {
       radius: Radius.circular(3 * scale),
       clockwise: false,
     );
-    
+
     bookPath.arcToPoint(
       Offset(9 * scale, 18 * scale),
       radius: Radius.circular(3 * scale),
@@ -147,7 +152,11 @@ class _BookOpenTextPainter extends CustomPainter {
       {'start': const Offset(6, 8), 'end': const Offset(8, 8), 'time': 0.0},
       {'start': const Offset(16, 8), 'end': const Offset(18, 8), 'time': 0.25},
       {'start': const Offset(6, 12), 'end': const Offset(8, 12), 'time': 0.5},
-      {'start': const Offset(16, 12), 'end': const Offset(18, 12), 'time': 0.75},
+      {
+        'start': const Offset(16, 12),
+        'end': const Offset(18, 12),
+        'time': 0.75
+      },
     ];
 
     for (var line in lines) {
