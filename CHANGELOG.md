@@ -1,3 +1,8 @@
+## 0.12.0
+
+#### New icons
+* Added 24 book-themed icons: `book`, `book-a`, `book-alert`, `book-audio`, `book-check`, `book-copy`, `book-dashed`, `book-down`, `book-headphones`, `book-heart`, `book-image`, `book-key`, `book-lock`, `book-marked`, `book-minus`, `book-open`, `book-open-check`, `book-open-text`, `book-plus`, `book-text`, `book-type`, `book-up`, `book-up-2`, `book-user`, and `book-x`.
+
 ## 0.11.0
 
 #### New icons
