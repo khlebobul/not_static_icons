@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import '../core/animated_svg_icon_base.dart';
-import 'dart:math' as math;
 
-/// Animated Book Open Icon - page opening animation
+/// Animated Book Open Icon - progressive drawing animation
 class BookOpenIcon extends AnimatedSVGIcon {
   const BookOpenIcon({
     super.key,
@@ -18,7 +17,7 @@ class BookOpenIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => 'BookOpen: page opening animation';
+  String get animationDescription => 'BookOpen: progressive drawing animation';
 
   @override
   CustomPainter createPainter({
@@ -63,6 +62,10 @@ class _BookOpenPainter extends CustomPainter {
   }
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
+    _drawBook(canvas, paint, scale);
+  }
+
+  void _drawBook(Canvas canvas, Paint paint, double scale) {
     // Center spine: M12 7v14
     canvas.drawLine(
       Offset(12 * scale, 7 * scale),
@@ -142,21 +145,24 @@ class _BookOpenPainter extends CustomPainter {
       paint,
     );
 
-    // Animate pages opening with slight horizontal spread
-    final spreadOffset = math.sin(progress * math.pi) * 0.5 * scale;
+    // Progressive drawing of left page (0.0 - 0.5)
+    if (progress > 0.0) {
+      final leftProgress = (progress / 0.5).clamp(0.0, 1.0);
+      _drawProgressivePath(
+          _buildLeftPagePath(scale), canvas, paint, leftProgress);
+      _drawProgressivePath(
+          _buildBottomLeftPath(scale), canvas, paint, leftProgress);
+    }
 
-    canvas.save();
-    canvas.translate(-spreadOffset, 0);
-    _drawLeftPage(canvas, paint, scale);
-    canvas.restore();
-
-    canvas.save();
-    canvas.translate(spreadOffset, 0);
-    _drawRightPage(canvas, paint, scale);
-    canvas.restore();
+    // Progressive drawing of right page (0.5 - 1.0)
+    if (progress > 0.5) {
+      final rightProgress = ((progress - 0.5) / 0.5).clamp(0.0, 1.0);
+      _drawProgressivePath(
+          _buildRightPagePath(scale), canvas, paint, rightProgress);
+    }
   }
 
-  void _drawLeftPage(Canvas canvas, Paint paint, double scale) {
+  Path _buildLeftPagePath(double scale) {
     final leftPath = Path();
     leftPath.moveTo(3 * scale, 18 * scale);
     leftPath.arcToPoint(
@@ -176,8 +182,10 @@ class _BookOpenPainter extends CustomPainter {
       radius: Radius.circular(4 * scale),
       clockwise: true,
     );
-    canvas.drawPath(leftPath, paint);
+    return leftPath;
+  }
 
+  Path _buildBottomLeftPath(double scale) {
     final bottomLeftPath = Path();
     bottomLeftPath.moveTo(12 * scale, 21 * scale);
     bottomLeftPath.arcToPoint(
@@ -186,10 +194,10 @@ class _BookOpenPainter extends CustomPainter {
       clockwise: false,
     );
     bottomLeftPath.lineTo(3 * scale, 18 * scale);
-    canvas.drawPath(bottomLeftPath, paint);
+    return bottomLeftPath;
   }
 
-  void _drawRightPage(Canvas canvas, Paint paint, double scale) {
+  Path _buildRightPagePath(double scale) {
     final rightPath = Path();
     rightPath.moveTo(12 * scale, 7 * scale);
     rightPath.arcToPoint(
@@ -215,7 +223,19 @@ class _BookOpenPainter extends CustomPainter {
       radius: Radius.circular(3 * scale),
       clockwise: false,
     );
-    canvas.drawPath(rightPath, paint);
+    return rightPath;
+  }
+
+  void _drawProgressivePath(
+      Path path, Canvas canvas, Paint paint, double progress) {
+    final pathMetrics = path.computeMetrics().toList();
+    for (var pathMetric in pathMetrics) {
+      final extractPath = pathMetric.extractPath(
+        0.0,
+        pathMetric.length * progress,
+      );
+      canvas.drawPath(extractPath, paint);
+    }
   }
 
   @override
