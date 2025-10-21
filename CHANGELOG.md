@@ -1,3 +1,7 @@
+## 0.12.1
+
+* Updated `book-open` and `book-key` icons
+
 ## 0.12.0
 
 #### New icons

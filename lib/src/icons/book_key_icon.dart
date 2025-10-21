@@ -18,7 +18,8 @@ class BookKeyIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => 'BookKey: key turning animation';
+  String get animationDescription =>
+      'BookKey: key progressive drawing animation';
 
   @override
   CustomPainter createPainter({
@@ -65,7 +66,7 @@ class _BookKeyPainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookOutline(canvas, paint, scale);
-    _drawKey(canvas, paint, scale, 0.0);
+    _drawKey(canvas, paint, scale);
   }
 
   void _drawBookOutline(Canvas canvas, Paint paint, double scale) {
@@ -102,20 +103,57 @@ class _BookKeyPainter extends CustomPainter {
   void _drawAnimatedKey(Canvas canvas, Paint paint, double scale) {
     final progress = animationValue;
 
-    // Rotation angle: 0 to 45 degrees
-    final rotation = progress * math.pi / 4;
+    // Phase 1: Draw circle (0.0 - 0.3)
+    if (progress > 0.0) {
+      final circleProgress = (progress / 0.3).clamp(0.0, 1.0);
+      final sweepAngle = circleProgress * 2 * math.pi;
 
-    _drawKey(canvas, paint, scale, rotation);
+      canvas.drawArc(
+        Rect.fromCircle(
+          center: Offset(14 * scale, 8 * scale),
+          radius: 2 * scale,
+        ),
+        -math.pi / 2,
+        sweepAngle,
+        false,
+        paint,
+      );
+    }
+
+    // Phase 2: Draw diagonal line (0.3 - 0.65)
+    if (progress > 0.3) {
+      final diagonalProgress = ((progress - 0.3) / 0.35).clamp(0.0, 1.0);
+      final diagonalEnd = Offset.lerp(
+        Offset(15.5 * scale, 6.5 * scale),
+        Offset(20 * scale, 2 * scale),
+        diagonalProgress,
+      )!;
+
+      canvas.drawLine(
+        Offset(15.5 * scale, 6.5 * scale),
+        diagonalEnd,
+        paint,
+      );
+    }
+
+    // Phase 3: Draw key tooth (0.65 - 1.0)
+    if (progress > 0.65) {
+      final toothProgress = ((progress - 0.65) / 0.35).clamp(0.0, 1.0);
+      final toothEnd = Offset.lerp(
+        Offset(19 * scale, 3 * scale),
+        Offset(20 * scale, 4 * scale),
+        toothProgress,
+      )!;
+
+      canvas.drawLine(
+        Offset(19 * scale, 3 * scale),
+        toothEnd,
+        paint,
+      );
+    }
   }
 
-  void _drawKey(Canvas canvas, Paint paint, double scale, double rotation) {
-    canvas.save();
-
-    // Rotate around the key circle center (14, 8)
-    canvas.translate(14 * scale, 8 * scale);
-    canvas.rotate(rotation);
-    canvas.translate(-14 * scale, -8 * scale);
-
+  void _drawKey(Canvas canvas, Paint paint, double scale) {
     // Circle: cx="14" cy="8" r="2"
     canvas.drawCircle(
       Offset(14 * scale, 8 * scale),
@@ -134,7 +172,6 @@ class _BookKeyPainter extends CustomPainter {
     keyPath.relativeLineTo(-4.5 * scale, 4.5 * scale);
 
     canvas.drawPath(keyPath, paint);
-    canvas.restore();
   }
 
   @override
