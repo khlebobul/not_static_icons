@@ -1,3 +1,8 @@
+## 0.13.0
+
+#### New icons
+* Added bookmark animated icons.
+
 ## 0.12.1
 
 * Updated `book-open` and `book-key` icons

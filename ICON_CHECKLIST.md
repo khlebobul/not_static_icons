@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-10-20T11:25:05.151300Z UTC.
+Generated on 2025-10-28T15:42:32.276716Z UTC.
 
-## ✅ Existing Icons (206)
+## ✅ Existing Icons (211)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -208,13 +208,13 @@ Generated on 2025-10-20T11:25:05.151300Z UTC.
 - [x] `book-up-2`
 - [x] `book-user`
 - [x] `book-x`
+- [x] `bookmark`
+- [x] `bookmark-check`
+- [x] `bookmark-minus`
+- [x] `bookmark-plus`
+- [x] `bookmark-x`
 
-## ➕ New Icons to Add (1432)
-- [ ] `bookmark`
-- [ ] `bookmark-check`
-- [ ] `bookmark-minus`
-- [ ] `bookmark-plus`
-- [ ] `bookmark-x`
+## ➕ New Icons to Add (1427)
 - [ ] `boom-box`
 - [ ] `bot`
 - [ ] `bot-message-square`
