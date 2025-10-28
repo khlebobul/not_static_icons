@@ -64,14 +64,14 @@ class _BookmarkXPainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookmarkOutline(canvas, paint, scale);
-    
+
     // First diagonal: m14.5 7.5-5 5
     canvas.drawLine(
       Offset(14.5 * scale, 7.5 * scale),
       Offset(9.5 * scale, 12.5 * scale),
       paint,
     );
-    
+
     // Second diagonal: m9.5 7.5 5 5
     canvas.drawLine(
       Offset(9.5 * scale, 7.5 * scale),
@@ -83,7 +83,7 @@ class _BookmarkXPainter extends CustomPainter {
   void _drawBookmarkOutline(Canvas canvas, Paint paint, double scale) {
     // Path: m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z
     final bookmarkPath = Path();
-    
+
     bookmarkPath.moveTo(19 * scale, 21 * scale);
     bookmarkPath.relativeLineTo(-7 * scale, -4 * scale);
     bookmarkPath.relativeLineTo(-7 * scale, 4 * scale);
@@ -113,7 +113,7 @@ class _BookmarkXPainter extends CustomPainter {
       final start = Offset(14.5 * scale, 7.5 * scale);
       final end = Offset(9.5 * scale, 12.5 * scale);
       final current = Offset.lerp(start, end, firstProgress)!;
-      
+
       canvas.drawLine(start, current, paint);
     }
 
@@ -123,7 +123,7 @@ class _BookmarkXPainter extends CustomPainter {
       final start = Offset(9.5 * scale, 7.5 * scale);
       final end = Offset(14.5 * scale, 12.5 * scale);
       final current = Offset.lerp(start, end, secondProgress)!;
-      
+
       canvas.drawLine(start, current, paint);
     }
   }

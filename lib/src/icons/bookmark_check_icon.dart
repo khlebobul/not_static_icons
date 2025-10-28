@@ -17,7 +17,8 @@ class BookmarkCheckIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => 'BookmarkCheck: checkmark drawing animation';
+  String get animationDescription =>
+      'BookmarkCheck: checkmark drawing animation';
 
   @override
   CustomPainter createPainter({
@@ -64,7 +65,7 @@ class _BookmarkCheckPainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookmarkOutline(canvas, paint, scale);
-    
+
     // Checkmark: m9 10 2 2 4-4
     final checkPath = Path();
     checkPath.moveTo(9 * scale, 10 * scale);
@@ -76,7 +77,7 @@ class _BookmarkCheckPainter extends CustomPainter {
   void _drawBookmarkOutline(Canvas canvas, Paint paint, double scale) {
     // Path: m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z
     final bookmarkPath = Path();
-    
+
     bookmarkPath.moveTo(19 * scale, 21 * scale);
     bookmarkPath.relativeLineTo(-7 * scale, -4 * scale);
     bookmarkPath.relativeLineTo(-7 * scale, 4 * scale);
@@ -106,7 +107,7 @@ class _BookmarkCheckPainter extends CustomPainter {
       final start = Offset(9 * scale, 10 * scale);
       final end = Offset(11 * scale, 12 * scale);
       final current = Offset.lerp(start, end, firstProgress)!;
-      
+
       canvas.drawLine(start, current, paint);
     }
 
@@ -116,7 +117,7 @@ class _BookmarkCheckPainter extends CustomPainter {
       final start = Offset(11 * scale, 12 * scale);
       final end = Offset(15 * scale, 8 * scale);
       final current = Offset.lerp(start, end, secondProgress)!;
-      
+
       canvas.drawLine(start, current, paint);
     }
   }

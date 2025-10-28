@@ -17,7 +17,8 @@ class BookmarkMinusIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => 'BookmarkMinus: minus line drawing from center';
+  String get animationDescription =>
+      'BookmarkMinus: minus line drawing from center';
 
   @override
   CustomPainter createPainter({
@@ -64,7 +65,7 @@ class _BookmarkMinusPainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookmarkOutline(canvas, paint, scale);
-    
+
     // Minus line: x1="15" x2="9" y1="10" y2="10"
     canvas.drawLine(
       Offset(9 * scale, 10 * scale),
@@ -76,7 +77,7 @@ class _BookmarkMinusPainter extends CustomPainter {
   void _drawBookmarkOutline(Canvas canvas, Paint paint, double scale) {
     // Path: m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z
     final bookmarkPath = Path();
-    
+
     bookmarkPath.moveTo(19 * scale, 21 * scale);
     bookmarkPath.relativeLineTo(-7 * scale, -4 * scale);
     bookmarkPath.relativeLineTo(-7 * scale, 4 * scale);
@@ -99,23 +100,23 @@ class _BookmarkMinusPainter extends CustomPainter {
 
   void _drawAnimatedMinus(Canvas canvas, Paint paint, double scale) {
     final progress = animationValue;
-    
+
     // Draw line from center outwards
     final centerX = 12 * scale;
     final centerY = 10 * scale;
-    
+
     final leftPoint = Offset.lerp(
       Offset(centerX, centerY),
       Offset(9 * scale, 10 * scale),
       progress,
     )!;
-    
+
     final rightPoint = Offset.lerp(
       Offset(centerX, centerY),
       Offset(15 * scale, 10 * scale),
       progress,
     )!;
-    
+
     canvas.drawLine(leftPoint, rightPoint, paint);
   }
 

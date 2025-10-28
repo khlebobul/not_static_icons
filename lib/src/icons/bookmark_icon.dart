@@ -68,10 +68,10 @@ class _BookmarkPainter extends CustomPainter {
 
   void _drawAnimatedBookmark(Canvas canvas, Paint paint, double scale) {
     final progress = animationValue;
-    
+
     // Slide down and return with sine wave
     final slideOffset = math.sin(progress * math.pi) * -1.5 * scale;
-    
+
     _drawBookmark(canvas, paint, scale, slideOffset);
   }
 
@@ -81,7 +81,7 @@ class _BookmarkPainter extends CustomPainter {
 
     // Path: m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z
     final bookmarkPath = Path();
-    
+
     bookmarkPath.moveTo(19 * scale, 21 * scale);
     bookmarkPath.relativeLineTo(-7 * scale, -4 * scale);
     bookmarkPath.relativeLineTo(-7 * scale, 4 * scale);

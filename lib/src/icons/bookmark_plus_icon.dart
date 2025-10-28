@@ -64,14 +64,14 @@ class _BookmarkPlusPainter extends CustomPainter {
 
   void _drawCompleteIcon(Canvas canvas, Paint paint, double scale) {
     _drawBookmarkOutline(canvas, paint, scale);
-    
+
     // Vertical line: x1="12" x2="12" y1="7" y2="13"
     canvas.drawLine(
       Offset(12 * scale, 7 * scale),
       Offset(12 * scale, 13 * scale),
       paint,
     );
-    
+
     // Horizontal line: x1="15" x2="9" y1="10" y2="10"
     canvas.drawLine(
       Offset(9 * scale, 10 * scale),
@@ -83,7 +83,7 @@ class _BookmarkPlusPainter extends CustomPainter {
   void _drawBookmarkOutline(Canvas canvas, Paint paint, double scale) {
     // Path: m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z
     final bookmarkPath = Path();
-    
+
     bookmarkPath.moveTo(19 * scale, 21 * scale);
     bookmarkPath.relativeLineTo(-7 * scale, -4 * scale);
     bookmarkPath.relativeLineTo(-7 * scale, 4 * scale);
@@ -106,45 +106,45 @@ class _BookmarkPlusPainter extends CustomPainter {
 
   void _drawAnimatedPlus(Canvas canvas, Paint paint, double scale) {
     final progress = animationValue;
-    
+
     final centerX = 12 * scale;
     final centerY = 10 * scale;
 
     // Phase 1: Vertical line expands from center (0.0 - 0.5)
     if (progress > 0.0) {
       final verticalProgress = (progress / 0.5).clamp(0.0, 1.0);
-      
+
       final topPoint = Offset.lerp(
         Offset(centerX, centerY),
         Offset(12 * scale, 7 * scale),
         verticalProgress,
       )!;
-      
+
       final bottomPoint = Offset.lerp(
         Offset(centerX, centerY),
         Offset(12 * scale, 13 * scale),
         verticalProgress,
       )!;
-      
+
       canvas.drawLine(topPoint, bottomPoint, paint);
     }
 
     // Phase 2: Horizontal line expands from center (0.5 - 1.0)
     if (progress > 0.5) {
       final horizontalProgress = ((progress - 0.5) / 0.5).clamp(0.0, 1.0);
-      
+
       final leftPoint = Offset.lerp(
         Offset(centerX, centerY),
         Offset(9 * scale, 10 * scale),
         horizontalProgress,
       )!;
-      
+
       final rightPoint = Offset.lerp(
         Offset(centerX, centerY),
         Offset(15 * scale, 10 * scale),
         horizontalProgress,
       )!;
-      
+
       canvas.drawLine(leftPoint, rightPoint, paint);
     }
   }
