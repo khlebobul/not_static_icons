@@ -25,7 +25,8 @@ class BracketsIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BracketsPainter(
+  }) =>
+      _BracketsPainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -68,18 +69,19 @@ class _BracketsPainter extends CustomPainter {
 
   void _drawAnimated(Canvas canvas, Paint paint, double scale) {
     final t = animationValue;
-    
+
     // Brackets open (move outward)
     final spread = math.sin(t * math.pi) * 1.5 * scale;
-    
+
     _drawLeftBracket(canvas, paint, scale, -spread);
     _drawRightBracket(canvas, paint, scale, spread);
   }
 
-  void _drawLeftBracket(Canvas canvas, Paint paint, double scale, double xOffset) {
+  void _drawLeftBracket(
+      Canvas canvas, Paint paint, double scale, double xOffset) {
     canvas.save();
     canvas.translate(xOffset, 0);
-    
+
     // M8 21H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h3
     final leftPath = Path()
       ..moveTo(8 * scale, 21 * scale)
@@ -97,14 +99,15 @@ class _BracketsPainter extends CustomPainter {
       )
       ..lineTo(8 * scale, 3 * scale);
     canvas.drawPath(leftPath, paint);
-    
+
     canvas.restore();
   }
 
-  void _drawRightBracket(Canvas canvas, Paint paint, double scale, double xOffset) {
+  void _drawRightBracket(
+      Canvas canvas, Paint paint, double scale, double xOffset) {
     canvas.save();
     canvas.translate(xOffset, 0);
-    
+
     // M16 3h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-3
     final rightPath = Path()
       ..moveTo(16 * scale, 3 * scale)
@@ -122,7 +125,7 @@ class _BracketsPainter extends CustomPainter {
       )
       ..lineTo(16 * scale, 21 * scale);
     canvas.drawPath(rightPath, paint);
-    
+
     canvas.restore();
   }
 

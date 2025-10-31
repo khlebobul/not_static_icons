@@ -25,7 +25,8 @@ class BotIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BotPainter(
+  }) =>
+      _BotPainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -115,8 +116,10 @@ class _BotPainter extends CustomPainter {
 
   void _drawSideConnectors(Canvas canvas, Paint paint, double scale) {
     // M2 14h2, M20 14h2
-    canvas.drawLine(Offset(2 * scale, 14 * scale), Offset(4 * scale, 14 * scale), paint);
-    canvas.drawLine(Offset(20 * scale, 14 * scale), Offset(22 * scale, 14 * scale), paint);
+    canvas.drawLine(
+        Offset(2 * scale, 14 * scale), Offset(4 * scale, 14 * scale), paint);
+    canvas.drawLine(
+        Offset(20 * scale, 14 * scale), Offset(22 * scale, 14 * scale), paint);
   }
 
   void _drawEye(Canvas canvas, Paint paint, double scale, double x) {

@@ -25,7 +25,8 @@ class BoxIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BoxPainter(
+  }) =>
+      _BoxPainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -67,7 +68,7 @@ class _BoxPainter extends CustomPainter {
 
   void _drawAnimated(Canvas canvas, Paint paint, double scale) {
     final t = animationValue;
-    
+
     // Entire box lifts up
     final lift = math.sin(t * math.pi) * -2 * scale;
     _drawBox(canvas, paint, scale, lift);
@@ -76,7 +77,7 @@ class _BoxPainter extends CustomPainter {
   void _drawBox(Canvas canvas, Paint paint, double scale, double yOffset) {
     canvas.save();
     canvas.translate(0, yOffset);
-    
+
     // M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z
     final box = Path()
       ..moveTo(21 * scale, 8 * scale)
@@ -117,21 +118,21 @@ class _BoxPainter extends CustomPainter {
       )
       ..close();
     canvas.drawPath(box, paint);
-    
+
     // m3.3 7 8.7 5 8.7-5
     final topLine = Path()
       ..moveTo(3.3 * scale, 7 * scale)
       ..relativeLineTo(8.7 * scale, 5 * scale)
       ..relativeLineTo(8.7 * scale, -5 * scale);
     canvas.drawPath(topLine, paint);
-    
+
     // M12 22V12
     canvas.drawLine(
       Offset(12 * scale, 22 * scale),
       Offset(12 * scale, 12 * scale),
       paint,
     );
-    
+
     canvas.restore();
   }
 

@@ -25,7 +25,8 @@ class BoxesIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BoxesPainter(
+  }) =>
+      _BoxesPainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -69,12 +70,12 @@ class _BoxesPainter extends CustomPainter {
 
   void _drawAnimated(Canvas canvas, Paint paint, double scale) {
     final t = animationValue;
-    
+
     // Each box pulses with phase offset
     final leftAlpha = 0.5 + 0.5 * math.sin(2 * math.pi * t);
     final rightAlpha = 0.5 + 0.5 * math.sin(2 * math.pi * t + 2 * math.pi / 3);
     final topAlpha = 0.5 + 0.5 * math.sin(2 * math.pi * t + 4 * math.pi / 3);
-    
+
     _drawLeftBox(canvas, paint, scale, leftAlpha);
     _drawRightBox(canvas, paint, scale, rightAlpha);
     _drawTopBox(canvas, paint, scale, topAlpha);
@@ -115,9 +116,12 @@ class _BoxesPainter extends CustomPainter {
       ..close();
     canvas.drawPath(p1, boxPaint);
 
-    canvas.drawLine(Offset(7 * scale, 16.5 * scale), Offset(2.26 * scale, 13.65 * scale), boxPaint);
-    canvas.drawLine(Offset(7 * scale, 16.5 * scale), Offset(12 * scale, 13.5 * scale), boxPaint);
-    canvas.drawLine(Offset(7 * scale, 16.5 * scale), Offset(7 * scale, 21.67 * scale), boxPaint);
+    canvas.drawLine(Offset(7 * scale, 16.5 * scale),
+        Offset(2.26 * scale, 13.65 * scale), boxPaint);
+    canvas.drawLine(Offset(7 * scale, 16.5 * scale),
+        Offset(12 * scale, 13.5 * scale), boxPaint);
+    canvas.drawLine(Offset(7 * scale, 16.5 * scale),
+        Offset(7 * scale, 21.67 * scale), boxPaint);
   }
 
   void _drawRightBox(Canvas canvas, Paint paint, double scale, double alpha) {
@@ -155,9 +159,12 @@ class _BoxesPainter extends CustomPainter {
       ..close();
     canvas.drawPath(p2, boxPaint);
 
-    canvas.drawLine(Offset(17 * scale, 16.5 * scale), Offset(12 * scale, 13.5 * scale), boxPaint);
-    canvas.drawLine(Offset(17 * scale, 16.5 * scale), Offset(21.74 * scale, 13.65 * scale), boxPaint);
-    canvas.drawLine(Offset(17 * scale, 16.5 * scale), Offset(17 * scale, 21.67 * scale), boxPaint);
+    canvas.drawLine(Offset(17 * scale, 16.5 * scale),
+        Offset(12 * scale, 13.5 * scale), boxPaint);
+    canvas.drawLine(Offset(17 * scale, 16.5 * scale),
+        Offset(21.74 * scale, 13.65 * scale), boxPaint);
+    canvas.drawLine(Offset(17 * scale, 16.5 * scale),
+        Offset(17 * scale, 21.67 * scale), boxPaint);
   }
 
   void _drawTopBox(Canvas canvas, Paint paint, double scale, double alpha) {
@@ -195,9 +202,12 @@ class _BoxesPainter extends CustomPainter {
       ..close();
     canvas.drawPath(p3, boxPaint);
 
-    canvas.drawLine(Offset(12 * scale, 8 * scale), Offset(7.26 * scale, 5.15 * scale), boxPaint);
-    canvas.drawLine(Offset(12 * scale, 8 * scale), Offset(16.74 * scale, 5.15 * scale), boxPaint);
-    canvas.drawLine(Offset(12 * scale, 13.5 * scale), Offset(12 * scale, 8 * scale), boxPaint);
+    canvas.drawLine(Offset(12 * scale, 8 * scale),
+        Offset(7.26 * scale, 5.15 * scale), boxPaint);
+    canvas.drawLine(Offset(12 * scale, 8 * scale),
+        Offset(16.74 * scale, 5.15 * scale), boxPaint);
+    canvas.drawLine(Offset(12 * scale, 13.5 * scale),
+        Offset(12 * scale, 8 * scale), boxPaint);
   }
 
   @override

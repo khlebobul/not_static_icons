@@ -24,7 +24,8 @@ class BotOffIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BotOffPainter(
+  }) =>
+      _BotOffPainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -89,8 +90,10 @@ class _BotOffPainter extends CustomPainter {
     canvas.drawPath(rightTop, paint);
 
     // Side connectors: M2 14h2 and M20 14h2
-    canvas.drawLine(Offset(2 * scale, 14 * scale), Offset(4 * scale, 14 * scale), paint);
-    canvas.drawLine(Offset(20 * scale, 14 * scale), Offset(22 * scale, 14 * scale), paint);
+    canvas.drawLine(
+        Offset(2 * scale, 14 * scale), Offset(4 * scale, 14 * scale), paint);
+    canvas.drawLine(
+        Offset(20 * scale, 14 * scale), Offset(22 * scale, 14 * scale), paint);
 
     // Main body: M8 8 H6 a2 2 0 0 0 -2 2 v8 a2 2 0 0 0 2 2 h12 a2 2 0 0 0 1.414 -.586
     final bodyPath = Path()
@@ -116,7 +119,8 @@ class _BotOffPainter extends CustomPainter {
     canvas.drawPath(bodyPath, paint);
 
     // Eye: M9 13v2  (only left eye in the SVG)
-    canvas.drawLine(Offset(9 * scale, 13 * scale), Offset(9 * scale, 15 * scale), paint);
+    canvas.drawLine(
+        Offset(9 * scale, 13 * scale), Offset(9 * scale, 15 * scale), paint);
 
     // Small top: M9.67 4 H12 v2.33
     final top = Path()

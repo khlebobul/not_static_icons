@@ -24,7 +24,8 @@ class BrainIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BrainPainter(
+  }) =>
+      _BrainPainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -160,15 +161,15 @@ class _BrainPainter extends CustomPainter {
 
   void _drawProgressiveBrain(Canvas canvas, Paint paint, double scale) {
     final t = animationValue;
-    
+
     // Build all brain paths in order
     final allPaths = <Path>[];
-    
+
     // 1. Center vertical line: M12 18V5
     allPaths.add(Path()
       ..moveTo(12 * scale, 18 * scale)
       ..lineTo(12 * scale, 5 * scale));
-    
+
     // 2. Inner arcs: M15 13 a4.17 4.17 0 0 1 -3 -4 a4.17 4.17 0 0 1 -3 4
     allPaths.add(Path()
       ..moveTo(15 * scale, 13 * scale)
@@ -182,7 +183,7 @@ class _BrainPainter extends CustomPainter {
         radius: Radius.circular(4.17 * scale),
         clockwise: true,
       ));
-    
+
     // 3. Top curves: M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5
     allPaths.add(Path()
       ..moveTo(17.598 * scale, 6.5 * scale)
@@ -198,7 +199,7 @@ class _BrainPainter extends CustomPainter {
         largeArc: true,
         clockwise: false,
       ));
-    
+
     // 4. Right top: M17.997 5.125a4 4 0 0 1 2.526 5.77
     allPaths.add(Path()
       ..moveTo(17.997 * scale, 5.125 * scale)
@@ -207,7 +208,7 @@ class _BrainPainter extends CustomPainter {
         radius: Radius.circular(4 * scale),
         clockwise: true,
       ));
-    
+
     // 5. Right middle: M18 18a4 4 0 0 0 2-7.464
     allPaths.add(Path()
       ..moveTo(18 * scale, 18 * scale)
@@ -216,7 +217,7 @@ class _BrainPainter extends CustomPainter {
         radius: Radius.circular(4 * scale),
         clockwise: false,
       ));
-    
+
     // 6. Bottom: M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517
     allPaths.add(Path()
       ..moveTo(19.967 * scale, 17.483 * scale)
@@ -232,7 +233,7 @@ class _BrainPainter extends CustomPainter {
         largeArc: true,
         clockwise: true,
       ));
-    
+
     // 7. Left middle: M6 18a4 4 0 0 1-2-7.464
     allPaths.add(Path()
       ..moveTo(6 * scale, 18 * scale)
@@ -241,7 +242,7 @@ class _BrainPainter extends CustomPainter {
         radius: Radius.circular(4 * scale),
         clockwise: true,
       ));
-    
+
     // 8. Left top: M6.003 5.125a4 4 0 0 0-2.526 5.77
     allPaths.add(Path()
       ..moveTo(6.003 * scale, 5.125 * scale)
@@ -250,7 +251,7 @@ class _BrainPainter extends CustomPainter {
         radius: Radius.circular(4 * scale),
         clockwise: false,
       ));
-    
+
     // Calculate total length
     double totalLength = 0;
     final pathLengths = <double>[];
@@ -262,18 +263,18 @@ class _BrainPainter extends CustomPainter {
       pathLengths.add(pathLen);
       totalLength += pathLen;
     }
-    
+
     // Draw progressively
     final drawLength = totalLength * t;
     double currentLength = 0;
-    
+
     for (int i = 0; i < allPaths.length; i++) {
       if (currentLength >= drawLength) break;
-      
+
       final path = allPaths[i];
       final pathLen = pathLengths[i];
       final remaining = drawLength - currentLength;
-      
+
       if (remaining >= pathLen) {
         // Draw entire path
         canvas.drawPath(path, paint);
@@ -299,4 +300,3 @@ class _BrainPainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
-

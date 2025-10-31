@@ -77,7 +77,6 @@ class _BowArrowPainter extends CustomPainter {
     _drawArrow(canvas, paint, scale, offset);
   }
 
-
   void _drawBowStrings(Canvas canvas, Paint paint, double scale) {
     // M18.575 11.082a13 13 0 0 1 1.048 9.027 1.17 1.17 0 0 1-1.914.597L14 17
     final rightString = Path()

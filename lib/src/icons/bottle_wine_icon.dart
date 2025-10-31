@@ -24,7 +24,8 @@ class BottleWineIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BottleWinePainter(
+  }) =>
+      _BottleWinePainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -123,11 +124,11 @@ class _BottleWinePainter extends CustomPainter {
 
   void _drawAnimatedLabel(Canvas canvas, Paint paint, double scale) {
     final t = animationValue;
-    
+
     // Progressive drawing of label
     final labelPath = _buildLabelPath(scale);
     final pathMetrics = labelPath.computeMetrics().toList();
-    
+
     if (pathMetrics.isNotEmpty) {
       for (var pathMetric in pathMetrics) {
         final extractedPath = pathMetric.extractPath(

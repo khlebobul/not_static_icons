@@ -18,14 +18,16 @@ class BoomBoxIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => 'BoomBox: pulsing speakers and blinking buttons';
+  String get animationDescription =>
+      'BoomBox: pulsing speakers and blinking buttons';
 
   @override
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BoomBoxPainter(
+  }) =>
+      _BoomBoxPainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -140,12 +142,14 @@ class _BoomBoxPainter extends CustomPainter {
     canvas.drawRRect(rrect, paint);
   }
 
-  void _drawSpeaker(Canvas canvas, Paint paint, double scale, Offset center, double pulseScale) {
+  void _drawSpeaker(Canvas canvas, Paint paint, double scale, Offset center,
+      double pulseScale) {
     canvas.save();
     canvas.translate(center.dx * scale, center.dy * scale);
     canvas.scale(pulseScale, pulseScale);
     canvas.translate(-center.dx * scale, -center.dy * scale);
-    canvas.drawCircle(Offset(center.dx * scale, center.dy * scale), 2 * scale, paint);
+    canvas.drawCircle(
+        Offset(center.dx * scale, center.dy * scale), 2 * scale, paint);
     canvas.restore();
   }
 

@@ -25,7 +25,8 @@ class BracesIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BracesPainter(
+  }) =>
+      _BracesPainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -68,18 +69,19 @@ class _BracesPainter extends CustomPainter {
 
   void _drawAnimated(Canvas canvas, Paint paint, double scale) {
     final t = animationValue;
-    
+
     // Braces open (move outward)
     final spread = math.sin(t * math.pi) * 1.5 * scale;
-    
+
     _drawLeftBrace(canvas, paint, scale, -spread);
     _drawRightBrace(canvas, paint, scale, spread);
   }
 
-  void _drawLeftBrace(Canvas canvas, Paint paint, double scale, double xOffset) {
+  void _drawLeftBrace(
+      Canvas canvas, Paint paint, double scale, double xOffset) {
     canvas.save();
     canvas.translate(xOffset, 0);
-    
+
     // M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1
     final leftPath = Path()
       ..moveTo(8 * scale, 3 * scale)
@@ -108,14 +110,15 @@ class _BracesPainter extends CustomPainter {
       )
       ..lineTo(8 * scale, 21 * scale);
     canvas.drawPath(leftPath, paint);
-    
+
     canvas.restore();
   }
 
-  void _drawRightBrace(Canvas canvas, Paint paint, double scale, double xOffset) {
+  void _drawRightBrace(
+      Canvas canvas, Paint paint, double scale, double xOffset) {
     canvas.save();
     canvas.translate(xOffset, 0);
-    
+
     // M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1
     final rightPath = Path()
       ..moveTo(16 * scale, 21 * scale)
@@ -144,7 +147,7 @@ class _BracesPainter extends CustomPainter {
       )
       ..lineTo(16 * scale, 3 * scale);
     canvas.drawPath(rightPath, paint);
-    
+
     canvas.restore();
   }
 

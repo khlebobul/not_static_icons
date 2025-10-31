@@ -90,17 +90,17 @@ class _BluetoothOffPainter extends CustomPainter {
     final alpha = 0.3 + pulse * 0.7;
 
     final animatedPaint = Paint()
-        ..color = color.withValues(alpha: alpha)
+      ..color = color.withValues(alpha: alpha)
       ..strokeWidth = strokeWidth
-        ..strokeCap = StrokeCap.round
-        ..style = PaintingStyle.stroke;
+      ..strokeCap = StrokeCap.round
+      ..style = PaintingStyle.stroke;
 
     // Draw blinking diagonal line
-      canvas.drawLine(
-        Offset(2 * scale, 2 * scale),
-        Offset(22 * scale, 22 * scale),
+    canvas.drawLine(
+      Offset(2 * scale, 2 * scale),
+      Offset(22 * scale, 22 * scale),
       animatedPaint,
-      );
+    );
   }
 
   @override
