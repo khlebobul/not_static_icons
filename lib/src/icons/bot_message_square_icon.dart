@@ -84,7 +84,7 @@ class _BotMessageSquarePainter extends CustomPainter {
     // Eyes blink
     final eyeAlpha = 0.35 + 0.65 * (0.5 + 0.5 * math.sin(2 * math.pi * t));
     final eyePaint = Paint()
-      ..color = color.withOpacity(eyeAlpha)
+      ..color = color.withValues(alpha: eyeAlpha)
       ..strokeWidth = paint.strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round

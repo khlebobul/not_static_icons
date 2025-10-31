@@ -107,7 +107,7 @@ class _BoomBoxPainter extends CustomPainter {
 
   void _drawTopButtons(Canvas canvas, Paint paint, double scale, double alpha) {
     final buttonPaint = Paint()
-      ..color = color.withOpacity(alpha)
+      ..color = color.withValues(alpha: alpha)
       ..strokeWidth = paint.strokeWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
