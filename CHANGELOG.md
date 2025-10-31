@@ -1,3 +1,8 @@
+## 0.14.0
+
+#### New icons
+* Added 13 new animated icons including `boom box`, `bot`, `bot message square`, `bot off`, `bow arrow`, `bottle wine`, `box`, `boxes`, `braces`, `brackets`, `brain`, `brain circuit`, and `brain cog`.
+
 ## 0.13.0
 
 #### New icons

@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-10-28T15:42:32.276716Z UTC.
+Generated on 2025-10-31T21:01:54.252029Z UTC.
 
-## ✅ Existing Icons (211)
+## ✅ Existing Icons (224)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -213,21 +213,21 @@ Generated on 2025-10-28T15:42:32.276716Z UTC.
 - [x] `bookmark-minus`
 - [x] `bookmark-plus`
 - [x] `bookmark-x`
+- [x] `boom-box`
+- [x] `bot`
+- [x] `bot-message-square`
+- [x] `bot-off`
+- [x] `bottle-wine`
+- [x] `bow-arrow`
+- [x] `box`
+- [x] `boxes`
+- [x] `braces`
+- [x] `brackets`
+- [x] `brain`
+- [x] `brain-circuit`
+- [x] `brain-cog`
 
-## ➕ New Icons to Add (1427)
-- [ ] `boom-box`
-- [ ] `bot`
-- [ ] `bot-message-square`
-- [ ] `bot-off`
-- [ ] `bottle-wine`
-- [ ] `bow-arrow`
-- [ ] `box`
-- [ ] `boxes`
-- [ ] `braces`
-- [ ] `brackets`
-- [ ] `brain`
-- [ ] `brain-circuit`
-- [ ] `brain-cog`
+## ➕ New Icons to Add (1414)
 - [ ] `brick-wall`
 - [ ] `brick-wall-fire`
 - [ ] `brick-wall-shield`
