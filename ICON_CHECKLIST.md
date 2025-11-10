@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-10-31T21:01:54.252029Z UTC.
+Generated on 2025-11-10T04:49:47.235759Z UTC.
 
-## ✅ Existing Icons (224)
+## ✅ Existing Icons (227)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -226,11 +226,11 @@ Generated on 2025-10-31T21:01:54.252029Z UTC.
 - [x] `brain`
 - [x] `brain-circuit`
 - [x] `brain-cog`
+- [x] `brick-wall`
+- [x] `brick-wall-fire`
+- [x] `brick-wall-shield`
 
-## ➕ New Icons to Add (1414)
-- [ ] `brick-wall`
-- [ ] `brick-wall-fire`
-- [ ] `brick-wall-shield`
+## ➕ New Icons to Add (1411)
 - [ ] `briefcase`
 - [ ] `briefcase-business`
 - [ ] `briefcase-conveyor-belt`
