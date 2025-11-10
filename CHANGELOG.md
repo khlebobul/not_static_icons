@@ -1,3 +1,8 @@
+## 0.15.0
+
+#### New icons
+* Added brick wall animated icons.
+
 ## 0.14.0
 
 #### New icons
