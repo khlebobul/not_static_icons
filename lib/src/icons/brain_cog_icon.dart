@@ -243,5 +243,3 @@ class _BrainCogPainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
-
-

@@ -24,7 +24,8 @@ class BrickWallIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BrickWallPainter(
+  }) =>
+      _BrickWallPainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -149,7 +150,7 @@ class _BrickWallPainter extends CustomPainter {
     // Vertical lines appear last (0.66-1.0)
     if (t > 0.66) {
       final vertT = ((t - 0.66) / 0.34).clamp(0.0, 1.0);
-      
+
       // Bottom section verticals
       // M16 15v6
       final v1Height = 6 * vertT;
@@ -196,5 +197,3 @@ class _BrickWallPainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
-
-

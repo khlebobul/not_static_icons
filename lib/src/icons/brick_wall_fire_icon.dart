@@ -25,7 +25,8 @@ class BrickWallFireIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BrickWallFirePainter(
+  }) =>
+      _BrickWallFirePainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -129,9 +130,12 @@ class _BrickWallFirePainter extends CustomPainter {
     final firePath = Path()
       ..moveTo(17 * scale, 9 * scale)
       ..cubicTo(
-        18 * scale, 12 * scale,
-        19.5 * scale, 12.5 * scale,
-        20.5 * scale, 13.5 * scale,
+        18 * scale,
+        12 * scale,
+        19.5 * scale,
+        12.5 * scale,
+        20.5 * scale,
+        13.5 * scale,
       )
       ..arcToPoint(
         Offset(22 * scale, 17 * scale),
@@ -145,9 +149,12 @@ class _BrickWallFirePainter extends CustomPainter {
         clockwise: true,
       )
       ..cubicTo(
-        12 * scale, 16.7 * scale,
-        12 * scale, 16.4 * scale,
-        12.1 * scale, 16.1 * scale,
+        12 * scale,
+        16.7 * scale,
+        12 * scale,
+        16.4 * scale,
+        12.1 * scale,
+        16.1 * scale,
       )
       ..arcToPoint(
         Offset(15.4 * scale, 14.1 * scale),
@@ -156,9 +163,12 @@ class _BrickWallFirePainter extends CustomPainter {
         clockwise: false,
       )
       ..cubicTo(
-        13 * scale, 11.5 * scale,
-        16 * scale, 9 * scale,
-        17 * scale, 9 * scale,
+        13 * scale,
+        11.5 * scale,
+        16 * scale,
+        9 * scale,
+        17 * scale,
+        9 * scale,
       );
     canvas.drawPath(firePath, paint);
   }
@@ -180,4 +190,3 @@ class _BrickWallFirePainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
-

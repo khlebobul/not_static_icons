@@ -18,14 +18,16 @@ class BrickWallShieldIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => 'Brick Wall Shield: shield pulsing size animation';
+  String get animationDescription =>
+      'Brick Wall Shield: shield pulsing size animation';
 
   @override
   CustomPainter createPainter({
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _BrickWallShieldPainter(
+  }) =>
+      _BrickWallShieldPainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -136,9 +138,12 @@ class _BrickWallShieldPainter extends CustomPainter {
     final shieldPath = Path()
       ..moveTo(22 * scale, 17.5 * scale)
       ..cubicTo(
-        22 * scale, 20 * scale,
-        20.25 * scale, 21.25 * scale,
-        18.17 * scale, 21.974 * scale,
+        22 * scale,
+        20 * scale,
+        20.25 * scale,
+        21.25 * scale,
+        18.17 * scale,
+        21.974 * scale,
       )
       ..arcToPoint(
         Offset(17.835 * scale, 21.969 * scale),
@@ -146,9 +151,12 @@ class _BrickWallShieldPainter extends CustomPainter {
         clockwise: true,
       )
       ..cubicTo(
-        15.75 * scale, 21.249 * scale,
-        14 * scale, 19.999 * scale,
-        14 * scale, 17.5 * scale,
+        15.75 * scale,
+        21.249 * scale,
+        14 * scale,
+        19.999 * scale,
+        14 * scale,
+        17.5 * scale,
       )
       ..lineTo(14 * scale, 14 * scale)
       ..arcToPoint(
@@ -157,9 +165,12 @@ class _BrickWallShieldPainter extends CustomPainter {
         clockwise: true,
       )
       ..cubicTo(
-        15.5 * scale, 13.501 * scale,
-        16.75 * scale, 12.901 * scale,
-        17.62 * scale, 12.141 * scale,
+        15.5 * scale,
+        13.501 * scale,
+        16.75 * scale,
+        12.901 * scale,
+        17.62 * scale,
+        12.141 * scale,
       )
       ..arcToPoint(
         Offset(18.38 * scale, 12.14 * scale),
@@ -167,9 +178,12 @@ class _BrickWallShieldPainter extends CustomPainter {
         clockwise: true,
       )
       ..cubicTo(
-        19.255 * scale, 12.905 * scale,
-        20.5 * scale, 13.5 * scale,
-        21.5 * scale, 13.5 * scale,
+        19.255 * scale,
+        12.905 * scale,
+        20.5 * scale,
+        13.5 * scale,
+        21.5 * scale,
+        13.5 * scale,
       )
       ..arcToPoint(
         Offset(22 * scale, 14 * scale),
@@ -202,4 +216,3 @@ class _BrickWallShieldPainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
-
