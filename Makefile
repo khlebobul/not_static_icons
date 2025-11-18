@@ -1,5 +1,9 @@
 .PHONY: check-icons bump-version update-lock help
 
+# Helper targets for contributors.
+# Use `make help` to see available commands. Override `LUCIDE_REPO_PATH`
+# if the Lucide repository lives elsewhere (defaults to ../lucide).
+
 # Variables
 LUCIDE_REPO_PATH ?= ../lucide
 PUBSPEC_PATH = not_static_icons_app/pubspec.yaml

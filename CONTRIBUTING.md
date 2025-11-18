@@ -71,6 +71,21 @@ not_static_icons/
    flutter run
    ```
 
+### Using the Makefile
+
+For convenience, the repository root includes a `Makefile` that wraps common maintenance tasks:
+
+- `make check-icons` — runs `tool/check_lucide_icons.dart` to ensure every Lucide SVG has a matching animated icon implementation.
+- `make bump-version` — increments both the patch and build numbers in `not_static_icons_app/pubspec.yaml`.
+- `make update-lock` — runs `flutter pub get` inside `not_static_icons_app` to refresh `pubspec.lock`.
+- `make all` — executes the three commands above sequentially (icon check → version bump → lock update).
+
+All targets accept the optional `LUCIDE_REPO_PATH` variable (defaults to `../lucide`) for the icon check script:
+
+```bash
+make check-icons LUCIDE_REPO_PATH=/absolute/path/to/lucide
+```
+
 ## Adding a New Icon
 
 > [!IMPORTANT]
