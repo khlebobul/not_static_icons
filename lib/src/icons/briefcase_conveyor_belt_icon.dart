@@ -57,7 +57,7 @@ class BriefcaseConveyorBeltPainter extends CustomPainter {
 
     // Briefcase (Body + Handle) - Bouncing
     // Handle: M8 16V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v12
-    
+
     final handlePath = Path();
     handlePath.moveTo(8 * scale, (16 - bounceOffset) * scale);
     handlePath.lineTo(8 * scale, (4 - bounceOffset) * scale);
@@ -77,22 +77,28 @@ class BriefcaseConveyorBeltPainter extends CustomPainter {
 
     // Body: rect x="4" y="6" width="16" height="10" rx="2"
     final rect = RRect.fromRectAndRadius(
-      Rect.fromLTWH(4 * scale, (6 - bounceOffset) * scale, 16 * scale, 10 * scale),
+      Rect.fromLTWH(
+          4 * scale, (6 - bounceOffset) * scale, 16 * scale, 10 * scale),
       Radius.circular(2 * scale),
     );
     canvas.drawRRect(rect, paint);
 
     // Conveyor Belt - Static
     // M10 20v2
-    canvas.drawLine(Offset(10 * scale, 20 * scale), Offset(10 * scale, 22 * scale), paint);
+    canvas.drawLine(
+        Offset(10 * scale, 20 * scale), Offset(10 * scale, 22 * scale), paint);
     // M14 20v2
-    canvas.drawLine(Offset(14 * scale, 20 * scale), Offset(14 * scale, 22 * scale), paint);
+    canvas.drawLine(
+        Offset(14 * scale, 20 * scale), Offset(14 * scale, 22 * scale), paint);
     // M18 20v2
-    canvas.drawLine(Offset(18 * scale, 20 * scale), Offset(18 * scale, 22 * scale), paint);
+    canvas.drawLine(
+        Offset(18 * scale, 20 * scale), Offset(18 * scale, 22 * scale), paint);
     // M21 20H3 -> Line from 21,20 to 3,20
-    canvas.drawLine(Offset(21 * scale, 20 * scale), Offset(3 * scale, 20 * scale), paint);
+    canvas.drawLine(
+        Offset(21 * scale, 20 * scale), Offset(3 * scale, 20 * scale), paint);
     // M6 20v2
-    canvas.drawLine(Offset(6 * scale, 20 * scale), Offset(6 * scale, 22 * scale), paint);
+    canvas.drawLine(
+        Offset(6 * scale, 20 * scale), Offset(6 * scale, 22 * scale), paint);
   }
 
   @override

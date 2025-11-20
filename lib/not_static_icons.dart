@@ -1,4 +1,4 @@
-library not_static_icons;
+library;
 
 // Export the base class for animated SVG icons
 export 'src/core/animated_svg_icon_base.dart';

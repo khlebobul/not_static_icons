@@ -61,23 +61,23 @@ class BriefcasePainter extends CustomPainter {
     // We apply handleOffset to Y coordinates to move it up
     path.moveTo(16 * scale, (20 - handleOffset) * scale);
     path.lineTo(16 * scale, (4 - handleOffset) * scale);
-    
+
     path.arcToPoint(
       Offset(14 * scale, (2 - handleOffset) * scale),
       radius: Radius.circular(2 * scale),
       clockwise: false,
     );
-    
+
     path.lineTo(10 * scale, (2 - handleOffset) * scale);
-    
+
     path.arcToPoint(
       Offset(8 * scale, (4 - handleOffset) * scale),
       radius: Radius.circular(2 * scale),
       clockwise: false,
     );
-    
+
     path.lineTo(8 * scale, (20 - handleOffset) * scale);
-    
+
     canvas.drawPath(path, paint);
 
     // Body

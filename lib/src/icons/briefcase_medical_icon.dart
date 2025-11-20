@@ -83,16 +83,20 @@ class BriefcaseMedicalPainter extends CustomPainter {
     canvas.drawRRect(rect, paint);
 
     // Cross V: M12 11v4
-    canvas.drawLine(Offset(12 * scale, 11 * scale), Offset(12 * scale, 15 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(12 * scale, 11 * scale), Offset(12 * scale, 15 * scale), paint);
+
     // Cross H: M14 13h-4
-    canvas.drawLine(Offset(14 * scale, 13 * scale), Offset(10 * scale, 13 * scale), paint);
+    canvas.drawLine(
+        Offset(14 * scale, 13 * scale), Offset(10 * scale, 13 * scale), paint);
 
     // Side R: M18 6v14
-    canvas.drawLine(Offset(18 * scale, 6 * scale), Offset(18 * scale, 20 * scale), paint);
+    canvas.drawLine(
+        Offset(18 * scale, 6 * scale), Offset(18 * scale, 20 * scale), paint);
 
     // Side L: M6 6v14
-    canvas.drawLine(Offset(6 * scale, 6 * scale), Offset(6 * scale, 20 * scale), paint);
+    canvas.drawLine(
+        Offset(6 * scale, 6 * scale), Offset(6 * scale, 20 * scale), paint);
   }
 
   @override
