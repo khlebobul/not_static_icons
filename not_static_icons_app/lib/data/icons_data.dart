@@ -312,6 +312,19 @@ final List<IconData> icons = [
   IconData(name: 'brick-wall', widget: BrickWallIcon(size: 40)),
   IconData(name: 'brick-wall-fire', widget: BrickWallFireIcon(size: 40)),
   IconData(name: 'brick-wall-shield', widget: BrickWallShieldIcon(size: 40)),
+  IconData(name: 'briefcase', widget: BriefcaseIcon(size: 40)),
+  IconData(
+    name: 'briefcase-business',
+    widget: BriefcaseBusinessIcon(size: 40),
+  ),
+  IconData(
+    name: 'briefcase-conveyor-belt',
+    widget: BriefcaseConveyorBeltIcon(size: 40),
+  ),
+  IconData(
+    name: 'briefcase-medical',
+    widget: BriefcaseMedicalIcon(size: 40),
+  ),
   IconData(name: 'boom-box', widget: BoomBoxIcon(size: 40)),
   IconData(name: 'bot', widget: BotIcon(size: 40)),
   IconData(name: 'bot-message-square', widget: BotMessageSquareIcon(size: 40)),
