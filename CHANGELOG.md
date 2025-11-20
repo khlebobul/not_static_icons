@@ -1,3 +1,8 @@
+## 0.16.0
+
+#### New icons
+* Added briefcase animated icons.
+
 ## 0.15.0
 
 #### New icons
