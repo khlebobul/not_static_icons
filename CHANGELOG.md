@@ -1,3 +1,8 @@
+## 0.17.0
+
+#### New icons
+* Added 4 new animated icons: `bring-to-front`, `brush`, `bubbles`, and `brush-cleaning`.
+
 ## 0.16.0
 
 #### New icons
