@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 import '../core/animated_svg_icon_base.dart';
 
-/// Animated Bubbles Icon - Bubbles float up
+/// Animated Bubbles Icon - Bubbles float up and return
 class BubblesIcon extends AnimatedSVGIcon {
   const BubblesIcon({
     super.key,
@@ -17,7 +18,7 @@ class BubblesIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Bubbles float up";
+  String get animationDescription => "Bubbles float up and return";
 
   @override
   CustomPainter createPainter({
@@ -55,21 +56,18 @@ class BubblesPainter extends CustomPainter {
 
     final scale = size.width / 24.0;
 
+    // Use sine wave for up and down motion: 0 -> 1 -> 0
+    final moveValue = math.sin(animationValue * math.pi);
+
     // Helper to draw bubble with offset
     void drawBubble(
         double cx, double cy, double r, double offsetFactor, double phase) {
-      // Calculate offset based on animationValue
+      
       // Move up: y decreases
-      // We want them to wobble a bit too maybe?
-      // Simple float up:
+      double yOffset = -moveValue * 4.0 * offsetFactor;
 
-      // Use sine wave for continuous floating feel if looped, but here it's 0->1
-      // Let's make them move up by some amount and reset or just move up.
-
-      double yOffset = -animationValue * 4.0 * offsetFactor;
-
-      // Scale effect: grow slightly as they go up?
-      double scaleEffect = 1.0 + animationValue * 0.1 * offsetFactor;
+      // Scale effect: grow slightly as they go up
+      double scaleEffect = 1.0 + moveValue * 0.1 * offsetFactor;
 
       canvas.save();
       canvas.translate(cx * scale, (cy + yOffset) * scale);
@@ -88,8 +86,8 @@ class BubblesPainter extends CustomPainter {
     // Reflection on big bubble
     // M7.2 14.8a2 2 0 0 1 2 2
     // This should move with the big bubble
-    double bigBubbleYOffset = -animationValue * 4.0 * 1.0;
-    double bigBubbleScale = 1.0 + animationValue * 0.1;
+    double bigBubbleYOffset = -moveValue * 4.0 * 1.0;
+    double bigBubbleScale = 1.0 + moveValue * 0.1;
 
     canvas.save();
     canvas.translate(7.5 * scale, (16.5 + bigBubbleYOffset) * scale);
