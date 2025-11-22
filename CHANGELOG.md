@@ -1,3 +1,8 @@
+## 0.19.0
+
+#### New icons
+* Added 4 new animated icons: `building`, `building-2`, `bus`, and `bus-front`.
+
 ## 0.18.0
 
 #### New icons

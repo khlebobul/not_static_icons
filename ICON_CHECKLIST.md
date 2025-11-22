@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-11-22T06:03:42.452536Z UTC.
+Generated on 2025-11-22T21:21:55.009912Z UTC.
 
-## ✅ Existing Icons (238)
+## ✅ Existing Icons (242)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -240,12 +240,12 @@ Generated on 2025-11-22T06:03:42.452536Z UTC.
 - [x] `bug`
 - [x] `bug-off`
 - [x] `bug-play`
+- [x] `building`
+- [x] `building-2`
+- [x] `bus`
+- [x] `bus-front`
 
-## ➕ New Icons to Add (1400)
-- [ ] `building`
-- [ ] `building-2`
-- [ ] `bus`
-- [ ] `bus-front`
+## ➕ New Icons to Add (1396)
 - [ ] `cable`
 - [ ] `cable-car`
 - [ ] `cake`
