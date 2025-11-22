@@ -62,7 +62,6 @@ class BubblesPainter extends CustomPainter {
     // Helper to draw bubble with offset
     void drawBubble(
         double cx, double cy, double r, double offsetFactor, double phase) {
-      
       // Move up: y decreases
       double yOffset = -moveValue * 4.0 * offsetFactor;
 
