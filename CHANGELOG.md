@@ -1,3 +1,8 @@
+## 0.18.0
+
+#### New icons
+* Added bugs animated icons.
+
 ## 0.17.0
 
 #### New icons

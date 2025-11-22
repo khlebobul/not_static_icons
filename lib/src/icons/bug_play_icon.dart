@@ -25,14 +25,15 @@ class BugPlayIcon extends AnimatedSVGIcon {
     required double strokeWidth,
   }) {
     // Pulse: 0 -> 1 -> 0
-    final pulse = 2 * animationValue * (1 - animationValue); // Parabolic 0->0.5->0
+    final pulse =
+        2 * animationValue * (1 - animationValue); // Parabolic 0->0.5->0
     // Actually we want 0 -> 1 -> 0 scale effect?
     // Or just scale up and down?
     // Let's do scale 1.0 -> 1.2 -> 1.0
-    
+
     return BugPlayPainter(
       color: color,
-      scaleValue: pulse * 0.3, // Max 0.15 scale increase? 
+      scaleValue: pulse * 0.3, // Max 0.15 scale increase?
       // Let's do 0 -> 1 for animationValue.
       // We want continuous pulse maybe?
       // Just one pulse on hover is fine.
@@ -64,7 +65,7 @@ class BugPlayPainter extends CustomPainter {
     final scale = size.width / 24.0;
 
     // Bug Parts (Static)
-    
+
     // M10 19.655A6 6 0 0 1 6 14v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 3.97
     final bodyPath = Path();
     bodyPath.moveTo(10 * scale, 19.655 * scale);
@@ -89,9 +90,11 @@ class BugPlayPainter extends CustomPainter {
 
     // Antennae & Head
     // M14.12 3.88 16 2
-    canvas.drawLine(Offset(14.12 * scale, 3.88 * scale), Offset(16 * scale, 2 * scale), paint);
+    canvas.drawLine(Offset(14.12 * scale, 3.88 * scale),
+        Offset(16 * scale, 2 * scale), paint);
     // m8 2 1.88 1.88 -> M8 2 L9.88 3.88
-    canvas.drawLine(Offset(8 * scale, 2 * scale), Offset(9.88 * scale, 3.88 * scale), paint);
+    canvas.drawLine(Offset(8 * scale, 2 * scale),
+        Offset(9.88 * scale, 3.88 * scale), paint);
     // M9 7.13V6a3 3 0 1 1 6 0v1.13
     final headPath = Path();
     headPath.moveTo(9 * scale, 7.13 * scale);
@@ -137,8 +140,8 @@ class BugPlayPainter extends CustomPainter {
     canvas.drawPath(tlLeg, paint);
 
     // M6 13H2
-    canvas.drawLine(Offset(6 * scale, 13 * scale), Offset(2 * scale, 13 * scale), paint);
-
+    canvas.drawLine(
+        Offset(6 * scale, 13 * scale), Offset(2 * scale, 13 * scale), paint);
 
     // Play Triangle (Animated)
     // M14 15.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997a1 1 0 0 1-1.517-.86z
@@ -146,7 +149,7 @@ class BugPlayPainter extends CustomPainter {
     // x range: 14 to 14+1.517+4.997 ~ 20.5
     // y range: 15 to 15+some ~ 19
     // Bounding box center roughly (17, 17)
-    
+
     final centerX = 17.0 * scale;
     final centerY = 17.0 * scale;
 
@@ -175,7 +178,8 @@ class BugPlayPainter extends CustomPainter {
     playPath.lineTo(15.517 * scale, 21.856 * scale);
     // a1 1 0 0 1-1.517-.86z
     playPath.arcToPoint(
-      Offset(14 * scale, 20.996 * scale), // Close enough to vertical line start?
+      Offset(
+          14 * scale, 20.996 * scale), // Close enough to vertical line start?
       radius: Radius.circular(1 * scale),
       clockwise: true,
     );

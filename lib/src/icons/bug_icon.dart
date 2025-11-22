@@ -71,8 +71,9 @@ class BugPainter extends CustomPainter {
 
     // Body
     // M12 20v-9
-    canvas.drawLine(Offset(12 * scale, 20 * scale), Offset(12 * scale, 11 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(12 * scale, 20 * scale), Offset(12 * scale, 11 * scale), paint);
+
     // M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z
     final bodyPath = Path();
     bodyPath.moveTo(14 * scale, 7 * scale);
@@ -112,12 +113,14 @@ class BugPainter extends CustomPainter {
 
     // Antennae
     // M14.12 3.88 16 2
-    canvas.drawLine(Offset(14.12 * scale, 3.88 * scale), Offset(16 * scale, 2 * scale), paint);
+    canvas.drawLine(Offset(14.12 * scale, 3.88 * scale),
+        Offset(16 * scale, 2 * scale), paint);
     // m8 2 1.88 1.88 -> M8 2 L9.88 3.88
-    canvas.drawLine(Offset(8 * scale, 2 * scale), Offset(9.88 * scale, 3.88 * scale), paint);
+    canvas.drawLine(Offset(8 * scale, 2 * scale),
+        Offset(9.88 * scale, 3.88 * scale), paint);
 
     // Legs (Animated)
-    
+
     // Top Right: M21 5a4 4 0 0 1-3.55 3.97
     // Pivot roughly at (17.45, 9) - where it connects to body? Body is width 12 at y=11..14.
     // Body at y=9 is narrower.

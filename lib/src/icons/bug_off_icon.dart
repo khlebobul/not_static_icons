@@ -56,19 +56,22 @@ class BugOffPainter extends CustomPainter {
     final scale = size.width / 24.0;
 
     // Shake animation for bug parts AND slash
-    final shake = math.sin(animationValue * math.pi * 3) * 1.0 * scale; // 3 shakes
+    final shake =
+        math.sin(animationValue * math.pi * 3) * 1.0 * scale; // 3 shakes
 
     canvas.save();
     // Apply shake to everything
     canvas.translate(shake, 0);
 
     // Bug Parts (Static relative to shake)
-    
+
     // M12 20v-8
-    canvas.drawLine(Offset(12 * scale, 20 * scale), Offset(12 * scale, 12 * scale), paint);
+    canvas.drawLine(
+        Offset(12 * scale, 20 * scale), Offset(12 * scale, 12 * scale), paint);
 
     // M14.12 3.88 16 2 (Right Antenna)
-    canvas.drawLine(Offset(14.12 * scale, 3.88 * scale), Offset(16 * scale, 2 * scale), paint);
+    canvas.drawLine(Offset(14.12 * scale, 3.88 * scale),
+        Offset(16 * scale, 2 * scale), paint);
 
     // M15 7.13V6a3 3 0 0 0-5.14-2.1L8 2 (Head + Left Antenna part?)
     // SVG: M15 7.13V6a3 3 0 0 0-5.14-2.1L8 2
@@ -107,7 +110,8 @@ class BugOffPainter extends CustomPainter {
     canvas.drawPath(trLeg, paint);
 
     // M22 13h-3.34 (Middle Right Leg)
-    canvas.drawLine(Offset(22 * scale, 13 * scale), Offset(18.66 * scale, 13 * scale), paint);
+    canvas.drawLine(Offset(22 * scale, 13 * scale),
+        Offset(18.66 * scale, 13 * scale), paint);
 
     // M3 21a4 4 0 0 1 3.81-4 (Bottom Left Leg)
     final blLeg = Path();
@@ -120,7 +124,8 @@ class BugOffPainter extends CustomPainter {
     canvas.drawPath(blLeg, paint);
 
     // M6 13H2 (Middle Left Leg)
-    canvas.drawLine(Offset(6 * scale, 13 * scale), Offset(2 * scale, 13 * scale), paint);
+    canvas.drawLine(
+        Offset(6 * scale, 13 * scale), Offset(2 * scale, 13 * scale), paint);
 
     // M7.7 7.7A4 4 0 0 0 6 11v3a6 6 0 0 0 11.13 3.13 (Left Body + Bottom Body)
     final bodyLeft = Path();
@@ -140,7 +145,8 @@ class BugOffPainter extends CustomPainter {
 
     // Slash (Static, but shakes with bug)
     // m2 2 20 20
-    canvas.drawLine(Offset(2 * scale, 2 * scale), Offset(22 * scale, 22 * scale), paint);
+    canvas.drawLine(
+        Offset(2 * scale, 2 * scale), Offset(22 * scale, 22 * scale), paint);
 
     canvas.restore(); // End shake
   }
