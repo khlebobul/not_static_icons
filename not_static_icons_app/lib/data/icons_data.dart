@@ -369,4 +369,7 @@ final List<IconData> icons = [
   IconData(name: 'beer', widget: BeerIcon(size: 40)),
   IconData(name: 'beer-off', widget: BeerOffIcon(size: 40)),
   IconData(name: 'beef', widget: BeefIcon(size: 40)),
+  IconData(name: 'bug', widget: BugIcon(size: 40)),
+  IconData(name: 'bug-off', widget: BugOffIcon(size: 40)),
+  IconData(name: 'bug-play', widget: BugPlayIcon(size: 40)),
 ];
