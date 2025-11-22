@@ -1,3 +1,6 @@
+## 0.19.1
+* Removed duplicate icons
+
 ## 0.19.0
 
 #### New icons
