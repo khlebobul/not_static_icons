@@ -1,3 +1,8 @@
+## 0.20.0
+
+#### New icons
+* Added 4 new animated icons: `cable`, `cable-car`, `cake`, `cake-slice` and `calculator`.
+
 ## 0.19.1
 * Removed duplicate icons
 

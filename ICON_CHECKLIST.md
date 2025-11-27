@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-11-22T21:43:54.872228Z UTC.
+Generated on 2025-11-27T04:50:39.019098Z UTC.
 
-## ✅ Existing Icons (242)
+## ✅ Existing Icons (247)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -244,13 +244,13 @@ Generated on 2025-11-22T21:43:54.872228Z UTC.
 - [x] `building-2`
 - [x] `bus`
 - [x] `bus-front`
+- [x] `cable`
+- [x] `cable-car`
+- [x] `cake`
+- [x] `cake-slice`
+- [x] `calculator`
 
-## ➕ New Icons to Add (1396)
-- [ ] `cable`
-- [ ] `cable-car`
-- [ ] `cake`
-- [ ] `cake-slice`
-- [ ] `calculator`
+## ➕ New Icons to Add (1391)
 - [ ] `calendar`
 - [ ] `calendar-1`
 - [ ] `calendar-arrow-down`
