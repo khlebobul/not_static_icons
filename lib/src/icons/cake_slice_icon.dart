@@ -59,14 +59,17 @@ class CakeSlicePainter extends CustomPainter {
 
     // Cake Body (Static)
     // M16 13H3
-    canvas.drawLine(Offset(16 * scale, 13 * scale), Offset(3 * scale, 13 * scale), paint);
+    canvas.drawLine(
+        Offset(16 * scale, 13 * scale), Offset(3 * scale, 13 * scale), paint);
     // M16 17H3
-    canvas.drawLine(Offset(16 * scale, 17 * scale), Offset(3 * scale, 17 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(16 * scale, 17 * scale), Offset(3 * scale, 17 * scale), paint);
+
     // m7.2 7.9-3.388 2.5A2 2 0 0 0 3 12.01V20a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-8.654c0-2-2.44-6.026-6.44-8.026a1 1 0 0 0-1.082.057L10.4 5.6
     final bodyPath = Path();
     bodyPath.moveTo(7.2 * scale, 7.9 * scale);
-    bodyPath.lineTo(3.812 * scale, 10.4 * scale); // 7.2-3.388=3.812, 7.9+2.5=10.4
+    bodyPath.lineTo(
+        3.812 * scale, 10.4 * scale); // 7.2-3.388=3.812, 7.9+2.5=10.4
     bodyPath.arcToPoint(
       Offset(3 * scale, 12.01 * scale),
       radius: Radius.circular(2 * scale),
@@ -91,9 +94,12 @@ class CakeSlicePainter extends CustomPainter {
     // cp2: 18.56, 5.32
     // end: 14.56, 3.32
     bodyPath.cubicTo(
-      21 * scale, 9.346 * scale,
-      18.56 * scale, 5.32 * scale,
-      14.56 * scale, 3.32 * scale,
+      21 * scale,
+      9.346 * scale,
+      18.56 * scale,
+      5.32 * scale,
+      14.56 * scale,
+      3.32 * scale,
     );
     // a1 1 0 0 0-1.082.057
     bodyPath.arcToPoint(
@@ -103,7 +109,7 @@ class CakeSlicePainter extends CustomPainter {
     );
     // L10.4 5.6
     bodyPath.lineTo(10.4 * scale, 5.6 * scale);
-    
+
     canvas.drawPath(bodyPath, paint);
 
     // Cherry (Bouncing)

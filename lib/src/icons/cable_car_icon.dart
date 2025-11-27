@@ -29,10 +29,10 @@ class CableCarIcon extends AnimatedSVGIcon {
     // Cable goes from (2,9) to (22,4).
     // Vector: (20, -5).
     // Let's oscillate around the center.
-    
+
     final sine = math.sin(animationValue * math.pi * 2);
     final offsetFactor = sine * 0.2; // Move 20% of the way
-    
+
     return CableCarPainter(
       color: color,
       offsetFactor: offsetFactor,
@@ -65,20 +65,23 @@ class CableCarPainter extends CustomPainter {
 
     // Static Cable
     // m2 9 20-5 -> M2 9 L22 4
-    canvas.drawLine(Offset(2 * scale, 9 * scale), Offset(22 * scale, 4 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(2 * scale, 9 * scale), Offset(22 * scale, 4 * scale), paint);
+
     // Static dots on cable?
     // M10 3h.01
-    canvas.drawLine(Offset(10 * scale, 3 * scale), Offset(10.01 * scale, 3 * scale), paint);
+    canvas.drawLine(
+        Offset(10 * scale, 3 * scale), Offset(10.01 * scale, 3 * scale), paint);
     // M14 2h.01
-    canvas.drawLine(Offset(14 * scale, 2 * scale), Offset(14.01 * scale, 2 * scale), paint);
+    canvas.drawLine(
+        Offset(14 * scale, 2 * scale), Offset(14.01 * scale, 2 * scale), paint);
 
     // Moving Car
     // Calculate translation based on cable slope
     // Cable vector (20, -5).
     final dx = 20.0 * offsetFactor;
     final dy = -5.0 * offsetFactor;
-    
+
     canvas.save();
     canvas.translate(dx * scale, dy * scale);
 
@@ -89,7 +92,8 @@ class CableCarPainter extends CustomPainter {
     // Start (2,9). Slope -5/20 = -0.25.
     // y = 9 + (x-2)*(-0.25).
     // At x=12: y = 9 + 10*(-0.25) = 9 - 2.5 = 6.5. Correct.
-    canvas.drawLine(Offset(12 * scale, 12 * scale), Offset(12 * scale, 6.5 * scale), paint);
+    canvas.drawLine(
+        Offset(12 * scale, 12 * scale), Offset(12 * scale, 6.5 * scale), paint);
 
     // Car Body
     // rect width="16" height="10" x="4" y="12" rx="3"
@@ -101,11 +105,14 @@ class CableCarPainter extends CustomPainter {
 
     // Windows/Details
     // M9 12v5
-    canvas.drawLine(Offset(9 * scale, 12 * scale), Offset(9 * scale, 17 * scale), paint);
+    canvas.drawLine(
+        Offset(9 * scale, 12 * scale), Offset(9 * scale, 17 * scale), paint);
     // M15 12v5
-    canvas.drawLine(Offset(15 * scale, 12 * scale), Offset(15 * scale, 17 * scale), paint);
+    canvas.drawLine(
+        Offset(15 * scale, 12 * scale), Offset(15 * scale, 17 * scale), paint);
     // M4 17h16
-    canvas.drawLine(Offset(4 * scale, 17 * scale), Offset(20 * scale, 17 * scale), paint);
+    canvas.drawLine(
+        Offset(4 * scale, 17 * scale), Offset(20 * scale, 17 * scale), paint);
 
     canvas.restore();
   }
