@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import '../core/animated_svg_icon_base.dart';
 
-/// Animated Calendar Plus Icon - Plus sign draws itself
-class CalendarPlusIcon extends AnimatedSVGIcon {
-  const CalendarPlusIcon({
+/// Animated Calendar X Icon - X draws itself
+class CalendarXIcon extends AnimatedSVGIcon {
+  const CalendarXIcon({
     super.key,
     super.size = 40.0,
     super.color,
@@ -16,7 +16,7 @@ class CalendarPlusIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Plus sign draws itself";
+  String get animationDescription => "X draws itself";
 
   @override
   CustomPainter createPainter({
@@ -24,7 +24,7 @@ class CalendarPlusIcon extends AnimatedSVGIcon {
     required double animationValue,
     required double strokeWidth,
   }) {
-    return CalendarPlusPainter(
+    return CalendarXPainter(
       color: color,
       progress: animationValue,
       strokeWidth: strokeWidth,
@@ -32,12 +32,12 @@ class CalendarPlusIcon extends AnimatedSVGIcon {
   }
 }
 
-class CalendarPlusPainter extends CustomPainter {
+class CalendarXPainter extends CustomPainter {
   final Color color;
   final double progress;
   final double strokeWidth;
 
-  CalendarPlusPainter({
+  CalendarXPainter({
     required this.color,
     required this.progress,
     required this.strokeWidth,
@@ -55,17 +55,12 @@ class CalendarPlusPainter extends CustomPainter {
     final scale = size.width / 24.0;
 
     // Calendar Body (Static)
-    // M21 12.598V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8.5
-    final bodyPath = Path();
-    bodyPath.moveTo(21 * scale, 12.598 * scale);
-    bodyPath.lineTo(21 * scale, 6 * scale);
-    bodyPath.arcToPoint(Offset(19 * scale, 4 * scale), radius: Radius.circular(2 * scale), clockwise: false);
-    bodyPath.lineTo(5 * scale, 4 * scale);
-    bodyPath.arcToPoint(Offset(3 * scale, 6 * scale), radius: Radius.circular(2 * scale), clockwise: false);
-    bodyPath.lineTo(3 * scale, 20 * scale);
-    bodyPath.arcToPoint(Offset(5 * scale, 22 * scale), radius: Radius.circular(2 * scale), clockwise: false);
-    bodyPath.lineTo(13.5 * scale, 22 * scale);
-    canvas.drawPath(bodyPath, paint);
+    // rect width="18" height="18" x="3" y="4" rx="2"
+    final rect = RRect.fromRectAndRadius(
+      Rect.fromLTWH(3 * scale, 4 * scale, 18 * scale, 18 * scale),
+      Radius.circular(2 * scale),
+    );
+    canvas.drawRRect(rect, paint);
 
     // Top Lines
     // M16 2v4
@@ -77,15 +72,15 @@ class CalendarPlusPainter extends CustomPainter {
     // M3 10h18
     canvas.drawLine(Offset(3 * scale, 10 * scale), Offset(21 * scale, 10 * scale), paint);
 
-    // Plus (Animated)
-    // M16 19h6
-    // M19 16v6
+    // X (Animated)
+    // m14 14-4 4
+    // m10 14 4 4
     
-    final plusPath = Path();
-    plusPath.moveTo(16 * scale, 19 * scale);
-    plusPath.lineTo(22 * scale, 19 * scale);
-    plusPath.moveTo(19 * scale, 16 * scale);
-    plusPath.lineTo(19 * scale, 22 * scale);
+    final xPath = Path();
+    xPath.moveTo(14 * scale, 14 * scale);
+    xPath.lineTo(10 * scale, 18 * scale);
+    xPath.moveTo(10 * scale, 14 * scale);
+    xPath.lineTo(14 * scale, 18 * scale);
     
     double drawProgress = progress;
     if (progress == 0) {
@@ -93,7 +88,7 @@ class CalendarPlusPainter extends CustomPainter {
     }
     
     if (drawProgress > 0) {
-      final pathMetrics = plusPath.computeMetrics();
+      final pathMetrics = xPath.computeMetrics();
       for (final metric in pathMetrics) {
         final extractPath = metric.extractPath(0.0, metric.length * drawProgress);
         canvas.drawPath(extractPath, paint);
@@ -102,7 +97,7 @@ class CalendarPlusPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(CalendarPlusPainter oldDelegate) {
+  bool shouldRepaint(CalendarXPainter oldDelegate) {
     return oldDelegate.color != color ||
         oldDelegate.progress != progress ||
         oldDelegate.strokeWidth != strokeWidth;

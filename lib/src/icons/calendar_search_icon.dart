@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 import '../core/animated_svg_icon_base.dart';
 
-/// Animated Calendar Plus Icon - Plus sign draws itself
-class CalendarPlusIcon extends AnimatedSVGIcon {
-  const CalendarPlusIcon({
+/// Animated Calendar Search Icon - Magnifying glass pulses
+class CalendarSearchIcon extends AnimatedSVGIcon {
+  const CalendarSearchIcon({
     super.key,
     super.size = 40.0,
     super.color,
@@ -16,7 +17,7 @@ class CalendarPlusIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Plus sign draws itself";
+  String get animationDescription => "Magnifying glass pulses";
 
   @override
   CustomPainter createPainter({
@@ -24,22 +25,26 @@ class CalendarPlusIcon extends AnimatedSVGIcon {
     required double animationValue,
     required double strokeWidth,
   }) {
-    return CalendarPlusPainter(
+    // Pulse: 1.0 -> 1.2 -> 1.0
+    final pulse = math.sin(animationValue * math.pi);
+    final scale = 1.0 + pulse * 0.2;
+    
+    return CalendarSearchPainter(
       color: color,
-      progress: animationValue,
+      searchScale: scale,
       strokeWidth: strokeWidth,
     );
   }
 }
 
-class CalendarPlusPainter extends CustomPainter {
+class CalendarSearchPainter extends CustomPainter {
   final Color color;
-  final double progress;
+  final double searchScale;
   final double strokeWidth;
 
-  CalendarPlusPainter({
+  CalendarSearchPainter({
     required this.color,
-    required this.progress,
+    required this.searchScale,
     required this.strokeWidth,
   });
 
@@ -55,16 +60,16 @@ class CalendarPlusPainter extends CustomPainter {
     final scale = size.width / 24.0;
 
     // Calendar Body (Static)
-    // M21 12.598V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8.5
+    // M21 11.75V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.25
     final bodyPath = Path();
-    bodyPath.moveTo(21 * scale, 12.598 * scale);
+    bodyPath.moveTo(21 * scale, 11.75 * scale);
     bodyPath.lineTo(21 * scale, 6 * scale);
     bodyPath.arcToPoint(Offset(19 * scale, 4 * scale), radius: Radius.circular(2 * scale), clockwise: false);
     bodyPath.lineTo(5 * scale, 4 * scale);
     bodyPath.arcToPoint(Offset(3 * scale, 6 * scale), radius: Radius.circular(2 * scale), clockwise: false);
     bodyPath.lineTo(3 * scale, 20 * scale);
     bodyPath.arcToPoint(Offset(5 * scale, 22 * scale), radius: Radius.circular(2 * scale), clockwise: false);
-    bodyPath.lineTo(13.5 * scale, 22 * scale);
+    bodyPath.lineTo(12.25 * scale, 22 * scale);
     canvas.drawPath(bodyPath, paint);
 
     // Top Lines
@@ -77,34 +82,26 @@ class CalendarPlusPainter extends CustomPainter {
     // M3 10h18
     canvas.drawLine(Offset(3 * scale, 10 * scale), Offset(21 * scale, 10 * scale), paint);
 
-    // Plus (Animated)
-    // M16 19h6
-    // M19 16v6
+    // Search Icon (Animated)
+    // circle cx="18" cy="18" r="3"
+    // m22 22-1.875-1.875
+    // Center 18, 18.
     
-    final plusPath = Path();
-    plusPath.moveTo(16 * scale, 19 * scale);
-    plusPath.lineTo(22 * scale, 19 * scale);
-    plusPath.moveTo(19 * scale, 16 * scale);
-    plusPath.lineTo(19 * scale, 22 * scale);
+    canvas.save();
+    canvas.translate(18 * scale, 18 * scale);
+    canvas.scale(searchScale);
+    canvas.translate(-18 * scale, -18 * scale);
     
-    double drawProgress = progress;
-    if (progress == 0) {
-      drawProgress = 1.0;
-    }
+    canvas.drawCircle(Offset(18 * scale, 18 * scale), 3 * scale, paint);
+    canvas.drawLine(Offset(22 * scale, 22 * scale), Offset(20.125 * scale, 20.125 * scale), paint);
     
-    if (drawProgress > 0) {
-      final pathMetrics = plusPath.computeMetrics();
-      for (final metric in pathMetrics) {
-        final extractPath = metric.extractPath(0.0, metric.length * drawProgress);
-        canvas.drawPath(extractPath, paint);
-      }
-    }
+    canvas.restore();
   }
 
   @override
-  bool shouldRepaint(CalendarPlusPainter oldDelegate) {
+  bool shouldRepaint(CalendarSearchPainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.progress != progress ||
+        oldDelegate.searchScale != searchScale ||
         oldDelegate.strokeWidth != strokeWidth;
   }
 }

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 import '../core/animated_svg_icon_base.dart';
 
-/// Animated Calendar Plus 2 Icon - Plus sign draws itself
-class CalendarPlus2Icon extends AnimatedSVGIcon {
-  const CalendarPlus2Icon({
+/// Animated Calendar Icon - Top hooks stretch
+class CalendarIcon extends AnimatedSVGIcon {
+  const CalendarIcon({
     super.key,
     super.size = 40.0,
     super.color,
@@ -16,7 +17,7 @@ class CalendarPlus2Icon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Plus sign draws itself";
+  String get animationDescription => "Top hooks stretch";
 
   @override
   CustomPainter createPainter({
@@ -24,22 +25,25 @@ class CalendarPlus2Icon extends AnimatedSVGIcon {
     required double animationValue,
     required double strokeWidth,
   }) {
-    return CalendarPlus2Painter(
+    // Stretch: 0 -> 4 -> 0 (length increase)
+    final stretch = math.sin(animationValue * math.pi) * 2.0;
+    
+    return CalendarPainter(
       color: color,
-      progress: animationValue,
+      stretch: stretch,
       strokeWidth: strokeWidth,
     );
   }
 }
 
-class CalendarPlus2Painter extends CustomPainter {
+class CalendarPainter extends CustomPainter {
   final Color color;
-  final double progress;
+  final double stretch;
   final double strokeWidth;
 
-  CalendarPlus2Painter({
+  CalendarPainter({
     required this.color,
-    required this.progress,
+    required this.stretch,
     required this.strokeWidth,
   });
 
@@ -62,44 +66,25 @@ class CalendarPlus2Painter extends CustomPainter {
     );
     canvas.drawRRect(rect, paint);
 
-    // Top Lines
+    // Top Lines (Animated)
     // M16 2v4
-    canvas.drawLine(Offset(16 * scale, 2 * scale), Offset(16 * scale, 6 * scale), paint);
     // M8 2v4
-    canvas.drawLine(Offset(8 * scale, 2 * scale), Offset(8 * scale, 6 * scale), paint);
+    // Stretch up? Or down?
+    // Let's stretch up.
+    // 2 - stretch to 6.
+    
+    canvas.drawLine(Offset(16 * scale, (2 - stretch) * scale), Offset(16 * scale, 6 * scale), paint);
+    canvas.drawLine(Offset(8 * scale, (2 - stretch) * scale), Offset(8 * scale, 6 * scale), paint);
     
     // Horizontal Line
     // M3 10h18
     canvas.drawLine(Offset(3 * scale, 10 * scale), Offset(21 * scale, 10 * scale), paint);
-
-    // Plus (Animated)
-    // M10 16h4
-    // M12 14v4
-    
-    final plusPath = Path();
-    plusPath.moveTo(10 * scale, 16 * scale);
-    plusPath.lineTo(14 * scale, 16 * scale);
-    plusPath.moveTo(12 * scale, 14 * scale);
-    plusPath.lineTo(12 * scale, 18 * scale);
-    
-    double drawProgress = progress;
-    if (progress == 0) {
-      drawProgress = 1.0;
-    }
-    
-    if (drawProgress > 0) {
-      final pathMetrics = plusPath.computeMetrics();
-      for (final metric in pathMetrics) {
-        final extractPath = metric.extractPath(0.0, metric.length * drawProgress);
-        canvas.drawPath(extractPath, paint);
-      }
-    }
   }
 
   @override
-  bool shouldRepaint(CalendarPlus2Painter oldDelegate) {
+  bool shouldRepaint(CalendarPainter oldDelegate) {
     return oldDelegate.color != color ||
-        oldDelegate.progress != progress ||
+        oldDelegate.stretch != stretch ||
         oldDelegate.strokeWidth != strokeWidth;
   }
 }

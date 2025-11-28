@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:ui'; // For PathMetric
 import '../core/animated_svg_icon_base.dart';
 
 /// Animated Calendar Range Icon - Range line draws itself
