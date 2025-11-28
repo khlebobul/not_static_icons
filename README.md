@@ -14,7 +14,7 @@ Seamlessly animated Flutter icons — no Rive or Lottie required. Made with [Luc
 
 ## Features
 
-- **240+ Animated Icons**: Based on popular Lucide icon set
+- **250+ Animated Icons**: Based on popular Lucide icon set
 - **Interactive Animations**: Hover and touch effects
 - **Customizable**: Size, color, animation duration, stroke width
 

@@ -27,7 +27,7 @@ class CalendarIcon extends AnimatedSVGIcon {
   }) {
     // Stretch: 0 -> 4 -> 0 (length increase)
     final stretch = math.sin(animationValue * math.pi) * 2.0;
-    
+
     return CalendarPainter(
       color: color,
       stretch: stretch,
@@ -72,13 +72,16 @@ class CalendarPainter extends CustomPainter {
     // Stretch up? Or down?
     // Let's stretch up.
     // 2 - stretch to 6.
-    
-    canvas.drawLine(Offset(16 * scale, (2 - stretch) * scale), Offset(16 * scale, 6 * scale), paint);
-    canvas.drawLine(Offset(8 * scale, (2 - stretch) * scale), Offset(8 * scale, 6 * scale), paint);
-    
+
+    canvas.drawLine(Offset(16 * scale, (2 - stretch) * scale),
+        Offset(16 * scale, 6 * scale), paint);
+    canvas.drawLine(Offset(8 * scale, (2 - stretch) * scale),
+        Offset(8 * scale, 6 * scale), paint);
+
     // Horizontal Line
     // M3 10h18
-    canvas.drawLine(Offset(3 * scale, 10 * scale), Offset(21 * scale, 10 * scale), paint);
+    canvas.drawLine(
+        Offset(3 * scale, 10 * scale), Offset(21 * scale, 10 * scale), paint);
   }
 
   @override

@@ -64,33 +64,37 @@ class CalendarPlus2Painter extends CustomPainter {
 
     // Top Lines
     // M16 2v4
-    canvas.drawLine(Offset(16 * scale, 2 * scale), Offset(16 * scale, 6 * scale), paint);
+    canvas.drawLine(
+        Offset(16 * scale, 2 * scale), Offset(16 * scale, 6 * scale), paint);
     // M8 2v4
-    canvas.drawLine(Offset(8 * scale, 2 * scale), Offset(8 * scale, 6 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(8 * scale, 2 * scale), Offset(8 * scale, 6 * scale), paint);
+
     // Horizontal Line
     // M3 10h18
-    canvas.drawLine(Offset(3 * scale, 10 * scale), Offset(21 * scale, 10 * scale), paint);
+    canvas.drawLine(
+        Offset(3 * scale, 10 * scale), Offset(21 * scale, 10 * scale), paint);
 
     // Plus (Animated)
     // M10 16h4
     // M12 14v4
-    
+
     final plusPath = Path();
     plusPath.moveTo(10 * scale, 16 * scale);
     plusPath.lineTo(14 * scale, 16 * scale);
     plusPath.moveTo(12 * scale, 14 * scale);
     plusPath.lineTo(12 * scale, 18 * scale);
-    
+
     double drawProgress = progress;
     if (progress == 0) {
       drawProgress = 1.0;
     }
-    
+
     if (drawProgress > 0) {
       final pathMetrics = plusPath.computeMetrics();
       for (final metric in pathMetrics) {
-        final extractPath = metric.extractPath(0.0, metric.length * drawProgress);
+        final extractPath =
+            metric.extractPath(0.0, metric.length * drawProgress);
         canvas.drawPath(extractPath, paint);
       }
     }

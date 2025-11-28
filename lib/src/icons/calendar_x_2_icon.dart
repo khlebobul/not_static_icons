@@ -59,43 +59,50 @@ class CalendarX2Painter extends CustomPainter {
     final bodyPath = Path();
     bodyPath.moveTo(21 * scale, 13 * scale);
     bodyPath.lineTo(21 * scale, 6 * scale);
-    bodyPath.arcToPoint(Offset(19 * scale, 4 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    bodyPath.arcToPoint(Offset(19 * scale, 4 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     bodyPath.lineTo(5 * scale, 4 * scale);
-    bodyPath.arcToPoint(Offset(3 * scale, 6 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    bodyPath.arcToPoint(Offset(3 * scale, 6 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     bodyPath.lineTo(3 * scale, 20 * scale);
-    bodyPath.arcToPoint(Offset(5 * scale, 22 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    bodyPath.arcToPoint(Offset(5 * scale, 22 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     bodyPath.lineTo(13 * scale, 22 * scale);
     canvas.drawPath(bodyPath, paint);
 
     // Top Lines
     // M16 2v4
-    canvas.drawLine(Offset(16 * scale, 2 * scale), Offset(16 * scale, 6 * scale), paint);
+    canvas.drawLine(
+        Offset(16 * scale, 2 * scale), Offset(16 * scale, 6 * scale), paint);
     // M8 2v4
-    canvas.drawLine(Offset(8 * scale, 2 * scale), Offset(8 * scale, 6 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(8 * scale, 2 * scale), Offset(8 * scale, 6 * scale), paint);
+
     // Horizontal Line
     // M3 10h18
-    canvas.drawLine(Offset(3 * scale, 10 * scale), Offset(21 * scale, 10 * scale), paint);
+    canvas.drawLine(
+        Offset(3 * scale, 10 * scale), Offset(21 * scale, 10 * scale), paint);
 
     // X (Animated)
     // m17 22 5-5
     // m17 17 5 5
-    
+
     final xPath = Path();
     xPath.moveTo(17 * scale, 22 * scale);
     xPath.lineTo(22 * scale, 17 * scale);
     xPath.moveTo(17 * scale, 17 * scale);
     xPath.lineTo(22 * scale, 22 * scale);
-    
+
     double drawProgress = progress;
     if (progress == 0) {
       drawProgress = 1.0;
     }
-    
+
     if (drawProgress > 0) {
       final pathMetrics = xPath.computeMetrics();
       for (final metric in pathMetrics) {
-        final extractPath = metric.extractPath(0.0, metric.length * drawProgress);
+        final extractPath =
+            metric.extractPath(0.0, metric.length * drawProgress);
         canvas.drawPath(extractPath, paint);
       }
     }

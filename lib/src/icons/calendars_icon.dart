@@ -27,7 +27,7 @@ class CalendarsIcon extends AnimatedSVGIcon {
   }) {
     // Tilt: 0 -> -15 degrees -> 0
     final angle = -math.sin(animationValue * math.pi) * (15 * math.pi / 180);
-    
+
     return CalendarsPainter(
       color: color,
       angle: angle,
@@ -64,25 +64,29 @@ class CalendarsPainter extends CustomPainter {
     // Back Calendar (Animated)
     // Pivot around center of front calendar? Or bottom right corner of back calendar?
     // Let's pivot around (15, 10) which is roughly center of front calendar.
-    
+
     canvas.save();
     canvas.translate(15 * scale, 10 * scale);
     canvas.rotate(angle);
     canvas.translate(-15 * scale, -10 * scale);
-    
+
     // M15.726 21.01A2 2 0 0 1 14 22H4a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2
     final backPath = Path();
     backPath.moveTo(15.726 * scale, 21.01 * scale);
-    backPath.arcToPoint(Offset(14 * scale, 22 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    backPath.arcToPoint(Offset(14 * scale, 22 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     backPath.lineTo(4 * scale, 22 * scale);
-    backPath.arcToPoint(Offset(2 * scale, 20 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    backPath.arcToPoint(Offset(2 * scale, 20 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     backPath.lineTo(2 * scale, 10 * scale);
-    backPath.arcToPoint(Offset(4 * scale, 8 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    backPath.arcToPoint(Offset(4 * scale, 8 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     canvas.drawPath(backPath, paint);
-    
+
     // M2 13h2
-    canvas.drawLine(Offset(2 * scale, 13 * scale), Offset(4 * scale, 13 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(2 * scale, 13 * scale), Offset(4 * scale, 13 * scale), paint);
+
     canvas.restore();
 
     // Front Calendar
@@ -97,15 +101,18 @@ class CalendarsPainter extends CustomPainter {
     // If we rotate the back calendar, it might cross the front calendar lines.
     // Let's just draw it.
     canvas.drawRRect(frontRect, paint);
-    
+
     // M8 8h14
-    canvas.drawLine(Offset(8 * scale, 8 * scale), Offset(22 * scale, 8 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(8 * scale, 8 * scale), Offset(22 * scale, 8 * scale), paint);
+
     // Rings (Static, attached to front)
     // M12 2v2
-    canvas.drawLine(Offset(12 * scale, 2 * scale), Offset(12 * scale, 4 * scale), paint);
+    canvas.drawLine(
+        Offset(12 * scale, 2 * scale), Offset(12 * scale, 4 * scale), paint);
     // M18 2v2
-    canvas.drawLine(Offset(18 * scale, 2 * scale), Offset(18 * scale, 4 * scale), paint);
+    canvas.drawLine(
+        Offset(18 * scale, 2 * scale), Offset(18 * scale, 4 * scale), paint);
   }
 
   @override

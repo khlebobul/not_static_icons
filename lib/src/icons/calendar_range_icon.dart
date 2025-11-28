@@ -64,42 +64,46 @@ class CalendarRangePainter extends CustomPainter {
 
     // Top Lines
     // M16 2v4
-    canvas.drawLine(Offset(16 * scale, 2 * scale), Offset(16 * scale, 6 * scale), paint);
+    canvas.drawLine(
+        Offset(16 * scale, 2 * scale), Offset(16 * scale, 6 * scale), paint);
     // M8 2v4
-    canvas.drawLine(Offset(8 * scale, 2 * scale), Offset(8 * scale, 6 * scale), paint);
-    
+    canvas.drawLine(
+        Offset(8 * scale, 2 * scale), Offset(8 * scale, 6 * scale), paint);
+
     // Horizontal Line
     // M3 10h18
-    canvas.drawLine(Offset(3 * scale, 10 * scale), Offset(21 * scale, 10 * scale), paint);
+    canvas.drawLine(
+        Offset(3 * scale, 10 * scale), Offset(21 * scale, 10 * scale), paint);
 
     // Range (Animated)
     // M17 14h-6
     // M13 18H7
     // M7 14h.01
     // M17 18h.01
-    
+
     // Let's animate the lines drawing.
     final rangePath = Path();
     rangePath.moveTo(17 * scale, 14 * scale);
     rangePath.lineTo(11 * scale, 14 * scale);
     rangePath.moveTo(13 * scale, 18 * scale);
     rangePath.lineTo(7 * scale, 18 * scale);
-    
+
     // Dots
     rangePath.moveTo(7 * scale, 14 * scale);
     rangePath.lineTo(7.01 * scale, 14 * scale);
     rangePath.moveTo(17 * scale, 18 * scale);
     rangePath.lineTo(17.01 * scale, 18 * scale);
-    
+
     double drawProgress = progress;
     if (progress == 0) {
       drawProgress = 1.0;
     }
-    
+
     if (drawProgress > 0) {
       final pathMetrics = rangePath.computeMetrics();
       for (final metric in pathMetrics) {
-        final extractPath = metric.extractPath(0.0, metric.length * drawProgress);
+        final extractPath =
+            metric.extractPath(0.0, metric.length * drawProgress);
         canvas.drawPath(extractPath, paint);
       }
     }

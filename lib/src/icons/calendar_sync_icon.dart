@@ -27,7 +27,7 @@ class CalendarSyncIcon extends AnimatedSVGIcon {
   }) {
     // Rotate 360 degrees
     final angle = animationValue * math.pi * 2;
-    
+
     return CalendarSyncPainter(
       color: color,
       angle: angle,
@@ -63,22 +63,28 @@ class CalendarSyncPainter extends CustomPainter {
     final bodyPath = Path();
     bodyPath.moveTo(21 * scale, 8.5 * scale);
     bodyPath.lineTo(21 * scale, 6 * scale);
-    bodyPath.arcToPoint(Offset(19 * scale, 4 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    bodyPath.arcToPoint(Offset(19 * scale, 4 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     bodyPath.lineTo(5 * scale, 4 * scale);
-    bodyPath.arcToPoint(Offset(3 * scale, 6 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    bodyPath.arcToPoint(Offset(3 * scale, 6 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     bodyPath.lineTo(3 * scale, 20 * scale);
-    bodyPath.arcToPoint(Offset(5 * scale, 22 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    bodyPath.arcToPoint(Offset(5 * scale, 22 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     bodyPath.lineTo(9.3 * scale, 22 * scale);
     canvas.drawPath(bodyPath, paint);
 
     // M3 10h4
-    canvas.drawLine(Offset(3 * scale, 10 * scale), Offset(7 * scale, 10 * scale), paint);
+    canvas.drawLine(
+        Offset(3 * scale, 10 * scale), Offset(7 * scale, 10 * scale), paint);
 
     // Top Lines
     // M16 2v4
-    canvas.drawLine(Offset(16 * scale, 2 * scale), Offset(16 * scale, 6 * scale), paint);
+    canvas.drawLine(
+        Offset(16 * scale, 2 * scale), Offset(16 * scale, 6 * scale), paint);
     // M8 2v4
-    canvas.drawLine(Offset(8 * scale, 2 * scale), Offset(8 * scale, 6 * scale), paint);
+    canvas.drawLine(
+        Offset(8 * scale, 2 * scale), Offset(8 * scale, 6 * scale), paint);
 
     // Sync Arrows (Animated)
     // Center roughly 16, 16.
@@ -86,7 +92,7 @@ class CalendarSyncPainter extends CustomPainter {
     // m11 14 1.535-1.605a5 5 0 0 1 8 1.5
     // m21 18-1.535 1.605a5 5 0 0 1-8-1.5
     // M21 22v-4h-4
-    
+
     // The center of rotation seems to be 16, 16.
     // Let's check coordinates.
     // Top arrow starts at 11, 14.
@@ -97,12 +103,12 @@ class CalendarSyncPainter extends CustomPainter {
     // If arc is from 12.535, 12.395 to 20.535, 13.895?
     // It's a bit complex to reconstruct exact center.
     // But visually it looks like a circle around 16, 16.
-    
+
     canvas.save();
     canvas.translate(16 * scale, 16 * scale);
     canvas.rotate(angle);
     canvas.translate(-16 * scale, -16 * scale);
-    
+
     // Arrow 1 (Top/Left)
     // M11 10v4h4 -> Arrow head
     final head1 = Path();
@@ -110,7 +116,7 @@ class CalendarSyncPainter extends CustomPainter {
     head1.lineTo(11 * scale, 14 * scale);
     head1.lineTo(15 * scale, 14 * scale);
     canvas.drawPath(head1, paint);
-    
+
     // m11 14 1.535-1.605a5 5 0 0 1 8 1.5 -> Arc
     final arc1 = Path();
     arc1.moveTo(11 * scale, 14 * scale);
@@ -122,7 +128,7 @@ class CalendarSyncPainter extends CustomPainter {
       clockwise: true,
     );
     canvas.drawPath(arc1, paint);
-    
+
     // Arrow 2 (Bottom/Right)
     // M21 22v-4h-4 -> Arrow head
     final head2 = Path();
@@ -130,7 +136,7 @@ class CalendarSyncPainter extends CustomPainter {
     head2.lineTo(21 * scale, 18 * scale);
     head2.lineTo(17 * scale, 18 * scale);
     canvas.drawPath(head2, paint);
-    
+
     // m21 18-1.535 1.605a5 5 0 0 1-8-1.5 -> Arc
     final arc2 = Path();
     arc2.moveTo(21 * scale, 18 * scale);
@@ -142,7 +148,7 @@ class CalendarSyncPainter extends CustomPainter {
       clockwise: true,
     );
     canvas.drawPath(arc2, paint);
-    
+
     canvas.restore();
   }
 

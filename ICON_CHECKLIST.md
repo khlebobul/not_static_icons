@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-11-27T04:50:39.019098Z UTC.
+Generated on 2025-11-28T14:24:03.632721Z UTC.
 
-## ✅ Existing Icons (247)
+## ✅ Existing Icons (268)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -249,29 +249,29 @@ Generated on 2025-11-27T04:50:39.019098Z UTC.
 - [x] `cake`
 - [x] `cake-slice`
 - [x] `calculator`
+- [x] `calendar`
+- [x] `calendar-1`
+- [x] `calendar-arrow-down`
+- [x] `calendar-arrow-up`
+- [x] `calendar-check`
+- [x] `calendar-check-2`
+- [x] `calendar-clock`
+- [x] `calendar-cog`
+- [x] `calendar-days`
+- [x] `calendar-fold`
+- [x] `calendar-heart`
+- [x] `calendar-minus`
+- [x] `calendar-minus-2`
+- [x] `calendar-off`
+- [x] `calendar-plus`
+- [x] `calendar-plus-2`
+- [x] `calendar-range`
+- [x] `calendar-search`
+- [x] `calendar-sync`
+- [x] `calendar-x`
+- [x] `calendar-x-2`
 
-## ➕ New Icons to Add (1391)
-- [ ] `calendar`
-- [ ] `calendar-1`
-- [ ] `calendar-arrow-down`
-- [ ] `calendar-arrow-up`
-- [ ] `calendar-check`
-- [ ] `calendar-check-2`
-- [ ] `calendar-clock`
-- [ ] `calendar-cog`
-- [ ] `calendar-days`
-- [ ] `calendar-fold`
-- [ ] `calendar-heart`
-- [ ] `calendar-minus`
-- [ ] `calendar-minus-2`
-- [ ] `calendar-off`
-- [ ] `calendar-plus`
-- [ ] `calendar-plus-2`
-- [ ] `calendar-range`
-- [ ] `calendar-search`
-- [ ] `calendar-sync`
-- [ ] `calendar-x`
-- [ ] `calendar-x-2`
+## ➕ New Icons to Add (1370)
 - [ ] `camera`
 - [ ] `camera-off`
 - [ ] `candy`
@@ -1643,9 +1643,10 @@ Generated on 2025-11-27T04:50:39.019098Z UTC.
 - [ ] `zoom-in`
 - [ ] `zoom-out`
 
-## ➖ Potentially Removed Icons (4)
+## ➖ Potentially Removed Icons (5)
 - [ ] `align-center`
 - [ ] `align-justify`
 - [ ] `align-left`
 - [ ] `align-right`
+- [ ] `calendars`
 
