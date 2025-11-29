@@ -1,3 +1,8 @@
+## 0.21.0
+
+#### New icons
+* Added 22 new animated `calendar` icons to the icon library, including calendar with `number`, `arrows`, `checkmarks`, `clock`, `gear`, `days`, `fold`, `heart`, `minus/plus signs`, `date range`, `search`, `sync`, and more.
+
 ## 0.20.0
 
 #### New icons
