@@ -369,6 +369,8 @@ final List<IconData> icons = [
   IconData(name: 'car-taxi-front', widget: CarTaxiFrontIcon(size: 40)),
   IconData(name: 'car', widget: CarIcon(size: 40)),
   IconData(name: 'caravan', widget: CaravanIcon(size: 40)),
+  IconData(name: 'card-sim', widget: CardSimIcon(size: 40)),
+  IconData(name: 'carrot', widget: CarrotIcon(size: 40)),
   IconData(name: 'boom-box', widget: BoomBoxIcon(size: 40)),
   IconData(name: 'bot', widget: BotIcon(size: 40)),
   IconData(name: 'bot-message-square', widget: BotMessageSquareIcon(size: 40)),

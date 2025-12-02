@@ -261,6 +261,8 @@ export 'icons/car_front_icon.dart';
 export 'icons/car_icon.dart';
 export 'icons/car_taxi_front_icon.dart';
 export 'icons/caravan_icon.dart';
+export 'icons/card_sim_icon.dart';
+export 'icons/carrot_icon.dart';
 export 'icons/boom_box_icon.dart';
 export 'icons/bot_icon.dart';
 export 'icons/bot_message_square_icon.dart';
