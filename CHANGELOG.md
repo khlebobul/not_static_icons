@@ -1,3 +1,8 @@
+## 0.22.0
+
+#### New icons
+* Added `camera`, `camera-off`, `candy`, `candy-cane`, `candy-off`, `cannabis`, `captions`, `captions-off`, `car`, `car-front`, `car-taxi-front`, `caravan`, `card-sim`, and `carrot`
+
 ## 0.21.0
 
 #### New icons

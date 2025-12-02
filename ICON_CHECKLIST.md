@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-11-28T14:24:03.632721Z UTC.
+Generated on 2025-12-02T04:43:34.449852Z UTC.
 
-## ✅ Existing Icons (268)
+## ✅ Existing Icons (282)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -270,22 +270,22 @@ Generated on 2025-11-28T14:24:03.632721Z UTC.
 - [x] `calendar-sync`
 - [x] `calendar-x`
 - [x] `calendar-x-2`
+- [x] `camera`
+- [x] `camera-off`
+- [x] `candy`
+- [x] `candy-cane`
+- [x] `candy-off`
+- [x] `cannabis`
+- [x] `captions`
+- [x] `captions-off`
+- [x] `car`
+- [x] `car-front`
+- [x] `car-taxi-front`
+- [x] `caravan`
+- [x] `card-sim`
+- [x] `carrot`
 
-## ➕ New Icons to Add (1370)
-- [ ] `camera`
-- [ ] `camera-off`
-- [ ] `candy`
-- [ ] `candy-cane`
-- [ ] `candy-off`
-- [ ] `cannabis`
-- [ ] `captions`
-- [ ] `captions-off`
-- [ ] `car`
-- [ ] `car-front`
-- [ ] `car-taxi-front`
-- [ ] `caravan`
-- [ ] `card-sim`
-- [ ] `carrot`
+## ➕ New Icons to Add (1356)
 - [ ] `case-lower`
 - [ ] `case-sensitive`
 - [ ] `case-upper`
