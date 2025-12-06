@@ -288,3 +288,6 @@ export 'icons/carrot_icon.dart';
 export 'icons/case_lower_icon.dart';
 export 'icons/case_sensitive_icon.dart';
 export 'icons/case_upper_icon.dart';
+export 'icons/cassette_tape_icon.dart';
+export 'icons/cast_icon.dart';
+export 'icons/castle_icon.dart';
