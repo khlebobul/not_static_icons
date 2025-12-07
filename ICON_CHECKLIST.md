@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-12-02T04:43:34.449852Z UTC.
+Generated on 2025-12-07T04:39:43.135722Z UTC.
 
-## ✅ Existing Icons (282)
+## ✅ Existing Icons (290)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -284,16 +284,16 @@ Generated on 2025-12-02T04:43:34.449852Z UTC.
 - [x] `caravan`
 - [x] `card-sim`
 - [x] `carrot`
+- [x] `case-lower`
+- [x] `case-sensitive`
+- [x] `case-upper`
+- [x] `cassette-tape`
+- [x] `cast`
+- [x] `castle`
+- [x] `cat`
+- [x] `cctv`
 
-## ➕ New Icons to Add (1356)
-- [ ] `case-lower`
-- [ ] `case-sensitive`
-- [ ] `case-upper`
-- [ ] `cassette-tape`
-- [ ] `cast`
-- [ ] `castle`
-- [ ] `cat`
-- [ ] `cctv`
+## ➕ New Icons to Add (1348)
 - [ ] `chart-area`
 - [ ] `chart-bar`
 - [ ] `chart-bar-big`
