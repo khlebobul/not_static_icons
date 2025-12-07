@@ -1,3 +1,8 @@
+## 0.23.0
+
+#### New icons
+* Added 8 new animated icons: `case_lower`, `case_upper`, `case_sensitive`, `cassette_tape`, `cast`, `castle`, `cat`, and`cctv`.
+
 ## 0.22.0
 
 #### New icons
