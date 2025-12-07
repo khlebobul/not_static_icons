@@ -25,7 +25,8 @@ class CatIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _CatPainter(
+  }) =>
+      _CatPainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -66,54 +67,84 @@ class _CatPainter extends CustomPainter {
     final headPath = Path()
       ..moveTo(12 * scale, 5 * scale)
       ..cubicTo(
-        12.67 * scale, 5 * scale,
-        13.35 * scale, 5.09 * scale,
-        14 * scale, 5.26 * scale,
+        12.67 * scale,
+        5 * scale,
+        13.35 * scale,
+        5.09 * scale,
+        14 * scale,
+        5.26 * scale,
       )
       ..cubicTo(
-        15.78 * scale, 3.26 * scale,
-        19.03 * scale, 2.16 * scale,
-        20.42 * scale, 2.74 * scale,
+        15.78 * scale,
+        3.26 * scale,
+        19.03 * scale,
+        2.16 * scale,
+        20.42 * scale,
+        2.74 * scale,
       )
       ..cubicTo(
-        21.82 * scale, 3.32 * scale,
-        20.58 * scale, 10 * scale,
-        20.58 * scale, 10 * scale,
+        21.82 * scale,
+        3.32 * scale,
+        20.58 * scale,
+        10 * scale,
+        20.58 * scale,
+        10 * scale,
       )
       ..cubicTo(
-        21.65 * scale, 11.07 * scale,
-        22 * scale, 12.24 * scale,
-        22 * scale, 13.44 * scale,
+        21.65 * scale,
+        11.07 * scale,
+        22 * scale,
+        12.24 * scale,
+        22 * scale,
+        13.44 * scale,
       )
       ..cubicTo(
-        22 * scale, 17.9 * scale,
-        16.97 * scale, 21 * scale,
-        12 * scale, 21 * scale,
+        22 * scale,
+        17.9 * scale,
+        16.97 * scale,
+        21 * scale,
+        12 * scale,
+        21 * scale,
       )
       ..cubicTo(
-        7.03 * scale, 21 * scale,
-        3 * scale, 17.9 * scale,
-        3 * scale, 13.44 * scale,
+        7.03 * scale,
+        21 * scale,
+        3 * scale,
+        17.9 * scale,
+        3 * scale,
+        13.44 * scale,
       )
       ..cubicTo(
-        3 * scale, 12.19 * scale,
-        3.5 * scale, 11.04 * scale,
-        4 * scale, 10 * scale,
+        3 * scale,
+        12.19 * scale,
+        3.5 * scale,
+        11.04 * scale,
+        4 * scale,
+        10 * scale,
       )
       ..cubicTo(
-        4 * scale, 10 * scale,
-        2.11 * scale, 3.58 * scale,
-        3.5 * scale, 3 * scale,
+        4 * scale,
+        10 * scale,
+        2.11 * scale,
+        3.58 * scale,
+        3.5 * scale,
+        3 * scale,
       )
       ..cubicTo(
-        4.89 * scale, 2.42 * scale,
-        8.22 * scale, 3.23 * scale,
-        10 * scale, 5.23 * scale,
+        4.89 * scale,
+        2.42 * scale,
+        8.22 * scale,
+        3.23 * scale,
+        10 * scale,
+        5.23 * scale,
       )
       ..cubicTo(
-        10.65 * scale, 5.09 * scale,
-        11.33 * scale, 5 * scale,
-        12 * scale, 5 * scale,
+        10.65 * scale,
+        5.09 * scale,
+        11.33 * scale,
+        5 * scale,
+        12 * scale,
+        5 * scale,
       )
       ..close();
     canvas.drawPath(headPath, paint);
@@ -147,54 +178,84 @@ class _CatPainter extends CustomPainter {
     final headPath = Path()
       ..moveTo(12 * scale, 5 * scale)
       ..cubicTo(
-        12.67 * scale, 5 * scale,
-        13.35 * scale, 5.09 * scale,
-        14 * scale, 5.26 * scale,
+        12.67 * scale,
+        5 * scale,
+        13.35 * scale,
+        5.09 * scale,
+        14 * scale,
+        5.26 * scale,
       )
       ..cubicTo(
-        15.78 * scale, 3.26 * scale,
-        19.03 * scale, 2.16 * scale,
-        20.42 * scale, 2.74 * scale,
+        15.78 * scale,
+        3.26 * scale,
+        19.03 * scale,
+        2.16 * scale,
+        20.42 * scale,
+        2.74 * scale,
       )
       ..cubicTo(
-        21.82 * scale, 3.32 * scale,
-        20.58 * scale, 10 * scale,
-        20.58 * scale, 10 * scale,
+        21.82 * scale,
+        3.32 * scale,
+        20.58 * scale,
+        10 * scale,
+        20.58 * scale,
+        10 * scale,
       )
       ..cubicTo(
-        21.65 * scale, 11.07 * scale,
-        22 * scale, 12.24 * scale,
-        22 * scale, 13.44 * scale,
+        21.65 * scale,
+        11.07 * scale,
+        22 * scale,
+        12.24 * scale,
+        22 * scale,
+        13.44 * scale,
       )
       ..cubicTo(
-        22 * scale, 17.9 * scale,
-        16.97 * scale, 21 * scale,
-        12 * scale, 21 * scale,
+        22 * scale,
+        17.9 * scale,
+        16.97 * scale,
+        21 * scale,
+        12 * scale,
+        21 * scale,
       )
       ..cubicTo(
-        7.03 * scale, 21 * scale,
-        3 * scale, 17.9 * scale,
-        3 * scale, 13.44 * scale,
+        7.03 * scale,
+        21 * scale,
+        3 * scale,
+        17.9 * scale,
+        3 * scale,
+        13.44 * scale,
       )
       ..cubicTo(
-        3 * scale, 12.19 * scale,
-        3.5 * scale, 11.04 * scale,
-        4 * scale, 10 * scale,
+        3 * scale,
+        12.19 * scale,
+        3.5 * scale,
+        11.04 * scale,
+        4 * scale,
+        10 * scale,
       )
       ..cubicTo(
-        4 * scale, 10 * scale,
-        2.11 * scale, 3.58 * scale,
-        3.5 * scale, 3 * scale,
+        4 * scale,
+        10 * scale,
+        2.11 * scale,
+        3.58 * scale,
+        3.5 * scale,
+        3 * scale,
       )
       ..cubicTo(
-        4.89 * scale, 2.42 * scale,
-        8.22 * scale, 3.23 * scale,
-        10 * scale, 5.23 * scale,
+        4.89 * scale,
+        2.42 * scale,
+        8.22 * scale,
+        3.23 * scale,
+        10 * scale,
+        5.23 * scale,
       )
       ..cubicTo(
-        10.65 * scale, 5.09 * scale,
-        11.33 * scale, 5 * scale,
-        12 * scale, 5 * scale,
+        10.65 * scale,
+        5.09 * scale,
+        11.33 * scale,
+        5 * scale,
+        12 * scale,
+        5 * scale,
       )
       ..close();
     canvas.drawPath(headPath, paint);
@@ -240,4 +301,3 @@ class _CatPainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
-

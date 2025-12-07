@@ -28,10 +28,10 @@ class CaseLowerIcon extends AnimatedSVGIcon {
     // Bounce sequentially
     // 0.0 - 0.5: First letter
     // 0.5 - 1.0: Second letter
-    
+
     double bounce1 = 0.0;
     double bounce2 = 0.0;
-    
+
     if (animationValue < 0.5) {
       final t = animationValue * 2;
       bounce1 = math.sin(t * math.pi) * 2.0;
@@ -39,7 +39,7 @@ class CaseLowerIcon extends AnimatedSVGIcon {
       final t = (animationValue - 0.5) * 2;
       bounce2 = math.sin(t * math.pi) * 2.0;
     }
-    
+
     return CaseLowerPainter(
       color: color,
       bounce1: bounce1,
@@ -78,10 +78,11 @@ class CaseLowerPainter extends CustomPainter {
     // circle cx="6.5" cy="12.5" r="3.5"
     canvas.save();
     canvas.translate(0, -bounce1 * scale);
-    
-    canvas.drawLine(Offset(10 * scale, 9 * scale), Offset(10 * scale, 16 * scale), paint);
+
+    canvas.drawLine(
+        Offset(10 * scale, 9 * scale), Offset(10 * scale, 16 * scale), paint);
     canvas.drawCircle(Offset(6.5 * scale, 12.5 * scale), 3.5 * scale, paint);
-    
+
     canvas.restore();
 
     // Letter 2: 'b'
@@ -89,10 +90,11 @@ class CaseLowerPainter extends CustomPainter {
     // circle cx="17.5" cy="12.5" r="3.5"
     canvas.save();
     canvas.translate(0, -bounce2 * scale);
-    
-    canvas.drawLine(Offset(14 * scale, 6 * scale), Offset(14 * scale, 16 * scale), paint);
+
+    canvas.drawLine(
+        Offset(14 * scale, 6 * scale), Offset(14 * scale, 16 * scale), paint);
     canvas.drawCircle(Offset(17.5 * scale, 12.5 * scale), 3.5 * scale, paint);
-    
+
     canvas.restore();
   }
 

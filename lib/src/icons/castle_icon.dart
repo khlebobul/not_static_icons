@@ -24,7 +24,8 @@ class CastleIcon extends AnimatedSVGIcon {
     required Color color,
     required double animationValue,
     required double strokeWidth,
-  }) => _CastlePainter(
+  }) =>
+      _CastlePainter(
         color: color,
         animationValue: animationValue,
         strokeWidth: strokeWidth,
@@ -277,4 +278,3 @@ class _CastlePainter extends CustomPainter {
         oldDelegate.strokeWidth != strokeWidth;
   }
 }
-

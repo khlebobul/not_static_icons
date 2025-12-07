@@ -28,7 +28,7 @@ class CaseUpperIcon extends AnimatedSVGIcon {
     // Bounce sequentially
     double bounce1 = 0.0;
     double bounce2 = 0.0;
-    
+
     if (animationValue < 0.5) {
       final t = animationValue * 2;
       bounce1 = math.sin(t * math.pi) * 2.0;
@@ -36,7 +36,7 @@ class CaseUpperIcon extends AnimatedSVGIcon {
       final t = (animationValue - 0.5) * 2;
       bounce2 = math.sin(t * math.pi) * 2.0;
     }
-    
+
     return CaseUpperPainter(
       color: color,
       bounce1: bounce1,
@@ -75,35 +75,41 @@ class CaseUpperPainter extends CustomPainter {
     // M3.304 13h6.392
     canvas.save();
     canvas.translate(0, -bounce1 * scale);
-    
+
     final pathA = Path();
     pathA.moveTo(2 * scale, 16 * scale);
     pathA.lineTo(6.039 * scale, 6.31 * scale);
-    pathA.arcToPoint(Offset(6.962 * scale, 6.31 * scale), radius: Radius.circular(0.5 * scale), clockwise: true);
+    pathA.arcToPoint(Offset(6.962 * scale, 6.31 * scale),
+        radius: Radius.circular(0.5 * scale), clockwise: true);
     pathA.lineTo(11 * scale, 16 * scale);
     canvas.drawPath(pathA, paint);
-    
-    canvas.drawLine(Offset(3.304 * scale, 13 * scale), Offset(9.696 * scale, 13 * scale), paint);
-    
+
+    canvas.drawLine(Offset(3.304 * scale, 13 * scale),
+        Offset(9.696 * scale, 13 * scale), paint);
+
     canvas.restore();
 
     // Letter 2: 'B'
     // M15 11h4.5a1 1 0 0 1 0 5h-4a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h3a1 1 0 0 1 0 5
     canvas.save();
     canvas.translate(0, -bounce2 * scale);
-    
+
     final pathB = Path();
     pathB.moveTo(15 * scale, 11 * scale);
     pathB.lineTo(19.5 * scale, 11 * scale);
-    pathB.arcToPoint(Offset(19.5 * scale, 16 * scale), radius: Radius.circular(1 * scale), clockwise: true);
+    pathB.arcToPoint(Offset(19.5 * scale, 16 * scale),
+        radius: Radius.circular(1 * scale), clockwise: true);
     pathB.lineTo(15.5 * scale, 16 * scale);
-    pathB.arcToPoint(Offset(15 * scale, 15.5 * scale), radius: Radius.circular(0.5 * scale), clockwise: true);
+    pathB.arcToPoint(Offset(15 * scale, 15.5 * scale),
+        radius: Radius.circular(0.5 * scale), clockwise: true);
     pathB.lineTo(15 * scale, 6.5 * scale);
-    pathB.arcToPoint(Offset(15.5 * scale, 6 * scale), radius: Radius.circular(0.5 * scale), clockwise: true);
+    pathB.arcToPoint(Offset(15.5 * scale, 6 * scale),
+        radius: Radius.circular(0.5 * scale), clockwise: true);
     pathB.lineTo(18.5 * scale, 6 * scale);
-    pathB.arcToPoint(Offset(18.5 * scale, 11 * scale), radius: Radius.circular(1 * scale), clockwise: true);
+    pathB.arcToPoint(Offset(18.5 * scale, 11 * scale),
+        radius: Radius.circular(1 * scale), clockwise: true);
     canvas.drawPath(pathB, paint);
-    
+
     canvas.restore();
   }
 
