@@ -291,3 +291,5 @@ export 'icons/case_upper_icon.dart';
 export 'icons/cassette_tape_icon.dart';
 export 'icons/cast_icon.dart';
 export 'icons/castle_icon.dart';
+export 'icons/cat_icon.dart';
+export 'icons/cctv_icon.dart';

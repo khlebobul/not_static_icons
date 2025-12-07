@@ -425,4 +425,6 @@ final List<IconData> icons = [
   IconData(name: 'cassette-tape', widget: CassetteTapeIcon(size: 40)),
   IconData(name: 'cast', widget: CastIcon(size: 40)),
   IconData(name: 'castle', widget: CastleIcon(size: 40)),
+  IconData(name: 'cat', widget: CatIcon(size: 40)),
+  IconData(name: 'cctv', widget: CctvIcon(size: 40)),
 ];
