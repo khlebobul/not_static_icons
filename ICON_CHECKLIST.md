@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-12-07T04:39:43.135722Z UTC.
+Generated on 2025-12-09T06:37:26.827271Z UTC.
 
-## ✅ Existing Icons (290)
+## ✅ Existing Icons (291)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -270,6 +270,7 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [x] `calendar-sync`
 - [x] `calendar-x`
 - [x] `calendar-x-2`
+- [x] `calendars`
 - [x] `camera`
 - [x] `camera-off`
 - [x] `candy`
@@ -293,7 +294,9 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [x] `cat`
 - [x] `cctv`
 
-## ➕ New Icons to Add (1348)
+## ➕ New Icons to Add (1364)
+- [ ] `birdhouse`
+- [ ] `book-search`
 - [ ] `chart-area`
 - [ ] `chart-bar`
 - [ ] `chart-bar-big`
@@ -322,6 +325,12 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `check-line`
 - [ ] `chef-hat`
 - [ ] `cherry`
+- [ ] `chess-bishop`
+- [ ] `chess-king`
+- [ ] `chess-knight`
+- [ ] `chess-pawn`
+- [ ] `chess-queen`
+- [ ] `chess-rook`
 - [ ] `chevron-down`
 - [ ] `chevron-first`
 - [ ] `chevron-last`
@@ -417,6 +426,7 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `clock-alert`
 - [ ] `clock-arrow-down`
 - [ ] `clock-arrow-up`
+- [ ] `clock-check`
 - [ ] `clock-fading`
 - [ ] `clock-plus`
 - [ ] `closed-caption`
@@ -574,47 +584,45 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `figma`
 - [ ] `file`
 - [ ] `file-archive`
-- [ ] `file-audio`
-- [ ] `file-audio-2`
 - [ ] `file-axis-3d`
 - [ ] `file-badge`
-- [ ] `file-badge-2`
 - [ ] `file-box`
+- [ ] `file-braces`
+- [ ] `file-braces-corner`
 - [ ] `file-chart-column`
 - [ ] `file-chart-column-increasing`
 - [ ] `file-chart-line`
 - [ ] `file-chart-pie`
 - [ ] `file-check`
-- [ ] `file-check-2`
+- [ ] `file-check-corner`
 - [ ] `file-clock`
 - [ ] `file-code`
-- [ ] `file-code-2`
+- [ ] `file-code-corner`
 - [ ] `file-cog`
 - [ ] `file-diff`
 - [ ] `file-digit`
 - [ ] `file-down`
+- [ ] `file-exclamation-point`
+- [ ] `file-headphone`
 - [ ] `file-heart`
 - [ ] `file-image`
 - [ ] `file-input`
-- [ ] `file-json`
-- [ ] `file-json-2`
 - [ ] `file-key`
-- [ ] `file-key-2`
 - [ ] `file-lock`
-- [ ] `file-lock-2`
 - [ ] `file-minus`
-- [ ] `file-minus-2`
+- [ ] `file-minus-corner`
 - [ ] `file-music`
 - [ ] `file-output`
 - [ ] `file-pen`
 - [ ] `file-pen-line`
 - [ ] `file-play`
 - [ ] `file-plus`
-- [ ] `file-plus-2`
+- [ ] `file-plus-corner`
 - [ ] `file-question-mark`
 - [ ] `file-scan`
 - [ ] `file-search`
-- [ ] `file-search-2`
+- [ ] `file-search-corner`
+- [ ] `file-signal`
 - [ ] `file-sliders`
 - [ ] `file-spreadsheet`
 - [ ] `file-stack`
@@ -622,18 +630,16 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `file-terminal`
 - [ ] `file-text`
 - [ ] `file-type`
-- [ ] `file-type-2`
+- [ ] `file-type-corner`
 - [ ] `file-up`
 - [ ] `file-user`
 - [ ] `file-video-camera`
 - [ ] `file-volume`
-- [ ] `file-volume-2`
-- [ ] `file-warning`
 - [ ] `file-x`
-- [ ] `file-x-2`
+- [ ] `file-x-corner`
 - [ ] `files`
 - [ ] `film`
-- [ ] `fingerprint`
+- [ ] `fingerprint-pattern`
 - [ ] `fire-extinguisher`
 - [ ] `fish`
 - [ ] `fish-off`
@@ -691,6 +697,7 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `folders`
 - [ ] `footprints`
 - [ ] `forklift`
+- [ ] `form`
 - [ ] `forward`
 - [ ] `frame`
 - [ ] `framer`
@@ -707,6 +714,7 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `gallery-vertical-end`
 - [ ] `gamepad`
 - [ ] `gamepad-2`
+- [ ] `gamepad-directional`
 - [ ] `gauge`
 - [ ] `gavel`
 - [ ] `gem`
@@ -714,6 +722,7 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `ghost`
 - [ ] `gift`
 - [ ] `git-branch`
+- [ ] `git-branch-minus`
 - [ ] `git-branch-plus`
 - [ ] `git-commit-horizontal`
 - [ ] `git-commit-vertical`
@@ -788,6 +797,7 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `heart-plus`
 - [ ] `heart-pulse`
 - [ ] `heater`
+- [ ] `helicopter`
 - [ ] `hexagon`
 - [ ] `highlighter`
 - [ ] `history`
@@ -1010,6 +1020,7 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `mouse-off`
 - [ ] `mouse-pointer`
 - [ ] `mouse-pointer-2`
+- [ ] `mouse-pointer-2-off`
 - [ ] `mouse-pointer-ban`
 - [ ] `mouse-pointer-click`
 - [ ] `move`
@@ -1249,6 +1260,7 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `school`
 - [ ] `scissors`
 - [ ] `scissors-line-dashed`
+- [ ] `scooter`
 - [ ] `screen-share`
 - [ ] `screen-share-off`
 - [ ] `scroll`
@@ -1327,6 +1339,7 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `snowflake`
 - [ ] `soap-dispenser-droplet`
 - [ ] `sofa`
+- [ ] `solar-panel`
 - [ ] `soup`
 - [ ] `space`
 - [ ] `spade`
@@ -1581,6 +1594,7 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `utensils`
 - [ ] `utensils-crossed`
 - [ ] `utility-pole`
+- [ ] `van`
 - [ ] `variable`
 - [ ] `vault`
 - [ ] `vector-square`
@@ -1612,12 +1626,15 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `washing-machine`
 - [ ] `watch`
 - [ ] `waves`
+- [ ] `waves-arrow-down`
+- [ ] `waves-arrow-up`
 - [ ] `waves-ladder`
 - [ ] `waypoints`
 - [ ] `webcam`
 - [ ] `webhook`
 - [ ] `webhook-off`
 - [ ] `weight`
+- [ ] `weight-tilde`
 - [ ] `wheat`
 - [ ] `wheat-off`
 - [ ] `whole-word`
@@ -1643,10 +1660,9 @@ Generated on 2025-12-07T04:39:43.135722Z UTC.
 - [ ] `zoom-in`
 - [ ] `zoom-out`
 
-## ➖ Potentially Removed Icons (5)
+## ➖ Potentially Removed Icons (4)
 - [ ] `align-center`
 - [ ] `align-justify`
 - [ ] `align-left`
 - [ ] `align-right`
-- [ ] `calendars`
 
