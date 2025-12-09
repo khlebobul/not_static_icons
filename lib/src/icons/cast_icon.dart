@@ -152,10 +152,11 @@ class _CastPainter extends CustomPainter {
       ..lineTo(14 * scale, 20 * scale);
     canvas.drawPath(screenPath, paint);
 
-    // Simple pulsing signal paths
-    final t = animationValue;
-    final pulse = math.sin(t * math.pi * 2) * 0.2 + 0.8;
-    _drawSignalPaths(canvas, paint, scale, pulse);
+    // Pulsing signal paths - more noticeable animation like bluetooth_searching
+    final progress = animationValue;
+    final pulse = math.sin(progress * math.pi * 3) * 0.5 + 0.5;
+    final alpha = 0.3 + pulse * 0.7; // Alpha from 0.3 to 1.0
+    _drawSignalPaths(canvas, paint, scale, alpha);
   }
 
   @override
