@@ -293,3 +293,7 @@ export 'icons/cast_icon.dart';
 export 'icons/castle_icon.dart';
 export 'icons/cat_icon.dart';
 export 'icons/cctv_icon.dart';
+export 'icons/chart_area_icon.dart';
+export 'icons/chart_bar_big_icon.dart';
+export 'icons/chart_bar_decreasing_icon.dart';
+export 'icons/chart_bar_increasing_icon.dart';

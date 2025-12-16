@@ -427,4 +427,8 @@ final List<IconData> icons = [
   IconData(name: 'castle', widget: CastleIcon(size: 40)),
   IconData(name: 'cat', widget: CatIcon(size: 40)),
   IconData(name: 'cctv', widget: CctvIcon(size: 40)),
+  IconData(name: 'chart-area', widget: ChartAreaIcon(size: 40)),
+  IconData(name: 'chart-bar-big', widget: ChartBarBigIcon(size: 40)),
+  IconData(name: 'chart-bar-decreasing', widget: ChartBarDecreasingIcon(size: 40)),
+  IconData(name: 'chart-bar-increasing', widget: ChartBarIncreasingIcon(size: 40)),
 ];
