@@ -296,4 +296,8 @@ export 'icons/cctv_icon.dart';
 export 'icons/chart_area_icon.dart';
 export 'icons/chart_bar_big_icon.dart';
 export 'icons/chart_bar_decreasing_icon.dart';
+export 'icons/chart_bar_icon.dart';
 export 'icons/chart_bar_increasing_icon.dart';
+export 'icons/chart_bar_stacked_icon.dart';
+export 'icons/chart_candlestick_icon.dart';
+export 'icons/chart_column_big_icon.dart';

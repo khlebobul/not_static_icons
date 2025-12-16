@@ -429,6 +429,16 @@ final List<IconData> icons = [
   IconData(name: 'cctv', widget: CctvIcon(size: 40)),
   IconData(name: 'chart-area', widget: ChartAreaIcon(size: 40)),
   IconData(name: 'chart-bar-big', widget: ChartBarBigIcon(size: 40)),
-  IconData(name: 'chart-bar-decreasing', widget: ChartBarDecreasingIcon(size: 40)),
-  IconData(name: 'chart-bar-increasing', widget: ChartBarIncreasingIcon(size: 40)),
+  IconData(
+    name: 'chart-bar-decreasing',
+    widget: ChartBarDecreasingIcon(size: 40),
+  ),
+  IconData(
+    name: 'chart-bar-increasing',
+    widget: ChartBarIncreasingIcon(size: 40),
+  ),
+  IconData(name: 'chart-bar', widget: ChartBarIcon(size: 40)),
+  IconData(name: 'chart-bar-stacked', widget: ChartBarStackedIcon(size: 40)),
+  IconData(name: 'chart-candlestick', widget: ChartCandlestickIcon(size: 40)),
+  IconData(name: 'chart-column-big', widget: ChartColumnBigIcon(size: 40)),
 ];
