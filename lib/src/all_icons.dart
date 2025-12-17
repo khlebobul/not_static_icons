@@ -301,3 +301,7 @@ export 'icons/chart_bar_increasing_icon.dart';
 export 'icons/chart_bar_stacked_icon.dart';
 export 'icons/chart_candlestick_icon.dart';
 export 'icons/chart_column_big_icon.dart';
+export 'icons/chart_column_decreasing_icon.dart';
+export 'icons/chart_column_icon.dart';
+export 'icons/chart_column_increasing_icon.dart';
+export 'icons/chart_column_stacked_icon.dart';
