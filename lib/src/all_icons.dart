@@ -309,3 +309,7 @@ export 'icons/chart_gantt_icon.dart';
 export 'icons/chart_line_icon.dart';
 export 'icons/chart_network_icon.dart';
 export 'icons/chart_no_axes_column_decreasing_icon.dart';
+export 'icons/chart_no_axes_column_icon.dart';
+export 'icons/chart_no_axes_column_increasing_icon.dart';
+export 'icons/chart_no_axes_combined_icon.dart';
+export 'icons/chart_no_axes_gantt_icon.dart';
