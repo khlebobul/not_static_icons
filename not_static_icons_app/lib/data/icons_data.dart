@@ -445,4 +445,9 @@ final List<IconData> icons = [
   IconData(name: 'chart-column-decreasing', widget: ChartColumnDecreasingIcon(size: 40)),
   IconData(name: 'chart-column-increasing', widget: ChartColumnIncreasingIcon(size: 40)),
   IconData(name: 'chart-column-stacked', widget: ChartColumnStackedIcon(size: 40)),
+  IconData(name: 'chart-gantt', widget: ChartGanttIcon(size: 40)),
+  IconData(name: 'chart-line', widget: ChartLineIcon(size: 40)),
+  IconData(name: 'chart-network', widget: ChartNetworkIcon(size: 40)),
+  IconData(name: 'chart-no-axes-column-decreasing', widget: ChartNoAxesColumnDecreasingIcon(size: 40)),
+
 ];
