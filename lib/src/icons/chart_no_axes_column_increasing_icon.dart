@@ -16,7 +16,8 @@ class ChartNoAxesColumnIncreasingIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Column bars grow showing increasing trend";
+  String get animationDescription =>
+      "Column bars grow showing increasing trend";
 
   @override
   CustomPainter createPainter({

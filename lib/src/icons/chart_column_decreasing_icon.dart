@@ -16,7 +16,8 @@ class ChartColumnDecreasingIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Chart columns animate with decreasing effect";
+  String get animationDescription =>
+      "Chart columns animate with decreasing effect";
 
   @override
   CustomPainter createPainter({

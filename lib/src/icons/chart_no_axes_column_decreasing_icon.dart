@@ -16,7 +16,8 @@ class ChartNoAxesColumnDecreasingIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Column bars shrink showing decreasing trend";
+  String get animationDescription =>
+      "Column bars shrink showing decreasing trend";
 
   @override
   CustomPainter createPainter({

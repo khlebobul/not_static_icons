@@ -58,7 +58,7 @@ class ChartPiePainter extends CustomPainter {
     // Animation - slice moves out slightly
     final oscillation = 4 * animationValue * (1 - animationValue);
     final sliceOffset = oscillation * 1.0;
-    
+
     // Offset direction for slice (diagonal: up-right)
     final dx = sliceOffset * 0.7;
     final dy = -sliceOffset * 0.7;
@@ -67,10 +67,10 @@ class ChartPiePainter extends CustomPainter {
     // SVG: M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z
     // Simplified interpretation:
     // - Start at (21, 12) - right edge
-    // - Arc counter-clockwise to (12, 3) - top edge  
+    // - Arc counter-clockwise to (12, 3) - top edge
     // - Line down to (12, 12) - center
     // - Line right back to (21, 12)
-    
+
     final slicePath = Path();
     // Start at right edge of slice
     slicePath.moveTo((21 + dx) * scale, (12 + dy) * scale);
@@ -90,7 +90,7 @@ class ChartPiePainter extends CustomPainter {
     // SVG: M21.21 15.89A10 10 0 1 1 8 2.83
     // This is a large arc from (21.21, 15.89) to (8, 2.83)
     // Flags: 1 1 = large-arc-flag=1, sweep-flag=1 (clockwise)
-    
+
     final mainPath = Path();
     mainPath.moveTo(21.21 * scale, 15.89 * scale);
     mainPath.arcToPoint(

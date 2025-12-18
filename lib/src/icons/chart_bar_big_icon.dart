@@ -66,7 +66,7 @@ class ChartBarBigPainter extends CustomPainter {
     // ========== ANIMATED PART - BARS ==========
     // Oscillating scale effect for bars
     final oscillation = 4 * animationValue * (1 - animationValue);
-    
+
     // Bottom bar: rect x="7" y="13" width="9" height="4" rx="1"
     // Animate width slightly
     final bottomBarWidth = 9.0 + oscillation * 2.0;

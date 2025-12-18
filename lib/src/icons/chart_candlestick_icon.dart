@@ -102,7 +102,8 @@ class ChartCandlestickPainter extends CustomPainter {
 
     // Body: rect width="4" height="8" x="15" y="5" rx="1"
     final rightBody = RRect.fromRectAndRadius(
-      Rect.fromLTWH(15 * scale, (5 + rightOffset) * scale, 4 * scale, 8 * scale),
+      Rect.fromLTWH(
+          15 * scale, (5 + rightOffset) * scale, 4 * scale, 8 * scale),
       Radius.circular(1 * scale),
     );
     canvas.drawRRect(rightBody, paint);

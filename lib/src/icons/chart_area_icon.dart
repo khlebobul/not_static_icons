@@ -71,11 +71,11 @@ class ChartAreaPainter extends CustomPainter {
 
     // Original SVG path:
     // M7 11.207a.5.5 0 0 1 .146-.353l2-2a.5.5 0 0 1 .708 0l3.292 3.292a.5.5 0 0 0 .708 0l4.292-4.292a.5.5 0 0 1 .854.353V16a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1z
-    // 
+    //
     // Key points:
     // Start: (7, 11.207)
     // Line to: (9, 9) - up-right (2-2 means +2x, -2y from ~7,11)
-    // Line to: (13.292, 12.292) - down-right 
+    // Line to: (13.292, 12.292) - down-right
     // Line to: (18, 8) - up-right
     // Line down to: (18, 16)
     // Line left with rounded corner to: (8, 16)

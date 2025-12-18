@@ -71,7 +71,8 @@ class ChartColumnBigPainter extends CustomPainter {
     final rightColY = 5.0 - oscillation * 2.0;
     final rightColHeight = 12.0 + oscillation * 2.0;
     final rightCol = RRect.fromRectAndRadius(
-      Rect.fromLTWH(15 * scale, rightColY * scale, 4 * scale, rightColHeight * scale),
+      Rect.fromLTWH(
+          15 * scale, rightColY * scale, 4 * scale, rightColHeight * scale),
       Radius.circular(1 * scale),
     );
     canvas.drawRRect(rightCol, paint);
@@ -81,7 +82,8 @@ class ChartColumnBigPainter extends CustomPainter {
     final leftColY = 8.0 + oscillation * 2.0;
     final leftColHeight = 9.0 - oscillation * 2.0;
     final leftCol = RRect.fromRectAndRadius(
-      Rect.fromLTWH(7 * scale, leftColY * scale, 4 * scale, leftColHeight * scale),
+      Rect.fromLTWH(
+          7 * scale, leftColY * scale, 4 * scale, leftColHeight * scale),
       Radius.circular(1 * scale),
     );
     canvas.drawRRect(leftCol, paint);

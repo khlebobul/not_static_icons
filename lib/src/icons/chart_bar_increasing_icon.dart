@@ -16,7 +16,8 @@ class ChartBarIncreasingIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Chart bars animate with increasing effect";
+  String get animationDescription =>
+      "Chart bars animate with increasing effect";
 
   @override
   CustomPainter createPainter({

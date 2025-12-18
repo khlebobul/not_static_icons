@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-12-09T06:37:26.827271Z UTC.
+Generated on 2025-12-18T04:39:34.460963Z UTC.
 
-## ✅ Existing Icons (291)
+## ✅ Existing Icons (314)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -293,33 +293,35 @@ Generated on 2025-12-09T06:37:26.827271Z UTC.
 - [x] `castle`
 - [x] `cat`
 - [x] `cctv`
+- [x] `chart-area`
+- [x] `chart-bar`
+- [x] `chart-bar-big`
+- [x] `chart-bar-decreasing`
+- [x] `chart-bar-increasing`
+- [x] `chart-bar-stacked`
+- [x] `chart-candlestick`
+- [x] `chart-column`
+- [x] `chart-column-big`
+- [x] `chart-column-decreasing`
+- [x] `chart-column-increasing`
+- [x] `chart-column-stacked`
+- [x] `chart-gantt`
+- [x] `chart-line`
+- [x] `chart-network`
+- [x] `chart-no-axes-column`
+- [x] `chart-no-axes-column-decreasing`
+- [x] `chart-no-axes-column-increasing`
+- [x] `chart-no-axes-combined`
+- [x] `chart-no-axes-gantt`
+- [x] `chart-pie`
+- [x] `chart-scatter`
+- [x] `chart-spline`
 
-## ➕ New Icons to Add (1364)
+## ➕ New Icons to Add (1351)
+- [ ] `balloon`
 - [ ] `birdhouse`
 - [ ] `book-search`
-- [ ] `chart-area`
-- [ ] `chart-bar`
-- [ ] `chart-bar-big`
-- [ ] `chart-bar-decreasing`
-- [ ] `chart-bar-increasing`
-- [ ] `chart-bar-stacked`
-- [ ] `chart-candlestick`
-- [ ] `chart-column`
-- [ ] `chart-column-big`
-- [ ] `chart-column-decreasing`
-- [ ] `chart-column-increasing`
-- [ ] `chart-column-stacked`
-- [ ] `chart-gantt`
-- [ ] `chart-line`
-- [ ] `chart-network`
-- [ ] `chart-no-axes-column`
-- [ ] `chart-no-axes-column-decreasing`
-- [ ] `chart-no-axes-column-increasing`
-- [ ] `chart-no-axes-combined`
-- [ ] `chart-no-axes-gantt`
-- [ ] `chart-pie`
-- [ ] `chart-scatter`
-- [ ] `chart-spline`
+- [ ] `cannabis-off`
 - [ ] `check`
 - [ ] `check-check`
 - [ ] `check-line`
@@ -382,6 +384,7 @@ Generated on 2025-12-09T06:37:26.827271Z UTC.
 - [ ] `circle-parking-off`
 - [ ] `circle-pause`
 - [ ] `circle-percent`
+- [ ] `circle-pile`
 - [ ] `circle-play`
 - [ ] `circle-plus`
 - [ ] `circle-pound-sterling`
@@ -432,6 +435,7 @@ Generated on 2025-12-09T06:37:26.827271Z UTC.
 - [ ] `closed-caption`
 - [ ] `cloud`
 - [ ] `cloud-alert`
+- [ ] `cloud-backup`
 - [ ] `cloud-check`
 - [ ] `cloud-cog`
 - [ ] `cloud-download`
@@ -447,6 +451,7 @@ Generated on 2025-12-09T06:37:26.827271Z UTC.
 - [ ] `cloud-snow`
 - [ ] `cloud-sun`
 - [ ] `cloud-sun-rain`
+- [ ] `cloud-sync`
 - [ ] `cloud-upload`
 - [ ] `cloudy`
 - [ ] `clover`
@@ -644,6 +649,7 @@ Generated on 2025-12-09T06:37:26.827271Z UTC.
 - [ ] `fish`
 - [ ] `fish-off`
 - [ ] `fish-symbol`
+- [ ] `fishing-hook`
 - [ ] `flag`
 - [ ] `flag-off`
 - [ ] `flag-triangle-left`
@@ -778,6 +784,7 @@ Generated on 2025-12-09T06:37:26.827271Z UTC.
 - [ ] `hash`
 - [ ] `hat-glasses`
 - [ ] `haze`
+- [ ] `hd`
 - [ ] `hdmi-port`
 - [ ] `heading`
 - [ ] `heading-1`
@@ -861,6 +868,7 @@ Generated on 2025-12-09T06:37:26.827271Z UTC.
 - [ ] `laugh`
 - [ ] `layers`
 - [ ] `layers-2`
+- [ ] `layers-plus`
 - [ ] `layout-dashboard`
 - [ ] `layout-grid`
 - [ ] `layout-list`
@@ -1266,6 +1274,7 @@ Generated on 2025-12-09T06:37:26.827271Z UTC.
 - [ ] `scroll`
 - [ ] `scroll-text`
 - [ ] `search`
+- [ ] `search-alert`
 - [ ] `search-check`
 - [ ] `search-code`
 - [ ] `search-slash`
@@ -1437,6 +1446,7 @@ Generated on 2025-12-09T06:37:26.827271Z UTC.
 - [ ] `stethoscope`
 - [ ] `sticker`
 - [ ] `sticky-note`
+- [ ] `stone`
 - [ ] `store`
 - [ ] `stretch-horizontal`
 - [ ] `stretch-vertical`
