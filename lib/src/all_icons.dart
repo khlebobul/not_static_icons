@@ -313,3 +313,6 @@ export 'icons/chart_no_axes_column_icon.dart';
 export 'icons/chart_no_axes_column_increasing_icon.dart';
 export 'icons/chart_no_axes_combined_icon.dart';
 export 'icons/chart_no_axes_gantt_icon.dart';
+export 'icons/chart_pie_icon.dart';
+export 'icons/chart_scatter_icon.dart';
+export 'icons/chart_spline_icon.dart';
