@@ -1,3 +1,8 @@
+## 0.24.0
+
+#### New icons
+* Added 23 new chart-related icons including `bar`, `column`, `line`, `pie`, `scatter`, `spline`, `candlestick`, `gantt`, and `network` chart variants.
+
 ## 0.23.1
 
 #### Improvements

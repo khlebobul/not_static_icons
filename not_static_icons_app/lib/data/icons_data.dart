@@ -427,4 +427,54 @@ final List<IconData> icons = [
   IconData(name: 'castle', widget: CastleIcon(size: 40)),
   IconData(name: 'cat', widget: CatIcon(size: 40)),
   IconData(name: 'cctv', widget: CctvIcon(size: 40)),
+  IconData(name: 'chart-area', widget: ChartAreaIcon(size: 40)),
+  IconData(name: 'chart-bar-big', widget: ChartBarBigIcon(size: 40)),
+  IconData(
+    name: 'chart-bar-decreasing',
+    widget: ChartBarDecreasingIcon(size: 40),
+  ),
+  IconData(
+    name: 'chart-bar-increasing',
+    widget: ChartBarIncreasingIcon(size: 40),
+  ),
+  IconData(name: 'chart-bar', widget: ChartBarIcon(size: 40)),
+  IconData(name: 'chart-bar-stacked', widget: ChartBarStackedIcon(size: 40)),
+  IconData(name: 'chart-candlestick', widget: ChartCandlestickIcon(size: 40)),
+  IconData(name: 'chart-column-big', widget: ChartColumnBigIcon(size: 40)),
+  IconData(name: 'chart-column', widget: ChartColumnIcon(size: 40)),
+  IconData(
+    name: 'chart-column-decreasing',
+    widget: ChartColumnDecreasingIcon(size: 40),
+  ),
+  IconData(
+    name: 'chart-column-increasing',
+    widget: ChartColumnIncreasingIcon(size: 40),
+  ),
+  IconData(
+    name: 'chart-column-stacked',
+    widget: ChartColumnStackedIcon(size: 40),
+  ),
+  IconData(name: 'chart-gantt', widget: ChartGanttIcon(size: 40)),
+  IconData(name: 'chart-line', widget: ChartLineIcon(size: 40)),
+  IconData(name: 'chart-network', widget: ChartNetworkIcon(size: 40)),
+  IconData(
+    name: 'chart-no-axes-column-decreasing',
+    widget: ChartNoAxesColumnDecreasingIcon(size: 40),
+  ),
+  IconData(
+    name: 'chart-no-axes-column',
+    widget: ChartNoAxesColumnIcon(size: 40),
+  ),
+  IconData(
+    name: 'chart-no-axes-column-increasing',
+    widget: ChartNoAxesColumnIncreasingIcon(size: 40),
+  ),
+  IconData(
+    name: 'chart-no-axes-combined',
+    widget: ChartNoAxesCombinedIcon(size: 40),
+  ),
+  IconData(name: 'chart-no-axes-gantt', widget: ChartNoAxesGanttIcon(size: 40)),
+  IconData(name: 'chart-pie', widget: ChartPieIcon(size: 40)),
+  IconData(name: 'chart-scatter', widget: ChartScatterIcon(size: 40)),
+  IconData(name: 'chart-spline', widget: ChartSplineIcon(size: 40)),
 ];
