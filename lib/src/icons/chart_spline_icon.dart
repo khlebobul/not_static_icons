@@ -67,7 +67,7 @@ class ChartSplinePainter extends CustomPainter {
     // ========== ANIMATED PART - SPLINE WITH WAVE ==========
     // Original points: (7,16) -> (11,9) -> (15,12) -> (20,5)
     // Wave travels from left to right
-    
+
     final wavePhase = animationValue * math.pi * 2;
     final waveAmplitude = 2.0;
 
@@ -89,23 +89,32 @@ class ChartSplinePainter extends CustomPainter {
 
     // First curve
     splinePath.cubicTo(
-      7.5 * scale, (14 + waveOffset(7.5)) * scale,
-      9.5 * scale, (9 + waveOffset(9.5)) * scale,
-      11 * scale, p1y * scale,
+      7.5 * scale,
+      (14 + waveOffset(7.5)) * scale,
+      9.5 * scale,
+      (9 + waveOffset(9.5)) * scale,
+      11 * scale,
+      p1y * scale,
     );
 
     // Second curve
     splinePath.cubicTo(
-      13 * scale, (9 + waveOffset(13)) * scale,
-      13 * scale, (12 + waveOffset(13)) * scale,
-      15 * scale, p2y * scale,
+      13 * scale,
+      (9 + waveOffset(13)) * scale,
+      13 * scale,
+      (12 + waveOffset(13)) * scale,
+      15 * scale,
+      p2y * scale,
     );
 
     // Third curve
     splinePath.cubicTo(
-      17.5 * scale, (12 + waveOffset(17.5)) * scale,
-      18.5 * scale, (7 + waveOffset(18.5)) * scale,
-      20 * scale, p3y * scale,
+      17.5 * scale,
+      (12 + waveOffset(17.5)) * scale,
+      18.5 * scale,
+      (7 + waveOffset(18.5)) * scale,
+      20 * scale,
+      p3y * scale,
     );
 
     canvas.drawPath(splinePath, paint);

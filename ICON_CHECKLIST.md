@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-12-18T04:39:34.460963Z UTC.
+Generated on 2025-12-22T04:45:07.998617Z UTC.
 
-## ✅ Existing Icons (314)
+## ✅ Existing Icons (318)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -127,6 +127,7 @@ Generated on 2025-12-18T04:39:34.460963Z UTC.
 - [x] `badge-turkish-lira`
 - [x] `badge-x`
 - [x] `baggage-claim`
+- [x] `balloon`
 - [x] `ban`
 - [x] `banana`
 - [x] `bandage`
@@ -171,6 +172,7 @@ Generated on 2025-12-18T04:39:34.460963Z UTC.
 - [x] `binoculars`
 - [x] `biohazard`
 - [x] `bird`
+- [x] `birdhouse`
 - [x] `bitcoin`
 - [x] `blend`
 - [x] `blinds`
@@ -202,6 +204,7 @@ Generated on 2025-12-18T04:39:34.460963Z UTC.
 - [x] `book-open-check`
 - [x] `book-open-text`
 - [x] `book-plus`
+- [x] `book-search`
 - [x] `book-text`
 - [x] `book-type`
 - [x] `book-up`
@@ -277,6 +280,7 @@ Generated on 2025-12-18T04:39:34.460963Z UTC.
 - [x] `candy-cane`
 - [x] `candy-off`
 - [x] `cannabis`
+- [x] `cannabis-off`
 - [x] `captions`
 - [x] `captions-off`
 - [x] `car`
@@ -317,11 +321,7 @@ Generated on 2025-12-18T04:39:34.460963Z UTC.
 - [x] `chart-scatter`
 - [x] `chart-spline`
 
-## ➕ New Icons to Add (1351)
-- [ ] `balloon`
-- [ ] `birdhouse`
-- [ ] `book-search`
-- [ ] `cannabis-off`
+## ➕ New Icons to Add (1348)
 - [ ] `check`
 - [ ] `check-check`
 - [ ] `check-line`
@@ -1526,6 +1526,7 @@ Generated on 2025-12-18T04:39:34.460963Z UTC.
 - [ ] `toggle-right`
 - [ ] `toilet`
 - [ ] `tool-case`
+- [ ] `toolbox`
 - [ ] `tornado`
 - [ ] `torus`
 - [ ] `touchpad`

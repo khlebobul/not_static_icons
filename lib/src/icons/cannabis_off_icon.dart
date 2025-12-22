@@ -78,14 +78,20 @@ class CannabisOffPainter extends CustomPainter {
     final rightBottomPath = Path();
     rightBottomPath.moveTo(12 * scale, 18 * scale);
     rightBottomPath.cubicTo(
-      (13.5 + sway) * scale, 19.5 * scale,
-      (15.5 + sway) * scale, 21 * scale,
-      (18 + sway) * scale, 21 * scale,
+      (13.5 + sway) * scale,
+      19.5 * scale,
+      (15.5 + sway) * scale,
+      21 * scale,
+      (18 + sway) * scale,
+      21 * scale,
     );
     rightBottomPath.cubicTo(
-      (18 + sway) * scale, 19.5 * scale,
-      (17.5 + sway) * scale, 17.5 * scale,
-      (16 + sway) * scale, 16 * scale,
+      (18 + sway) * scale,
+      19.5 * scale,
+      (17.5 + sway) * scale,
+      17.5 * scale,
+      (16 + sway) * scale,
+      16 * scale,
     );
     canvas.drawPath(rightBottomPath, paint);
 
@@ -94,18 +100,24 @@ class CannabisOffPainter extends CustomPainter {
     final topPath = Path();
     topPath.moveTo((13.988 + sway * 0.3) * scale, 8.327 * scale);
     topPath.cubicTo(
-      (13.902 + sway * 0.2) * scale, 6.054 * scale,
-      (13.365 + sway * 0.1) * scale, 3.82 * scale,
-      12 * scale, 2 * scale,
+      (13.902 + sway * 0.2) * scale,
+      6.054 * scale,
+      (13.365 + sway * 0.1) * scale,
+      3.82 * scale,
+      12 * scale,
+      2 * scale,
     );
     canvas.drawPath(topPath, paint);
 
     final topPath2 = Path();
     topPath2.moveTo(12 * scale, 2 * scale);
     topPath2.cubicTo(
-      (11.5 - sway * 0.1) * scale, 3 * scale,
-      (10.8 - sway * 0.2) * scale, 4 * scale,
-      (10.555 - sway * 0.3) * scale, 4.9 * scale,
+      (11.5 - sway * 0.1) * scale,
+      3 * scale,
+      (10.8 - sway * 0.2) * scale,
+      4 * scale,
+      (10.555 - sway * 0.3) * scale,
+      4.9 * scale,
     );
     canvas.drawPath(topPath2, paint);
 
@@ -114,14 +126,20 @@ class CannabisOffPainter extends CustomPainter {
     final rightPath = Path();
     rightPath.moveTo((17.375 + sway) * scale, 11.725 * scale);
     rightPath.cubicTo(
-      (18.882 + sway) * scale, 10.53 * scale,
-      (21 + sway) * scale, 7.841 * scale,
-      (21 + sway) * scale, 6 * scale,
+      (18.882 + sway) * scale,
+      10.53 * scale,
+      (21 + sway) * scale,
+      7.841 * scale,
+      (21 + sway) * scale,
+      6 * scale,
     );
     rightPath.cubicTo(
-      (18.676 + sway) * scale, 6 * scale,
-      (15.92 + sway * 0.5) * scale, 7.296 * scale,
-      (14.338 + sway * 0.3) * scale, 8.684 * scale,
+      (18.676 + sway) * scale,
+      6 * scale,
+      (15.92 + sway * 0.5) * scale,
+      7.296 * scale,
+      (14.338 + sway * 0.3) * scale,
+      8.684 * scale,
     );
     canvas.drawPath(rightPath, paint);
 
@@ -131,9 +149,12 @@ class CannabisOffPainter extends CustomPainter {
     topRightPath.moveTo((21.024 + sway) * scale, 15.378 * scale);
     topRightPath.lineTo((22 + sway) * scale, 15 * scale);
     topRightPath.cubicTo(
-      (21.574 + sway) * scale, 13.721 * scale,
-      (19.33 + sway) * scale, 12.443 * scale,
-      (17.75 + sway) * scale, 12.093 * scale,
+      (21.574 + sway) * scale,
+      13.721 * scale,
+      (19.33 + sway) * scale,
+      12.443 * scale,
+      (17.75 + sway) * scale,
+      12.093 * scale,
     );
     canvas.drawPath(topRightPath, paint);
 
@@ -142,42 +163,60 @@ class CannabisOffPainter extends CustomPainter {
     final leftPath = Path();
     leftPath.moveTo((6.995 - sway) * scale, 6.992 * scale);
     leftPath.cubicTo(
-      (5.714 - sway) * scale, 6.4 * scale,
-      (4.29 - sway) * scale, 6 * scale,
-      (3 - sway) * scale, 6 * scale,
+      (5.714 - sway) * scale,
+      6.4 * scale,
+      (4.29 - sway) * scale,
+      6 * scale,
+      (3 - sway) * scale,
+      6 * scale,
     );
     leftPath.cubicTo(
-      (3 - sway) * scale, 8 * scale,
-      (5.5 - sway * 0.5) * scale, 11 * scale,
-      (7 - sway * 0.3) * scale, 12 * scale,
+      (3 - sway) * scale,
+      8 * scale,
+      (5.5 - sway * 0.5) * scale,
+      11 * scale,
+      (7 - sway * 0.3) * scale,
+      12 * scale,
     );
     canvas.drawPath(leftPath, paint);
 
     final leftPath2 = Path();
     leftPath2.moveTo((7 - sway * 0.3) * scale, 12 * scale);
     leftPath2.cubicTo(
-      (5.5 - sway) * scale, 12 * scale,
-      (2.5 - sway) * scale, 13.5 * scale,
-      (2 - sway) * scale, 15 * scale,
+      (5.5 - sway) * scale,
+      12 * scale,
+      (2.5 - sway) * scale,
+      13.5 * scale,
+      (2 - sway) * scale,
+      15 * scale,
     );
     leftPath2.cubicTo(
-      (5.5 - sway * 0.5) * scale, 16.5 * scale,
-      (8 - sway * 0.3) * scale, 16 * scale,
-      (8 - sway * 0.3) * scale, 16 * scale,
+      (5.5 - sway * 0.5) * scale,
+      16.5 * scale,
+      (8 - sway * 0.3) * scale,
+      16 * scale,
+      (8 - sway * 0.3) * scale,
+      16 * scale,
     );
     canvas.drawPath(leftPath2, paint);
 
     final leftPath3 = Path();
     leftPath3.moveTo((8 - sway * 0.3) * scale, 16 * scale);
     leftPath3.cubicTo(
-      (6.5 - sway * 0.3) * scale, 17.5 * scale,
-      (6 - sway * 0.3) * scale, 19.5 * scale,
-      (6 - sway * 0.3) * scale, 21 * scale,
+      (6.5 - sway * 0.3) * scale,
+      17.5 * scale,
+      (6 - sway * 0.3) * scale,
+      19.5 * scale,
+      (6 - sway * 0.3) * scale,
+      21 * scale,
     );
     leftPath3.cubicTo(
-      (8.5 - sway * 0.2) * scale, 21 * scale,
-      (10.5 - sway * 0.1) * scale, 19.5 * scale,
-      12 * scale, 18 * scale,
+      (8.5 - sway * 0.2) * scale,
+      21 * scale,
+      (10.5 - sway * 0.1) * scale,
+      19.5 * scale,
+      12 * scale,
+      18 * scale,
     );
     canvas.drawPath(leftPath3, paint);
   }

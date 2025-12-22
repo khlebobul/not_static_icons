@@ -62,21 +62,27 @@ class BalloonPainter extends CustomPainter {
     // ========== BALLOON BODY ==========
     // M18 8c0 4-3.5 8-6 8s-6-4-6-8a6 6 0 0 1 12 0
     // This is an oval/balloon shape: top is a semicircle (radius 6), bottom tapers to a point
-    
+
     final balloonPath = Path();
     // Start at right side of balloon
     balloonPath.moveTo(18 * scale, (8 - floatOffset) * scale);
     // Curve down to bottom point (12, 16)
     balloonPath.cubicTo(
-      18 * scale, (12 - floatOffset) * scale,
-      14.5 * scale, (16 - floatOffset) * scale,
-      12 * scale, (16 - floatOffset) * scale,
+      18 * scale,
+      (12 - floatOffset) * scale,
+      14.5 * scale,
+      (16 - floatOffset) * scale,
+      12 * scale,
+      (16 - floatOffset) * scale,
     );
     // Curve up to left side
     balloonPath.cubicTo(
-      9.5 * scale, (16 - floatOffset) * scale,
-      6 * scale, (12 - floatOffset) * scale,
-      6 * scale, (8 - floatOffset) * scale,
+      9.5 * scale,
+      (16 - floatOffset) * scale,
+      6 * scale,
+      (12 - floatOffset) * scale,
+      6 * scale,
+      (8 - floatOffset) * scale,
     );
     // Arc back to start (top semicircle) - a6 6 0 0 1 12 0
     balloonPath.arcToPoint(
