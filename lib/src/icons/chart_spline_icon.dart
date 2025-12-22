@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 import '../core/animated_svg_icon_base.dart';
 
-/// Animated Chart Spline Icon - Spline curve pulses up and down
+/// Animated Chart Spline Icon - Wave animation along the curve
 class ChartSplineIcon extends AnimatedSVGIcon {
   const ChartSplineIcon({
     super.key,
@@ -16,7 +17,7 @@ class ChartSplineIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Spline curve pulses up and down";
+  String get animationDescription => "Wave animation along the spline";
 
   @override
   CustomPainter createPainter({
@@ -63,43 +64,48 @@ class ChartSplinePainter extends CustomPainter {
     axisPath.lineTo(21 * scale, 21 * scale);
     canvas.drawPath(axisPath, paint);
 
-    // ========== ANIMATED PART - SPLINE CURVE ==========
-    // Original: M7 16c.5-2 1.5-7 4-7 2 0 2 3 4 3 2.5 0 4.5-5 5-7
-    // Points: (7,16) -> curve to (11,9) -> curve to (15,12) -> curve to (20,5)
-    final oscillation = 4 * animationValue * (1 - animationValue);
-    final lift = oscillation * 2.0;
+    // ========== ANIMATED PART - SPLINE WITH WAVE ==========
+    // Original points: (7,16) -> (11,9) -> (15,12) -> (20,5)
+    // Wave travels from left to right
+    
+    final wavePhase = animationValue * math.pi * 2;
+    final waveAmplitude = 2.0;
+
+    // Calculate wave offset for each point based on x position
+    double waveOffset(double x) {
+      // Wave travels from left to right
+      final normalizedX = (x - 7) / 13; // 0 to 1 across the curve
+      return math.sin(wavePhase - normalizedX * math.pi * 2) * waveAmplitude;
+    }
+
+    // Key points with wave applied
+    final p0y = 16 + waveOffset(7);
+    final p1y = 9 + waveOffset(11);
+    final p2y = 12 + waveOffset(15);
+    final p3y = 5 + waveOffset(20);
 
     final splinePath = Path();
-    splinePath.moveTo(7 * scale, (16 - lift) * scale);
+    splinePath.moveTo(7 * scale, p0y * scale);
 
-    // First curve: from (7,16) curving up to (11,9)
+    // First curve
     splinePath.cubicTo(
-      7.5 * scale,
-      (14 - lift) * scale,
-      9.5 * scale,
-      (9 - lift) * scale,
-      11 * scale,
-      (9 - lift) * scale,
+      7.5 * scale, (14 + waveOffset(7.5)) * scale,
+      9.5 * scale, (9 + waveOffset(9.5)) * scale,
+      11 * scale, p1y * scale,
     );
 
-    // Second curve: from (11,9) curving down to (15,12)
+    // Second curve
     splinePath.cubicTo(
-      13 * scale,
-      (9 - lift) * scale,
-      13 * scale,
-      (12 - lift) * scale,
-      15 * scale,
-      (12 - lift) * scale,
+      13 * scale, (9 + waveOffset(13)) * scale,
+      13 * scale, (12 + waveOffset(13)) * scale,
+      15 * scale, p2y * scale,
     );
 
-    // Third curve: from (15,12) curving up to (20,5)
+    // Third curve
     splinePath.cubicTo(
-      17.5 * scale,
-      (12 - lift) * scale,
-      18.5 * scale,
-      (7 - lift) * scale,
-      20 * scale,
-      (5 - lift) * scale,
+      17.5 * scale, (12 + waveOffset(17.5)) * scale,
+      18.5 * scale, (7 + waveOffset(18.5)) * scale,
+      20 * scale, p3y * scale,
     );
 
     canvas.drawPath(splinePath, paint);
