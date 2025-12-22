@@ -1,3 +1,11 @@
+## 0.25.0
+
+#### New icons
+*Added four new animated icons: `balloon`, `birdhouse`, `book-search`, and `cannabis-off`
+
+#### Improvements
+* Enhanced `chart-spline` icon with improved wave-based animation.
+
 ## 0.24.0
 
 #### New icons
