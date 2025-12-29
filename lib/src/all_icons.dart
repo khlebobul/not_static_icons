@@ -320,3 +320,7 @@ export 'icons/chart_no_axes_gantt_icon.dart';
 export 'icons/chart_pie_icon.dart';
 export 'icons/chart_scatter_icon.dart';
 export 'icons/chart_spline_icon.dart';
+export 'icons/club_icon.dart';
+export 'icons/diamond_icon.dart';
+export 'icons/heart_icon.dart';
+export 'icons/spade_icon.dart';

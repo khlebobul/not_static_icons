@@ -481,4 +481,8 @@ final List<IconData> icons = [
   IconData(name: 'chart-pie', widget: ChartPieIcon(size: 40)),
   IconData(name: 'chart-scatter', widget: ChartScatterIcon(size: 40)),
   IconData(name: 'chart-spline', widget: ChartSplineIcon(size: 40)),
+  IconData(name: 'club', widget: ClubIcon(size: 40)),
+  IconData(name: 'diamond', widget: DiamondIcon(size: 40)),
+  IconData(name: 'heart', widget: HeartIcon(size: 40)),
+  IconData(name: 'spade', widget: SpadeIcon(size: 40)),
 ];
