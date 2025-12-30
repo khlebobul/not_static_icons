@@ -485,4 +485,7 @@ final List<IconData> icons = [
   IconData(name: 'diamond', widget: DiamondIcon(size: 40)),
   IconData(name: 'heart', widget: HeartIcon(size: 40)),
   IconData(name: 'spade', widget: SpadeIcon(size: 40)),
+  IconData(name: 'redo-2', widget: Redo2Icon(size: 40)),
+  IconData(name: 'rotate-ccw', widget: RotateCcwIcon(size: 40)),
+  IconData(name: 'undo-2', widget: Undo2Icon(size: 40)),
 ];
