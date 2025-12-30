@@ -325,5 +325,6 @@ export 'icons/diamond_icon.dart';
 export 'icons/heart_icon.dart';
 export 'icons/redo_2_icon.dart';
 export 'icons/rotate_ccw_icon.dart';
+export 'icons/rotate_cw_icon.dart';
 export 'icons/spade_icon.dart';
 export 'icons/undo_2_icon.dart';
