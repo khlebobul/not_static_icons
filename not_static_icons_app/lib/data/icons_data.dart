@@ -489,4 +489,6 @@ final List<IconData> icons = [
   IconData(name: 'rotate-ccw', widget: RotateCcwIcon(size: 40)),
   IconData(name: 'rotate-cw', widget: RotateCwIcon(size: 40)),
   IconData(name: 'undo-2', widget: Undo2Icon(size: 40)),
+  IconData(name: 'circle-alert', widget: CircleAlertIcon(size: 40)),
+  IconData(name: 'circle-question-mark', widget: CircleQuestionMarkIcon(size: 40)),
 ];
