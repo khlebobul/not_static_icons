@@ -329,6 +329,7 @@ export 'icons/mars_icon.dart';
 export 'icons/pause_icon.dart';
 export 'icons/play_icon.dart';
 export 'icons/redo_2_icon.dart';
+export 'icons/repeat_icon.dart';
 export 'icons/rotate_ccw_icon.dart';
 export 'icons/rotate_cw_icon.dart';
 export 'icons/spade_icon.dart';
