@@ -342,3 +342,6 @@ export 'icons/undo_2_icon.dart';
 export 'icons/venus_icon.dart';
 export 'icons/keyboard_icon.dart';
 export 'icons/star_icon.dart';
+export 'icons/grid_2x2_icon.dart';
+export 'icons/layers_icon.dart';
+export 'icons/replace_icon.dart';
