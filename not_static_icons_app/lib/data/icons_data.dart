@@ -9,6 +9,7 @@ class IconData {
 }
 
 final List<IconData> icons = [
+  // Lucide icons
   IconData(name: 'a-arrow-down', widget: AArrowDownIcon(size: 40)),
   IconData(name: 'a-arrow-up', widget: AArrowUpIcon(size: 40)),
   IconData(name: 'a-large-small', widget: ALargeSmallIcon(size: 40)),
@@ -509,4 +510,7 @@ final List<IconData> icons = [
   IconData(name: 'grid-2x2', widget: Grid2x2Icon(size: 40)),
   IconData(name: 'layers', widget: LayersIcon(size: 40)),
   IconData(name: 'replace', widget: ReplaceIcon(size: 40)),
+
+  // Custom Icons
+  IconData(name: 'victory-points', widget: VictoryPointsIcon(size: 40)),
 ];
