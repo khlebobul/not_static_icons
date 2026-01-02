@@ -490,10 +490,15 @@ final List<IconData> icons = [
   IconData(name: 'rotate-cw', widget: RotateCwIcon(size: 40)),
   IconData(name: 'undo-2', widget: Undo2Icon(size: 40)),
   IconData(name: 'circle-alert', widget: CircleAlertIcon(size: 40)),
-  IconData(name: 'circle-question-mark', widget: CircleQuestionMarkIcon(size: 40)),
+  IconData(
+    name: 'circle-question-mark',
+    widget: CircleQuestionMarkIcon(size: 40),
+  ),
   IconData(name: 'mars', widget: MarsIcon(size: 40)),
+  IconData(name: 'moon', widget: MoonIcon(size: 40)),
   IconData(name: 'venus', widget: VenusIcon(size: 40)),
   IconData(name: 'repeat', widget: RepeatIcon(size: 40)),
   IconData(name: 'pause', widget: PauseIcon(size: 40)),
   IconData(name: 'play', widget: PlayIcon(size: 40)),
+  IconData(name: 'sun', widget: SunIcon(size: 40)),
 ];
