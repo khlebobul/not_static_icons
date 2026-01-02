@@ -336,5 +336,7 @@ export 'icons/rotate_cw_icon.dart';
 export 'icons/spade_icon.dart';
 export 'icons/sun_icon.dart';
 export 'icons/swords_icon.dart';
+export 'icons/trash_2_icon.dart';
+export 'icons/trash_icon.dart';
 export 'icons/undo_2_icon.dart';
 export 'icons/venus_icon.dart';
