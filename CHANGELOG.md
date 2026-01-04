@@ -1,3 +1,9 @@
+## 0.26.0
+
+#### New icons
+* Added 25 new Lucide-based animated icons: `circle-alert`, `circle-question-mark`, `club`, `diamond`, `heart`, `mars`, `moon`, `pause`, `play`, `redo-2`, `repeat`, `rotate-ccw`, `rotate-cw`, `spade`, `star`, `sun`, `swords`, `trash`, `trash-2`, `undo-2`, `venus`, `keyboard`, `layers`, `grid-2x2`, and `replace`.
+* Added 6 new custom animated icons: `victory-points`, `replace-2`, `road`, `grid-2`, `grid-plus-2`, and `grid-plus-4`.
+
 ## 0.25.0
 
 #### New icons

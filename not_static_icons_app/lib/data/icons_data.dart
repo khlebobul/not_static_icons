@@ -9,6 +9,7 @@ class IconData {
 }
 
 final List<IconData> icons = [
+  // Lucide icons
   IconData(name: 'a-arrow-down', widget: AArrowDownIcon(size: 40)),
   IconData(name: 'a-arrow-up', widget: AArrowUpIcon(size: 40)),
   IconData(name: 'a-large-small', widget: ALargeSmallIcon(size: 40)),
@@ -481,4 +482,40 @@ final List<IconData> icons = [
   IconData(name: 'chart-pie', widget: ChartPieIcon(size: 40)),
   IconData(name: 'chart-scatter', widget: ChartScatterIcon(size: 40)),
   IconData(name: 'chart-spline', widget: ChartSplineIcon(size: 40)),
+  IconData(name: 'club', widget: ClubIcon(size: 40)),
+  IconData(name: 'diamond', widget: DiamondIcon(size: 40)),
+  IconData(name: 'heart', widget: HeartIcon(size: 40)),
+  IconData(name: 'spade', widget: SpadeIcon(size: 40)),
+  IconData(name: 'redo-2', widget: Redo2Icon(size: 40)),
+  IconData(name: 'rotate-ccw', widget: RotateCcwIcon(size: 40)),
+  IconData(name: 'rotate-cw', widget: RotateCwIcon(size: 40)),
+  IconData(name: 'undo-2', widget: Undo2Icon(size: 40)),
+  IconData(name: 'circle-alert', widget: CircleAlertIcon(size: 40)),
+  IconData(
+    name: 'circle-question-mark',
+    widget: CircleQuestionMarkIcon(size: 40),
+  ),
+  IconData(name: 'mars', widget: MarsIcon(size: 40)),
+  IconData(name: 'moon', widget: MoonIcon(size: 40)),
+  IconData(name: 'venus', widget: VenusIcon(size: 40)),
+  IconData(name: 'repeat', widget: RepeatIcon(size: 40)),
+  IconData(name: 'pause', widget: PauseIcon(size: 40)),
+  IconData(name: 'play', widget: PlayIcon(size: 40)),
+  IconData(name: 'sun', widget: SunIcon(size: 40)),
+  IconData(name: 'swords', widget: SwordsIcon(size: 40)),
+  IconData(name: 'trash', widget: TrashIcon(size: 40)),
+  IconData(name: 'trash-2', widget: Trash2Icon(size: 40)),
+  IconData(name: 'keyboard', widget: KeyboardIcon(size: 40)),
+  IconData(name: 'star', widget: StarIcon(size: 40)),
+  IconData(name: 'grid-2x2', widget: Grid2x2Icon(size: 40)),
+  IconData(name: 'layers', widget: LayersIcon(size: 40)),
+  IconData(name: 'replace', widget: ReplaceIcon(size: 40)),
+
+  // Custom Icons
+  IconData(name: 'victory-points', widget: VictoryPointsIcon(size: 40)),
+  IconData(name: 'replace-2', widget: Replace2Icon(size: 40)),
+  IconData(name: 'road', widget: RoadIcon(size: 40)),
+  IconData(name: 'grid-2', widget: Grid2Icon(size: 40)),
+  IconData(name: 'grid-plus-2', widget: GridPlus2Icon(size: 40)),
+  IconData(name: 'grid-plus-4', widget: GridPlus4Icon(size: 40)),
 ];

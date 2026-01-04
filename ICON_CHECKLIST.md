@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2025-12-22T04:45:07.998617Z UTC.
+Generated on 2026-01-04T06:55:57.977556Z UTC.
 
-## ✅ Existing Icons (318)
+## ✅ Existing Icons (343)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -320,8 +320,33 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [x] `chart-pie`
 - [x] `chart-scatter`
 - [x] `chart-spline`
+- [x] `circle-alert`
+- [x] `circle-question-mark`
+- [x] `club`
+- [x] `diamond`
+- [x] `grid-2x2`
+- [x] `heart`
+- [x] `keyboard`
+- [x] `layers`
+- [x] `mars`
+- [x] `moon`
+- [x] `pause`
+- [x] `play`
+- [x] `redo-2`
+- [x] `repeat`
+- [x] `replace`
+- [x] `rotate-ccw`
+- [x] `rotate-cw`
+- [x] `spade`
+- [x] `star`
+- [x] `sun`
+- [x] `swords`
+- [x] `trash`
+- [x] `trash-2`
+- [x] `undo-2`
+- [x] `venus`
 
-## ➕ New Icons to Add (1348)
+## ➕ New Icons to Add (1323)
 - [ ] `check`
 - [ ] `check-check`
 - [ ] `check-line`
@@ -353,7 +378,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `cigarette`
 - [ ] `cigarette-off`
 - [ ] `circle`
-- [ ] `circle-alert`
 - [ ] `circle-arrow-down`
 - [ ] `circle-arrow-left`
 - [ ] `circle-arrow-out-down-left`
@@ -389,7 +413,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `circle-plus`
 - [ ] `circle-pound-sterling`
 - [ ] `circle-power`
-- [ ] `circle-question-mark`
 - [ ] `circle-slash`
 - [ ] `circle-slash-2`
 - [ ] `circle-small`
@@ -455,7 +478,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `cloud-upload`
 - [ ] `cloudy`
 - [ ] `clover`
-- [ ] `club`
 - [ ] `code`
 - [ ] `code-xml`
 - [ ] `codepen`
@@ -518,7 +540,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `delete`
 - [ ] `dessert`
 - [ ] `diameter`
-- [ ] `diamond`
 - [ ] `diamond-minus`
 - [ ] `diamond-percent`
 - [ ] `diamond-plus`
@@ -753,7 +774,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `gpu`
 - [ ] `graduation-cap`
 - [ ] `grape`
-- [ ] `grid-2x2`
 - [ ] `grid-2x2-check`
 - [ ] `grid-2x2-plus`
 - [ ] `grid-2x2-x`
@@ -796,7 +816,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `headphone-off`
 - [ ] `headphones`
 - [ ] `headset`
-- [ ] `heart`
 - [ ] `heart-crack`
 - [ ] `heart-handshake`
 - [ ] `heart-minus`
@@ -848,7 +867,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `key`
 - [ ] `key-round`
 - [ ] `key-square`
-- [ ] `keyboard`
 - [ ] `keyboard-music`
 - [ ] `keyboard-off`
 - [ ] `lamp`
@@ -866,7 +884,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `lasso`
 - [ ] `lasso-select`
 - [ ] `laugh`
-- [ ] `layers`
 - [ ] `layers-2`
 - [ ] `layers-plus`
 - [ ] `layout-dashboard`
@@ -953,7 +970,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `map-pin-x-inside`
 - [ ] `map-pinned`
 - [ ] `map-plus`
-- [ ] `mars`
 - [ ] `mars-stroke`
 - [ ] `martini`
 - [ ] `maximize`
@@ -1019,7 +1035,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `monitor-stop`
 - [ ] `monitor-up`
 - [ ] `monitor-x`
-- [ ] `moon`
 - [ ] `moon-star`
 - [ ] `motorbike`
 - [ ] `mountain`
@@ -1113,7 +1128,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `parentheses`
 - [ ] `parking-meter`
 - [ ] `party-popper`
-- [ ] `pause`
 - [ ] `paw-print`
 - [ ] `pc-case`
 - [ ] `pen`
@@ -1153,7 +1167,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `plane`
 - [ ] `plane-landing`
 - [ ] `plane-takeoff`
-- [ ] `play`
 - [ ] `plug`
 - [ ] `plug-2`
 - [ ] `plug-zap`
@@ -1206,7 +1219,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `rectangle-vertical`
 - [ ] `recycle`
 - [ ] `redo`
-- [ ] `redo-2`
 - [ ] `redo-dot`
 - [ ] `refresh-ccw`
 - [ ] `refresh-ccw-dot`
@@ -1215,10 +1227,8 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `refrigerator`
 - [ ] `regex`
 - [ ] `remove-formatting`
-- [ ] `repeat`
 - [ ] `repeat-1`
 - [ ] `repeat-2`
-- [ ] `replace`
 - [ ] `replace-all`
 - [ ] `reply`
 - [ ] `reply-all`
@@ -1229,10 +1239,8 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `roller-coaster`
 - [ ] `rose`
 - [ ] `rotate-3d`
-- [ ] `rotate-ccw`
 - [ ] `rotate-ccw-key`
 - [ ] `rotate-ccw-square`
-- [ ] `rotate-cw`
 - [ ] `rotate-cw-square`
 - [ ] `route`
 - [ ] `route-off`
@@ -1351,7 +1359,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `solar-panel`
 - [ ] `soup`
 - [ ] `space`
-- [ ] `spade`
 - [ ] `sparkle`
 - [ ] `sparkles`
 - [ ] `speaker`
@@ -1438,7 +1445,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `squircle-dashed`
 - [ ] `squirrel`
 - [ ] `stamp`
-- [ ] `star`
 - [ ] `star-half`
 - [ ] `star-off`
 - [ ] `step-back`
@@ -1452,7 +1458,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `stretch-vertical`
 - [ ] `strikethrough`
 - [ ] `subscript`
-- [ ] `sun`
 - [ ] `sun-dim`
 - [ ] `sun-medium`
 - [ ] `sun-moon`
@@ -1464,7 +1469,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `swiss-franc`
 - [ ] `switch-camera`
 - [ ] `sword`
-- [ ] `swords`
 - [ ] `syringe`
 - [ ] `table`
 - [ ] `table-2`
@@ -1540,8 +1544,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `train-track`
 - [ ] `tram-front`
 - [ ] `transgender`
-- [ ] `trash`
-- [ ] `trash-2`
 - [ ] `tree-deciduous`
 - [ ] `tree-palm`
 - [ ] `tree-pine`
@@ -1571,7 +1573,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `umbrella-off`
 - [ ] `underline`
 - [ ] `undo`
-- [ ] `undo-2`
 - [ ] `undo-dot`
 - [ ] `unfold-horizontal`
 - [ ] `unfold-vertical`
@@ -1611,7 +1612,6 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `vector-square`
 - [ ] `vegan`
 - [ ] `venetian-mask`
-- [ ] `venus`
 - [ ] `venus-and-mars`
 - [ ] `vibrate`
 - [ ] `vibrate-off`
@@ -1677,3 +1677,10 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `align-left`
 - [ ] `align-right`
 
+## 🎨 Custom Icons (6)
+- [x] `victory-points`
+- [x] `replace-2`
+- [x] `road`
+- [x] `grid-2`
+- [x] `grid-plus-2`
+- [x] `grid-plus-4`

@@ -69,6 +69,17 @@ Set<String> _getProjectIcons(Directory dir) {
 
 void _generateChecklist(
     Set<String> existing, Set<String> newIcons, Set<String> removed) {
+  // Read existing custom icons section if it exists
+  final checklistFile = File('ICON_CHECKLIST.md');
+  String? customIconsSection;
+  if (checklistFile.existsSync()) {
+    final content = checklistFile.readAsStringSync();
+    final customMatch = RegExp(r'## 🎨 Custom Icons.*', dotAll: true).firstMatch(content);
+    if (customMatch != null) {
+      customIconsSection = customMatch.group(0);
+    }
+  }
+
   final buffer = StringBuffer();
   buffer.writeln('# Lucide Icons Checklist');
   buffer
@@ -96,6 +107,13 @@ void _generateChecklist(
   }
   buffer.writeln();
 
-  final checklistFile = File('ICON_CHECKLIST.md');
+  // Append custom icons section if it existed
+  if (customIconsSection != null) {
+    buffer.write(customIconsSection);
+    if (!customIconsSection.endsWith('\n')) {
+      buffer.writeln();
+    }
+  }
+
   checklistFile.writeAsStringSync(buffer.toString());
 }
