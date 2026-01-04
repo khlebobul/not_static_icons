@@ -515,4 +515,7 @@ final List<IconData> icons = [
   IconData(name: 'victory-points', widget: VictoryPointsIcon(size: 40)),
   IconData(name: 'replace-2', widget: Replace2Icon(size: 40)),
   IconData(name: 'road', widget: RoadIcon(size: 40)),
+  IconData(name: 'grid-2', widget: Grid2Icon(size: 40)),
+  IconData(name: 'grid-plus-2', widget: GridPlus2Icon(size: 40)),
+  IconData(name: 'grid-plus-4', widget: GridPlus4Icon(size: 40)),
 ];
