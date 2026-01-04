@@ -64,58 +64,88 @@ class GridPlus4Painter extends CustomPainter {
     gridPath.moveTo(12 * scale, 3 * scale);
     gridPath.lineTo(12 * scale, 20 * scale);
     gridPath.cubicTo(
-      12 * scale, 20.2652 * scale,
-      11.8946 * scale, 20.5196 * scale,
-      11.7071 * scale, 20.7071 * scale,
+      12 * scale,
+      20.2652 * scale,
+      11.8946 * scale,
+      20.5196 * scale,
+      11.7071 * scale,
+      20.7071 * scale,
     );
     gridPath.cubicTo(
-      11.5196 * scale, 20.8946 * scale,
-      11.2652 * scale, 21 * scale,
-      11 * scale, 21 * scale,
+      11.5196 * scale,
+      20.8946 * scale,
+      11.2652 * scale,
+      21 * scale,
+      11 * scale,
+      21 * scale,
     );
     gridPath.lineTo(5 * scale, 21 * scale);
     gridPath.cubicTo(
-      4.46957 * scale, 21 * scale,
-      3.96086 * scale, 20.7893 * scale,
-      3.58579 * scale, 20.4142 * scale,
+      4.46957 * scale,
+      21 * scale,
+      3.96086 * scale,
+      20.7893 * scale,
+      3.58579 * scale,
+      20.4142 * scale,
     );
     gridPath.cubicTo(
-      3.21071 * scale, 20.0391 * scale,
-      3 * scale, 19.5304 * scale,
-      3 * scale, 19 * scale,
+      3.21071 * scale,
+      20.0391 * scale,
+      3 * scale,
+      19.5304 * scale,
+      3 * scale,
+      19 * scale,
     );
     gridPath.lineTo(3 * scale, 5 * scale);
     gridPath.cubicTo(
-      3 * scale, 4.46957 * scale,
-      3.21071 * scale, 3.96086 * scale,
-      3.58579 * scale, 3.58579 * scale,
+      3 * scale,
+      4.46957 * scale,
+      3.21071 * scale,
+      3.96086 * scale,
+      3.58579 * scale,
+      3.58579 * scale,
     );
     gridPath.cubicTo(
-      3.96086 * scale, 3.21071 * scale,
-      4.46957 * scale, 3 * scale,
-      5 * scale, 3 * scale,
+      3.96086 * scale,
+      3.21071 * scale,
+      4.46957 * scale,
+      3 * scale,
+      5 * scale,
+      3 * scale,
     );
     gridPath.lineTo(19 * scale, 3 * scale);
     gridPath.cubicTo(
-      19.5304 * scale, 3 * scale,
-      20.0391 * scale, 3.21071 * scale,
-      20.4142 * scale, 3.58579 * scale,
+      19.5304 * scale,
+      3 * scale,
+      20.0391 * scale,
+      3.21071 * scale,
+      20.4142 * scale,
+      3.58579 * scale,
     );
     gridPath.cubicTo(
-      20.7893 * scale, 3.96086 * scale,
-      21 * scale, 4.46957 * scale,
-      21 * scale, 5 * scale,
+      20.7893 * scale,
+      3.96086 * scale,
+      21 * scale,
+      4.46957 * scale,
+      21 * scale,
+      5 * scale,
     );
     gridPath.lineTo(21 * scale, 11 * scale);
     gridPath.cubicTo(
-      21 * scale, 11.2652 * scale,
-      20.8946 * scale, 11.5196 * scale,
-      20.7071 * scale, 11.7071 * scale,
+      21 * scale,
+      11.2652 * scale,
+      20.8946 * scale,
+      11.5196 * scale,
+      20.7071 * scale,
+      11.7071 * scale,
     );
     gridPath.cubicTo(
-      20.5196 * scale, 11.8946 * scale,
-      20.2652 * scale, 12 * scale,
-      20 * scale, 12 * scale,
+      20.5196 * scale,
+      11.8946 * scale,
+      20.2652 * scale,
+      12 * scale,
+      20 * scale,
+      12 * scale,
     );
     gridPath.lineTo(3 * scale, 12 * scale);
     canvas.drawPath(gridPath, paint);

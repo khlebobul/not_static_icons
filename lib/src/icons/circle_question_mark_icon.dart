@@ -79,9 +79,12 @@ class CircleQuestionMarkPainter extends CustomPainter {
     );
     // Curve down to the stem
     questionPath.cubicTo(
-      14.92 * scale, 12 * scale,
-      11.92 * scale, 12 * scale,
-      11.92 * scale, 13 * scale,
+      14.92 * scale,
+      12 * scale,
+      11.92 * scale,
+      12 * scale,
+      11.92 * scale,
+      13 * scale,
     );
     canvas.drawPath(questionPath, paint);
 

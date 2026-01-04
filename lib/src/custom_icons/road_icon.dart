@@ -70,25 +70,37 @@ class RoadPainter extends CustomPainter {
     final roadPath = Path();
     roadPath.moveTo(22 * scale, (8 + waveOffset) * scale);
     roadPath.cubicTo(
-      20 * scale, (13 + waveOffset) * scale,
-      17 * scale, (10 - waveOffset) * scale,
-      15 * scale, (15 + waveOffset) * scale,
+      20 * scale,
+      (13 + waveOffset) * scale,
+      17 * scale,
+      (10 - waveOffset) * scale,
+      15 * scale,
+      (15 + waveOffset) * scale,
     );
     roadPath.cubicTo(
-      13 * scale, (20 + waveOffset) * scale,
-      10 * scale, (17 - waveOffset) * scale,
-      8 * scale, 22 * scale,
+      13 * scale,
+      (20 + waveOffset) * scale,
+      10 * scale,
+      (17 - waveOffset) * scale,
+      8 * scale,
+      22 * scale,
     );
     roadPath.lineTo(2 * scale, 16 * scale);
     roadPath.cubicTo(
-      4 * scale, (11 - waveOffset) * scale,
-      7 * scale, (14 + waveOffset) * scale,
-      9 * scale, (9 - waveOffset) * scale,
+      4 * scale,
+      (11 - waveOffset) * scale,
+      7 * scale,
+      (14 + waveOffset) * scale,
+      9 * scale,
+      (9 - waveOffset) * scale,
     );
     roadPath.cubicTo(
-      11 * scale, (4 - waveOffset) * scale,
-      14 * scale, (7 + waveOffset) * scale,
-      16 * scale, 2 * scale,
+      11 * scale,
+      (4 - waveOffset) * scale,
+      14 * scale,
+      (7 + waveOffset) * scale,
+      16 * scale,
+      2 * scale,
     );
     roadPath.close();
     canvas.drawPath(roadPath, paint);
@@ -98,21 +110,28 @@ class RoadPainter extends CustomPainter {
     final centerPath = Path();
     centerPath.moveTo(5 * scale, (19 - waveOffset) * scale);
     centerPath.cubicTo(
-      7 * scale, (14 - waveOffset) * scale,
-      10 * scale, (17 + waveOffset) * scale,
-      12 * scale, 12 * scale,
+      7 * scale,
+      (14 - waveOffset) * scale,
+      10 * scale,
+      (17 + waveOffset) * scale,
+      12 * scale,
+      12 * scale,
     );
     centerPath.cubicTo(
-      14 * scale, (7 - waveOffset) * scale,
-      17 * scale, (10 + waveOffset) * scale,
-      19 * scale, (5 + waveOffset) * scale,
+      14 * scale,
+      (7 - waveOffset) * scale,
+      17 * scale,
+      (10 + waveOffset) * scale,
+      19 * scale,
+      (5 + waveOffset) * scale,
     );
 
     // Draw dashed line manually
     _drawDashedPath(canvas, centerPath, dashedPaint, 2 * scale, 2 * scale);
   }
 
-  void _drawDashedPath(Canvas canvas, Path path, Paint paint, double dashLength, double gapLength) {
+  void _drawDashedPath(Canvas canvas, Path path, Paint paint, double dashLength,
+      double gapLength) {
     final pathMetrics = path.computeMetrics();
     for (final metric in pathMetrics) {
       double distance = 0;

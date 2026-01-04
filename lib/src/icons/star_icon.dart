@@ -68,7 +68,7 @@ class StarPainter extends CustomPainter {
     // Star shape - 5 pointed star
     // Using simplified points based on SVG path
     final starPath = Path();
-    
+
     // Top point
     starPath.moveTo(12 * scale, 2 * scale);
     // To right upper

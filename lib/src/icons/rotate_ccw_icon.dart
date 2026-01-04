@@ -84,9 +84,12 @@ class RotateCcwPainter extends CustomPainter {
     );
     // Curve from (12,3) to (5.26, 5.74) then to (3, 8)
     circlePath.cubicTo(
-      9.48 * scale, 3 * scale,
-      7.07 * scale, 4 * scale,
-      5.26 * scale, 5.74 * scale,
+      9.48 * scale,
+      3 * scale,
+      7.07 * scale,
+      4 * scale,
+      5.26 * scale,
+      5.74 * scale,
     );
     circlePath.lineTo(3 * scale, 8 * scale);
     canvas.drawPath(circlePath, paint);

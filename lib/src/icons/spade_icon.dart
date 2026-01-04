@@ -89,9 +89,12 @@ class SpadePainter extends CustomPainter {
     );
     // Right side up
     spadePath.cubicTo(
-      22 * scale, 12.21 * scale,
-      20.5 * scale, 10.5 * scale,
-      19 * scale, 9 * scale,
+      22 * scale,
+      12.21 * scale,
+      20.5 * scale,
+      10.5 * scale,
+      19 * scale,
+      9 * scale,
     );
     // Top right to point
     spadePath.lineTo(13.508 * scale, 3.688 * scale);
@@ -105,9 +108,12 @@ class SpadePainter extends CustomPainter {
     spadePath.lineTo(5 * scale, 8.999 * scale);
     // Left side down
     spadePath.cubicTo(
-      3.5 * scale, 10.5 * scale,
-      2 * scale, 12.2 * scale,
-      2 * scale, 14.499 * scale,
+      3.5 * scale,
+      10.5 * scale,
+      2 * scale,
+      12.2 * scale,
+      2 * scale,
+      14.499 * scale,
     );
     canvas.drawPath(spadePath, paint);
 

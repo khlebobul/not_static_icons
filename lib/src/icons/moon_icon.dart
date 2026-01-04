@@ -78,9 +78,12 @@ class MoonPainter extends CustomPainter {
     );
     // Small curve at top
     moonPath.cubicTo(
-      11.917 * scale, 2.992 * scale,
-      12.129 * scale, 3.474 * scale,
-      11.914 * scale, 3.817 * scale,
+      11.917 * scale,
+      2.992 * scale,
+      12.129 * scale,
+      3.474 * scale,
+      11.914 * scale,
+      3.817 * scale,
     );
     // Inner crescent arc (6 radius)
     moonPath.arcToPoint(
@@ -90,9 +93,12 @@ class MoonPainter extends CustomPainter {
     );
     // Small curve at end
     moonPath.cubicTo(
-      20.526 * scale, 11.87 * scale,
-      21.007 * scale, 12.081 * scale,
-      20.985 * scale, 12.486 * scale,
+      20.526 * scale,
+      11.87 * scale,
+      21.007 * scale,
+      12.081 * scale,
+      20.985 * scale,
+      12.486 * scale,
     );
     canvas.drawPath(moonPath, paint);
 

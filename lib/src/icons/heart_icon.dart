@@ -89,9 +89,12 @@ class HeartPainter extends CustomPainter {
     );
     // Right side down
     heartPath.cubicTo(
-      22 * scale, 11.79 * scale,
-      20.5 * scale, 13.5 * scale,
-      19 * scale, 15 * scale,
+      22 * scale,
+      11.79 * scale,
+      20.5 * scale,
+      13.5 * scale,
+      19 * scale,
+      15 * scale,
     );
     // Bottom right curve to point
     heartPath.lineTo(13.508 * scale, 20.313 * scale);
@@ -105,9 +108,12 @@ class HeartPainter extends CustomPainter {
     heartPath.lineTo(5 * scale, 15 * scale);
     // Left side up
     heartPath.cubicTo(
-      3.5 * scale, 13.5 * scale,
-      2 * scale, 11.8 * scale,
-      2 * scale, 9.5 * scale,
+      3.5 * scale,
+      13.5 * scale,
+      2 * scale,
+      11.8 * scale,
+      2 * scale,
+      9.5 * scale,
     );
     canvas.drawPath(heartPath, paint);
 

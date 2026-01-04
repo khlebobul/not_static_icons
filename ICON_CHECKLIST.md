@@ -1677,3 +1677,11 @@ Generated on 2025-12-22T04:45:07.998617Z UTC.
 - [ ] `align-left`
 - [ ] `align-right`
 
+## 🎨 Custom Icons (6)
+- [x] `victory-points`
+- [x] `replace-2`
+- [x] `road`
+- [x] `grid-2`
+- [x] `grid-plus-2`
+- [x] `grid-plus-4`
+

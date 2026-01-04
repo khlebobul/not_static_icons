@@ -62,11 +62,13 @@ class SwordsPainter extends CustomPainter {
     // ========== LEFT SWORD (moves right-down) ==========
     // Main blade: polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"
     final leftSwordPath = Path();
-    leftSwordPath.moveTo((14.5 + clashOffset) * scale, (17.5 + clashOffset) * scale);
+    leftSwordPath.moveTo(
+        (14.5 + clashOffset) * scale, (17.5 + clashOffset) * scale);
     leftSwordPath.lineTo((3 + clashOffset) * scale, (6 + clashOffset) * scale);
     leftSwordPath.lineTo((3 + clashOffset) * scale, (3 + clashOffset) * scale);
     leftSwordPath.lineTo((6 + clashOffset) * scale, (3 + clashOffset) * scale);
-    leftSwordPath.lineTo((17.5 + clashOffset) * scale, (14.5 + clashOffset) * scale);
+    leftSwordPath.lineTo(
+        (17.5 + clashOffset) * scale, (14.5 + clashOffset) * scale);
     canvas.drawPath(leftSwordPath, paint);
 
     // Left sword guard: line x1="13" x2="19" y1="19" y2="13"
@@ -91,11 +93,16 @@ class SwordsPainter extends CustomPainter {
     // ========== RIGHT SWORD (moves left-down) ==========
     // Main blade: polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"
     final rightSwordPath = Path();
-    rightSwordPath.moveTo((14.5 - clashOffset) * scale, (6.5 + clashOffset) * scale);
-    rightSwordPath.lineTo((18 - clashOffset) * scale, (3 + clashOffset) * scale);
-    rightSwordPath.lineTo((21 - clashOffset) * scale, (3 + clashOffset) * scale);
-    rightSwordPath.lineTo((21 - clashOffset) * scale, (6 + clashOffset) * scale);
-    rightSwordPath.lineTo((17.5 - clashOffset) * scale, (9.5 + clashOffset) * scale);
+    rightSwordPath.moveTo(
+        (14.5 - clashOffset) * scale, (6.5 + clashOffset) * scale);
+    rightSwordPath.lineTo(
+        (18 - clashOffset) * scale, (3 + clashOffset) * scale);
+    rightSwordPath.lineTo(
+        (21 - clashOffset) * scale, (3 + clashOffset) * scale);
+    rightSwordPath.lineTo(
+        (21 - clashOffset) * scale, (6 + clashOffset) * scale);
+    rightSwordPath.lineTo(
+        (17.5 - clashOffset) * scale, (9.5 + clashOffset) * scale);
     canvas.drawPath(rightSwordPath, paint);
 
     // Right sword guard: line x1="5" x2="9" y1="14" y2="18"
