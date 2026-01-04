@@ -513,4 +513,5 @@ final List<IconData> icons = [
 
   // Custom Icons
   IconData(name: 'victory-points', widget: VictoryPointsIcon(size: 40)),
+  IconData(name: 'replace-2', widget: Replace2Icon(size: 40)),
 ];
