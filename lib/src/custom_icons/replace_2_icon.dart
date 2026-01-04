@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../core/animated_svg_icon_base.dart';
 
-/// Animated Replace 2 Icon - Arrow moves down
+/// Animated Replace 2 Icon - Arrow moves down (filled rectangle variant)
 class Replace2Icon extends AnimatedSVGIcon {
   const Replace2Icon({
     super.key,
@@ -63,46 +63,43 @@ class Replace2Painter extends CustomPainter {
     final oscillation = 4 * animationValue * (1 - animationValue);
     final arrowOffset = oscillation * 2.0;
 
-    // Top-left dashed rectangle corner
-    // M14 4a2 2 0 0 1 2-2
+    // Top-right dashed rectangle corners
+    // M14 4a1 1 0 0 1 1-1
     final corner1 = Path();
     corner1.moveTo(14 * scale, 4 * scale);
     corner1.arcToPoint(
-      Offset(16 * scale, 2 * scale),
-      radius: Radius.circular(2 * scale),
+      Offset(15 * scale, 3 * scale),
+      radius: Radius.circular(1 * scale),
       clockwise: true,
     );
     canvas.drawPath(corner1, paint);
 
-    // Bottom-left corner
-    // M16 10a2 2 0 0 1-2-2
+    // M15 10a1 1 0 0 1-1-1
     final corner2 = Path();
-    corner2.moveTo(16 * scale, 10 * scale);
+    corner2.moveTo(15 * scale, 10 * scale);
     corner2.arcToPoint(
-      Offset(14 * scale, 8 * scale),
-      radius: Radius.circular(2 * scale),
+      Offset(14 * scale, 9 * scale),
+      radius: Radius.circular(1 * scale),
       clockwise: true,
     );
     canvas.drawPath(corner2, paint);
 
-    // Top-right corner
-    // M20 2a2 2 0 0 1 2 2
+    // M21 4a1 1 0 0 0-1-1
     final corner3 = Path();
-    corner3.moveTo(20 * scale, 2 * scale);
+    corner3.moveTo(21 * scale, 4 * scale);
     corner3.arcToPoint(
-      Offset(22 * scale, 4 * scale),
-      radius: Radius.circular(2 * scale),
-      clockwise: true,
+      Offset(20 * scale, 3 * scale),
+      radius: Radius.circular(1 * scale),
+      clockwise: false,
     );
     canvas.drawPath(corner3, paint);
 
-    // Bottom-right corner
-    // M22 8a2 2 0 0 1-2 2
+    // M21 9a1 1 0 0 1-1 1
     final corner4 = Path();
-    corner4.moveTo(22 * scale, 8 * scale);
+    corner4.moveTo(21 * scale, 9 * scale);
     corner4.arcToPoint(
       Offset(20 * scale, 10 * scale),
-      radius: Radius.circular(2 * scale),
+      radius: Radius.circular(1 * scale),
       clockwise: true,
     );
     canvas.drawPath(corner4, paint);
@@ -126,30 +123,30 @@ class Replace2Painter extends CustomPainter {
     arrowStemPath.lineTo(10 * scale, 3 * scale);
     canvas.drawPath(arrowStemPath, paint);
 
-    // Bottom-left filled rectangle: rect x="2" y="14" width="8" height="8" rx="1"
+    // Bottom-left FILLED rectangle: rect x="3" y="14" width="7" height="7" rx="1"
     final rectPath = Path();
-    rectPath.moveTo(3 * scale, 14 * scale);
+    rectPath.moveTo(4 * scale, 14 * scale);
     rectPath.lineTo(9 * scale, 14 * scale);
     rectPath.arcToPoint(
       Offset(10 * scale, 15 * scale),
       radius: Radius.circular(1 * scale),
       clockwise: true,
     );
-    rectPath.lineTo(10 * scale, 21 * scale);
+    rectPath.lineTo(10 * scale, 20 * scale);
     rectPath.arcToPoint(
-      Offset(9 * scale, 22 * scale),
+      Offset(9 * scale, 21 * scale),
       radius: Radius.circular(1 * scale),
       clockwise: true,
     );
-    rectPath.lineTo(3 * scale, 22 * scale);
+    rectPath.lineTo(4 * scale, 21 * scale);
     rectPath.arcToPoint(
-      Offset(2 * scale, 21 * scale),
+      Offset(3 * scale, 20 * scale),
       radius: Radius.circular(1 * scale),
       clockwise: true,
     );
-    rectPath.lineTo(2 * scale, 15 * scale);
+    rectPath.lineTo(3 * scale, 15 * scale);
     rectPath.arcToPoint(
-      Offset(3 * scale, 14 * scale),
+      Offset(4 * scale, 14 * scale),
       radius: Radius.circular(1 * scale),
       clockwise: true,
     );
