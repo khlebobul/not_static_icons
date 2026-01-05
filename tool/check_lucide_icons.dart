@@ -74,7 +74,8 @@ void _generateChecklist(
   String? customIconsSection;
   if (checklistFile.existsSync()) {
     final content = checklistFile.readAsStringSync();
-    final customMatch = RegExp(r'## 🎨 Custom Icons.*', dotAll: true).firstMatch(content);
+    final customMatch =
+        RegExp(r'## 🎨 Custom Icons.*', dotAll: true).firstMatch(content);
     if (customMatch != null) {
       customIconsSection = customMatch.group(0);
     }

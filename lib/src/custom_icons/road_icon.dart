@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import '../core/animated_svg_icon_base.dart';
 
-/// Animated Road Icon - Road path animates
+/// Animated Road Icon - Dashed line flows along the road
 class RoadIcon extends AnimatedSVGIcon {
   const RoadIcon({
     super.key,
     super.size = 40.0,
     super.color,
     super.hoverColor,
-    super.animationDuration = const Duration(milliseconds: 600),
+    super.animationDuration = const Duration(milliseconds: 800),
     super.strokeWidth = 2.0,
     super.reverseOnExit = false,
     super.enableTouchInteraction = true,
@@ -16,7 +16,7 @@ class RoadIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Road path animates";
+  String get animationDescription => "Road dashes flow";
 
   @override
   CustomPainter createPainter({
@@ -53,93 +53,99 @@ class RoadPainter extends CustomPainter {
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
 
-    final dashedPaint = Paint()
-      ..color = color
-      ..strokeWidth = strokeWidth
-      ..strokeCap = StrokeCap.round
-      ..strokeJoin = StrokeJoin.round
-      ..style = PaintingStyle.stroke;
-
     final scale = size.width / 24.0;
 
-    // Animation - slight wave/pulse effect
-    final oscillation = 4 * animationValue * (1 - animationValue);
-    final waveOffset = oscillation * 0.5;
-
-    // Outer road path: M22 8C20 13 17 10 15 15C13 20 10 17 8 22L2 16C4 11 7 14 9 9C11 4 14 7 16 2L22 8Z
+    // Outer road path (static)
     final roadPath = Path();
-    roadPath.moveTo(22 * scale, (8 + waveOffset) * scale);
+    roadPath.moveTo(22 * scale, 8 * scale);
     roadPath.cubicTo(
       20 * scale,
-      (13 + waveOffset) * scale,
+      13 * scale,
       17 * scale,
-      (10 - waveOffset) * scale,
+      10 * scale,
       15 * scale,
-      (15 + waveOffset) * scale,
+      15 * scale,
     );
     roadPath.cubicTo(
       13 * scale,
-      (20 + waveOffset) * scale,
+      20 * scale,
       10 * scale,
-      (17 - waveOffset) * scale,
+      17 * scale,
       8 * scale,
       22 * scale,
     );
     roadPath.lineTo(2 * scale, 16 * scale);
     roadPath.cubicTo(
       4 * scale,
-      (11 - waveOffset) * scale,
+      11 * scale,
       7 * scale,
-      (14 + waveOffset) * scale,
+      14 * scale,
       9 * scale,
-      (9 - waveOffset) * scale,
+      9 * scale,
     );
     roadPath.cubicTo(
       11 * scale,
-      (4 - waveOffset) * scale,
+      4 * scale,
       14 * scale,
-      (7 + waveOffset) * scale,
+      7 * scale,
       16 * scale,
       2 * scale,
     );
     roadPath.close();
     canvas.drawPath(roadPath, paint);
 
-    // Center dashed line: M5 19C7 14 10 17 12 12C14 7 17 10 19 5
-    // Draw as dashed path
+    // Center dashed line with flowing animation
     final centerPath = Path();
-    centerPath.moveTo(5 * scale, (19 - waveOffset) * scale);
+    centerPath.moveTo(5 * scale, 19 * scale);
     centerPath.cubicTo(
       7 * scale,
-      (14 - waveOffset) * scale,
+      14 * scale,
       10 * scale,
-      (17 + waveOffset) * scale,
+      17 * scale,
       12 * scale,
       12 * scale,
     );
     centerPath.cubicTo(
       14 * scale,
-      (7 - waveOffset) * scale,
+      7 * scale,
       17 * scale,
-      (10 + waveOffset) * scale,
+      10 * scale,
       19 * scale,
-      (5 + waveOffset) * scale,
+      5 * scale,
     );
 
-    // Draw dashed line manually
-    _drawDashedPath(canvas, centerPath, dashedPaint, 2 * scale, 2 * scale);
+    // Animated dash offset - dashes "flow" along the path
+    final dashLength = 2.5 * scale;
+    final gapLength = 2.5 * scale;
+    final totalDashCycle = dashLength + gapLength;
+    final offset = animationValue * totalDashCycle;
+
+    _drawAnimatedDashedPath(
+        canvas, centerPath, paint, dashLength, gapLength, offset);
   }
 
-  void _drawDashedPath(Canvas canvas, Path path, Paint paint, double dashLength,
-      double gapLength) {
+  void _drawAnimatedDashedPath(
+    Canvas canvas,
+    Path path,
+    Paint paint,
+    double dashLength,
+    double gapLength,
+    double offset,
+  ) {
     final pathMetrics = path.computeMetrics();
     for (final metric in pathMetrics) {
-      double distance = 0;
-      while (distance < metric.length) {
-        final start = distance;
-        final end = (distance + dashLength).clamp(0, metric.length);
-        final extractPath = metric.extractPath(start, end.toDouble());
-        canvas.drawPath(extractPath, paint);
+      final totalLength = metric.length;
+      double distance = -offset;
+
+      while (distance < totalLength) {
+        final start = distance.clamp(0.0, totalLength);
+        final end = (distance + dashLength).clamp(0.0, totalLength);
+
+        if (end > start) {
+          final extractPath = metric.extractPath(start, end);
+          canvas.drawPath(extractPath, paint);
+        }
+
         distance += dashLength + gapLength;
       }
     }
