@@ -1,3 +1,8 @@
+## 0.26.1
+
+#### Improvements
+* Update `road` icon animation
+
 ## 0.26.0
 
 #### New icons
