@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-01-05T05:33:59.009530Z UTC.
+Generated on 2026-01-06T03:24:21.221612Z UTC.
 
-## ✅ Existing Icons (343)
+## ✅ Existing Icons (346)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -328,6 +328,9 @@ Generated on 2026-01-05T05:33:59.009530Z UTC.
 - [x] `heart`
 - [x] `keyboard`
 - [x] `layers`
+- [x] `map`
+- [x] `map-minus`
+- [x] `map-plus`
 - [x] `mars`
 - [x] `moon`
 - [x] `pause`
@@ -346,7 +349,7 @@ Generated on 2026-01-05T05:33:59.009530Z UTC.
 - [x] `undo-2`
 - [x] `venus`
 
-## ➕ New Icons to Add (1323)
+## ➕ New Icons to Add (1320)
 - [ ] `check`
 - [ ] `check-check`
 - [ ] `check-line`
@@ -954,8 +957,6 @@ Generated on 2026-01-05T05:33:59.009530Z UTC.
 - [ ] `mail-x`
 - [ ] `mailbox`
 - [ ] `mails`
-- [ ] `map`
-- [ ] `map-minus`
 - [ ] `map-pin`
 - [ ] `map-pin-check`
 - [ ] `map-pin-check-inside`
@@ -969,7 +970,6 @@ Generated on 2026-01-05T05:33:59.009530Z UTC.
 - [ ] `map-pin-x`
 - [ ] `map-pin-x-inside`
 - [ ] `map-pinned`
-- [ ] `map-plus`
 - [ ] `mars-stroke`
 - [ ] `martini`
 - [ ] `maximize`

@@ -1,3 +1,8 @@
+## 0.27.0
+
+#### New icons
+*Added new animated icons: `map`, `map-plus`, `map-minus`.
+
 ## 0.26.1
 
 #### Improvements
