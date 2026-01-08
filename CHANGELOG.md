@@ -1,7 +1,7 @@
 ## 0.27.0
 
 #### New icons
-*Added new animated icons: `map`, `map-plus`, `map-minus`.
+* Added new animated icons: `map`, `map-plus`, `map-minus`.
 
 ## 0.26.1
 
@@ -17,7 +17,7 @@
 ## 0.25.0
 
 #### New icons
-*Added four new animated icons: `balloon`, `birdhouse`, `book-search`, and `cannabis-off`
+* Added four new animated icons: `balloon`, `birdhouse`, `book-search`, and `cannabis-off`
 
 #### Improvements
 * Enhanced `chart-spline` icon with improved wave-based animation.
