@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-01-06T03:24:21.221612Z UTC.
+Generated on 2026-01-15T04:20:18.109568Z UTC.
 
-## ✅ Existing Icons (346)
+## ✅ Existing Icons (372)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -320,6 +320,32 @@ Generated on 2026-01-06T03:24:21.221612Z UTC.
 - [x] `chart-pie`
 - [x] `chart-scatter`
 - [x] `chart-spline`
+- [x] `check`
+- [x] `check-check`
+- [x] `check-line`
+- [x] `chef-hat`
+- [x] `cherry`
+- [x] `chess-bishop`
+- [x] `chess-king`
+- [x] `chess-knight`
+- [x] `chess-pawn`
+- [x] `chess-queen`
+- [x] `chess-rook`
+- [x] `chevron-down`
+- [x] `chevron-first`
+- [x] `chevron-last`
+- [x] `chevron-left`
+- [x] `chevron-right`
+- [x] `chevron-up`
+- [x] `chevrons-down`
+- [x] `chevrons-down-up`
+- [x] `chevrons-left`
+- [x] `chevrons-left-right`
+- [x] `chevrons-left-right-ellipsis`
+- [x] `chevrons-right`
+- [x] `chevrons-right-left`
+- [x] `chevrons-up`
+- [x] `chevrons-up-down`
 - [x] `circle-alert`
 - [x] `circle-question-mark`
 - [x] `club`
@@ -349,33 +375,7 @@ Generated on 2026-01-06T03:24:21.221612Z UTC.
 - [x] `undo-2`
 - [x] `venus`
 
-## ➕ New Icons to Add (1320)
-- [ ] `check`
-- [ ] `check-check`
-- [ ] `check-line`
-- [ ] `chef-hat`
-- [ ] `cherry`
-- [ ] `chess-bishop`
-- [ ] `chess-king`
-- [ ] `chess-knight`
-- [ ] `chess-pawn`
-- [ ] `chess-queen`
-- [ ] `chess-rook`
-- [ ] `chevron-down`
-- [ ] `chevron-first`
-- [ ] `chevron-last`
-- [ ] `chevron-left`
-- [ ] `chevron-right`
-- [ ] `chevron-up`
-- [ ] `chevrons-down`
-- [ ] `chevrons-down-up`
-- [ ] `chevrons-left`
-- [ ] `chevrons-left-right`
-- [ ] `chevrons-left-right-ellipsis`
-- [ ] `chevrons-right`
-- [ ] `chevrons-right-left`
-- [ ] `chevrons-up`
-- [ ] `chevrons-up-down`
+## ➕ New Icons to Add (1294)
 - [ ] `chromium`
 - [ ] `church`
 - [ ] `cigarette`
