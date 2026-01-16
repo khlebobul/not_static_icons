@@ -69,26 +69,34 @@ class ChessKnightPainter extends CustomPainter {
     // Base
     final basePath = Path();
     basePath.moveTo(5 * scale, 20 * scale);
-    basePath.arcToPoint(Offset(7 * scale, 18 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(7 * scale, 18 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     basePath.lineTo(17 * scale, 18 * scale);
-    basePath.arcToPoint(Offset(19 * scale, 20 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(19 * scale, 20 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     basePath.lineTo(19 * scale, 21 * scale);
-    basePath.arcToPoint(Offset(18 * scale, 22 * scale), radius: Radius.circular(1 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(18 * scale, 22 * scale),
+        radius: Radius.circular(1 * scale), clockwise: true);
     basePath.lineTo(6 * scale, 22 * scale);
-    basePath.arcToPoint(Offset(5 * scale, 21 * scale), radius: Radius.circular(1 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(5 * scale, 21 * scale),
+        radius: Radius.circular(1 * scale), clockwise: true);
     basePath.close();
     canvas.drawPath(basePath, paint);
 
     // Body (horse head shape)
     final bodyPath = Path();
     bodyPath.moveTo(16.5 * scale, 18 * scale);
-    bodyPath.cubicTo(17.5 * scale, 16 * scale, 19 * scale, 13 * scale, 19 * scale, 9 * scale);
-    bodyPath.arcToPoint(Offset(12 * scale, 2 * scale), radius: Radius.circular(7 * scale), clockwise: false);
+    bodyPath.cubicTo(17.5 * scale, 16 * scale, 19 * scale, 13 * scale,
+        19 * scale, 9 * scale);
+    bodyPath.arcToPoint(Offset(12 * scale, 2 * scale),
+        radius: Radius.circular(7 * scale), clockwise: false);
     bodyPath.lineTo(6.635 * scale, 2 * scale);
-    bodyPath.arcToPoint(Offset(5.867 * scale, 3.64 * scale), radius: Radius.circular(1 * scale), clockwise: false);
+    bodyPath.arcToPoint(Offset(5.867 * scale, 3.64 * scale),
+        radius: Radius.circular(1 * scale), clockwise: false);
     bodyPath.lineTo(7 * scale, 5 * scale);
     bodyPath.lineTo(4.68 * scale, 10.802 * scale);
-    bodyPath.arcToPoint(Offset(5.63 * scale, 13.328 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    bodyPath.arcToPoint(Offset(5.63 * scale, 13.328 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     bodyPath.lineTo(8.5 * scale, 14.784 * scale);
     canvas.drawPath(bodyPath, paint);
 

@@ -69,13 +69,17 @@ class ChessQueenPainter extends CustomPainter {
     // Base
     final basePath = Path();
     basePath.moveTo(4 * scale, 20 * scale);
-    basePath.arcToPoint(Offset(6 * scale, 18 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(6 * scale, 18 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     basePath.lineTo(18 * scale, 18 * scale);
-    basePath.arcToPoint(Offset(20 * scale, 20 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(20 * scale, 20 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     basePath.lineTo(20 * scale, 21 * scale);
-    basePath.arcToPoint(Offset(19 * scale, 22 * scale), radius: Radius.circular(1 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(19 * scale, 22 * scale),
+        radius: Radius.circular(1 * scale), clockwise: true);
     basePath.lineTo(5 * scale, 22 * scale);
-    basePath.arcToPoint(Offset(4 * scale, 21 * scale), radius: Radius.circular(1 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(4 * scale, 21 * scale),
+        radius: Radius.circular(1 * scale), clockwise: true);
     basePath.close();
     canvas.drawPath(basePath, paint);
 
@@ -83,7 +87,8 @@ class ChessQueenPainter extends CustomPainter {
     final rightArm = Path();
     rightArm.moveTo(12.474 * scale, 5.943 * scale);
     rightArm.lineTo(14.041 * scale, 11.283 * scale);
-    rightArm.arcToPoint(Offset(15.791 * scale, 11.611 * scale), radius: Radius.circular(1 * scale), clockwise: false);
+    rightArm.arcToPoint(Offset(15.791 * scale, 11.611 * scale),
+        radius: Radius.circular(1 * scale), clockwise: false);
     rightArm.lineTo(18.407 * scale, 8.209 * scale);
     canvas.drawPath(rightArm, paint);
 
@@ -97,7 +102,8 @@ class ChessQueenPainter extends CustomPainter {
     final leftArm = Path();
     leftArm.moveTo(5.594 * scale, 8.209 * scale);
     leftArm.lineTo(8.209 * scale, 11.612 * scale);
-    leftArm.arcToPoint(Offset(9.959 * scale, 11.283 * scale), radius: Radius.circular(1 * scale), clockwise: false);
+    leftArm.arcToPoint(Offset(9.959 * scale, 11.283 * scale),
+        radius: Radius.circular(1 * scale), clockwise: false);
     leftArm.lineTo(11.526 * scale, 5.943 * scale);
     canvas.drawPath(leftArm, paint);
 

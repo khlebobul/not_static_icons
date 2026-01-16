@@ -76,14 +76,20 @@ class CherryPainter extends CustomPainter {
       clockwise: false,
     );
     leftCherry.cubicTo(
-      12 * scale, 14.24 * scale,
-      9.5 * scale, 12 * scale,
-      7 * scale, 14 * scale,
+      12 * scale,
+      14.24 * scale,
+      9.5 * scale,
+      12 * scale,
+      7 * scale,
+      14 * scale,
     );
     leftCherry.cubicTo(
-      4.5 * scale, 12 * scale,
-      2 * scale, 14.24 * scale,
-      2 * scale, 17 * scale,
+      4.5 * scale,
+      12 * scale,
+      2 * scale,
+      14.24 * scale,
+      2 * scale,
+      17 * scale,
     );
     canvas.drawPath(leftCherry, paint);
 
@@ -96,14 +102,20 @@ class CherryPainter extends CustomPainter {
       clockwise: false,
     );
     rightCherry.cubicTo(
-      22 * scale, 14.24 * scale,
-      19.5 * scale, 12 * scale,
-      17 * scale, 14 * scale,
+      22 * scale,
+      14.24 * scale,
+      19.5 * scale,
+      12 * scale,
+      17 * scale,
+      14 * scale,
     );
     rightCherry.cubicTo(
-      14.5 * scale, 12 * scale,
-      12 * scale, 14.24 * scale,
-      12 * scale, 17 * scale,
+      14.5 * scale,
+      12 * scale,
+      12 * scale,
+      14.24 * scale,
+      12 * scale,
+      17 * scale,
     );
     canvas.drawPath(rightCherry, paint);
 
@@ -111,14 +123,20 @@ class CherryPainter extends CustomPainter {
     final stems = Path();
     stems.moveTo(7 * scale, 14 * scale);
     stems.cubicTo(
-      10.22 * scale, 11.09 * scale,
-      11.29 * scale, 5.25 * scale,
-      12 * scale, 2 * scale,
+      10.22 * scale,
+      11.09 * scale,
+      11.29 * scale,
+      5.25 * scale,
+      12 * scale,
+      2 * scale,
     );
     stems.cubicTo(
-      13.66 * scale, 4.38 * scale,
-      16.94 * scale, 11 * scale,
-      17 * scale, 14 * scale,
+      13.66 * scale,
+      4.38 * scale,
+      16.94 * scale,
+      11 * scale,
+      17 * scale,
+      14 * scale,
     );
     canvas.drawPath(stems, paint);
 
@@ -126,14 +144,20 @@ class CherryPainter extends CustomPainter {
     final leaf = Path();
     leaf.moveTo(22 * scale, 9 * scale);
     leaf.cubicTo(
-      17.71 * scale, 9 * scale,
-      14.86 * scale, 6.67 * scale,
-      12 * scale, 2 * scale,
+      17.71 * scale,
+      9 * scale,
+      14.86 * scale,
+      6.67 * scale,
+      12 * scale,
+      2 * scale,
     );
     leaf.cubicTo(
-      17.71 * scale, 2 * scale,
-      22 * scale, 6.67 * scale,
-      22 * scale, 9 * scale,
+      17.71 * scale,
+      2 * scale,
+      22 * scale,
+      6.67 * scale,
+      22 * scale,
+      9 * scale,
     );
     canvas.drawPath(leaf, paint);
 

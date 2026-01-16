@@ -69,13 +69,17 @@ class ChessPawnPainter extends CustomPainter {
     // Base
     final basePath = Path();
     basePath.moveTo(5 * scale, 20 * scale);
-    basePath.arcToPoint(Offset(7 * scale, 18 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(7 * scale, 18 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     basePath.lineTo(17 * scale, 18 * scale);
-    basePath.arcToPoint(Offset(19 * scale, 20 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(19 * scale, 20 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     basePath.lineTo(19 * scale, 21 * scale);
-    basePath.arcToPoint(Offset(18 * scale, 22 * scale), radius: Radius.circular(1 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(18 * scale, 22 * scale),
+        radius: Radius.circular(1 * scale), clockwise: true);
     basePath.lineTo(6 * scale, 22 * scale);
-    basePath.arcToPoint(Offset(5 * scale, 21 * scale), radius: Radius.circular(1 * scale), clockwise: true);
+    basePath.arcToPoint(Offset(5 * scale, 21 * scale),
+        radius: Radius.circular(1 * scale), clockwise: true);
     basePath.close();
     canvas.drawPath(basePath, paint);
 
