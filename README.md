@@ -17,62 +17,122 @@ Seamlessly animated Flutter icons — no Rive or Lottie required. Made with [Luc
 - **350+ Animated Icons**: Based on popular Lucide icon set
 - **Interactive Animations**: Hover and touch effects
 - **Customizable**: Size, color, animation duration, stroke width
+- **Flexible Integration**: Works with GestureDetector, InkWell, IconButton
+- **Programmatic Control**: AnimatedIconController for external animation control
 
 ## Usage
 
 ### Basic Usage
 
 ```dart
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// Simple icon
+AirplayIcon()
+
+// Customized icon
+AArrowDownIcon(
+  size: 45,
+  color: Colors.blue,
+  animationDuration: Duration(milliseconds: 800),
+  strokeWidth: 3.0,
+  hoverColor: Colors.red,
+  enableTouchInteraction: true,
+  infiniteLoop: false,
+  reverseOnExit: false,
+)
+```
+
+### Using onTap Callback
+
+Use `onTap` instead of wrapping the icon in GestureDetector:
+
+```dart
+CheckIcon(
+  size: 40,
+  color: Colors.green,
+  onTap: () {
+    print('Icon tapped!');
+  },
+)
+```
+
+### Using with IconButton
+
+Use `interactive: false` and `AnimatedIconController` for IconButton integration:
+
+```dart
+class MyWidget extends StatefulWidget {
+  @override
+  State<MyWidget> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<MyWidget> {
+  final _iconController = AnimatedIconController();
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // Simple icon usage
-              AirplayIcon(),
-              SizedBox(height: 20),
-
-              // Customized icon
-              AArrowDownIcon(
-                size: 45,
-                color: Colors.blue,
-                animationDuration: Duration(milliseconds: 800),
-                strokeWidth: 3.0,
-                hoverColor: Colors.red,
-                enableTouchInteraction: true,
-                infiniteLoop: false,
-                reverseOnExit: false,
-              ),
-            ],
-          ),
-        ),
+    return IconButton(
+      onPressed: () {
+        _iconController.animate(); // Trigger animation
+        // Your action here
+      },
+      icon: HeartIcon(
+        size: 32,
+        color: Colors.red,
+        interactive: false, // Disable internal gesture handlers
+        controller: _iconController,
       ),
     );
   }
 }
 ```
 
-### Advanced Configuration
+### Using with InkWell
+
+```dart
+final _iconController = AnimatedIconController();
+
+InkWell(
+  onTap: () {
+    _iconController.animate();
+    // Your action here
+  },
+  child: Padding(
+    padding: EdgeInsets.all(8),
+    child: CopyIcon(
+      size: 24,
+      interactive: false,
+      controller: _iconController,
+    ),
+  ),
+)
+```
+
+### All Configuration Options
 
 ```dart
 ActivityIcon(
-  size: 48.0, // Icon size
-  color: Colors.black87, // Default color
-  hoverColor: Colors.blue, // Hover color
+  size: 48.0,                                    // Icon size
+  color: Colors.black87,                         // Default color
+  hoverColor: Colors.blue,                       // Hover color
   animationDuration: Duration(milliseconds: 600), // Animation duration
-  strokeWidth: 2.0, // Stroke width
-  reverseOnExit: true, // Reverse animation on exit
-  enableTouchInteraction: true, // Enable touch interaction
-  infiniteLoop: false, // Enable infinite loop
+  strokeWidth: 2.0,                              // Stroke width
+  reverseOnExit: true,                           // Reverse animation on exit
+  enableTouchInteraction: true,                  // Enable touch interaction
+  infiniteLoop: false,                           // Enable infinite loop
+  resetToStartOnComplete: false,                 // Reset after animation completes
+  onTap: () {},                                  // Tap callback
+  interactive: true,                             // Enable/disable internal gestures
+  controller: AnimatedIconController(),          // External animation controller
 )
 ```
+
+### AnimatedIconController Methods
+
+| Method | Description |
+|--------|-------------|
+| `animate()` | Triggers the animation to play forward |
+| `stop()` | Stops the current animation |
+| `reset()` | Resets the animation to its initial state |
 
 ## Available Icons
 
