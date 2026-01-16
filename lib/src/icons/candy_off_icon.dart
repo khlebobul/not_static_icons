@@ -14,6 +14,9 @@ class CandyOffIcon extends AnimatedSVGIcon {
     super.reverseOnExit = false,
     super.enableTouchInteraction = true,
     super.infiniteLoop = false,
+    super.onTap,
+    super.interactive,
+    super.controller,
   });
 
   @override
