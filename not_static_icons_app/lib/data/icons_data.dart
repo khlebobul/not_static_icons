@@ -502,10 +502,19 @@ final List<IconData> icons = [
   IconData(name: 'chevrons-down', widget: ChevronsDownIcon(size: 40)),
   IconData(name: 'chevrons-down-up', widget: ChevronsDownUpIcon(size: 40)),
   IconData(name: 'chevrons-left', widget: ChevronsLeftIcon(size: 40)),
-  IconData(name: 'chevrons-left-right', widget: ChevronsLeftRightIcon(size: 40)),
-  IconData(name: 'chevrons-left-right-ellipsis', widget: ChevronsLeftRightEllipsisIcon(size: 40)),
+  IconData(
+    name: 'chevrons-left-right',
+    widget: ChevronsLeftRightIcon(size: 40),
+  ),
+  IconData(
+    name: 'chevrons-left-right-ellipsis',
+    widget: ChevronsLeftRightEllipsisIcon(size: 40),
+  ),
   IconData(name: 'chevrons-right', widget: ChevronsRightIcon(size: 40)),
-  IconData(name: 'chevrons-right-left', widget: ChevronsRightLeftIcon(size: 40)),
+  IconData(
+    name: 'chevrons-right-left',
+    widget: ChevronsRightLeftIcon(size: 40),
+  ),
   IconData(name: 'chevrons-up', widget: ChevronsUpIcon(size: 40)),
   IconData(name: 'chevrons-up-down', widget: ChevronsUpDownIcon(size: 40)),
   IconData(name: 'club', widget: ClubIcon(size: 40)),

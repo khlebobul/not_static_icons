@@ -1,3 +1,8 @@
+## 0.28.0
+
+#### New icons
+* Added 26 new animated icons: check mark variants (`check`, `double-check`, `check-line`), `chef hat`, `cherry`, chess pieces (`bishop`, `king`, `knight`, `pawn`, `queen`, `rook`), and chevron directional variants (`up`, `down`, `left`, `right`, `left-right`, `right-left`, and `multi-chevron` combinations).
+
 ## 0.27.0
 
 #### New icons

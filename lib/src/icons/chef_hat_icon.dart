@@ -73,45 +73,69 @@ class ChefHatPainter extends CustomPainter {
     hatPath.lineTo(18 * scale, 14.65 * scale);
     // Simplified curve for the top
     hatPath.cubicTo(
-      18 * scale, 14.193 * scale,
-      18.316 * scale, 13.806 * scale,
-      18.727 * scale, 13.609 * scale,
+      18 * scale,
+      14.193 * scale,
+      18.316 * scale,
+      13.806 * scale,
+      18.727 * scale,
+      13.609 * scale,
     );
     // Top cloud shape (simplified)
     hatPath.cubicTo(
-      20.5 * scale, 12.5 * scale,
-      21 * scale, 10 * scale,
-      19 * scale, 8 * scale,
+      20.5 * scale,
+      12.5 * scale,
+      21 * scale,
+      10 * scale,
+      19 * scale,
+      8 * scale,
     );
     hatPath.cubicTo(
-      18 * scale, 7 * scale,
-      17 * scale, 6.5 * scale,
-      16 * scale, 6.5 * scale,
+      18 * scale,
+      7 * scale,
+      17 * scale,
+      6.5 * scale,
+      16 * scale,
+      6.5 * scale,
     );
     hatPath.cubicTo(
-      15 * scale, 4 * scale,
-      13 * scale, 3 * scale,
-      12 * scale, 3 * scale,
+      15 * scale,
+      4 * scale,
+      13 * scale,
+      3 * scale,
+      12 * scale,
+      3 * scale,
     );
     hatPath.cubicTo(
-      11 * scale, 3 * scale,
-      9 * scale, 4 * scale,
-      8 * scale, 6.5 * scale,
+      11 * scale,
+      3 * scale,
+      9 * scale,
+      4 * scale,
+      8 * scale,
+      6.5 * scale,
     );
     hatPath.cubicTo(
-      7 * scale, 6.5 * scale,
-      6 * scale, 7 * scale,
-      5 * scale, 8 * scale,
+      7 * scale,
+      6.5 * scale,
+      6 * scale,
+      7 * scale,
+      5 * scale,
+      8 * scale,
     );
     hatPath.cubicTo(
-      3 * scale, 10 * scale,
-      3.5 * scale, 12.5 * scale,
-      5.273 * scale, 13.609 * scale,
+      3 * scale,
+      10 * scale,
+      3.5 * scale,
+      12.5 * scale,
+      5.273 * scale,
+      13.609 * scale,
     );
     hatPath.cubicTo(
-      5.684 * scale, 13.806 * scale,
-      6 * scale, 14.193 * scale,
-      6 * scale, 14.65 * scale,
+      5.684 * scale,
+      13.806 * scale,
+      6 * scale,
+      14.193 * scale,
+      6 * scale,
+      14.65 * scale,
     );
     hatPath.lineTo(6 * scale, 20 * scale);
     hatPath.arcToPoint(
