@@ -1,5 +1,62 @@
 import 'package:flutter/material.dart';
 
+/// Controller for programmatic control of AnimatedSVGIcon animations.
+///
+/// Use this controller when you need to trigger animations externally,
+/// for example when using icons inside IconButton or custom widgets.
+///
+/// Example:
+/// ```dart
+/// final controller = AnimatedIconController();
+///
+/// IconButton(
+///   onPressed: () {
+///     controller.animate();
+///     // your action here
+///   },
+///   icon: AppleIcon(
+///     controller: controller,
+///     interactive: false, // disable internal gesture handling
+///   ),
+/// )
+/// ```
+class AnimatedIconController extends ChangeNotifier {
+  VoidCallback? _animateCallback;
+  VoidCallback? _stopCallback;
+  VoidCallback? _resetCallback;
+
+  /// Triggers the animation to play forward.
+  void animate() {
+    _animateCallback?.call();
+  }
+
+  /// Stops the current animation.
+  void stop() {
+    _stopCallback?.call();
+  }
+
+  /// Resets the animation to its initial state.
+  void reset() {
+    _resetCallback?.call();
+  }
+
+  void _attach({
+    required VoidCallback onAnimate,
+    required VoidCallback onStop,
+    required VoidCallback onReset,
+  }) {
+    _animateCallback = onAnimate;
+    _stopCallback = onStop;
+    _resetCallback = onReset;
+  }
+
+  void _detach() {
+    _animateCallback = null;
+    _stopCallback = null;
+    _resetCallback = null;
+  }
+}
+
 /// Base class for animated SVG icons
 abstract class AnimatedSVGIcon extends StatefulWidget {
   final double size; // Icon size
@@ -13,6 +70,19 @@ abstract class AnimatedSVGIcon extends StatefulWidget {
   final bool
       resetToStartOnComplete; // Reset back to original when animation completes
 
+  /// Callback triggered when the icon is tapped.
+  /// Use this instead of wrapping the icon in GestureDetector.
+  final VoidCallback? onTap;
+
+  /// When false, disables all internal gesture handling (GestureDetector and MouseRegion).
+  /// Use this when placing the icon inside IconButton or other interactive widgets.
+  /// Default is true.
+  final bool interactive;
+
+  /// Controller for programmatic animation control.
+  /// Use with [interactive: false] when placing inside IconButton.
+  final AnimatedIconController? controller;
+
   const AnimatedSVGIcon({
     super.key,
     this.size = 40.0,
@@ -24,6 +94,9 @@ abstract class AnimatedSVGIcon extends StatefulWidget {
     this.enableTouchInteraction = true,
     this.infiniteLoop = false,
     this.resetToStartOnComplete = false,
+    this.onTap,
+    this.interactive = true,
+    this.controller,
   });
 
   /// Method to create custom painter
@@ -69,10 +142,34 @@ class AnimatedSVGIconState extends State<AnimatedSVGIcon>
         }
       }
     });
+
+    // Attach external controller if provided
+    _attachController();
+  }
+
+  @override
+  void didUpdateWidget(covariant AnimatedSVGIcon oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.controller != widget.controller) {
+      oldWidget.controller?._detach();
+      _attachController();
+    }
+  }
+
+  void _attachController() {
+    widget.controller?._attach(
+      onAnimate: _startAnimation,
+      onStop: _stopAnimation,
+      onReset: () {
+        _controller.reset();
+        setState(() {});
+      },
+    );
   }
 
   @override
   void dispose() {
+    widget.controller?._detach();
     _controller.dispose();
     super.dispose();
   }
@@ -107,6 +204,8 @@ class AnimatedSVGIconState extends State<AnimatedSVGIcon>
       _isPressed = false;
     });
     _stopAnimation();
+    // Call onTap callback after animation starts
+    widget.onTap?.call();
   }
 
   void _onTapCancel() {
@@ -158,8 +257,15 @@ class AnimatedSVGIconState extends State<AnimatedSVGIcon>
       },
     );
 
+    // If interactive is false, return just the painted widget without gesture handlers
+    // This is useful when placing icons inside IconButton or other interactive widgets
+    if (!widget.interactive) {
+      return child;
+    }
+
     if (widget.enableTouchInteraction) {
       child = GestureDetector(
+        behavior: HitTestBehavior.opaque,
         onTapDown: (_) => _onTapDown(),
         onTapUp: (_) => _onTapUp(),
         onTapCancel: () => _onTapCancel(),
