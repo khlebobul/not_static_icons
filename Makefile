@@ -1,4 +1,4 @@
-.PHONY: check-icons bump-version update-lock help
+.PHONY: check-icons bump-version update-lock format help
 
 # Helper targets for contributors.
 # Use `make help` to see available commands. Override `LUCIDE_REPO_PATH`
@@ -15,6 +15,7 @@ help:
 	@echo "  check-icons    - Run the Lucide icons check script"
 	@echo "  bump-version   - Increment the version in pubspec.yaml"
 	@echo "  update-lock    - Update pubspec.lock"
+	@echo "  format         - Format Dart code using dart format"
 	@echo "  all            - Run all commands in sequence"
 	@echo ""
 	@echo "Variables:"
@@ -47,6 +48,11 @@ update-lock:
 	@echo "Updating pubspec.lock..."
 	cd not_static_icons_app && flutter pub get
 
+# Format Dart code
+format:
+	@echo "Formatting Dart code..."
+	dart format .
+
 # Run all commands
-all: check-icons bump-version update-lock
+all: check-icons bump-version update-lock format
 	@echo "All commands executed successfully!"

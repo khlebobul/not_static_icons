@@ -23,21 +23,60 @@ class MyApp extends StatelessWidget {
 
               // Customized icon
               AArrowDownIcon(
-                size: 45, // icon size
-                color: Colors.blue, // icon color
-                animationDuration: Duration(
-                  milliseconds: 800,
-                ), // animation duration
-                strokeWidth: 3.0, // icon stroke width
-                hoverColor: Colors.red, // icon hover color
-                enableTouchInteraction:
-                    true, // enable touch interaction (for mobile devices)
-                infiniteLoop: false, // infinite loop
-                reverseOnExit: false, // reverse animation on exit
+                size: 45,
+                color: Colors.blue,
+                animationDuration: Duration(milliseconds: 800),
+                strokeWidth: 3.0,
+                hoverColor: Colors.red,
+                enableTouchInteraction: true,
+                infiniteLoop: false,
+                reverseOnExit: false,
               ),
+              SizedBox(height: 20),
+
+              // Icon with onTap callback
+              CheckIcon(
+                size: 40,
+                color: Colors.green,
+                onTap: () {
+                  debugPrint('Icon tapped!');
+                },
+              ),
+              SizedBox(height: 20),
+
+              // Icon inside IconButton with controller
+              IconButtonExample(),
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Example of using AnimatedIconController with IconButton
+class IconButtonExample extends StatefulWidget {
+  const IconButtonExample({super.key});
+
+  @override
+  State<IconButtonExample> createState() => _IconButtonExampleState();
+}
+
+class _IconButtonExampleState extends State<IconButtonExample> {
+  final _iconController = AnimatedIconController();
+
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      onPressed: () {
+        _iconController.animate();
+        debugPrint('IconButton pressed!');
+      },
+      icon: HeartIcon(
+        size: 32,
+        color: Colors.red,
+        interactive: false, // disable internal gesture handlers
+        controller: _iconController,
       ),
     );
   }
