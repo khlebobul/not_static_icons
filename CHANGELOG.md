@@ -1,3 +1,10 @@
+## 0.29.0
+
+#### New Features
+* **`onTap Callback`**: Icons now support direct `onTap` callbacks, eliminating the need to wrap them in `GestureDetector` for tap handling.
+* **`AnimatedIconController`**: Introduced new controller for programmatic animation control, enabling external triggering of animations via `animate()`, `stop()`, and `reset()` methods.
+* **Interactive Parameter**: Added `interactive` flag to disable internal gesture handlers, allowing seamless integration with `IconButton`, `InkWell`, and other interactive widgets.
+
 ## 0.28.0
 
 #### New icons
