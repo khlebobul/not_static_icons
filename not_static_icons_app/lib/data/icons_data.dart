@@ -543,8 +543,13 @@ final List<IconData> icons = [
   IconData(name: 'keyboard', widget: KeyboardIcon(size: 40)),
   IconData(name: 'star', widget: StarIcon(size: 40)),
   IconData(name: 'grid-2x2', widget: Grid2x2Icon(size: 40)),
+  IconData(name: 'hash', widget: HashIcon(size: 40)),
+  IconData(name: 'house', widget: HouseIcon(size: 40)),
   IconData(name: 'layers', widget: LayersIcon(size: 40)),
+  IconData(name: 'minus', widget: MinusIcon(size: 40)),
+  IconData(name: 'plus', widget: PlusIcon(size: 40)),
   IconData(name: 'replace', widget: ReplaceIcon(size: 40)),
+  IconData(name: 'x', widget: XIcon(size: 40)),
 
   // Custom Icons
   IconData(name: 'victory-points', widget: VictoryPointsIcon(size: 40)),
