@@ -1,3 +1,13 @@
+## 0.30.0
+
+#### New icons
+* Added five new animated icons: `hash`, `house`, `minus`, `plus`, and `x`.
+
+#### New Features
+* **`onTap Callback`**: all icons now support direct `onTap` callbacks.
+* **`AnimatedIconController`**: all icons now have a new controller for programmatic animation control.
+* **Interactive Parameter**: all icons now have an `interactive` flag.
+
 ## 0.29.0
 
 #### New Features

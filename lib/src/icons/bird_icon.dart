@@ -15,6 +15,9 @@ class BirdIcon extends AnimatedSVGIcon {
     super.enableTouchInteraction = true,
     super.infiniteLoop = true,
     super.resetToStartOnComplete = false,
+    super.onTap,
+    super.interactive,
+    super.controller,
   });
 
   @override

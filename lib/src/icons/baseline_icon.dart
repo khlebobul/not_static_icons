@@ -14,6 +14,9 @@ class BaselineIcon extends AnimatedSVGIcon {
     super.enableTouchInteraction = true,
     super.infiniteLoop = false,
     super.resetToStartOnComplete = true,
+    super.onTap,
+    super.interactive,
+    super.controller,
   });
 
   @override
