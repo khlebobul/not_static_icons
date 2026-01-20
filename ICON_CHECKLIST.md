@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-01-16T12:05:25.360257Z UTC.
+Generated on 2026-01-20T05:35:50.738667Z UTC.
 
-## ✅ Existing Icons (372)
+## ✅ Existing Icons (377)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -351,16 +351,20 @@ Generated on 2026-01-16T12:05:25.360257Z UTC.
 - [x] `club`
 - [x] `diamond`
 - [x] `grid-2x2`
+- [x] `hash`
 - [x] `heart`
+- [x] `house`
 - [x] `keyboard`
 - [x] `layers`
 - [x] `map`
 - [x] `map-minus`
 - [x] `map-plus`
 - [x] `mars`
+- [x] `minus`
 - [x] `moon`
 - [x] `pause`
 - [x] `play`
+- [x] `plus`
 - [x] `redo-2`
 - [x] `repeat`
 - [x] `replace`
@@ -374,8 +378,9 @@ Generated on 2026-01-16T12:05:25.360257Z UTC.
 - [x] `trash-2`
 - [x] `undo-2`
 - [x] `venus`
+- [x] `x`
 
-## ➕ New Icons to Add (1294)
+## ➕ New Icons to Add (1289)
 - [ ] `chromium`
 - [ ] `church`
 - [ ] `cigarette`
@@ -804,7 +809,6 @@ Generated on 2026-01-16T12:05:25.360257Z UTC.
 - [ ] `hard-drive-download`
 - [ ] `hard-drive-upload`
 - [ ] `hard-hat`
-- [ ] `hash`
 - [ ] `hat-glasses`
 - [ ] `haze`
 - [ ] `hd`
@@ -835,7 +839,6 @@ Generated on 2026-01-16T12:05:25.360257Z UTC.
 - [ ] `hospital`
 - [ ] `hotel`
 - [ ] `hourglass`
-- [ ] `house`
 - [ ] `house-heart`
 - [ ] `house-plug`
 - [ ] `house-plus`
@@ -1020,7 +1023,6 @@ Generated on 2026-01-16T12:05:25.360257Z UTC.
 - [ ] `milk-off`
 - [ ] `minimize`
 - [ ] `minimize-2`
-- [ ] `minus`
 - [ ] `monitor`
 - [ ] `monitor-check`
 - [ ] `monitor-cloud`
@@ -1170,7 +1172,6 @@ Generated on 2026-01-16T12:05:25.360257Z UTC.
 - [ ] `plug`
 - [ ] `plug-2`
 - [ ] `plug-zap`
-- [ ] `plus`
 - [ ] `pocket`
 - [ ] `pocket-knife`
 - [ ] `podcast`
@@ -1664,7 +1665,6 @@ Generated on 2026-01-16T12:05:25.360257Z UTC.
 - [ ] `workflow`
 - [ ] `worm`
 - [ ] `wrench`
-- [ ] `x`
 - [ ] `youtube`
 - [ ] `zap`
 - [ ] `zap-off`
