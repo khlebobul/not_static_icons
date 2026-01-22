@@ -378,4 +378,5 @@ export 'icons/layers_icon.dart';
 export 'icons/minus_icon.dart';
 export 'icons/plus_icon.dart';
 export 'icons/replace_icon.dart';
+export 'icons/slash_icon.dart';
 export 'icons/x_icon.dart';

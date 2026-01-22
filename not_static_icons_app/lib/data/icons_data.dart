@@ -561,4 +561,5 @@ final List<IconData> icons = [
   IconData(name: 'map', widget: MapIcon(size: 40)),
   IconData(name: 'map-minus', widget: MapMinusIcon(size: 40)),
   IconData(name: 'map-plus', widget: MapPlusIcon(size: 40)),
+  IconData(name: 'slash', widget: SlashIcon(size: 40)),
 ];
