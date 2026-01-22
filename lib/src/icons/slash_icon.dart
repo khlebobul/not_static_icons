@@ -19,7 +19,8 @@ class SlashIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => "Diagonal line draws from top-right to bottom-left";
+  String get animationDescription =>
+      "Diagonal line draws from top-right to bottom-left";
 
   @override
   CustomPainter createPainter({

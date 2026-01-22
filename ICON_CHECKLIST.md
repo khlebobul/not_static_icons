@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-01-20T05:35:50.738667Z UTC.
+Generated on 2026-01-22T05:18:02.648759Z UTC.
 
-## ✅ Existing Icons (377)
+## ✅ Existing Icons (378)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -370,6 +370,7 @@ Generated on 2026-01-20T05:35:50.738667Z UTC.
 - [x] `replace`
 - [x] `rotate-ccw`
 - [x] `rotate-cw`
+- [x] `slash`
 - [x] `spade`
 - [x] `star`
 - [x] `sun`
@@ -778,6 +779,7 @@ Generated on 2026-01-20T05:35:50.738667Z UTC.
 - [ ] `glasses`
 - [ ] `globe`
 - [ ] `globe-lock`
+- [ ] `globe-x`
 - [ ] `goal`
 - [ ] `gpu`
 - [ ] `graduation-cap`
@@ -1344,7 +1346,6 @@ Generated on 2026-01-20T05:35:50.738667Z UTC.
 - [ ] `skip-forward`
 - [ ] `skull`
 - [ ] `slack`
-- [ ] `slash`
 - [ ] `slice`
 - [ ] `sliders-horizontal`
 - [ ] `sliders-vertical`
