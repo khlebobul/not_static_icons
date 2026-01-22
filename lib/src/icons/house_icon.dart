@@ -146,7 +146,7 @@ class HousePainter extends CustomPainter {
     // Door
     // M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8
     if (doorProgress > 0) {
-      final doorHeight = 8.0 * doorProgress;
+      final doorHeight = 9.0 * doorProgress; // Full door height including top
 
       canvas.save();
       canvas.clipRect(Rect.fromLTWH(
