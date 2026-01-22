@@ -1,3 +1,16 @@
+## 0.31.0
+
+#### New icons
+* Added `slash` icon.
+
+#### New Features
+* **`onTap Callback`**: all icons now support direct `onTap` callbacks.
+* **`AnimatedIconController`**: all icons now have a new controller for programmatic animation control.
+* **Interactive Parameter**: all icons now have an `interactive` flag.
+
+#### Improvements
+* Update `house` icon
+
 ## 0.30.0
 
 #### New icons
