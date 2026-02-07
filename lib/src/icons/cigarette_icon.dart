@@ -104,9 +104,12 @@ class CigarettePainter extends CustomPainter {
       final smoke1 = Path();
       smoke1.moveTo(18 * scale, 8 * scale);
       smoke1.cubicTo(
-        18 * scale, 6.5 * scale,
-        17 * scale, 6 * scale,
-        16 * scale, 3 * scale,
+        18 * scale,
+        6.5 * scale,
+        17 * scale,
+        6 * scale,
+        16 * scale,
+        3 * scale,
       );
       canvas.drawPath(smoke1, paint);
 
@@ -114,52 +117,61 @@ class CigarettePainter extends CustomPainter {
       final smoke2 = Path();
       smoke2.moveTo(22 * scale, 8 * scale);
       smoke2.cubicTo(
-        22 * scale, 6.5 * scale,
-        21 * scale, 6 * scale,
-        20 * scale, 3 * scale,
+        22 * scale,
+        6.5 * scale,
+        21 * scale,
+        6 * scale,
+        20 * scale,
+        3 * scale,
       );
       canvas.drawPath(smoke2, paint);
     } else {
       // Animation - smoke draws from bottom to top, one line at a time
       // First smoke line: 0.0 - 0.5
       // Second smoke line: 0.5 - 1.0
-      
+
       // Smoke line 1: M18 8c0-2.5-2-2.5-2-5
       final smoke1Progress = (animationValue / 0.5).clamp(0.0, 1.0);
-      
+
       final smoke1 = Path();
       smoke1.moveTo(18 * scale, 8 * scale);
-      
+
       // Interpolate the curve based on progress
       final t = smoke1Progress;
       final y1 = 8 - (8 - 6.5) * t;
       final y2 = 8 - (8 - 3) * t;
       final x2 = 18 - (18 - 16) * t;
-      
+
       smoke1.cubicTo(
-        18 * scale, y1 * scale,
-        17 * scale, (6 + (8 - y2) * 0.5) * scale,
-        x2 * scale, y2 * scale,
+        18 * scale,
+        y1 * scale,
+        17 * scale,
+        (6 + (8 - y2) * 0.5) * scale,
+        x2 * scale,
+        y2 * scale,
       );
       canvas.drawPath(smoke1, paint);
 
       if (animationValue > 0.5) {
         // Smoke line 2: M22 8c0-2.5-2-2.5-2-5
         final smoke2Progress = ((animationValue - 0.5) / 0.5).clamp(0.0, 1.0);
-        
+
         final smoke2 = Path();
         smoke2.moveTo(22 * scale, 8 * scale);
-        
+
         // Interpolate the curve based on progress
         final t = smoke2Progress;
         final y1 = 8 - (8 - 6.5) * t;
         final y2 = 8 - (8 - 3) * t;
         final x2 = 22 - (22 - 20) * t;
-        
+
         smoke2.cubicTo(
-          22 * scale, y1 * scale,
-          21 * scale, (6 + (8 - y2) * 0.5) * scale,
-          x2 * scale, y2 * scale,
+          22 * scale,
+          y1 * scale,
+          21 * scale,
+          (6 + (8 - y2) * 0.5) * scale,
+          x2 * scale,
+          y2 * scale,
         );
         canvas.drawPath(smoke2, paint);
       }

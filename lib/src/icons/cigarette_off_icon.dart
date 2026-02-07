@@ -102,9 +102,12 @@ class CigaretteOffPainter extends CustomPainter {
     final smoke1 = Path();
     smoke1.moveTo(18 * scale, 8 * scale);
     smoke1.cubicTo(
-      18 * scale, 6.5 * scale,
-      17 * scale, 6 * scale,
-      16 * scale, 3 * scale,
+      18 * scale,
+      6.5 * scale,
+      17 * scale,
+      6 * scale,
+      16 * scale,
+      3 * scale,
     );
     canvas.drawPath(smoke1, paint);
 
@@ -112,9 +115,12 @@ class CigaretteOffPainter extends CustomPainter {
     final smoke2 = Path();
     smoke2.moveTo(22 * scale, 8 * scale);
     smoke2.cubicTo(
-      22 * scale, 6.5 * scale,
-      21 * scale, 6 * scale,
-      20 * scale, 3 * scale,
+      22 * scale,
+      6.5 * scale,
+      21 * scale,
+      6 * scale,
+      20 * scale,
+      3 * scale,
     );
     canvas.drawPath(smoke2, paint);
 
