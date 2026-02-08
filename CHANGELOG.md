@@ -1,3 +1,8 @@
+## 0.32.0
+
+#### New icons
+* Added `chromium`, `church`, `cigarette` and `cigarette-off` icon
+
 ## 0.31.0
 
 #### New icons

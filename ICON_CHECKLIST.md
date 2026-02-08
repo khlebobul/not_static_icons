@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-01-22T05:18:02.648759Z UTC.
+Generated on 2026-02-07T07:30:12.039852Z UTC.
 
-## ✅ Existing Icons (378)
+## ✅ Existing Icons (382)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -346,6 +346,10 @@ Generated on 2026-01-22T05:18:02.648759Z UTC.
 - [x] `chevrons-right-left`
 - [x] `chevrons-up`
 - [x] `chevrons-up-down`
+- [x] `chromium`
+- [x] `church`
+- [x] `cigarette`
+- [x] `cigarette-off`
 - [x] `circle-alert`
 - [x] `circle-question-mark`
 - [x] `club`
@@ -381,11 +385,7 @@ Generated on 2026-01-22T05:18:02.648759Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1289)
-- [ ] `chromium`
-- [ ] `church`
-- [ ] `cigarette`
-- [ ] `cigarette-off`
+## ➕ New Icons to Add (1287)
 - [ ] `circle`
 - [ ] `circle-arrow-down`
 - [ ] `circle-arrow-left`
@@ -543,6 +543,7 @@ Generated on 2026-01-22T05:18:02.648759Z UTC.
 - [ ] `dam`
 - [ ] `database`
 - [ ] `database-backup`
+- [ ] `database-search`
 - [ ] `database-zap`
 - [ ] `decimals-arrow-left`
 - [ ] `decimals-arrow-right`
@@ -1187,6 +1188,7 @@ Generated on 2026-01-22T05:18:02.648759Z UTC.
 - [ ] `presentation`
 - [ ] `printer`
 - [ ] `printer-check`
+- [ ] `printer-x`
 - [ ] `projector`
 - [ ] `proportions`
 - [ ] `puzzle`

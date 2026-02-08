@@ -167,3 +167,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Credits
 
 Icons based on [Lucide Icons](https://lucide.dev/) inspired by [pqoqubbw/icons](https://icons.pqoqubbw.dev/)
+
+## Used by
+
+- [Board Buddy](https://boardbuddyapp.vercel.app/) ➭ [AppStore](https://apps.apple.com/ru/app/board-buddy-score-counter/id6743980638?) / [Google Play](https://play.google.com/store/apps/details?id=com.khlebobul.board_buddy)
