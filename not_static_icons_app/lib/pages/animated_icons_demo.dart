@@ -110,24 +110,39 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
                 });
               }
             },
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  _buildDescriptionSection(),
-                  const SizedBox(height: 24),
-                  _buildInstallationSection(),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: Divider(color: Colors.grey.shade200),
+            child: CustomScrollView(
+              slivers: [
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        _buildDescriptionSection(),
+                        const SizedBox(height: 24),
+                        _buildInstallationSection(),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          child: Divider(color: Colors.grey.shade200),
+                        ),
+                      ],
+                    ),
                   ),
-                  _buildSearchSection(),
-                  const SizedBox(height: 16),
-                  _buildIconsGrid(),
-                  const SizedBox(height: 40),
-                ],
-              ),
+                ),
+                SliverPersistentHeader(
+                  pinned: true,
+                  delegate: _StickySearchDelegate(
+                    child: _buildSearchSection(),
+                  ),
+                ),
+                SliverPadding(
+                  padding: const EdgeInsets.all(16.0),
+                  sliver: _buildIconsGridSliver(),
+                ),
+                const SliverToBoxAdapter(
+                  child: SizedBox(height: 40),
+                ),
+              ],
             ),
           ),
         ),
@@ -314,36 +329,37 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
     );
   }
 
-  Widget _buildIconsGrid() {
+  Widget _buildIconsGridSliver() {
     if (_filteredIcons.isEmpty) {
-      return _buildEmptyState();
+      return SliverToBoxAdapter(child: _buildEmptyState());
     }
 
-    return LayoutBuilder(
+    return SliverLayoutBuilder(
       builder: (context, constraints) {
-        final crossAxisCount = (constraints.maxWidth / _gridMaxCrossAxisExtent)
-            .floor()
-            .clamp(1, 7);
+        final crossAxisCount =
+            (constraints.crossAxisExtent / _gridMaxCrossAxisExtent)
+                .floor()
+                .clamp(1, 7);
 
-        return GridView.builder(
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
+        return SliverGrid(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: crossAxisCount,
             crossAxisSpacing: _gridSpacing,
             mainAxisSpacing: _gridSpacing,
             childAspectRatio: 1.0,
           ),
-          itemCount: _filteredIcons.length,
-          itemBuilder: (context, index) {
-            final icon = _filteredIcons[index];
-            return IconCard(
-              name: icon.name,
-              iconWidget: icon.widget,
-              onViewCode: () => _openIconCode(icon.name),
-              onCopy: () => _copyIconCode(icon.name),
-            );
-          },
+          delegate: SliverChildBuilderDelegate(
+            (context, index) {
+              final icon = _filteredIcons[index];
+              return IconCard(
+                name: icon.name,
+                iconWidget: icon.widget,
+                onViewCode: () => _openIconCode(icon.name),
+                onCopy: () => _copyIconCode(icon.name),
+              );
+            },
+            childCount: _filteredIcons.length,
+          ),
         );
       },
     );
@@ -523,5 +539,50 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
         ),
       ),
     );
+  }
+}
+
+class _StickySearchDelegate extends SliverPersistentHeaderDelegate {
+  final Widget child;
+
+  _StickySearchDelegate({required this.child});
+
+  @override
+  double get minExtent => 64.0;
+
+  @override
+  double get maxExtent => 64.0;
+
+  @override
+  Widget build(
+    BuildContext context,
+    double shrinkOffset,
+    bool overlapsContent,
+  ) {
+    final isSticky = shrinkOffset > 0;
+    return Container(
+      color: Colors.white,
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: isSticky
+              ? [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.05),
+                    blurRadius: 4,
+                    offset: const Offset(0, 2),
+                  ),
+                ]
+              : null,
+        ),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+        child: child,
+      ),
+    );
+  }
+
+  @override
+  bool shouldRebuild(covariant _StickySearchDelegate oldDelegate) {
+    return child != oldDelegate.child;
   }
 }
