@@ -56,7 +56,6 @@ class CircleDollarSignPainter extends CustomPainter {
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
 
-
     final scale = size.width / 24.0;
     final center = Offset(12 * scale, 12 * scale);
 

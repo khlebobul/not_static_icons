@@ -131,17 +131,13 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
                 ),
                 SliverPersistentHeader(
                   pinned: true,
-                  delegate: _StickySearchDelegate(
-                    child: _buildSearchSection(),
-                  ),
+                  delegate: _StickySearchDelegate(child: _buildSearchSection()),
                 ),
                 SliverPadding(
                   padding: const EdgeInsets.all(16.0),
                   sliver: _buildIconsGridSliver(),
                 ),
-                const SliverToBoxAdapter(
-                  child: SizedBox(height: 40),
-                ),
+                const SliverToBoxAdapter(child: SizedBox(height: 40)),
               ],
             ),
           ),
@@ -348,18 +344,15 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
             mainAxisSpacing: _gridSpacing,
             childAspectRatio: 1.0,
           ),
-          delegate: SliverChildBuilderDelegate(
-            (context, index) {
-              final icon = _filteredIcons[index];
-              return IconCard(
-                name: icon.name,
-                iconWidget: icon.widget,
-                onViewCode: () => _openIconCode(icon.name),
-                onCopy: () => _copyIconCode(icon.name),
-              );
-            },
-            childCount: _filteredIcons.length,
-          ),
+          delegate: SliverChildBuilderDelegate((context, index) {
+            final icon = _filteredIcons[index];
+            return IconCard(
+              name: icon.name,
+              iconWidget: icon.widget,
+              onViewCode: () => _openIconCode(icon.name),
+              onCopy: () => _copyIconCode(icon.name),
+            );
+          }, childCount: _filteredIcons.length),
         );
       },
     );

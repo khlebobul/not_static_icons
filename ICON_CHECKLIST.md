@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-02-07T07:30:12.039852Z UTC.
+Generated on 2026-02-14T03:57:39.756248Z UTC.
 
-## ✅ Existing Icons (382)
+## ✅ Existing Icons (426)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -350,8 +350,52 @@ Generated on 2026-02-07T07:30:12.039852Z UTC.
 - [x] `church`
 - [x] `cigarette`
 - [x] `cigarette-off`
+- [x] `circle`
 - [x] `circle-alert`
+- [x] `circle-arrow-down`
+- [x] `circle-arrow-left`
+- [x] `circle-arrow-out-down-left`
+- [x] `circle-arrow-out-down-right`
+- [x] `circle-arrow-out-up-left`
+- [x] `circle-arrow-out-up-right`
+- [x] `circle-arrow-right`
+- [x] `circle-arrow-up`
+- [x] `circle-check`
+- [x] `circle-check-big`
+- [x] `circle-chevron-down`
+- [x] `circle-chevron-left`
+- [x] `circle-chevron-right`
+- [x] `circle-chevron-up`
+- [x] `circle-dashed`
+- [x] `circle-divide`
+- [x] `circle-dollar-sign`
+- [x] `circle-dot`
+- [x] `circle-dot-dashed`
+- [x] `circle-ellipsis`
+- [x] `circle-equal`
+- [x] `circle-fading-arrow-up`
+- [x] `circle-fading-plus`
+- [x] `circle-gauge`
+- [x] `circle-minus`
+- [x] `circle-off`
+- [x] `circle-parking`
+- [x] `circle-parking-off`
+- [x] `circle-pause`
+- [x] `circle-percent`
+- [x] `circle-pile`
+- [x] `circle-play`
+- [x] `circle-plus`
+- [x] `circle-pound-sterling`
+- [x] `circle-power`
 - [x] `circle-question-mark`
+- [x] `circle-slash`
+- [x] `circle-slash-2`
+- [x] `circle-small`
+- [x] `circle-star`
+- [x] `circle-stop`
+- [x] `circle-user`
+- [x] `circle-user-round`
+- [x] `circle-x`
 - [x] `club`
 - [x] `diamond`
 - [x] `grid-2x2`
@@ -385,51 +429,7 @@ Generated on 2026-02-07T07:30:12.039852Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1287)
-- [ ] `circle`
-- [ ] `circle-arrow-down`
-- [ ] `circle-arrow-left`
-- [ ] `circle-arrow-out-down-left`
-- [ ] `circle-arrow-out-down-right`
-- [ ] `circle-arrow-out-up-left`
-- [ ] `circle-arrow-out-up-right`
-- [ ] `circle-arrow-right`
-- [ ] `circle-arrow-up`
-- [ ] `circle-check`
-- [ ] `circle-check-big`
-- [ ] `circle-chevron-down`
-- [ ] `circle-chevron-left`
-- [ ] `circle-chevron-right`
-- [ ] `circle-chevron-up`
-- [ ] `circle-dashed`
-- [ ] `circle-divide`
-- [ ] `circle-dollar-sign`
-- [ ] `circle-dot`
-- [ ] `circle-dot-dashed`
-- [ ] `circle-ellipsis`
-- [ ] `circle-equal`
-- [ ] `circle-fading-arrow-up`
-- [ ] `circle-fading-plus`
-- [ ] `circle-gauge`
-- [ ] `circle-minus`
-- [ ] `circle-off`
-- [ ] `circle-parking`
-- [ ] `circle-parking-off`
-- [ ] `circle-pause`
-- [ ] `circle-percent`
-- [ ] `circle-pile`
-- [ ] `circle-play`
-- [ ] `circle-plus`
-- [ ] `circle-pound-sterling`
-- [ ] `circle-power`
-- [ ] `circle-slash`
-- [ ] `circle-slash-2`
-- [ ] `circle-small`
-- [ ] `circle-star`
-- [ ] `circle-stop`
-- [ ] `circle-user`
-- [ ] `circle-user-round`
-- [ ] `circle-x`
+## ➕ New Icons to Add (1243)
 - [ ] `circuit-board`
 - [ ] `citrus`
 - [ ] `clapperboard`

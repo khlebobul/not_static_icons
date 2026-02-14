@@ -553,8 +553,14 @@ final List<IconData> icons = [
   IconData(name: 'circle-arrow-up', widget: CircleArrowUpIcon(size: 40)),
   IconData(name: 'circle-check', widget: CircleCheckIcon(size: 40)),
   IconData(name: 'circle-check-big', widget: CircleCheckBigIcon(size: 40)),
-  IconData(name: 'circle-chevron-down', widget: CircleChevronDownIcon(size: 40)),
-  IconData(name: 'circle-chevron-left', widget: CircleChevronLeftIcon(size: 40)),
+  IconData(
+    name: 'circle-chevron-down',
+    widget: CircleChevronDownIcon(size: 40),
+  ),
+  IconData(
+    name: 'circle-chevron-left',
+    widget: CircleChevronLeftIcon(size: 40),
+  ),
   IconData(
     name: 'circle-chevron-right',
     widget: CircleChevronRightIcon(size: 40),
