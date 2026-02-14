@@ -1,3 +1,11 @@
+## 0.33.0
+
+#### New icons
+* Added 44 new animated `circle` icons: `circle`, `circle-arrow-down`, `circle-arrow-left`, `circle-arrow-out-down-left`, `circle-arrow-out-down-right`, `circle-arrow-out-up-left`, `circle-arrow-out-up-right`, `circle-arrow-right`, `circle-arrow-up`, `circle-check`, `circle-check-big`, `circle-chevron-down`, `circle-chevron-left`, `circle-chevron-right`, `circle-chevron-up`, `circle-dashed`, `circle-divide`, `circle-dollar-sign`, `circle-dot`, `circle-dot-dashed`, `circle-ellipsis`, `circle-equal`, `circle-fading-arrow-up`, `circle-fading-plus`, `circle-gauge`, `circle-minus`, `circle-off`, `circle-parking`, `circle-parking-off`, `circle-pause`, `circle-percent`, `circle-pile`, `circle-play`, `circle-plus`, `circle-pound-sterling`, `circle-power`, `circle-slash`, `circle-slash-2`, `circle-small`, `circle-star`, `circle-stop`, `circle-user`, `circle-user-round`, and `circle-x`.
+
+#### Demo App
+* Search bar now sticks to the top when scrolling for better usability.
+
 ## 0.32.0
 
 #### New icons
