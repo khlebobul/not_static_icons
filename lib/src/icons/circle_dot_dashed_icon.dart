@@ -57,11 +57,19 @@ class CircleDotDashedPainter extends CustomPainter {
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
 
+    final fillPaint = Paint()
+      ..color = color
+      ..style = PaintingStyle.fill;
+
     final scale = size.width / 24.0;
     final center = Offset(12 * scale, 12 * scale);
 
-    // Center dot (stroke): cx="12" cy="12" r="1"
-    canvas.drawCircle(center, 1 * scale, paint);
+    // Animation - inner dot scales
+    final oscillation = 4 * animationValue * (1 - animationValue);
+    final dotScale = 1.0 + oscillation * 3.5;
+
+    // Center dot (filled): cx="12" cy="12" r="1"
+    canvas.drawCircle(center, dotScale * scale, fillPaint);
 
     // Rotation animation for dashed circle
     canvas.save();

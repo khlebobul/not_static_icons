@@ -56,6 +56,10 @@ class CircleDotPainter extends CustomPainter {
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
 
+    final fillPaint = Paint()
+      ..color = color
+      ..style = PaintingStyle.fill;
+
     final scale = size.width / 24.0;
     final center = Offset(12 * scale, 12 * scale);
 
@@ -64,10 +68,10 @@ class CircleDotPainter extends CustomPainter {
 
     // Animation - inner dot scales
     final oscillation = 4 * animationValue * (1 - animationValue);
-    final dotScale = 1.0 + oscillation * 0.5;
+    final dotScale = 1.0 + oscillation * 3.5;
 
-    // Inner circle (stroke, not fill): cx="12" cy="12" r="1"
-    canvas.drawCircle(center, dotScale * scale, paint);
+    // Inner dot (filled): cx="12" cy="12" r="1"
+    canvas.drawCircle(center, dotScale * scale, fillPaint);
   }
 
   @override
