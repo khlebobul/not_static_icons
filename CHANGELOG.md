@@ -1,4 +1,4 @@
-## 0.34.0
+## 0.34.1
 
 #### Icons update
 * Update `palette` icon
