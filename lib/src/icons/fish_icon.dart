@@ -65,24 +65,36 @@ class FishPainter extends CustomPainter {
     final bodyPath = Path();
     bodyPath.moveTo(6.5 * scale, 12 * scale);
     bodyPath.cubicTo(
-      7.44 * scale, 8.54 * scale,
-      11.44 * scale, 6 * scale,
-      15 * scale, 6 * scale,
+      7.44 * scale,
+      8.54 * scale,
+      11.44 * scale,
+      6 * scale,
+      15 * scale,
+      6 * scale,
     );
     bodyPath.cubicTo(
-      18.56 * scale, 6 * scale,
-      21.06 * scale, 8.54 * scale,
-      22 * scale, 12 * scale,
+      18.56 * scale,
+      6 * scale,
+      21.06 * scale,
+      8.54 * scale,
+      22 * scale,
+      12 * scale,
     );
     bodyPath.cubicTo(
-      21.06 * scale, 15.47 * scale,
-      18.56 * scale, 18 * scale,
-      15 * scale, 18 * scale,
+      21.06 * scale,
+      15.47 * scale,
+      18.56 * scale,
+      18 * scale,
+      15 * scale,
+      18 * scale,
     );
     bodyPath.cubicTo(
-      11.44 * scale, 18 * scale,
-      7.44 * scale, 15.47 * scale,
-      6.5 * scale, 12 * scale,
+      11.44 * scale,
+      18 * scale,
+      7.44 * scale,
+      15.47 * scale,
+      6.5 * scale,
+      12 * scale,
     );
     bodyPath.close();
     canvas.drawPath(bodyPath, paint);
@@ -109,28 +121,40 @@ class FishPainter extends CustomPainter {
     canvas.translate(7 * scale, 12 * scale);
     canvas.rotate(tailOffset * 0.1);
     canvas.translate(-7 * scale, -12 * scale);
-    
+
     final tailPath = Path();
     tailPath.moveTo(7 * scale, 10.67 * scale);
     tailPath.cubicTo(
-      7 * scale, 8 * scale,
-      5.58 * scale, 5.97 * scale,
-      2.73 * scale, 5.5 * scale,
+      7 * scale,
+      8 * scale,
+      5.58 * scale,
+      5.97 * scale,
+      2.73 * scale,
+      5.5 * scale,
     );
     tailPath.cubicTo(
-      1.73 * scale, 7 * scale,
-      1.73 * scale, 10.5 * scale,
-      2.96 * scale, 12 * scale,
+      1.73 * scale,
+      7 * scale,
+      1.73 * scale,
+      10.5 * scale,
+      2.96 * scale,
+      12 * scale,
     );
     tailPath.cubicTo(
-      1.72 * scale, 13.5 * scale,
-      1.72 * scale, 17 * scale,
-      2.73 * scale, 18.5 * scale,
+      1.72 * scale,
+      13.5 * scale,
+      1.72 * scale,
+      17 * scale,
+      2.73 * scale,
+      18.5 * scale,
     );
     tailPath.cubicTo(
-      5.58 * scale, 18.03 * scale,
-      7 * scale, 16 * scale,
-      7 * scale, 13.33 * scale,
+      5.58 * scale,
+      18.03 * scale,
+      7 * scale,
+      16 * scale,
+      7 * scale,
+      13.33 * scale,
     );
     canvas.drawPath(tailPath, paint);
     canvas.restore();
@@ -139,9 +163,12 @@ class FishPainter extends CustomPainter {
     final topFinPath = Path();
     topFinPath.moveTo(10.46 * scale, 7.26 * scale);
     topFinPath.cubicTo(
-      10.2 * scale, 5.88 * scale,
-      9.17 * scale, 4.24 * scale,
-      8 * scale, 3 * scale,
+      10.2 * scale,
+      5.88 * scale,
+      9.17 * scale,
+      4.24 * scale,
+      8 * scale,
+      3 * scale,
     );
     topFinPath.lineTo(13.8 * scale, 3 * scale);
     topFinPath.arcToPoint(
@@ -163,9 +190,12 @@ class FishPainter extends CustomPainter {
     );
     bottomFinPath.lineTo(9.5 * scale, 21 * scale);
     bottomFinPath.cubicTo(
-      10.2 * scale, 19.5 * scale,
-      10.99 * scale, 18.5 * scale,
-      10.99 * scale, 17.02 * scale,
+      10.2 * scale,
+      19.5 * scale,
+      10.99 * scale,
+      18.5 * scale,
+      10.99 * scale,
+      17.02 * scale,
     );
     canvas.drawPath(bottomFinPath, paint);
   }

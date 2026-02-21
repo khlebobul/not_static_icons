@@ -62,7 +62,8 @@ class CrabPainter extends CustomPainter {
     final oscillation = math.sin(animationValue * math.pi * 2);
     final clawAngle = oscillation * 0.15; // Claws pinch
     final bodySwayX = oscillation * 0.3 * scale; // Slight horizontal sway
-    final legWiggle = math.sin(animationValue * math.pi * 4) * 0.08; // Legs wiggle faster
+    final legWiggle =
+        math.sin(animationValue * math.pi * 4) * 0.08; // Legs wiggle faster
 
     canvas.save();
     canvas.translate(bodySwayX, 0);
@@ -112,8 +113,8 @@ class CrabPainter extends CustomPainter {
     // For smooth cubic after a line, cp1 = current point
     leftClawPath.cubicTo(
       10 * scale, 7 * scale, // cp1 (reflection, same as current after line)
-      7 * scale, 8 * scale,  // cp2
-      2 * scale, 8 * scale,  // end
+      7 * scale, 8 * scale, // cp2
+      2 * scale, 8 * scale, // end
     );
     canvas.drawPath(leftClawPath, paint);
 
@@ -157,9 +158,12 @@ class CrabPainter extends CustomPainter {
     final leftFrontLeg = Path();
     leftFrontLeg.moveTo(2 * scale, 16 * scale);
     leftFrontLeg.cubicTo(
-      4 * scale, 16 * scale,
-      5 * scale, 17 * scale,
-      5 * scale, 17 * scale,
+      4 * scale,
+      16 * scale,
+      5 * scale,
+      17 * scale,
+      5 * scale,
+      17 * scale,
     );
     canvas.drawPath(leftFrontLeg, paint);
     canvas.restore();
@@ -172,9 +176,12 @@ class CrabPainter extends CustomPainter {
     final leftBackLeg = Path();
     leftBackLeg.moveTo(2 * scale, 22 * scale);
     leftBackLeg.cubicTo(
-      2 * scale, 20.3 * scale,
-      3.3 * scale, 19 * scale,
-      5 * scale, 19 * scale,
+      2 * scale,
+      20.3 * scale,
+      3.3 * scale,
+      19 * scale,
+      5 * scale,
+      19 * scale,
     );
     canvas.drawPath(leftBackLeg, paint);
     canvas.restore();
@@ -187,9 +194,12 @@ class CrabPainter extends CustomPainter {
     final rightFrontLeg = Path();
     rightFrontLeg.moveTo(19 * scale, 17 * scale);
     rightFrontLeg.cubicTo(
-      19 * scale, 17 * scale,
-      20 * scale, 16 * scale,
-      22 * scale, 16 * scale,
+      19 * scale,
+      17 * scale,
+      20 * scale,
+      16 * scale,
+      22 * scale,
+      16 * scale,
     );
     canvas.drawPath(rightFrontLeg, paint);
     canvas.restore();
@@ -202,9 +212,12 @@ class CrabPainter extends CustomPainter {
     final rightBackLeg = Path();
     rightBackLeg.moveTo(19 * scale, 19 * scale);
     rightBackLeg.cubicTo(
-      20.7 * scale, 19 * scale,
-      22 * scale, 20.3 * scale,
-      22 * scale, 22 * scale,
+      20.7 * scale,
+      19 * scale,
+      22 * scale,
+      20.3 * scale,
+      22 * scale,
+      22 * scale,
     );
     canvas.drawPath(rightBackLeg, paint);
     canvas.restore();

@@ -70,10 +70,10 @@ class ShellPainter extends CustomPainter {
 
     // Shell spiral path: M14 11a2 2 0 1 1-4 0 4 4 0 0 1 8 0 6 6 0 0 1-12 0 8 8 0 0 1 16 0 10 10 0 1 1-20 0 11.93 11.93 0 0 1 2.42-7.22 a2 2 0 1 1 3.16 2.44
     final shellPath = Path();
-    
+
     // Start at M14 11
     shellPath.moveTo(14 * scale, 11 * scale);
-    
+
     // a2 2 0 1 1-4 0
     shellPath.arcToPoint(
       Offset(10 * scale, 11 * scale),
@@ -81,7 +81,7 @@ class ShellPainter extends CustomPainter {
       clockwise: true,
       largeArc: true,
     );
-    
+
     // 4 4 0 0 1 8 0
     shellPath.arcToPoint(
       Offset(18 * scale, 11 * scale),
@@ -89,7 +89,7 @@ class ShellPainter extends CustomPainter {
       clockwise: true,
       largeArc: false,
     );
-    
+
     // 6 6 0 0 1-12 0
     shellPath.arcToPoint(
       Offset(6 * scale, 11 * scale),
@@ -97,7 +97,7 @@ class ShellPainter extends CustomPainter {
       clockwise: true,
       largeArc: false,
     );
-    
+
     // 8 8 0 0 1 16 0
     shellPath.arcToPoint(
       Offset(22 * scale, 11 * scale),
@@ -105,7 +105,7 @@ class ShellPainter extends CustomPainter {
       clockwise: true,
       largeArc: false,
     );
-    
+
     // 10 10 0 1 1-20 0
     shellPath.arcToPoint(
       Offset(2 * scale, 11 * scale),
@@ -113,7 +113,7 @@ class ShellPainter extends CustomPainter {
       clockwise: true,
       largeArc: true,
     );
-    
+
     // 11.93 11.93 0 0 1 2.42-7.22
     shellPath.arcToPoint(
       Offset(4.42 * scale, 3.78 * scale),
@@ -121,7 +121,7 @@ class ShellPainter extends CustomPainter {
       clockwise: true,
       largeArc: false,
     );
-    
+
     // a2 2 0 1 1 3.16 2.44
     shellPath.arcToPoint(
       Offset(7.58 * scale, 6.22 * scale),
@@ -129,7 +129,7 @@ class ShellPainter extends CustomPainter {
       clockwise: true,
       largeArc: true,
     );
-    
+
     canvas.drawPath(shellPath, paint);
 
     canvas.restore();

@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-02-14T03:57:39.756248Z UTC.
+Generated on 2026-02-21T05:37:24.524628Z UTC.
 
-## ✅ Existing Icons (426)
+## ✅ Existing Icons (432)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -397,7 +397,9 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [x] `circle-user-round`
 - [x] `circle-x`
 - [x] `club`
+- [x] `crown`
 - [x] `diamond`
+- [x] `fish`
 - [x] `grid-2x2`
 - [x] `hash`
 - [x] `heart`
@@ -410,6 +412,7 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [x] `mars`
 - [x] `minus`
 - [x] `moon`
+- [x] `palette`
 - [x] `pause`
 - [x] `play`
 - [x] `plus`
@@ -418,6 +421,9 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [x] `replace`
 - [x] `rotate-ccw`
 - [x] `rotate-cw`
+- [x] `palette`
+- [x] `shell`
+- [x] `ship`
 - [x] `slash`
 - [x] `spade`
 - [x] `star`
@@ -429,7 +435,7 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1243)
+## ➕ New Icons to Add (1239)
 - [ ] `circuit-board`
 - [ ] `citrus`
 - [ ] `clapperboard`
@@ -535,7 +541,6 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [ ] `crop`
 - [ ] `cross`
 - [ ] `crosshair`
-- [ ] `crown`
 - [ ] `cuboid`
 - [ ] `cup-soda`
 - [ ] `currency`
@@ -677,7 +682,6 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [ ] `film`
 - [ ] `fingerprint-pattern`
 - [ ] `fire-extinguisher`
-- [ ] `fish`
 - [ ] `fish-off`
 - [ ] `fish-symbol`
 - [ ] `fishing-hook`
@@ -1106,7 +1110,6 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [ ] `paint-roller`
 - [ ] `paintbrush`
 - [ ] `paintbrush-vertical`
-- [ ] `palette`
 - [ ] `panda`
 - [ ] `panel-bottom`
 - [ ] `panel-bottom-close`
@@ -1257,7 +1260,6 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [ ] `ruler`
 - [ ] `ruler-dimension-line`
 - [ ] `russian-ruble`
-- [ ] `sailboat`
 - [ ] `salad`
 - [ ] `sandwich`
 - [ ] `satellite`
@@ -1308,7 +1310,6 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [ ] `share`
 - [ ] `share-2`
 - [ ] `sheet`
-- [ ] `shell`
 - [ ] `shield`
 - [ ] `shield-alert`
 - [ ] `shield-ban`
@@ -1321,7 +1322,6 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [ ] `shield-question-mark`
 - [ ] `shield-user`
 - [ ] `shield-x`
-- [ ] `ship`
 - [ ] `ship-wheel`
 - [ ] `shirt`
 - [ ] `shopping-bag`
@@ -1590,6 +1590,7 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [ ] `user`
 - [ ] `user-check`
 - [ ] `user-cog`
+- [ ] `user-key`
 - [ ] `user-lock`
 - [ ] `user-minus`
 - [ ] `user-pen`
@@ -1597,6 +1598,7 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [ ] `user-round`
 - [ ] `user-round-check`
 - [ ] `user-round-cog`
+- [ ] `user-round-key`
 - [ ] `user-round-minus`
 - [ ] `user-round-pen`
 - [ ] `user-round-plus`
@@ -1674,11 +1676,13 @@ Generated on 2026-02-14T03:57:39.756248Z UTC.
 - [ ] `zoom-in`
 - [ ] `zoom-out`
 
-## ➖ Potentially Removed Icons (4)
+## ➖ Potentially Removed Icons (6)
 - [ ] `align-center`
 - [ ] `align-justify`
 - [ ] `align-left`
 - [ ] `align-right`
+- [ ] `crab`
+- [ ] `shark`
 
 ## 🎨 Custom Icons (6)
 - [x] `victory-points`

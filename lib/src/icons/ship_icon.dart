@@ -104,9 +104,12 @@ class ShipPainter extends CustomPainter {
     final hullPath = Path();
     hullPath.moveTo(19.38 * scale, 20 * scale);
     hullPath.cubicTo(
-      20.5 * scale, 18 * scale,
-      21 * scale, 16 * scale,
-      21 * scale, 14 * scale,
+      20.5 * scale,
+      18 * scale,
+      21 * scale,
+      16 * scale,
+      21 * scale,
+      14 * scale,
     );
     hullPath.lineTo(12.812 * scale, 10.361 * scale);
     hullPath.arcToPoint(
@@ -116,9 +119,12 @@ class ShipPainter extends CustomPainter {
     );
     hullPath.lineTo(3 * scale, 14 * scale);
     hullPath.cubicTo(
-      3.5 * scale, 16.5 * scale,
-      4.5 * scale, 19 * scale,
-      5.81 * scale, 21.76 * scale,
+      3.5 * scale,
+      16.5 * scale,
+      4.5 * scale,
+      19 * scale,
+      5.81 * scale,
+      21.76 * scale,
     );
     canvas.drawPath(hullPath, paint);
 
@@ -126,34 +132,52 @@ class ShipPainter extends CustomPainter {
     final wavePath = Path();
     wavePath.moveTo(2 * scale, 21 * scale);
     wavePath.cubicTo(
-      2.6 * scale, 21.5 * scale,
-      3.2 * scale, 22 * scale,
-      4.5 * scale, 22 * scale,
+      2.6 * scale,
+      21.5 * scale,
+      3.2 * scale,
+      22 * scale,
+      4.5 * scale,
+      22 * scale,
     );
     wavePath.cubicTo(
-      6 * scale, 22 * scale,
-      6.5 * scale, 20.5 * scale,
-      9.5 * scale, 20 * scale,
+      6 * scale,
+      22 * scale,
+      6.5 * scale,
+      20.5 * scale,
+      9.5 * scale,
+      20 * scale,
     );
     wavePath.cubicTo(
-      10.8 * scale, 20 * scale,
-      11.4 * scale, 20.5 * scale,
-      12 * scale, 21 * scale,
+      10.8 * scale,
+      20 * scale,
+      11.4 * scale,
+      20.5 * scale,
+      12 * scale,
+      21 * scale,
     );
     wavePath.cubicTo(
-      12.6 * scale, 21.5 * scale,
-      13.2 * scale, 22 * scale,
-      14.5 * scale, 22 * scale,
+      12.6 * scale,
+      21.5 * scale,
+      13.2 * scale,
+      22 * scale,
+      14.5 * scale,
+      22 * scale,
     );
     wavePath.cubicTo(
-      16 * scale, 22 * scale,
-      16.5 * scale, 20.5 * scale,
-      19.5 * scale, 20 * scale,
+      16 * scale,
+      22 * scale,
+      16.5 * scale,
+      20.5 * scale,
+      19.5 * scale,
+      20 * scale,
     );
     wavePath.cubicTo(
-      20.8 * scale, 20 * scale,
-      21.4 * scale, 20.5 * scale,
-      22 * scale, 21 * scale,
+      20.8 * scale,
+      20 * scale,
+      21.4 * scale,
+      20.5 * scale,
+      22 * scale,
+      21 * scale,
     );
     canvas.drawPath(wavePath, paint);
 
