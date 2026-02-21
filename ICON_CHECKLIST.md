@@ -1,5 +1,5 @@
 # Lucide Icons Checklist
-Generated on 2026-02-21T05:37:24.524628Z UTC.
+Generated on 2026-02-21T09:24:26.890196Z UTC.
 
 ## ✅ Existing Icons (432)
 - [x] `a-arrow-down`
@@ -421,7 +421,7 @@ Generated on 2026-02-21T05:37:24.524628Z UTC.
 - [x] `replace`
 - [x] `rotate-ccw`
 - [x] `rotate-cw`
-- [x] `palette`
+- [x] `sailboat`
 - [x] `shell`
 - [x] `ship`
 - [x] `slash`
