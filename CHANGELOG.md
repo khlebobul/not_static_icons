@@ -1,5 +1,10 @@
 ## 0.34.0
 
+#### Icons update
+* Update `palette` icon
+
+## 0.34.0
+
 #### New icons
 * Added new animated icons: `crab`, `crown`, `fish`, `shark`, `shell`, `ship`, `palette` and `sailboat`.
 

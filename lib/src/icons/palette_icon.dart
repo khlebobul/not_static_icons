@@ -131,32 +131,32 @@ class PalettePainter extends CustomPainter {
       return 1.0 + math.sin(phase * math.pi * 2) * 0.8 * easeInOut;
     }
 
-    // Paint dots (filled circles)
+    // Paint dots (filled circles) - increased size
     // Dot 1: cx="13.5" cy="6.5" r=".5"
     canvas.drawCircle(
       Offset(13.5 * scale, 6.5 * scale),
-      0.5 * scale * pulseScale(0.0),
+      1.0 * scale * pulseScale(0.0),
       fillPaint,
     );
 
     // Dot 2: cx="17.5" cy="10.5" r=".5"
     canvas.drawCircle(
       Offset(17.5 * scale, 10.5 * scale),
-      0.5 * scale * pulseScale(0.25),
+      1.0 * scale * pulseScale(0.25),
       fillPaint,
     );
 
     // Dot 3: cx="6.5" cy="12.5" r=".5"
     canvas.drawCircle(
       Offset(6.5 * scale, 12.5 * scale),
-      0.5 * scale * pulseScale(0.5),
+      1.0 * scale * pulseScale(0.5),
       fillPaint,
     );
 
     // Dot 4: cx="8.5" cy="7.5" r=".5"
     canvas.drawCircle(
       Offset(8.5 * scale, 7.5 * scale),
-      0.5 * scale * pulseScale(0.75),
+      1.0 * scale * pulseScale(0.75),
       fillPaint,
     );
   }
