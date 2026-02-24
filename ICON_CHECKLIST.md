@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-02-21T09:24:26.890196Z UTC.
+Generated on 2026-02-24T14:52:49.804247Z UTC.
 
-## ✅ Existing Icons (432)
+## ✅ Existing Icons (435)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -396,6 +396,9 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [x] `circle-user`
 - [x] `circle-user-round`
 - [x] `circle-x`
+- [x] `circuit-board`
+- [x] `citrus`
+- [x] `clapperboard`
 - [x] `club`
 - [x] `crown`
 - [x] `diamond`
@@ -435,10 +438,7 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1239)
-- [ ] `circuit-board`
-- [ ] `citrus`
-- [ ] `clapperboard`
+## ➕ New Icons to Add (1266)
 - [ ] `clipboard`
 - [ ] `clipboard-check`
 - [ ] `clipboard-clock`
@@ -696,9 +696,7 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `flask-conical`
 - [ ] `flask-conical-off`
 - [ ] `flask-round`
-- [ ] `flip-horizontal`
 - [ ] `flip-horizontal-2`
-- [ ] `flip-vertical`
 - [ ] `flip-vertical-2`
 - [ ] `flower`
 - [ ] `flower-2`
@@ -772,6 +770,7 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `git-fork`
 - [ ] `git-graph`
 - [ ] `git-merge`
+- [ ] `git-merge-conflict`
 - [ ] `git-pull-request`
 - [ ] `git-pull-request-arrow`
 - [ ] `git-pull-request-closed`
@@ -784,6 +783,7 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `glasses`
 - [ ] `globe`
 - [ ] `globe-lock`
+- [ ] `globe-off`
 - [ ] `globe-x`
 - [ ] `goal`
 - [ ] `gpu`
@@ -908,12 +908,15 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `leaf`
 - [ ] `leafy-green`
 - [ ] `lectern`
+- [ ] `lens-concave`
+- [ ] `lens-convex`
 - [ ] `library`
 - [ ] `library-big`
 - [ ] `life-buoy`
 - [ ] `ligature`
 - [ ] `lightbulb`
 - [ ] `lightbulb-off`
+- [ ] `line-dot-right-horizontal`
 - [ ] `line-squiggle`
 - [ ] `link`
 - [ ] `link-2`
@@ -992,6 +995,7 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `menu`
 - [ ] `merge`
 - [ ] `message-circle`
+- [ ] `message-circle-check`
 - [ ] `message-circle-code`
 - [ ] `message-circle-dashed`
 - [ ] `message-circle-heart`
@@ -1003,6 +1007,7 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `message-circle-warning`
 - [ ] `message-circle-x`
 - [ ] `message-square`
+- [ ] `message-square-check`
 - [ ] `message-square-code`
 - [ ] `message-square-dashed`
 - [ ] `message-square-diff`
@@ -1019,6 +1024,7 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `message-square-warning`
 - [ ] `message-square-x`
 - [ ] `messages-square`
+- [ ] `metronome`
 - [ ] `mic`
 - [ ] `mic-off`
 - [ ] `mic-vocal`
@@ -1030,6 +1036,8 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `milk-off`
 - [ ] `minimize`
 - [ ] `minimize-2`
+- [ ] `mirror-rectangular`
+- [ ] `mirror-round`
 - [ ] `monitor`
 - [ ] `monitor-check`
 - [ ] `monitor-cloud`
@@ -1049,12 +1057,14 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `mountain`
 - [ ] `mountain-snow`
 - [ ] `mouse`
+- [ ] `mouse-left`
 - [ ] `mouse-off`
 - [ ] `mouse-pointer`
 - [ ] `mouse-pointer-2`
 - [ ] `mouse-pointer-2-off`
 - [ ] `mouse-pointer-ban`
 - [ ] `mouse-pointer-click`
+- [ ] `mouse-right`
 - [ ] `move`
 - [ ] `move-3d`
 - [ ] `move-diagonal`
@@ -1310,6 +1320,7 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `share`
 - [ ] `share-2`
 - [ ] `sheet`
+- [ ] `shelving-unit`
 - [ ] `shield`
 - [ ] `shield-alert`
 - [ ] `shield-ban`
@@ -1387,11 +1398,15 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `square-arrow-out-up-left`
 - [ ] `square-arrow-out-up-right`
 - [ ] `square-arrow-right`
+- [ ] `square-arrow-right-enter`
+- [ ] `square-arrow-right-exit`
 - [ ] `square-arrow-up`
 - [ ] `square-arrow-up-left`
 - [ ] `square-arrow-up-right`
 - [ ] `square-asterisk`
 - [ ] `square-bottom-dashed-scissors`
+- [ ] `square-centerline-dashed-horizontal`
+- [ ] `square-centerline-dashed-vertical`
 - [ ] `square-chart-gantt`
 - [ ] `square-check`
 - [ ] `square-check-big`
@@ -1539,6 +1554,7 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `torus`
 - [ ] `touchpad`
 - [ ] `touchpad-off`
+- [ ] `towel-rack`
 - [ ] `tower-control`
 - [ ] `toy-brick`
 - [ ] `tractor`
@@ -1670,9 +1686,23 @@ Generated on 2026-02-21T09:24:26.890196Z UTC.
 - [ ] `workflow`
 - [ ] `worm`
 - [ ] `wrench`
+- [ ] `x-line-top`
 - [ ] `youtube`
 - [ ] `zap`
 - [ ] `zap-off`
+- [ ] `zodiac-aquarius`
+- [ ] `zodiac-aries`
+- [ ] `zodiac-cancer`
+- [ ] `zodiac-capricorn`
+- [ ] `zodiac-gemini`
+- [ ] `zodiac-leo`
+- [ ] `zodiac-libra`
+- [ ] `zodiac-ophiuchus`
+- [ ] `zodiac-pisces`
+- [ ] `zodiac-sagittarius`
+- [ ] `zodiac-scorpio`
+- [ ] `zodiac-taurus`
+- [ ] `zodiac-virgo`
 - [ ] `zoom-in`
 - [ ] `zoom-out`
 
