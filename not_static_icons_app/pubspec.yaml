@@ -1,7 +1,7 @@
 name: not_static_icons_app
 description: "A new Flutter project."
 publish_to: 'none'
-version: 0.1.46+47
+version: 0.1.47+48
 
 environment:
   sdk: ^3.8.1

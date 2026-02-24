@@ -71,7 +71,7 @@ class CitrusPainter extends CustomPainter {
     // This is a wedge shape from top-right to bottom-left
     final outerPath = Path();
     outerPath.moveTo(21.66 * scale, 17.67 * scale);
-    
+
     // Small arc at corner: a1.08 1.08 0 0 1-.04 1.6
     outerPath.arcToPoint(
       Offset(21.62 * scale, 19.27 * scale),
@@ -79,7 +79,7 @@ class CitrusPainter extends CustomPainter {
       clockwise: true,
       largeArc: false,
     );
-    
+
     // Large arc (the curved edge): A12 12 0 0 1 4.73 2.38
     outerPath.arcToPoint(
       Offset(4.73 * scale, 2.38 * scale),
@@ -87,7 +87,7 @@ class CitrusPainter extends CustomPainter {
       clockwise: true,
       largeArc: false,
     );
-    
+
     // Small arc at other corner: a1.1 1.1 0 0 1 1.61-.04
     outerPath.arcToPoint(
       Offset(6.34 * scale, 2.34 * scale),
@@ -95,7 +95,7 @@ class CitrusPainter extends CustomPainter {
       clockwise: true,
       largeArc: false,
     );
-    
+
     // z - close path
     outerPath.close();
     canvas.drawPath(outerPath, paint);
@@ -126,7 +126,7 @@ class CitrusPainter extends CustomPainter {
       Offset(14 * scale, 10 * scale),
       paint,
     );
-    
+
     // Horizontal line from (14, 10) to (6.15, 10)
     canvas.drawLine(
       Offset(14 * scale, 10 * scale),

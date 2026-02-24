@@ -92,15 +92,21 @@ class ClapperboardPainter extends CustomPainter {
     clapperPath.lineTo(3 * scale, 11 * scale);
     clapperPath.lineTo(2.1 * scale, 8.6 * scale);
     clapperPath.cubicTo(
-      1.8 * scale, 7.5 * scale,
-      2.4 * scale, 6.4 * scale,
-      3.4 * scale, 6.1 * scale,
+      1.8 * scale,
+      7.5 * scale,
+      2.4 * scale,
+      6.4 * scale,
+      3.4 * scale,
+      6.1 * scale,
     );
     clapperPath.lineTo(16.9 * scale, 2.1 * scale);
     clapperPath.cubicTo(
-      18 * scale, 1.8 * scale,
-      19.1 * scale, 2.4 * scale,
-      19.4 * scale, 3.4 * scale,
+      18 * scale,
+      1.8 * scale,
+      19.1 * scale,
+      2.4 * scale,
+      19.4 * scale,
+      3.4 * scale,
     );
     clapperPath.close();
     canvas.drawPath(clapperPath, paint);
