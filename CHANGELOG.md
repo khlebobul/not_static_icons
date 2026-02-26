@@ -1,7 +1,7 @@
 ## 0.35.0
 
 #### New icons
-* Added new animated icons: `circuit-board`, `citrus`, `fclapperboard`.
+* Added new animated icons: `circuit-board`, `citrus`, `clapperboard`.
 
 ## 0.34.1
 
