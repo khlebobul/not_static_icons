@@ -1,0 +1,132 @@
+import 'package:flutter/material.dart';
+import '../core/animated_svg_icon_base.dart';
+
+/// Animated Clipboard List Icon - List items pulse
+class ClipboardListIcon extends AnimatedSVGIcon {
+  const ClipboardListIcon({
+    super.key,
+    super.size = 40.0,
+    super.color,
+    super.hoverColor,
+    super.animationDuration = const Duration(milliseconds: 600),
+    super.strokeWidth = 2.0,
+    super.reverseOnExit = false,
+    super.enableTouchInteraction = true,
+    super.infiniteLoop = false,
+    super.onTap,
+    super.interactive,
+    super.controller,
+  });
+
+  @override
+  String get animationDescription => "List items pulse";
+
+  @override
+  CustomPainter createPainter({
+    required Color color,
+    required double animationValue,
+    required double strokeWidth,
+  }) {
+    return ClipboardListPainter(
+      color: color,
+      animationValue: animationValue,
+      strokeWidth: strokeWidth,
+    );
+  }
+}
+
+class ClipboardListPainter extends CustomPainter {
+  final Color color;
+  final double animationValue;
+  final double strokeWidth;
+
+  ClipboardListPainter({
+    required this.color,
+    required this.animationValue,
+    required this.strokeWidth,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = color
+      ..strokeWidth = strokeWidth
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round
+      ..style = PaintingStyle.stroke;
+
+    final scale = size.width / 24.0;
+
+    // Draw clipboard base
+    final clipRect = RRect.fromRectAndRadius(
+      Rect.fromLTWH(8 * scale, 2 * scale, 8 * scale, 4 * scale),
+      Radius.circular(1 * scale),
+    );
+    canvas.drawRRect(clipRect, paint);
+
+    final boardPath = Path();
+    boardPath.moveTo(16 * scale, 4 * scale);
+    boardPath.lineTo(18 * scale, 4 * scale);
+    boardPath.arcToPoint(
+      Offset(20 * scale, 6 * scale),
+      radius: Radius.circular(2 * scale),
+      clockwise: true,
+    );
+    boardPath.lineTo(20 * scale, 20 * scale);
+    boardPath.arcToPoint(
+      Offset(18 * scale, 22 * scale),
+      radius: Radius.circular(2 * scale),
+      clockwise: true,
+    );
+    boardPath.lineTo(6 * scale, 22 * scale);
+    boardPath.arcToPoint(
+      Offset(4 * scale, 20 * scale),
+      radius: Radius.circular(2 * scale),
+      clockwise: true,
+    );
+    boardPath.lineTo(4 * scale, 6 * scale);
+    boardPath.arcToPoint(
+      Offset(6 * scale, 4 * scale),
+      radius: Radius.circular(2 * scale),
+      clockwise: true,
+    );
+    boardPath.lineTo(8 * scale, 4 * scale);
+    canvas.drawPath(boardPath, paint);
+
+    // List items with staggered animation
+    final oscillation = 4 * animationValue * (1 - animationValue);
+
+    // First item: M12 11h4 and M8 11h.01
+    final scale1 = 1.0 + oscillation * 0.1;
+    canvas.save();
+    canvas.translate(14 * scale, 11 * scale);
+    canvas.scale(scale1, 1.0);
+    canvas.translate(-14 * scale, -11 * scale);
+    canvas.drawLine(
+        Offset(12 * scale, 11 * scale), Offset(16 * scale, 11 * scale), paint);
+    canvas.restore();
+
+    canvas.drawLine(
+        Offset(8 * scale, 11 * scale), Offset(8.01 * scale, 11 * scale), paint);
+
+    // Second item: M12 16h4 and M8 16h.01
+    final scale2 = 1.0 + oscillation * 0.1 * 0.7;
+    canvas.save();
+    canvas.translate(14 * scale, 16 * scale);
+    canvas.scale(scale2, 1.0);
+    canvas.translate(-14 * scale, -16 * scale);
+    canvas.drawLine(
+        Offset(12 * scale, 16 * scale), Offset(16 * scale, 16 * scale), paint);
+    canvas.restore();
+
+    canvas.drawLine(
+        Offset(8 * scale, 16 * scale), Offset(8.01 * scale, 16 * scale), paint);
+  }
+
+  @override
+  bool shouldRepaint(ClipboardListPainter oldDelegate) {
+    return oldDelegate.color != color ||
+        oldDelegate.animationValue != animationValue ||
+        oldDelegate.strokeWidth != strokeWidth;
+  }
+}
