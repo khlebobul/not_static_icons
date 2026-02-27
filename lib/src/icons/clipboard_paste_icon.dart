@@ -66,17 +66,21 @@ class ClipboardPastePainter extends CustomPainter {
     final boardPath = Path();
     boardPath.moveTo(8 * scale, 4 * scale);
     boardPath.lineTo(6 * scale, 4 * scale);
-    boardPath.arcToPoint(Offset(4 * scale, 6 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    boardPath.arcToPoint(Offset(4 * scale, 6 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     boardPath.lineTo(4 * scale, 20 * scale);
-    boardPath.arcToPoint(Offset(6 * scale, 22 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    boardPath.arcToPoint(Offset(6 * scale, 22 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     boardPath.lineTo(18 * scale, 22 * scale);
-    boardPath.arcToPoint(Offset(19.793 * scale, 20.887 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    boardPath.arcToPoint(Offset(19.793 * scale, 20.887 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     canvas.drawPath(boardPath, paint);
 
     final topPath = Path();
     topPath.moveTo(16 * scale, 4 * scale);
     topPath.lineTo(18 * scale, 4 * scale);
-    topPath.arcToPoint(Offset(20 * scale, 6 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    topPath.arcToPoint(Offset(20 * scale, 6 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     topPath.lineTo(20 * scale, 7.344 * scale);
     canvas.drawPath(topPath, paint);
 
@@ -86,7 +90,8 @@ class ClipboardPastePainter extends CustomPainter {
     canvas.save();
     canvas.translate(arrowOffset * scale, 0);
 
-    canvas.drawLine(Offset(11 * scale, 14 * scale), Offset(21 * scale, 14 * scale), paint);
+    canvas.drawLine(
+        Offset(11 * scale, 14 * scale), Offset(21 * scale, 14 * scale), paint);
 
     final arrowHead = Path();
     arrowHead.moveTo(17 * scale, 18 * scale);

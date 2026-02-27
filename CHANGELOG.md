@@ -1,3 +1,8 @@
+## 0.36.0
+
+#### New icons
+* Added 12 new animated `clipboard` icons: `clipboard`, `clipboard-check`, `clipboard-clock`, `clipboard-copy`, `clipboard-list`, `clipboard-minus`, `clipboard-paste`, `clipboard-pen`, `clipboard-pen-line`, `clipboard-plus`, `clipboard-type`, and `clipboard-x`.
+
 ## 0.35.0
 
 #### New icons

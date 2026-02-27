@@ -111,10 +111,12 @@ class ClipboardTypePainter extends CustomPainter {
     canvas.drawPath(topBar, paint);
 
     // Vertical line: M12 11v6
-    canvas.drawLine(Offset(12 * scale, 11 * scale), Offset(12 * scale, 17 * scale), paint);
+    canvas.drawLine(
+        Offset(12 * scale, 11 * scale), Offset(12 * scale, 17 * scale), paint);
 
     // Bottom horizontal line: M11 17h2
-    canvas.drawLine(Offset(11 * scale, 17 * scale), Offset(13 * scale, 17 * scale), paint);
+    canvas.drawLine(
+        Offset(11 * scale, 17 * scale), Offset(13 * scale, 17 * scale), paint);
 
     canvas.restore();
   }

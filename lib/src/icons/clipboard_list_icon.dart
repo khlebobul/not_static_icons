@@ -102,10 +102,12 @@ class ClipboardListPainter extends CustomPainter {
     canvas.translate(14 * scale, 11 * scale);
     canvas.scale(scale1, 1.0);
     canvas.translate(-14 * scale, -11 * scale);
-    canvas.drawLine(Offset(12 * scale, 11 * scale), Offset(16 * scale, 11 * scale), paint);
+    canvas.drawLine(
+        Offset(12 * scale, 11 * scale), Offset(16 * scale, 11 * scale), paint);
     canvas.restore();
 
-    canvas.drawLine(Offset(8 * scale, 11 * scale), Offset(8.01 * scale, 11 * scale), paint);
+    canvas.drawLine(
+        Offset(8 * scale, 11 * scale), Offset(8.01 * scale, 11 * scale), paint);
 
     // Second item: M12 16h4 and M8 16h.01
     final scale2 = 1.0 + oscillation * 0.1 * 0.7;
@@ -113,10 +115,12 @@ class ClipboardListPainter extends CustomPainter {
     canvas.translate(14 * scale, 16 * scale);
     canvas.scale(scale2, 1.0);
     canvas.translate(-14 * scale, -16 * scale);
-    canvas.drawLine(Offset(12 * scale, 16 * scale), Offset(16 * scale, 16 * scale), paint);
+    canvas.drawLine(
+        Offset(12 * scale, 16 * scale), Offset(16 * scale, 16 * scale), paint);
     canvas.restore();
 
-    canvas.drawLine(Offset(8 * scale, 16 * scale), Offset(8.01 * scale, 16 * scale), paint);
+    canvas.drawLine(
+        Offset(8 * scale, 16 * scale), Offset(8.01 * scale, 16 * scale), paint);
   }
 
   @override

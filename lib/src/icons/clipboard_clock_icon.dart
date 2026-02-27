@@ -66,16 +66,19 @@ class ClipboardClockPainter extends CustomPainter {
     final leftPath = Path();
     leftPath.moveTo(8 * scale, 4 * scale);
     leftPath.lineTo(6 * scale, 4 * scale);
-    leftPath.arcToPoint(Offset(4 * scale, 6 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    leftPath.arcToPoint(Offset(4 * scale, 6 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     leftPath.lineTo(4 * scale, 20 * scale);
-    leftPath.arcToPoint(Offset(6 * scale, 22 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    leftPath.arcToPoint(Offset(6 * scale, 22 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     leftPath.lineTo(8 * scale, 22 * scale);
     canvas.drawPath(leftPath, paint);
 
     final topPath = Path();
     topPath.moveTo(16 * scale, 4 * scale);
     topPath.lineTo(18 * scale, 4 * scale);
-    topPath.arcToPoint(Offset(20 * scale, 6 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    topPath.arcToPoint(Offset(20 * scale, 6 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     topPath.lineTo(20 * scale, 6.832 * scale);
     canvas.drawPath(topPath, paint);
 
@@ -91,11 +94,13 @@ class ClipboardClockPainter extends CustomPainter {
     canvas.translate(16 * scale, 16 * scale);
     canvas.rotate(handAngle);
     canvas.translate(-16 * scale, -16 * scale);
-    canvas.drawLine(Offset(16 * scale, 14 * scale), Offset(16 * scale, 16.2 * scale), paint);
+    canvas.drawLine(Offset(16 * scale, 14 * scale),
+        Offset(16 * scale, 16.2 * scale), paint);
     canvas.restore();
 
     // Minute hand: l1.6 1
-    canvas.drawLine(Offset(16 * scale, 16.2 * scale), Offset(17.6 * scale, 17.2 * scale), paint);
+    canvas.drawLine(Offset(16 * scale, 16.2 * scale),
+        Offset(17.6 * scale, 17.2 * scale), paint);
   }
 
   @override

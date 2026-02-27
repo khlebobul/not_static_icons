@@ -68,11 +68,14 @@ class ClipboardCopyPainter extends CustomPainter {
     final leftBoard = Path();
     leftBoard.moveTo(8 * scale, 4 * scale);
     leftBoard.lineTo(6 * scale, 4 * scale);
-    leftBoard.arcToPoint(Offset(4 * scale, 6 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    leftBoard.arcToPoint(Offset(4 * scale, 6 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     leftBoard.lineTo(4 * scale, 20 * scale);
-    leftBoard.arcToPoint(Offset(6 * scale, 22 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    leftBoard.arcToPoint(Offset(6 * scale, 22 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     leftBoard.lineTo(18 * scale, 22 * scale);
-    leftBoard.arcToPoint(Offset(20 * scale, 20 * scale), radius: Radius.circular(2 * scale), clockwise: false);
+    leftBoard.arcToPoint(Offset(20 * scale, 20 * scale),
+        radius: Radius.circular(2 * scale), clockwise: false);
     leftBoard.lineTo(20 * scale, 18 * scale);
     canvas.drawPath(leftBoard, paint);
 
@@ -80,7 +83,8 @@ class ClipboardCopyPainter extends CustomPainter {
     final rightBoard = Path();
     rightBoard.moveTo(16 * scale, 4 * scale);
     rightBoard.lineTo(18 * scale, 4 * scale);
-    rightBoard.arcToPoint(Offset(20 * scale, 6 * scale), radius: Radius.circular(2 * scale), clockwise: true);
+    rightBoard.arcToPoint(Offset(20 * scale, 6 * scale),
+        radius: Radius.circular(2 * scale), clockwise: true);
     rightBoard.lineTo(20 * scale, 10 * scale);
     canvas.drawPath(rightBoard, paint);
 
@@ -92,7 +96,8 @@ class ClipboardCopyPainter extends CustomPainter {
     canvas.translate(-arrowOffset * scale, 0);
 
     // Arrow line: M21 14H11
-    canvas.drawLine(Offset(21 * scale, 14 * scale), Offset(11 * scale, 14 * scale), paint);
+    canvas.drawLine(
+        Offset(21 * scale, 14 * scale), Offset(11 * scale, 14 * scale), paint);
 
     // Arrow head: m15 10-4 4 4 4
     final arrowHead = Path();
