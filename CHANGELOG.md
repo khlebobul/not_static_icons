@@ -1,3 +1,8 @@
+## 0.37.0
+
+#### New icons
+* Added 19 new animated `clock` icons: `clock`, `clock-1`, `clock-2`, `clock-3`, `clock-4`, `clock-5`, `clock-6`, `clock-7`, `clock-8`, `clock-9`, `clock-10`, `clock-11`, `clock-12`, `clock-alert`, `clock-arrow-down`, `clock-arrow-up`, `clock-check`, `clock-fading`, and `clock-plus`.
+
 ## 0.36.0
 
 #### New icons
