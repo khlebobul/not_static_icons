@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-02-26T20:16:38.758473Z UTC.
+Generated on 2026-03-05T10:29:00.574791Z UTC.
 
-## ✅ Existing Icons (447)
+## ✅ Existing Icons (466)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -411,6 +411,25 @@ Generated on 2026-02-26T20:16:38.758473Z UTC.
 - [x] `clipboard-plus`
 - [x] `clipboard-type`
 - [x] `clipboard-x`
+- [x] `clock`
+- [x] `clock-1`
+- [x] `clock-10`
+- [x] `clock-11`
+- [x] `clock-12`
+- [x] `clock-2`
+- [x] `clock-3`
+- [x] `clock-4`
+- [x] `clock-5`
+- [x] `clock-6`
+- [x] `clock-7`
+- [x] `clock-8`
+- [x] `clock-9`
+- [x] `clock-alert`
+- [x] `clock-arrow-down`
+- [x] `clock-arrow-up`
+- [x] `clock-check`
+- [x] `clock-fading`
+- [x] `clock-plus`
 - [x] `club`
 - [x] `crown`
 - [x] `diamond`
@@ -450,26 +469,7 @@ Generated on 2026-02-26T20:16:38.758473Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1254)
-- [ ] `clock`
-- [ ] `clock-1`
-- [ ] `clock-10`
-- [ ] `clock-11`
-- [ ] `clock-12`
-- [ ] `clock-2`
-- [ ] `clock-3`
-- [ ] `clock-4`
-- [ ] `clock-5`
-- [ ] `clock-6`
-- [ ] `clock-7`
-- [ ] `clock-8`
-- [ ] `clock-9`
-- [ ] `clock-alert`
-- [ ] `clock-arrow-down`
-- [ ] `clock-arrow-up`
-- [ ] `clock-check`
-- [ ] `clock-fading`
-- [ ] `clock-plus`
+## ➕ New Icons to Add (1236)
 - [ ] `closed-caption`
 - [ ] `cloud`
 - [ ] `cloud-alert`
@@ -685,6 +685,7 @@ Generated on 2026-02-26T20:16:38.758473Z UTC.
 - [ ] `fish-off`
 - [ ] `fish-symbol`
 - [ ] `fishing-hook`
+- [ ] `fishing-rod`
 - [ ] `flag`
 - [ ] `flag-off`
 - [ ] `flag-triangle-left`
