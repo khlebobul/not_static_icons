@@ -74,9 +74,11 @@ class ClockFadingPainter extends CustomPainter {
     // When animationValue == 0 or 1, all segments are fully visible
     // During animation, segments fade with different phases
     double getFadeOpacity(double phase) {
-      if (animationValue == 0 || animationValue == 1) return 1.0; // Fully visible at start and end
+      if (animationValue == 0 || animationValue == 1) {
+        return 1.0;
+      }
       final fade = (math.sin(animationValue * math.pi * 2 + phase) + 1) / 2;
-      return 0.3 + fade * 0.7; // Range from 0.3 to 1.0
+      return 0.3 + fade * 0.7;
     }
 
     // Segment 1: M4.636 5.235a10 10 0 0 1 .891-.857
