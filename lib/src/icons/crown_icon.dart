@@ -84,7 +84,7 @@ class CrownPainter extends CustomPainter {
     crownPath.arcToPoint(
       Offset(16.906 * scale, 9.164 * scale),
       radius: Radius.circular(1 * scale),
-      clockwise: true,
+      clockwise: false,
     );
 
     // Line to top right corner (L21.183 5.5)
@@ -104,7 +104,7 @@ class CrownPainter extends CustomPainter {
     crownPath.arcToPoint(
       Offset(18.191 * scale, 16.999 * scale),
       radius: Radius.circular(1 * scale),
-      clockwise: false,
+      clockwise: true,
     );
 
     // Line across bottom (H5.81)
@@ -114,7 +114,7 @@ class CrownPainter extends CustomPainter {
     crownPath.arcToPoint(
       Offset(4.853 * scale, 16.265 * scale),
       radius: Radius.circular(1 * scale),
-      clockwise: false,
+      clockwise: true,
     );
 
     // Line up left side (L2.02 6.02)
@@ -134,7 +134,7 @@ class CrownPainter extends CustomPainter {
     crownPath.arcToPoint(
       Offset(8.61 * scale, 8.871 * scale),
       radius: Radius.circular(1 * scale),
-      clockwise: true,
+      clockwise: false,
     );
 
     // Close path back to start

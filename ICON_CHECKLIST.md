@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-03-05T10:29:00.574791Z UTC.
+Generated on 2026-03-12T15:47:37.749298Z UTC.
 
-## ✅ Existing Icons (466)
+## ✅ Existing Icons (488)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -430,6 +430,28 @@ Generated on 2026-03-05T10:29:00.574791Z UTC.
 - [x] `clock-check`
 - [x] `clock-fading`
 - [x] `clock-plus`
+- [x] `closed-caption`
+- [x] `cloud`
+- [x] `cloud-alert`
+- [x] `cloud-backup`
+- [x] `cloud-check`
+- [x] `cloud-cog`
+- [x] `cloud-download`
+- [x] `cloud-drizzle`
+- [x] `cloud-fog`
+- [x] `cloud-hail`
+- [x] `cloud-lightning`
+- [x] `cloud-moon`
+- [x] `cloud-moon-rain`
+- [x] `cloud-off`
+- [x] `cloud-rain`
+- [x] `cloud-rain-wind`
+- [x] `cloud-snow`
+- [x] `cloud-sun`
+- [x] `cloud-sun-rain`
+- [x] `cloud-sync`
+- [x] `cloud-upload`
+- [x] `cloudy`
 - [x] `club`
 - [x] `crown`
 - [x] `diamond`
@@ -469,29 +491,7 @@ Generated on 2026-03-05T10:29:00.574791Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1236)
-- [ ] `closed-caption`
-- [ ] `cloud`
-- [ ] `cloud-alert`
-- [ ] `cloud-backup`
-- [ ] `cloud-check`
-- [ ] `cloud-cog`
-- [ ] `cloud-download`
-- [ ] `cloud-drizzle`
-- [ ] `cloud-fog`
-- [ ] `cloud-hail`
-- [ ] `cloud-lightning`
-- [ ] `cloud-moon`
-- [ ] `cloud-moon-rain`
-- [ ] `cloud-off`
-- [ ] `cloud-rain`
-- [ ] `cloud-rain-wind`
-- [ ] `cloud-snow`
-- [ ] `cloud-sun`
-- [ ] `cloud-sun-rain`
-- [ ] `cloud-sync`
-- [ ] `cloud-upload`
-- [ ] `cloudy`
+## ➕ New Icons to Add (1214)
 - [ ] `clover`
 - [ ] `code`
 - [ ] `code-xml`

@@ -1,3 +1,11 @@
+## 0.38.0
+
+#### New icons
+* Added 22 new animated `cloud` icons: `cloud`, `cloud-alert`, `cloud-backup`, `cloud-check`, `cloud-cog`, `cloud-download`, `cloud-drizzle`, `cloud-fog`, `cloud-hail`, `cloud-lightning`, `cloud-moon`, `cloud-moon-rain`, `cloud-off`, `cloud-rain`, `cloud-rain-wind`, `cloud-snow`, `cloud-sun`, `cloud-sun-rain`, `cloud-sync`, `cloud-upload`, `cloudy`, and `closed-caption`.
+
+#### Icons update
+* Fixed SVG arc flag mappings for `crown` icon
+
 ## 0.37.0
 
 #### New icons
