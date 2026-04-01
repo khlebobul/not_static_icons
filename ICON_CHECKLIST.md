@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-03-12T15:47:37.749298Z UTC.
+Generated on 2026-03-29T11:51:49.287936Z UTC.
 
-## ✅ Existing Icons (488)
+## ✅ Existing Icons (494)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -452,7 +452,13 @@ Generated on 2026-03-12T15:47:37.749298Z UTC.
 - [x] `cloud-sync`
 - [x] `cloud-upload`
 - [x] `cloudy`
+- [x] `clover`
 - [x] `club`
+- [x] `code`
+- [x] `code-xml`
+- [x] `coffee`
+- [x] `cog`
+- [x] `coins`
 - [x] `crown`
 - [x] `diamond`
 - [x] `fish`
@@ -491,15 +497,9 @@ Generated on 2026-03-12T15:47:37.749298Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1214)
-- [ ] `clover`
-- [ ] `code`
-- [ ] `code-xml`
+## ➕ New Icons to Add (1209)
 - [ ] `codepen`
 - [ ] `codesandbox`
-- [ ] `coffee`
-- [ ] `cog`
-- [ ] `coins`
 - [ ] `columns-2`
 - [ ] `columns-3`
 - [ ] `columns-3-cog`
@@ -601,6 +601,7 @@ Generated on 2026-03-12T15:47:37.749298Z UTC.
 - [ ] `egg`
 - [ ] `egg-fried`
 - [ ] `egg-off`
+- [ ] `ellipse`
 - [ ] `ellipsis`
 - [ ] `ellipsis-vertical`
 - [ ] `equal`

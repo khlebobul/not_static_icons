@@ -1,3 +1,8 @@
+## 0.39.0
+
+#### New icons
+* Added 6 new animated icons: `clover`, `code`, `code-xml`, `coffee`, `cog`, and `coins`.
+
 ## 0.38.0
 
 #### New icons
