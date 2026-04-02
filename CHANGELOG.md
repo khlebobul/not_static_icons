@@ -1,3 +1,8 @@
+## 0.40.0
+
+#### New icons
+* Added new icons: `columns-2`, `columns-3`, `columns-3-cog`, `columns-4`, `combine`, `command`, `compass`, `component`, `computer`, `concierge-bell`, `cone`, `construction`, `contact`, `contact-round`, `container`, `contrast`, `cookie`, `cooking-pot`
+
 ## 0.39.0
 
 #### New icons

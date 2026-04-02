@@ -62,8 +62,7 @@ class ComputerPainter extends CustomPainter {
 
     // Monitor (animated - bounces up): x="5" y="2" width="14" height="8" rx="2"
     final monitorRect = RRect.fromRectAndRadius(
-      Rect.fromLTWH(
-          5 * scale, (2 - bounce) * scale, 14 * scale, 8 * scale),
+      Rect.fromLTWH(5 * scale, (2 - bounce) * scale, 14 * scale, 8 * scale),
       Radius.circular(2 * scale),
     );
     canvas.drawRRect(monitorRect, paint);
