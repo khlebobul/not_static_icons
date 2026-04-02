@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-03-29T11:51:49.287936Z UTC.
+Generated on 2026-04-02T21:01:56.961303Z UTC.
 
-## ✅ Existing Icons (494)
+## ✅ Existing Icons (511)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -346,7 +346,6 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [x] `chevrons-right-left`
 - [x] `chevrons-up`
 - [x] `chevrons-up-down`
-- [x] `chromium`
 - [x] `church`
 - [x] `cigarette`
 - [x] `cigarette-off`
@@ -459,6 +458,24 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [x] `coffee`
 - [x] `cog`
 - [x] `coins`
+- [x] `columns-2`
+- [x] `columns-3`
+- [x] `columns-3-cog`
+- [x] `columns-4`
+- [x] `combine`
+- [x] `command`
+- [x] `compass`
+- [x] `component`
+- [x] `computer`
+- [x] `concierge-bell`
+- [x] `cone`
+- [x] `construction`
+- [x] `contact`
+- [x] `contact-round`
+- [x] `container`
+- [x] `contrast`
+- [x] `cookie`
+- [x] `cooking-pot`
 - [x] `crown`
 - [x] `diamond`
 - [x] `fish`
@@ -497,27 +514,9 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1209)
-- [ ] `codepen`
-- [ ] `codesandbox`
-- [ ] `columns-2`
-- [ ] `columns-3`
-- [ ] `columns-3-cog`
-- [ ] `columns-4`
-- [ ] `combine`
-- [ ] `command`
-- [ ] `compass`
-- [ ] `component`
-- [ ] `computer`
-- [ ] `concierge-bell`
-- [ ] `cone`
-- [ ] `construction`
-- [ ] `contact`
-- [ ] `contact-round`
-- [ ] `container`
-- [ ] `contrast`
-- [ ] `cookie`
-- [ ] `cooking-pot`
+## ➕ New Icons to Add (1183)
+- [ ] `beef-off`
+- [ ] `cctv-off`
 - [ ] `copy`
 - [ ] `copy-check`
 - [ ] `copy-minus`
@@ -584,7 +583,6 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `download`
 - [ ] `drafting-compass`
 - [ ] `drama`
-- [ ] `dribbble`
 - [ ] `drill`
 - [ ] `drone`
 - [ ] `droplet`
@@ -616,14 +614,12 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `eye`
 - [ ] `eye-closed`
 - [ ] `eye-off`
-- [ ] `facebook`
 - [ ] `factory`
 - [ ] `fan`
 - [ ] `fast-forward`
 - [ ] `feather`
 - [ ] `fence`
 - [ ] `ferris-wheel`
-- [ ] `figma`
 - [ ] `file`
 - [ ] `file-archive`
 - [ ] `file-axis-3d`
@@ -741,7 +737,6 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `form`
 - [ ] `forward`
 - [ ] `frame`
-- [ ] `framer`
 - [ ] `frown`
 - [ ] `fuel`
 - [ ] `fullscreen`
@@ -779,8 +774,6 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `git-pull-request-create`
 - [ ] `git-pull-request-create-arrow`
 - [ ] `git-pull-request-draft`
-- [ ] `github`
-- [ ] `gitlab`
 - [ ] `glass-water`
 - [ ] `glasses`
 - [ ] `globe`
@@ -871,7 +864,6 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `infinity`
 - [ ] `info`
 - [ ] `inspection-panel`
-- [ ] `instagram`
 - [ ] `italic`
 - [ ] `iteration-ccw`
 - [ ] `iteration-cw`
@@ -920,10 +912,10 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `lightbulb-off`
 - [ ] `line-dot-right-horizontal`
 - [ ] `line-squiggle`
+- [ ] `line-style`
 - [ ] `link`
 - [ ] `link-2`
 - [ ] `link-2-off`
-- [ ] `linkedin`
 - [ ] `list`
 - [ ] `list-check`
 - [ ] `list-checks`
@@ -982,6 +974,7 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `map-pin-pen`
 - [ ] `map-pin-plus`
 - [ ] `map-pin-plus-inside`
+- [ ] `map-pin-search`
 - [ ] `map-pin-x`
 - [ ] `map-pin-x-inside`
 - [ ] `map-pinned`
@@ -1190,7 +1183,6 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `plug`
 - [ ] `plug-2`
 - [ ] `plug-zap`
-- [ ] `pocket`
 - [ ] `pocket-knife`
 - [ ] `podcast`
 - [ ] `pointer`
@@ -1215,10 +1207,10 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `radiation`
 - [ ] `radical`
 - [ ] `radio`
+- [ ] `radio-off`
 - [ ] `radio-receiver`
 - [ ] `radio-tower`
 - [ ] `radius`
-- [ ] `rail-symbol`
 - [ ] `rainbow`
 - [ ] `rat`
 - [ ] `ratio`
@@ -1254,6 +1246,7 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `reply-all`
 - [ ] `rewind`
 - [ ] `ribbon`
+- [ ] `road`
 - [ ] `rocket`
 - [ ] `rocking-chair`
 - [ ] `roller-coaster`
@@ -1327,6 +1320,8 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `shield-alert`
 - [ ] `shield-ban`
 - [ ] `shield-check`
+- [ ] `shield-cog`
+- [ ] `shield-cog-corner`
 - [ ] `shield-ellipsis`
 - [ ] `shield-half`
 - [ ] `shield-minus`
@@ -1360,7 +1355,6 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `skip-back`
 - [ ] `skip-forward`
 - [ ] `skull`
-- [ ] `slack`
 - [ ] `slice`
 - [ ] `sliders-horizontal`
 - [ ] `sliders-vertical`
@@ -1386,6 +1380,7 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `spline-pointer`
 - [ ] `split`
 - [ ] `spool`
+- [ ] `sport-shoe`
 - [ ] `spotlight`
 - [ ] `spray-can`
 - [ ] `sprout`
@@ -1570,7 +1565,6 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `tree-palm`
 - [ ] `tree-pine`
 - [ ] `trees`
-- [ ] `trello`
 - [ ] `trending-down`
 - [ ] `trending-up`
 - [ ] `trending-up-down`
@@ -1587,8 +1581,6 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `tv`
 - [ ] `tv-minimal`
 - [ ] `tv-minimal-play`
-- [ ] `twitch`
-- [ ] `twitter`
 - [ ] `type`
 - [ ] `type-outline`
 - [ ] `umbrella`
@@ -1689,7 +1681,6 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `worm`
 - [ ] `wrench`
 - [ ] `x-line-top`
-- [ ] `youtube`
 - [ ] `zap`
 - [ ] `zap-off`
 - [ ] `zodiac-aquarius`
@@ -1708,11 +1699,12 @@ Generated on 2026-03-29T11:51:49.287936Z UTC.
 - [ ] `zoom-in`
 - [ ] `zoom-out`
 
-## ➖ Potentially Removed Icons (6)
+## ➖ Potentially Removed Icons (7)
 - [ ] `align-center`
 - [ ] `align-justify`
 - [ ] `align-left`
 - [ ] `align-right`
+- [ ] `chromium`
 - [ ] `crab`
 - [ ] `shark`
 
