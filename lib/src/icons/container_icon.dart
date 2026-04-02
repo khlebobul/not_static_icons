@@ -81,9 +81,12 @@ class ContainerPainter extends CustomPainter {
 
     // Right-top corner curve -> (21.2, 6.2)
     p.cubicTo(
-      22 * s, 7.1 * s,
-      21.6 * s, 6.5 * s,
-      21.2 * s, 6.2 * s,
+      22 * s,
+      7.1 * s,
+      21.6 * s,
+      6.5 * s,
+      21.2 * s,
+      6.2 * s,
     );
 
     // Diagonal to top -> (14.9, 2.3)
@@ -101,9 +104,12 @@ class ContainerPainter extends CustomPainter {
 
     // Left-top corner curve -> (2.0, 9.7)
     p.cubicTo(
-      2.4 * s, 8.5 * s,
-      2.0 * s, 9.1 * s,
-      2.0 * s, 9.7 * s,
+      2.4 * s,
+      8.5 * s,
+      2.0 * s,
+      9.1 * s,
+      2.0 * s,
+      9.7 * s,
     );
 
     // Left side down -> (2.0, 16.3)
@@ -111,9 +117,12 @@ class ContainerPainter extends CustomPainter {
 
     // Left-bottom corner curve -> (2.8, 17.8)
     p.cubicTo(
-      2.0 * s, 16.8 * s,
-      2.4 * s, 17.5 * s,
-      2.8 * s, 17.8 * s,
+      2.0 * s,
+      16.8 * s,
+      2.4 * s,
+      17.5 * s,
+      2.8 * s,
+      17.8 * s,
     );
 
     // Diagonal to bottom -> (9.1, 21.7)
@@ -131,9 +140,12 @@ class ContainerPainter extends CustomPainter {
 
     // Right-bottom corner curve -> (22.0, 14.2)
     p.cubicTo(
-      21.6 * s, 15.4 * s,
-      22.0 * s, 14.7 * s,
-      22.0 * s, 14.2 * s,
+      21.6 * s,
+      15.4 * s,
+      22.0 * s,
+      14.7 * s,
+      22.0 * s,
+      14.2 * s,
     );
 
     // Right side up (close -> back to 22, 7.7)
