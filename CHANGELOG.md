@@ -1,3 +1,8 @@
+## 0.40.1
+
+#### Icons update
+* Fixed `container` icon
+
 ## 0.40.0
 
 #### New icons
