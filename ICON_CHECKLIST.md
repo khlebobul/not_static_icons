@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-04-02T21:24:57.617443Z UTC.
+Generated on 2026-04-08T18:03:42.040419Z UTC.
 
-## ✅ Existing Icons (511)
+## ✅ Existing Icons (519)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -476,6 +476,14 @@ Generated on 2026-04-02T21:24:57.617443Z UTC.
 - [x] `contrast`
 - [x] `cookie`
 - [x] `cooking-pot`
+- [x] `copy`
+- [x] `copy-check`
+- [x] `copy-minus`
+- [x] `copy-plus`
+- [x] `copy-slash`
+- [x] `copy-x`
+- [x] `copyleft`
+- [x] `copyright`
 - [x] `crown`
 - [x] `diamond`
 - [x] `fish`
@@ -514,17 +522,9 @@ Generated on 2026-04-02T21:24:57.617443Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1183)
+## ➕ New Icons to Add (1175)
 - [ ] `beef-off`
 - [ ] `cctv-off`
-- [ ] `copy`
-- [ ] `copy-check`
-- [ ] `copy-minus`
-- [ ] `copy-plus`
-- [ ] `copy-slash`
-- [ ] `copy-x`
-- [ ] `copyleft`
-- [ ] `copyright`
 - [ ] `corner-down-left`
 - [ ] `corner-down-right`
 - [ ] `corner-left-down`

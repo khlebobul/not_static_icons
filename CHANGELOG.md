@@ -1,3 +1,8 @@
+## 0.41.0
+
+#### New icons
+* Added 8 new animated `copy` icons: `copy`, `copy-check`, `copy-minus`, `copy-plus`, `copy-slash`, `copy-x`, `copyleft`, and `copyright`.
+
 ## 0.40.1
 
 #### Icons update
