@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container for the loader */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+/* Loading text */
+.loading-text {
+  font-size: 12px;
+  color: #1a1a1a;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+  font-weight: 400;
+  min-height: 16px;
+  opacity: 0.8;
+}
+
+/* Progress container */
+.progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-container {
+  width: 120px;
+  height: 2px;
+  background-color: #f5f5f5;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #1a1a1a 0%, #333 100%);
+  will-change: width;
+}
+
+/* Hide loader when Flutter takes over */
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
