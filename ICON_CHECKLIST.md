@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-04-08T18:03:42.040419Z UTC.
+Generated on 2026-04-28T07:35:09.052177Z UTC.
 
-## ✅ Existing Icons (519)
+## ✅ Existing Icons (527)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -484,6 +484,14 @@ Generated on 2026-04-08T18:03:42.040419Z UTC.
 - [x] `copy-x`
 - [x] `copyleft`
 - [x] `copyright`
+- [x] `corner-down-left`
+- [x] `corner-down-right`
+- [x] `corner-left-down`
+- [x] `corner-left-up`
+- [x] `corner-right-down`
+- [x] `corner-right-up`
+- [x] `corner-up-left`
+- [x] `corner-up-right`
 - [x] `crown`
 - [x] `diamond`
 - [x] `fish`
@@ -522,17 +530,10 @@ Generated on 2026-04-08T18:03:42.040419Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1175)
+## ➕ New Icons to Add (1168)
 - [ ] `beef-off`
+- [ ] `bookmark-off`
 - [ ] `cctv-off`
-- [ ] `corner-down-left`
-- [ ] `corner-down-right`
-- [ ] `corner-left-down`
-- [ ] `corner-left-up`
-- [ ] `corner-right-down`
-- [ ] `corner-right-up`
-- [ ] `corner-up-left`
-- [ ] `corner-up-right`
 - [ ] `cpu`
 - [ ] `creative-commons`
 - [ ] `credit-card`
@@ -1417,6 +1418,7 @@ Generated on 2026-04-08T18:03:42.040419Z UTC.
 - [ ] `square-dashed-bottom-code`
 - [ ] `square-dashed-kanban`
 - [ ] `square-dashed-mouse-pointer`
+- [ ] `square-dashed-text`
 - [ ] `square-dashed-top-solid`
 - [ ] `square-divide`
 - [ ] `square-dot`
@@ -1522,7 +1524,6 @@ Generated on 2026-04-08T18:03:42.040419Z UTC.
 - [ ] `text-initial`
 - [ ] `text-quote`
 - [ ] `text-search`
-- [ ] `text-select`
 - [ ] `text-wrap`
 - [ ] `theater`
 - [ ] `thermometer`
