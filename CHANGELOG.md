@@ -1,3 +1,8 @@
+## 0.42.0
+
+#### New icons
+* Added 8 new animated `corner` icons: `corner-down-left`, `corner-down-right`, `corner-left-down`, `corner-left-up`, `corner-right-down`, `corner-right-up`, `corner-up-left`, and `corner-up-right`.
+
 ## 0.41.0
 
 #### New icons
