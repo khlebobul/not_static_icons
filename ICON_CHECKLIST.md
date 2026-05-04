@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-04-28T07:35:09.052177Z UTC.
+Generated on 2026-05-04T06:44:05.629078Z UTC.
 
-## ✅ Existing Icons (527)
+## ✅ Existing Icons (541)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -153,6 +153,7 @@ Generated on 2026-04-28T07:35:09.052177Z UTC.
 - [x] `bed-double`
 - [x] `bed-single`
 - [x] `beef`
+- [x] `beef-off`
 - [x] `beer`
 - [x] `beer-off`
 - [x] `bell`
@@ -214,6 +215,7 @@ Generated on 2026-04-28T07:35:09.052177Z UTC.
 - [x] `bookmark`
 - [x] `bookmark-check`
 - [x] `bookmark-minus`
+- [x] `bookmark-off`
 - [x] `bookmark-plus`
 - [x] `bookmark-x`
 - [x] `boom-box`
@@ -297,6 +299,7 @@ Generated on 2026-04-28T07:35:09.052177Z UTC.
 - [x] `castle`
 - [x] `cat`
 - [x] `cctv`
+- [x] `cctv-off`
 - [x] `chart-area`
 - [x] `chart-bar`
 - [x] `chart-bar-big`
@@ -492,7 +495,18 @@ Generated on 2026-04-28T07:35:09.052177Z UTC.
 - [x] `corner-right-up`
 - [x] `corner-up-left`
 - [x] `corner-up-right`
+- [x] `cpu`
+- [x] `creative-commons`
+- [x] `credit-card`
+- [x] `croissant`
+- [x] `crop`
+- [x] `cross`
+- [x] `crosshair`
 - [x] `crown`
+- [x] `cuboid`
+- [x] `cup-soda`
+- [x] `currency`
+- [x] `cylinder`
 - [x] `diamond`
 - [x] `fish`
 - [x] `grid-2x2`
@@ -530,21 +544,9 @@ Generated on 2026-04-28T07:35:09.052177Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1168)
-- [ ] `beef-off`
-- [ ] `bookmark-off`
-- [ ] `cctv-off`
-- [ ] `cpu`
-- [ ] `creative-commons`
-- [ ] `credit-card`
-- [ ] `croissant`
-- [ ] `crop`
-- [ ] `cross`
-- [ ] `crosshair`
-- [ ] `cuboid`
-- [ ] `cup-soda`
-- [ ] `currency`
-- [ ] `cylinder`
+## ➕ New Icons to Add (1162)
+- [ ] `astroid`
+- [ ] `bell-check`
 - [ ] `dam`
 - [ ] `database`
 - [ ] `database-backup`
@@ -704,6 +706,7 @@ Generated on 2026-04-28T07:35:09.052177Z UTC.
 - [ ] `fold-vertical`
 - [ ] `folder`
 - [ ] `folder-archive`
+- [ ] `folder-bookmark`
 - [ ] `folder-check`
 - [ ] `folder-clock`
 - [ ] `folder-closed`
@@ -832,6 +835,7 @@ Generated on 2026-04-28T07:35:09.052177Z UTC.
 - [ ] `heart-off`
 - [ ] `heart-plus`
 - [ ] `heart-pulse`
+- [ ] `heart-x`
 - [ ] `heater`
 - [ ] `helicopter`
 - [ ] `hexagon`
@@ -893,6 +897,7 @@ Generated on 2026-04-28T07:35:09.052177Z UTC.
 - [ ] `lasso-select`
 - [ ] `laugh`
 - [ ] `layers-2`
+- [ ] `layers-minus`
 - [ ] `layers-plus`
 - [ ] `layout-dashboard`
 - [ ] `layout-grid`
@@ -1242,6 +1247,7 @@ Generated on 2026-04-28T07:35:09.052177Z UTC.
 - [ ] `remove-formatting`
 - [ ] `repeat-1`
 - [ ] `repeat-2`
+- [ ] `repeat-off`
 - [ ] `replace-all`
 - [ ] `reply`
 - [ ] `reply-all`
@@ -1540,6 +1546,7 @@ Generated on 2026-04-28T07:35:09.052177Z UTC.
 - [ ] `ticket-x`
 - [ ] `tickets`
 - [ ] `tickets-plane`
+- [ ] `timeline`
 - [ ] `timer`
 - [ ] `timer-off`
 - [ ] `timer-reset`
@@ -1653,10 +1660,11 @@ Generated on 2026-04-28T07:35:09.052177Z UTC.
 - [ ] `warehouse`
 - [ ] `washing-machine`
 - [ ] `watch`
-- [ ] `waves`
 - [ ] `waves-arrow-down`
 - [ ] `waves-arrow-up`
+- [ ] `waves-horizontal`
 - [ ] `waves-ladder`
+- [ ] `waves-vertical`
 - [ ] `waypoints`
 - [ ] `webcam`
 - [ ] `webhook`

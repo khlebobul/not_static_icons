@@ -1,3 +1,9 @@
+## 0.43.0
+
+#### New icons
+* Added 11 new animated icons: `cpu` (inner core pulse), `creative-commons` (CC marks draw in), `credit-card` (swipe), `croissant` (stroke reveal), `crop` (corners breathe), `cross` (scale pulse), `crosshair` (ticks spread outward), `cuboid` (3D rotation), `cup-soda` (bubble wave), `currency` (coin spin), and `cylinder` (vertical bob).
+* Added 3 new animated "off" icons: `beef-off` (forbidden shake), `bookmark-off` (slash draws across), and `cctv-off` (camera signal-loss flicker).
+
 ## 0.42.0
 
 #### New icons
