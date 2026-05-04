@@ -21,7 +21,8 @@ class CctvOffIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => 'Camera flickers like signal loss; slash static';
+  String get animationDescription =>
+      'Camera flickers like signal loss; slash static';
 
   @override
   CustomPainter createPainter({

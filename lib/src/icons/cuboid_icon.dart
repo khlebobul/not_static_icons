@@ -21,7 +21,8 @@ class CuboidIcon extends AnimatedSVGIcon {
   });
 
   @override
-  String get animationDescription => 'Simulated 3D rotation via horizontal compression';
+  String get animationDescription =>
+      'Simulated 3D rotation via horizontal compression';
 
   @override
   CustomPainter createPainter({
