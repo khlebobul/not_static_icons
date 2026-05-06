@@ -96,7 +96,8 @@ class _DrillPainter extends CustomPainter {
     canvas.drawLine(Offset(7 * s, 18 * s), Offset(9 * s, 10 * s), paint);
 
     if (pulse > 0) {
-      final pulsePaint = _paint(color.withValues(alpha: 0.45 * pulse), strokeWidth);
+      final pulsePaint =
+          _paint(color.withValues(alpha: 0.45 * pulse), strokeWidth);
       canvas.drawLine(
           Offset(19.2 * s, 4.7 * s), Offset(21.2 * s, 4.7 * s), pulsePaint);
       canvas.drawLine(
