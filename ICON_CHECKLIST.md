@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-05-04T06:44:05.629078Z UTC.
+Generated on 2026-05-06T15:10:45.453278Z UTC.
 
-## ✅ Existing Icons (541)
+## ✅ Existing Icons (590)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -99,6 +99,7 @@ Generated on 2026-05-04T06:44:05.629078Z UTC.
 - [x] `arrow-up-z-a`
 - [x] `arrows-up-from-line`
 - [x] `asterisk`
+- [x] `astroid`
 - [x] `at-sign`
 - [x] `atom`
 - [x] `audio-lines`
@@ -157,6 +158,7 @@ Generated on 2026-05-04T06:44:05.629078Z UTC.
 - [x] `beer`
 - [x] `beer-off`
 - [x] `bell`
+- [x] `bell-check`
 - [x] `bell-dot`
 - [x] `bell-electric`
 - [x] `bell-minus`
@@ -507,7 +509,54 @@ Generated on 2026-05-04T06:44:05.629078Z UTC.
 - [x] `cup-soda`
 - [x] `currency`
 - [x] `cylinder`
+- [x] `dam`
+- [x] `database`
+- [x] `database-backup`
+- [x] `database-search`
+- [x] `database-zap`
+- [x] `decimals-arrow-left`
+- [x] `decimals-arrow-right`
+- [x] `delete`
+- [x] `dessert`
+- [x] `diameter`
 - [x] `diamond`
+- [x] `diamond-minus`
+- [x] `diamond-percent`
+- [x] `diamond-plus`
+- [x] `dice-1`
+- [x] `dice-2`
+- [x] `dice-3`
+- [x] `dice-4`
+- [x] `dice-5`
+- [x] `dice-6`
+- [x] `dices`
+- [x] `diff`
+- [x] `disc`
+- [x] `disc-2`
+- [x] `disc-3`
+- [x] `disc-album`
+- [x] `divide`
+- [x] `dna`
+- [x] `dna-off`
+- [x] `dock`
+- [x] `dog`
+- [x] `dollar-sign`
+- [x] `donut`
+- [x] `door-closed`
+- [x] `door-closed-locked`
+- [x] `door-open`
+- [x] `dot`
+- [x] `download`
+- [x] `drafting-compass`
+- [x] `drama`
+- [x] `drill`
+- [x] `drone`
+- [x] `droplet`
+- [x] `droplet-off`
+- [x] `droplets`
+- [x] `drum`
+- [x] `drumstick`
+- [x] `dumbbell`
 - [x] `fish`
 - [x] `grid-2x2`
 - [x] `hash`
@@ -544,56 +593,7 @@ Generated on 2026-05-04T06:44:05.629078Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1162)
-- [ ] `astroid`
-- [ ] `bell-check`
-- [ ] `dam`
-- [ ] `database`
-- [ ] `database-backup`
-- [ ] `database-search`
-- [ ] `database-zap`
-- [ ] `decimals-arrow-left`
-- [ ] `decimals-arrow-right`
-- [ ] `delete`
-- [ ] `dessert`
-- [ ] `diameter`
-- [ ] `diamond-minus`
-- [ ] `diamond-percent`
-- [ ] `diamond-plus`
-- [ ] `dice-1`
-- [ ] `dice-2`
-- [ ] `dice-3`
-- [ ] `dice-4`
-- [ ] `dice-5`
-- [ ] `dice-6`
-- [ ] `dices`
-- [ ] `diff`
-- [ ] `disc`
-- [ ] `disc-2`
-- [ ] `disc-3`
-- [ ] `disc-album`
-- [ ] `divide`
-- [ ] `dna`
-- [ ] `dna-off`
-- [ ] `dock`
-- [ ] `dog`
-- [ ] `dollar-sign`
-- [ ] `donut`
-- [ ] `door-closed`
-- [ ] `door-closed-locked`
-- [ ] `door-open`
-- [ ] `dot`
-- [ ] `download`
-- [ ] `drafting-compass`
-- [ ] `drama`
-- [ ] `drill`
-- [ ] `drone`
-- [ ] `droplet`
-- [ ] `droplet-off`
-- [ ] `droplets`
-- [ ] `drum`
-- [ ] `drumstick`
-- [ ] `dumbbell`
+## ➕ New Icons to Add (1113)
 - [ ] `ear`
 - [ ] `ear-off`
 - [ ] `earth`

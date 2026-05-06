@@ -1,8 +1,13 @@
+## 0.44.0
+
+#### New icons
+* Added 49 new animated icons: `astroid`, `bell-check`, `dam`, `database`, `database-backup`, `database-search`, `database-zap`, `decimals-arrow-left`, `decimals-arrow-right`, `delete`, `dessert`, `diameter`, `diamond-minus`, `diamond-percent`, `diamond-plus`, `dice-1`, `dice-2`, `dice-3`, `dice-4`, `dice-5`, `dice-6`, `dices`, `diff`, `disc`, `disc-2`, `disc-3`, `disc-album`, `divide`, `dna`, `dna-off`, `dock`, `dog`, `dollar-sign`, `donut`, `door-closed`, `door-closed-locked`, `door-open`, `dot`, `download`, `drafting-compass`, `drama`, `drill`, `drone`, `droplet`, `droplet-off`, `droplets`, `drum`, `drumstick`, and `dumbbell`.
+
 ## 0.43.0
 
 #### New icons
-* Added 11 new animated icons: `cpu` (inner core pulse), `creative-commons` (CC marks draw in), `credit-card` (swipe), `croissant` (stroke reveal), `crop` (corners breathe), `cross` (scale pulse), `crosshair` (ticks spread outward), `cuboid` (3D rotation), `cup-soda` (bubble wave), `currency` (coin spin), and `cylinder` (vertical bob).
-* Added 3 new animated "off" icons: `beef-off` (forbidden shake), `bookmark-off` (slash draws across), and `cctv-off` (camera signal-loss flicker).
+* Added 11 new animated icons: `cpu`, `creative-commons`, `credit-card`, `croissant`, `crop`, `cross`, `crosshair`, `cuboid`, `cup-soda`, `currency`, and `cylinder`.
+* Added 3 new animated "off" icons: `beef-off`, `bookmark-off`, and `cctv-off`.
 
 ## 0.42.0
 
