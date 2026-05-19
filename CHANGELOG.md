@@ -1,3 +1,8 @@
+## 0.45.0
+
+#### New icons
+* Added 23 new animated icons: `ear`, `ear-off`, `earth`, `earth-lock`, `eclipse`, `egg`, `egg-fried`, `egg-off`, `ellipse`, `ellipsis`, `ellipsis-vertical`, `equal`, `equal-approximately`, `equal-not`, `eraser`, `ethernet-port`, `euro`, `ev-charger`, `expand`, `external-link`, `eye`, `eye-off`, and `eye-closed`.
+
 ## 0.44.0
 
 #### New icons

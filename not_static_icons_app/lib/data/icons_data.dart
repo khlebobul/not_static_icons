@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide ExpandIcon;
 import 'package:not_static_icons/not_static_icons.dart';
 
 class IconData {
@@ -324,6 +324,32 @@ final List<IconData> icons = [
   IconData(name: 'drum', widget: DrumIcon(size: 40)),
   IconData(name: 'drumstick', widget: DrumstickIcon(size: 40)),
   IconData(name: 'dumbbell', widget: DumbbellIcon(size: 40)),
+  IconData(name: 'ear', widget: EarIcon(size: 40)),
+  IconData(name: 'ear-off', widget: EarOffIcon(size: 40)),
+  IconData(name: 'earth', widget: EarthIcon(size: 40)),
+  IconData(name: 'earth-lock', widget: EarthLockIcon(size: 40)),
+  IconData(name: 'eclipse', widget: EclipseIcon(size: 40)),
+  IconData(name: 'egg', widget: EggIcon(size: 40)),
+  IconData(name: 'egg-fried', widget: EggFriedIcon(size: 40)),
+  IconData(name: 'egg-off', widget: EggOffIcon(size: 40)),
+  IconData(name: 'ellipse', widget: EllipseIcon(size: 40)),
+  IconData(name: 'ellipsis', widget: EllipsisIcon(size: 40)),
+  IconData(name: 'ellipsis-vertical', widget: EllipsisVerticalIcon(size: 40)),
+  IconData(name: 'equal', widget: EqualIcon(size: 40)),
+  IconData(
+    name: 'equal-approximately',
+    widget: EqualApproximatelyIcon(size: 40),
+  ),
+  IconData(name: 'equal-not', widget: EqualNotIcon(size: 40)),
+  IconData(name: 'eraser', widget: EraserIcon(size: 40)),
+  IconData(name: 'ethernet-port', widget: EthernetPortIcon(size: 40)),
+  IconData(name: 'euro', widget: EuroIcon(size: 40)),
+  IconData(name: 'ev-charger', widget: EvChargerIcon(size: 40)),
+  IconData(name: 'expand', widget: ExpandIcon(size: 40)),
+  IconData(name: 'external-link', widget: ExternalLinkIcon(size: 40)),
+  IconData(name: 'eye', widget: EyeIcon(size: 40)),
+  IconData(name: 'eye-off', widget: EyeOffIcon(size: 40)),
+  IconData(name: 'eye-closed', widget: EyeClosedIcon(size: 40)),
   IconData(name: 'disc', widget: DiscIcon(size: 40)),
   IconData(name: 'disc-2', widget: Disc2Icon(size: 40)),
   IconData(name: 'disc-3', widget: Disc3Icon(size: 40)),

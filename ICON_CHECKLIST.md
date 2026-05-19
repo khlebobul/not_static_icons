@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-05-06T15:10:45.453278Z UTC.
+Generated on 2026-05-18T05:16:34.031471Z UTC.
 
-## ✅ Existing Icons (590)
+## ✅ Existing Icons (613)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -557,6 +557,29 @@ Generated on 2026-05-06T15:10:45.453278Z UTC.
 - [x] `drum`
 - [x] `drumstick`
 - [x] `dumbbell`
+- [x] `ear`
+- [x] `ear-off`
+- [x] `earth`
+- [x] `earth-lock`
+- [x] `eclipse`
+- [x] `egg`
+- [x] `egg-fried`
+- [x] `egg-off`
+- [x] `ellipse`
+- [x] `ellipsis`
+- [x] `ellipsis-vertical`
+- [x] `equal`
+- [x] `equal-approximately`
+- [x] `equal-not`
+- [x] `eraser`
+- [x] `ethernet-port`
+- [x] `euro`
+- [x] `ev-charger`
+- [x] `expand`
+- [x] `external-link`
+- [x] `eye`
+- [x] `eye-closed`
+- [x] `eye-off`
 - [x] `fish`
 - [x] `grid-2x2`
 - [x] `hash`
@@ -593,30 +616,9 @@ Generated on 2026-05-06T15:10:45.453278Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1113)
-- [ ] `ear`
-- [ ] `ear-off`
-- [ ] `earth`
-- [ ] `earth-lock`
-- [ ] `eclipse`
-- [ ] `egg`
-- [ ] `egg-fried`
-- [ ] `egg-off`
-- [ ] `ellipse`
-- [ ] `ellipsis`
-- [ ] `ellipsis-vertical`
-- [ ] `equal`
-- [ ] `equal-approximately`
-- [ ] `equal-not`
-- [ ] `eraser`
-- [ ] `ethernet-port`
-- [ ] `euro`
-- [ ] `ev-charger`
-- [ ] `expand`
-- [ ] `external-link`
-- [ ] `eye`
-- [ ] `eye-closed`
-- [ ] `eye-off`
+## ➕ New Icons to Add (1098)
+- [ ] `blender`
+- [ ] `broccoli`
 - [ ] `factory`
 - [ ] `fan`
 - [ ] `fast-forward`
@@ -1476,6 +1478,12 @@ Generated on 2026-05-06T15:10:45.453278Z UTC.
 - [ ] `stethoscope`
 - [ ] `sticker`
 - [ ] `sticky-note`
+- [ ] `sticky-note-check`
+- [ ] `sticky-note-minus`
+- [ ] `sticky-note-off`
+- [ ] `sticky-note-plus`
+- [ ] `sticky-note-x`
+- [ ] `sticky-notes`
 - [ ] `stone`
 - [ ] `store`
 - [ ] `stretch-horizontal`
