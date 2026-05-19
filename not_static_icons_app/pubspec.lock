@@ -166,7 +166,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.44.0"
+    version: "0.45.0"
   path:
     dependency: transitive
     description:
