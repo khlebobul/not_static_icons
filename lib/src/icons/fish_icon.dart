@@ -186,7 +186,7 @@ class FishPainter extends CustomPainter {
     bottomFinPath.arcToPoint(
       Offset(13.8 * scale, 21 * scale),
       radius: Radius.circular(2 * scale),
-      clockwise: false,
+      clockwise: true,
     );
     bottomFinPath.lineTo(9.5 * scale, 21 * scale);
     bottomFinPath.cubicTo(
