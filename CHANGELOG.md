@@ -1,3 +1,11 @@
+## 0.46.0
+
+#### New icons
+* Added 8 new animated icons: `blender`, `broccoli`, `factory`, `fan`, `fast-forward`, `feather`, `fence`, and `ferris-wheel`.
+
+#### Improvements
+* Updated `fish` icon
+
 ## 0.45.0
 
 #### New icons

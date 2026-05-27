@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-05-18T05:16:34.031471Z UTC.
+Generated on 2026-05-27T04:59:54.073344Z UTC.
 
-## ✅ Existing Icons (613)
+## ✅ Existing Icons (621)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -178,6 +178,7 @@ Generated on 2026-05-18T05:16:34.031471Z UTC.
 - [x] `birdhouse`
 - [x] `bitcoin`
 - [x] `blend`
+- [x] `blender`
 - [x] `blinds`
 - [x] `blocks`
 - [x] `bluetooth`
@@ -241,6 +242,7 @@ Generated on 2026-05-18T05:16:34.031471Z UTC.
 - [x] `briefcase-conveyor-belt`
 - [x] `briefcase-medical`
 - [x] `bring-to-front`
+- [x] `broccoli`
 - [x] `brush`
 - [x] `brush-cleaning`
 - [x] `bubbles`
@@ -580,6 +582,12 @@ Generated on 2026-05-18T05:16:34.031471Z UTC.
 - [x] `eye`
 - [x] `eye-closed`
 - [x] `eye-off`
+- [x] `factory`
+- [x] `fan`
+- [x] `fast-forward`
+- [x] `feather`
+- [x] `fence`
+- [x] `ferris-wheel`
 - [x] `fish`
 - [x] `grid-2x2`
 - [x] `hash`
@@ -616,15 +624,7 @@ Generated on 2026-05-18T05:16:34.031471Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1098)
-- [ ] `blender`
-- [ ] `broccoli`
-- [ ] `factory`
-- [ ] `fan`
-- [ ] `fast-forward`
-- [ ] `feather`
-- [ ] `fence`
-- [ ] `ferris-wheel`
+## ➕ New Icons to Add (1090)
 - [ ] `file`
 - [ ] `file-archive`
 - [ ] `file-axis-3d`
