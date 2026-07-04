@@ -1,3 +1,9 @@
+## 0.47.0
+
+#### New icons
+* Added 55 animated file icons, including archive, charts, code, media, search, security, status, and editing variants.
+* Added 8 animated icons: `files`, `film`, `fingerprint-pattern`, `fire-extinguisher`, `fish-off`, `fish-symbol`, `fishing-hook`, and `fishing-rod`.
+
 ## 0.46.0
 
 #### New icons
