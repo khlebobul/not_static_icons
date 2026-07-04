@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-05-27T04:59:54.073344Z UTC.
+Generated on 2026-07-04T22:06:30.826663Z UTC.
 
-## ✅ Existing Icons (621)
+## ✅ Existing Icons (684)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -588,7 +588,70 @@ Generated on 2026-05-27T04:59:54.073344Z UTC.
 - [x] `feather`
 - [x] `fence`
 - [x] `ferris-wheel`
+- [x] `file`
+- [x] `file-archive`
+- [x] `file-axis-3d`
+- [x] `file-badge`
+- [x] `file-box`
+- [x] `file-braces`
+- [x] `file-braces-corner`
+- [x] `file-chart-column`
+- [x] `file-chart-column-increasing`
+- [x] `file-chart-line`
+- [x] `file-chart-pie`
+- [x] `file-check`
+- [x] `file-check-corner`
+- [x] `file-clock`
+- [x] `file-code`
+- [x] `file-code-corner`
+- [x] `file-cog`
+- [x] `file-diff`
+- [x] `file-digit`
+- [x] `file-down`
+- [x] `file-exclamation-point`
+- [x] `file-headphone`
+- [x] `file-heart`
+- [x] `file-image`
+- [x] `file-input`
+- [x] `file-key`
+- [x] `file-lock`
+- [x] `file-minus`
+- [x] `file-minus-corner`
+- [x] `file-music`
+- [x] `file-output`
+- [x] `file-pen`
+- [x] `file-pen-line`
+- [x] `file-play`
+- [x] `file-plus`
+- [x] `file-plus-corner`
+- [x] `file-question-mark`
+- [x] `file-scan`
+- [x] `file-search`
+- [x] `file-search-corner`
+- [x] `file-signal`
+- [x] `file-sliders`
+- [x] `file-spreadsheet`
+- [x] `file-stack`
+- [x] `file-symlink`
+- [x] `file-terminal`
+- [x] `file-text`
+- [x] `file-type`
+- [x] `file-type-corner`
+- [x] `file-up`
+- [x] `file-user`
+- [x] `file-video-camera`
+- [x] `file-volume`
+- [x] `file-x`
+- [x] `file-x-corner`
+- [x] `files`
+- [x] `film`
+- [x] `fingerprint-pattern`
+- [x] `fire-extinguisher`
 - [x] `fish`
+- [x] `fish-off`
+- [x] `fish-symbol`
+- [x] `fishing-hook`
+- [x] `fishing-rod`
 - [x] `grid-2x2`
 - [x] `hash`
 - [x] `heart`
@@ -624,70 +687,7 @@ Generated on 2026-05-27T04:59:54.073344Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1090)
-- [ ] `file`
-- [ ] `file-archive`
-- [ ] `file-axis-3d`
-- [ ] `file-badge`
-- [ ] `file-box`
-- [ ] `file-braces`
-- [ ] `file-braces-corner`
-- [ ] `file-chart-column`
-- [ ] `file-chart-column-increasing`
-- [ ] `file-chart-line`
-- [ ] `file-chart-pie`
-- [ ] `file-check`
-- [ ] `file-check-corner`
-- [ ] `file-clock`
-- [ ] `file-code`
-- [ ] `file-code-corner`
-- [ ] `file-cog`
-- [ ] `file-diff`
-- [ ] `file-digit`
-- [ ] `file-down`
-- [ ] `file-exclamation-point`
-- [ ] `file-headphone`
-- [ ] `file-heart`
-- [ ] `file-image`
-- [ ] `file-input`
-- [ ] `file-key`
-- [ ] `file-lock`
-- [ ] `file-minus`
-- [ ] `file-minus-corner`
-- [ ] `file-music`
-- [ ] `file-output`
-- [ ] `file-pen`
-- [ ] `file-pen-line`
-- [ ] `file-play`
-- [ ] `file-plus`
-- [ ] `file-plus-corner`
-- [ ] `file-question-mark`
-- [ ] `file-scan`
-- [ ] `file-search`
-- [ ] `file-search-corner`
-- [ ] `file-signal`
-- [ ] `file-sliders`
-- [ ] `file-spreadsheet`
-- [ ] `file-stack`
-- [ ] `file-symlink`
-- [ ] `file-terminal`
-- [ ] `file-text`
-- [ ] `file-type`
-- [ ] `file-type-corner`
-- [ ] `file-up`
-- [ ] `file-user`
-- [ ] `file-video-camera`
-- [ ] `file-volume`
-- [ ] `file-x`
-- [ ] `file-x-corner`
-- [ ] `files`
-- [ ] `film`
-- [ ] `fingerprint-pattern`
-- [ ] `fire-extinguisher`
-- [ ] `fish-off`
-- [ ] `fish-symbol`
-- [ ] `fishing-hook`
-- [ ] `fishing-rod`
+## ➕ New Icons to Add (1030)
 - [ ] `flag`
 - [ ] `flag-off`
 - [ ] `flag-triangle-left`
@@ -783,6 +783,7 @@ Generated on 2026-05-27T04:59:54.073344Z UTC.
 - [ ] `glass-water`
 - [ ] `glasses`
 - [ ] `globe`
+- [ ] `globe-check`
 - [ ] `globe-lock`
 - [ ] `globe-off`
 - [ ] `globe-x`
@@ -1146,6 +1147,7 @@ Generated on 2026-05-27T04:59:54.073344Z UTC.
 - [ ] `panels-right-bottom`
 - [ ] `panels-top-left`
 - [ ] `paperclip`
+- [ ] `parasol`
 - [ ] `parentheses`
 - [ ] `parking-meter`
 - [ ] `party-popper`
@@ -1188,6 +1190,7 @@ Generated on 2026-05-27T04:59:54.073344Z UTC.
 - [ ] `plane`
 - [ ] `plane-landing`
 - [ ] `plane-takeoff`
+- [ ] `play-off`
 - [ ] `plug`
 - [ ] `plug-2`
 - [ ] `plug-zap`
