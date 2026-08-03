@@ -95,7 +95,7 @@ make check-icons LUCIDE_REPO_PATH=/absolute/path/to/lucide
 
 ### Step 1: Create the Icon Implementation
 
-1. **Use the Template**: Copy `not_static_icons_app/lib/templates/icon_template.dart`
+1. **Use the Template**: Copy `lib/src/template/icon_template.dart`
 2. **Create Icon File**: Add your icon to `lib/src/icons/lucide_icon_name_icon.dart`
 3. **Follow Naming Convention**: 
    - File: `snake_case_icon.dart`
