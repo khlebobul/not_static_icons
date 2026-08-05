@@ -11,8 +11,6 @@ class AnimatedIconsStrings {
   static const githubIconsBaseUrl =
       'https://github.com/khlebobul/not_static_icons/blob/main/lib/src/icons/';
 
-  static const supportLabel = 'support';
-
   static const telegramLabel = 'telegram';
   static const telegramUrl = 'https://t.me/khlebobul_dev';
   static const yoomoneyLabel = 'yoomoney';

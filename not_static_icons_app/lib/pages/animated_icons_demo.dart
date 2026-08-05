@@ -142,7 +142,6 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
             ),
           ),
         ),
-        _buildSupportDropdown(),
       ],
     );
   }
@@ -176,7 +175,6 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
                 AnimatedIconsStrings.pubDevLabel,
                 AnimatedIconsStrings.pubDevUrl,
               ),
-              _buildSupportButton(),
             ],
           ),
         ),
@@ -417,118 +415,6 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
                     ),
                   ),
           ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildSupportButton() {
-    return InkWell(
-      onTap: () {
-        setState(() {
-          _showSupportDropdown = !_showSupportDropdown;
-        });
-      },
-      borderRadius: BorderRadius.circular(6),
-      child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 4),
-        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-        decoration: BoxDecoration(
-          color: _showSupportDropdown
-              ? Colors.grey.shade200
-              : Colors.grey.shade50,
-          borderRadius: BorderRadius.circular(6),
-          border: Border.all(color: Colors.grey),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Text(
-              AnimatedIconsStrings.supportLabel,
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.black,
-                fontFamily: AnimatedIconsStrings.fontFamily,
-              ),
-            ),
-            const SizedBox(width: 4),
-            Icon(
-              _showSupportDropdown
-                  ? Icons.keyboard_arrow_up
-                  : Icons.keyboard_arrow_down,
-              size: 16,
-              color: Colors.grey.shade600,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildSupportDropdown() {
-    if (!_showSupportDropdown) return const SizedBox.shrink();
-
-    return Positioned(
-      top: kToolbarHeight,
-      right: 16,
-      child: Material(
-        elevation: 4,
-        borderRadius: BorderRadius.circular(8),
-        child: Container(
-          width: 120,
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: Colors.grey.shade200),
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              _buildSupportDropdownItem(
-                AnimatedIconsStrings.telegramLabel,
-                AnimatedIconsStrings.telegramUrl,
-                isFirst: true,
-              ),
-              Divider(height: 1, color: Colors.grey.shade200),
-              _buildSupportDropdownItem(
-                AnimatedIconsStrings.yoomoneyLabel,
-                AnimatedIconsStrings.yoomoneyUrl,
-                isLast: true,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildSupportDropdownItem(
-    String text,
-    String url, {
-    bool isFirst = false,
-    bool isLast = false,
-  }) {
-    return InkWell(
-      onTap: () {
-        _launchUrl(url);
-        setState(() {
-          _showSupportDropdown = false;
-        });
-      },
-      borderRadius: BorderRadius.vertical(
-        top: isFirst ? const Radius.circular(8) : Radius.zero,
-        bottom: isLast ? const Radius.circular(8) : Radius.zero,
-      ),
-      child: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        child: Text(
-          text,
-          style: const TextStyle(
-            fontSize: 14,
-            color: Colors.black,
-            fontFamily: AnimatedIconsStrings.fontFamily,
-          ),
         ),
       ),
     );
