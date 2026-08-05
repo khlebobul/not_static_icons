@@ -1,7 +1,7 @@
 name: not_static_icons_app
 description: "A new Flutter project."
 publish_to: 'none'
-version: 0.1.62+63
+version: 0.1.65+66
 
 environment:
   sdk: ^3.8.1
@@ -12,7 +12,7 @@ dependencies:
   not_static_icons:
     path: ../
   url_launcher: ^6.3.2
-  flutter_svg: ^2.2.2
+  flutter_svg: ^2.3.0
 
 dev_dependencies:
   flutter_test:

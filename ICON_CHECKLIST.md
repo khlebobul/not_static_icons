@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-07-04T22:06:30.826663Z UTC.
+Generated on 2026-08-05T04:54:26.584385Z UTC.
 
-## ✅ Existing Icons (684)
+## ✅ Existing Icons (702)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -652,6 +652,24 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [x] `fish-symbol`
 - [x] `fishing-hook`
 - [x] `fishing-rod`
+- [x] `flag`
+- [x] `flag-off`
+- [x] `flag-triangle-left`
+- [x] `flag-triangle-right`
+- [x] `flame`
+- [x] `flame-kindling`
+- [x] `flashlight`
+- [x] `flashlight-off`
+- [x] `flask-conical`
+- [x] `flask-conical-off`
+- [x] `flask-round`
+- [x] `flip-horizontal-2`
+- [x] `flip-vertical-2`
+- [x] `flower`
+- [x] `flower-2`
+- [x] `focus`
+- [x] `fold-horizontal`
+- [x] `fold-vertical`
 - [x] `grid-2x2`
 - [x] `hash`
 - [x] `heart`
@@ -687,25 +705,20 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1030)
-- [ ] `flag`
-- [ ] `flag-off`
-- [ ] `flag-triangle-left`
-- [ ] `flag-triangle-right`
-- [ ] `flame`
-- [ ] `flame-kindling`
-- [ ] `flashlight`
-- [ ] `flashlight-off`
-- [ ] `flask-conical`
-- [ ] `flask-conical-off`
-- [ ] `flask-round`
-- [ ] `flip-horizontal-2`
-- [ ] `flip-vertical-2`
-- [ ] `flower`
-- [ ] `flower-2`
-- [ ] `focus`
-- [ ] `fold-horizontal`
-- [ ] `fold-vertical`
+## ➕ New Icons to Add (1054)
+- [ ] `ad`
+- [ ] `banknote-check`
+- [ ] `bone-fracture`
+- [ ] `circle-euro`
+- [ ] `clock-arrow-left`
+- [ ] `clock-arrow-right`
+- [ ] `database-arrow-down`
+- [ ] `database-arrow-up`
+- [ ] `database-check`
+- [ ] `database-minus`
+- [ ] `database-plus`
+- [ ] `database-x`
+- [ ] `eye-dashed`
 - [ ] `folder`
 - [ ] `folder-archive`
 - [ ] `folder-bookmark`
@@ -843,7 +856,6 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `helicopter`
 - [ ] `hexagon`
 - [ ] `highlighter`
-- [ ] `history`
 - [ ] `hop`
 - [ ] `hop-off`
 - [ ] `hospital`
@@ -903,6 +915,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `layers-minus`
 - [ ] `layers-plus`
 - [ ] `layout-dashboard`
+- [ ] `layout-freeform`
 - [ ] `layout-grid`
 - [ ] `layout-list`
 - [ ] `layout-panel-left`
@@ -941,6 +954,8 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `list-ordered`
 - [ ] `list-plus`
 - [ ] `list-restart`
+- [ ] `list-sort-ascending`
+- [ ] `list-sort-descending`
 - [ ] `list-start`
 - [ ] `list-todo`
 - [ ] `list-tree`
@@ -1030,7 +1045,9 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `messages-square`
 - [ ] `metronome`
 - [ ] `mic`
+- [ ] `mic-audio-lines`
 - [ ] `mic-off`
+- [ ] `mic-signal`
 - [ ] `mic-vocal`
 - [ ] `microchip`
 - [ ] `microscope`
@@ -1057,6 +1074,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `monitor-up`
 - [ ] `monitor-x`
 - [ ] `moon-star`
+- [ ] `mosque`
 - [ ] `motorbike`
 - [ ] `mountain`
 - [ ] `mountain-snow`
@@ -1146,6 +1164,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `panels-left-bottom`
 - [ ] `panels-right-bottom`
 - [ ] `panels-top-left`
+- [ ] `paper-bag`
 - [ ] `paperclip`
 - [ ] `parasol`
 - [ ] `parentheses`
@@ -1161,9 +1180,11 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `pencil-line`
 - [ ] `pencil-off`
 - [ ] `pencil-ruler`
+- [ ] `pencil-sparkles`
 - [ ] `pentagon`
 - [ ] `percent`
 - [ ] `person-standing`
+- [ ] `phi`
 - [ ] `philippine-peso`
 - [ ] `phone`
 - [ ] `phone-call`
@@ -1195,7 +1216,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `plug-2`
 - [ ] `plug-zap`
 - [ ] `pocket-knife`
-- [ ] `podcast`
+- [ ] `podium`
 - [ ] `pointer`
 - [ ] `pointer-off`
 - [ ] `popcorn`
@@ -1264,8 +1285,10 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `roller-coaster`
 - [ ] `rose`
 - [ ] `rotate-3d`
+- [ ] `rotate-ccw-clock`
 - [ ] `rotate-ccw-key`
 - [ ] `rotate-ccw-square`
+- [ ] `rotate-cw-fading-clock`
 - [ ] `rotate-cw-square`
 - [ ] `route`
 - [ ] `route-off`
@@ -1284,18 +1307,23 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `saudi-riyal`
 - [ ] `save`
 - [ ] `save-all`
+- [ ] `save-check`
 - [ ] `save-off`
+- [ ] `save-pen`
+- [ ] `save-plus`
 - [ ] `scale`
 - [ ] `scale-3d`
 - [ ] `scaling`
 - [ ] `scan`
 - [ ] `scan-barcode`
+- [ ] `scan-box`
 - [ ] `scan-eye`
 - [ ] `scan-face`
 - [ ] `scan-heart`
 - [ ] `scan-line`
 - [ ] `scan-qr-code`
 - [ ] `scan-search`
+- [ ] `scan-square`
 - [ ] `scan-text`
 - [ ] `school`
 - [ ] `scissors`
@@ -1321,6 +1349,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `server-cog`
 - [ ] `server-crash`
 - [ ] `server-off`
+- [ ] `server-plus`
 - [ ] `settings`
 - [ ] `settings-2`
 - [ ] `shapes`
@@ -1336,6 +1365,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `shield-cog-corner`
 - [ ] `shield-ellipsis`
 - [ ] `shield-half`
+- [ ] `shield-keyhole`
 - [ ] `shield-minus`
 - [ ] `shield-off`
 - [ ] `shield-plus`
@@ -1441,6 +1471,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `square-menu`
 - [ ] `square-minus`
 - [ ] `square-mouse-pointer`
+- [ ] `square-off`
 - [ ] `square-parking`
 - [ ] `square-parking-off`
 - [ ] `square-pause`
@@ -1474,8 +1505,12 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `squircle-dashed`
 - [ ] `squirrel`
 - [ ] `stamp`
+- [ ] `star-check`
 - [ ] `star-half`
+- [ ] `star-minus`
 - [ ] `star-off`
+- [ ] `star-plus`
+- [ ] `star-x`
 - [ ] `step-back`
 - [ ] `step-forward`
 - [ ] `stethoscope`
@@ -1493,6 +1528,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `stretch-vertical`
 - [ ] `strikethrough`
 - [ ] `subscript`
+- [ ] `summary`
 - [ ] `sun-dim`
 - [ ] `sun-medium`
 - [ ] `sun-moon`
@@ -1517,6 +1553,8 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `tablet-smartphone`
 - [ ] `tablets`
 - [ ] `tag`
+- [ ] `tag-plus`
+- [ ] `tag-x`
 - [ ] `tags`
 - [ ] `tally-1`
 - [ ] `tally-2`
@@ -1625,6 +1663,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `user-pen`
 - [ ] `user-plus`
 - [ ] `user-round`
+- [ ] `user-round-arrow-left`
 - [ ] `user-round-check`
 - [ ] `user-round-cog`
 - [ ] `user-round-key`
@@ -1634,6 +1673,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `user-round-search`
 - [ ] `user-round-x`
 - [ ] `user-search`
+- [ ] `user-shield`
 - [ ] `user-star`
 - [ ] `user-x`
 - [ ] `users`
@@ -1678,6 +1718,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `waves-vertical`
 - [ ] `waypoints`
 - [ ] `webcam`
+- [ ] `webcam-off`
 - [ ] `webhook`
 - [ ] `webhook-off`
 - [ ] `weight`
@@ -1700,6 +1741,7 @@ Generated on 2026-07-04T22:06:30.826663Z UTC.
 - [ ] `workflow`
 - [ ] `worm`
 - [ ] `wrench`
+- [ ] `wrench-off`
 - [ ] `x-line-top`
 - [ ] `zap`
 - [ ] `zap-off`
