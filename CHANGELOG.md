@@ -1,3 +1,8 @@
+## 0.48.0
+
+#### New icons
+* Added 18 animated icons: `flag`, `flag-off`, `flag-triangle-left`, `flag-triangle-right`, `flame`, `flame-kindling`, `flashlight`, `flashlight-off`, `flask-conical`, `flask-conical-off`, `flask-round`, `flip-horizontal-2`, `flip-vertical-2`, `flower`, `flower-2`, `focus`, `fold-horizontal`, and `fold-vertical`.
+
 ## 0.47.0
 
 #### New icons

@@ -14,7 +14,7 @@ Seamlessly animated Flutter icons — no Rive or Lottie required. Made with [Luc
 
 ## Features
 
-- **600+ Animated Icons**: Based on popular Lucide icon set
+- **700+ Animated Icons**: Based on popular Lucide icon set
 - **Interactive Animations**: Hover and touch effects
 - **Customizable**: Size, color, animation duration, stroke width
 - **Flexible Integration**: Works with GestureDetector, InkWell, IconButton
@@ -151,10 +151,6 @@ Each icon has its own unique animation:
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 [![CONTRIBUTING.md](https://img.shields.io/badge/CONTRIBUTING.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/CONTRIBUTING.md) [![CODE_OF_CONDUCT.md](https://img.shields.io/badge/CODE_OF_CONDUCT.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/CODE_OF_CONDUCT.md) [![ICON_CHECKLIST.md](https://img.shields.io/badge/ICON_CHECKLIST.md-414141?style=for-the-badge&logo=md&logoColor=F1F1F1)](https://github.com/khlebobul/not_static_icons/blob/main/ICON_CHECKLIST.md)
-
-## Project support
-
-[![Support - Stars](https://img.shields.io/badge/Support-Stars-414141?style=for-the-badge&logo=Telegram&logoColor=F1F1F1)](https://t.me/khlebobul_dev) [![Support - YooMoney](https://img.shields.io/badge/Support-YooMoney-414141?style=for-the-badge&logo=YooMoney&logoColor=F1F1F1)](https://yoomoney.ru/to/4100118234947004)
 
 ## Contacts
 
