@@ -1,12 +1,13 @@
 # Lucide Icons Checklist
-Generated on 2026-08-05T04:54:26.584385Z UTC.
+Generated on 2026-08-06T04:56:44.877328Z UTC.
 
-## ✅ Existing Icons (702)
+## ✅ Existing Icons (715)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
 - [x] `accessibility`
 - [x] `activity`
+- [x] `ad`
 - [x] `air-vent`
 - [x] `airplay`
 - [x] `alarm-clock`
@@ -135,6 +136,7 @@ Generated on 2026-08-05T04:54:26.584385Z UTC.
 - [x] `banknote`
 - [x] `banknote-arrow-down`
 - [x] `banknote-arrow-up`
+- [x] `banknote-check`
 - [x] `banknote-x`
 - [x] `barcode`
 - [x] `barrel`
@@ -189,6 +191,7 @@ Generated on 2026-08-05T04:54:26.584385Z UTC.
 - [x] `bolt`
 - [x] `bomb`
 - [x] `bone`
+- [x] `bone-fracture`
 - [x] `book`
 - [x] `book-a`
 - [x] `book-alert`
@@ -379,6 +382,7 @@ Generated on 2026-08-05T04:54:26.584385Z UTC.
 - [x] `circle-dot-dashed`
 - [x] `circle-ellipsis`
 - [x] `circle-equal`
+- [x] `circle-euro`
 - [x] `circle-fading-arrow-up`
 - [x] `circle-fading-plus`
 - [x] `circle-gauge`
@@ -432,6 +436,8 @@ Generated on 2026-08-05T04:54:26.584385Z UTC.
 - [x] `clock-9`
 - [x] `clock-alert`
 - [x] `clock-arrow-down`
+- [x] `clock-arrow-left`
+- [x] `clock-arrow-right`
 - [x] `clock-arrow-up`
 - [x] `clock-check`
 - [x] `clock-fading`
@@ -513,8 +519,14 @@ Generated on 2026-08-05T04:54:26.584385Z UTC.
 - [x] `cylinder`
 - [x] `dam`
 - [x] `database`
+- [x] `database-arrow-down`
+- [x] `database-arrow-up`
 - [x] `database-backup`
+- [x] `database-check`
+- [x] `database-minus`
+- [x] `database-plus`
 - [x] `database-search`
+- [x] `database-x`
 - [x] `database-zap`
 - [x] `decimals-arrow-left`
 - [x] `decimals-arrow-right`
@@ -581,6 +593,7 @@ Generated on 2026-08-05T04:54:26.584385Z UTC.
 - [x] `external-link`
 - [x] `eye`
 - [x] `eye-closed`
+- [x] `eye-dashed`
 - [x] `eye-off`
 - [x] `factory`
 - [x] `fan`
@@ -705,20 +718,7 @@ Generated on 2026-08-05T04:54:26.584385Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1054)
-- [ ] `ad`
-- [ ] `banknote-check`
-- [ ] `bone-fracture`
-- [ ] `circle-euro`
-- [ ] `clock-arrow-left`
-- [ ] `clock-arrow-right`
-- [ ] `database-arrow-down`
-- [ ] `database-arrow-up`
-- [ ] `database-check`
-- [ ] `database-minus`
-- [ ] `database-plus`
-- [ ] `database-x`
-- [ ] `eye-dashed`
+## ➕ New Icons to Add (1041)
 - [ ] `folder`
 - [ ] `folder-archive`
 - [ ] `folder-bookmark`
