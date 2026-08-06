@@ -23,5 +23,4 @@ Static fidelity, animation, interaction, demo, and command checks.
 
 ---
 
-*Last updated: August 3, 2026 · package v0.47.0*
-
+*Last updated: August 5, 2026 · package v0.49.0*

@@ -4,7 +4,7 @@
 
 ## Current Scope
 
-- 709 Lucide icons in `lib/src/icons/`
+- 722 Lucide icons in `lib/src/icons/`
 - 6 non-Lucide icons in `lib/src/custom_icons/`
 - Shared interaction and animation lifecycle through `AnimatedSVGIcon`
 - Pointer hover, touch, `onTap`, and external `AnimatedIconController` support

@@ -1,3 +1,8 @@
+## 0.49.0
+
+#### New icons
+* Added 13 animated icons: `ad`, `banknote-check`, `bone-fracture`, `circle-euro`, `clock-arrow-left`, `clock-arrow-right`, `database-arrow-down`, `database-arrow-up`, `database-check`, `database-minus`, `database-plus`, `database-x`, and `eye-dashed`.
+
 ## 0.48.0
 
 #### New icons
