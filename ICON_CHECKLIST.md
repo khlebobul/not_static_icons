@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-08-06T04:56:44.877328Z UTC.
+Generated on 2026-08-11T05:48:29.703124Z UTC.
 
-## ✅ Existing Icons (715)
+## ✅ Existing Icons (747)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -683,6 +683,38 @@ Generated on 2026-08-06T04:56:44.877328Z UTC.
 - [x] `focus`
 - [x] `fold-horizontal`
 - [x] `fold-vertical`
+- [x] `folder`
+- [x] `folder-archive`
+- [x] `folder-bookmark`
+- [x] `folder-check`
+- [x] `folder-clock`
+- [x] `folder-closed`
+- [x] `folder-code`
+- [x] `folder-cog`
+- [x] `folder-dot`
+- [x] `folder-down`
+- [x] `folder-git`
+- [x] `folder-git-2`
+- [x] `folder-heart`
+- [x] `folder-input`
+- [x] `folder-kanban`
+- [x] `folder-key`
+- [x] `folder-lock`
+- [x] `folder-minus`
+- [x] `folder-open`
+- [x] `folder-open-dot`
+- [x] `folder-output`
+- [x] `folder-pen`
+- [x] `folder-plus`
+- [x] `folder-root`
+- [x] `folder-search`
+- [x] `folder-search-2`
+- [x] `folder-symlink`
+- [x] `folder-sync`
+- [x] `folder-tree`
+- [x] `folder-up`
+- [x] `folder-x`
+- [x] `folders`
 - [x] `grid-2x2`
 - [x] `hash`
 - [x] `heart`
@@ -718,39 +750,7 @@ Generated on 2026-08-06T04:56:44.877328Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1041)
-- [ ] `folder`
-- [ ] `folder-archive`
-- [ ] `folder-bookmark`
-- [ ] `folder-check`
-- [ ] `folder-clock`
-- [ ] `folder-closed`
-- [ ] `folder-code`
-- [ ] `folder-cog`
-- [ ] `folder-dot`
-- [ ] `folder-down`
-- [ ] `folder-git`
-- [ ] `folder-git-2`
-- [ ] `folder-heart`
-- [ ] `folder-input`
-- [ ] `folder-kanban`
-- [ ] `folder-key`
-- [ ] `folder-lock`
-- [ ] `folder-minus`
-- [ ] `folder-open`
-- [ ] `folder-open-dot`
-- [ ] `folder-output`
-- [ ] `folder-pen`
-- [ ] `folder-plus`
-- [ ] `folder-root`
-- [ ] `folder-search`
-- [ ] `folder-search-2`
-- [ ] `folder-symlink`
-- [ ] `folder-sync`
-- [ ] `folder-tree`
-- [ ] `folder-up`
-- [ ] `folder-x`
-- [ ] `folders`
+## ➕ New Icons to Add (1009)
 - [ ] `footprints`
 - [ ] `forklift`
 - [ ] `form`
