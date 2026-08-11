@@ -4,7 +4,7 @@
 
 ## Current Scope
 
-- 722 Lucide icons in `lib/src/icons/`
+- 754 Lucide icons in `lib/src/icons/`
 - 6 non-Lucide icons in `lib/src/custom_icons/`
 - Shared interaction and animation lifecycle through `AnimatedSVGIcon`
 - Pointer hover, touch, `onTap`, and external `AnimatedIconController` support
@@ -25,6 +25,7 @@
 | Public package API | `lib/not_static_icons.dart` |
 | Shared widget/controller | `lib/src/core/animated_svg_icon_base.dart` |
 | Shared badge painter | `lib/src/core/badge_base_icon.dart` |
+| Shared folder painter | `lib/src/core/folder_base_icon.dart` |
 | Lucide exports | `lib/src/all_icons.dart` |
 | Custom exports | `lib/src/all_custom_icons.dart` |
 | Development template | `lib/src/template/icon_template.dart` |

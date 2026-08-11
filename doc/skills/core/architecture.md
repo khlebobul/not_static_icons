@@ -8,7 +8,8 @@ lib/
 └── src/
     ├── core/
     │   ├── animated_svg_icon_base.dart
-    │   └── badge_base_icon.dart
+    │   ├── badge_base_icon.dart
+    │   └── folder_base_icon.dart
     ├── icons/                         # Lucide implementations
     ├── custom_icons/                  # non-Lucide implementations
     ├── template/icon_template.dart
@@ -30,6 +31,8 @@ Icon widget
 ```
 
 `AnimatedSVGIconState` owns gestures, hover state, animation lifecycle, effective color, and external controller attachment. Individual icons own only defaults, animation description, and drawing.
+
+Folder variants share their outline and painter through `FolderIconBase`; each public folder widget still lives in its own icon file.
 
 When `interactive` is `false`, the icon returns bare `CustomPaint`; use this inside `IconButton` with `AnimatedIconController`. Otherwise hover/touch starts animation and `onTap` fires on touch release.
 
@@ -64,4 +67,3 @@ The demo sorts/searches its registry. Its “view code” URL assumes Lucide imp
 ---
 
 [Back to SKILLS.md](../../SKILLS.md)
-

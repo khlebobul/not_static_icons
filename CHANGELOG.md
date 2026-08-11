@@ -1,3 +1,8 @@
+## 0.50.0
+
+#### New icons
+* Added 32 animated folder icons
+
 ## 0.49.0
 
 #### New icons
