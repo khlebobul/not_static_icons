@@ -111,14 +111,26 @@ class _FolderPainter extends CustomPainter {
       FolderVariant.search2,
       FolderVariant.up,
       FolderVariant.x,
-      FolderVariant.folder,
     };
     const compact = {
       FolderVariant.dot,
       FolderVariant.kanban,
       FolderVariant.root,
     };
-    if (standard.contains(variant)) {
+    if (variant == FolderVariant.folder) {
+      _drawPath(c, p, _closed(0), _traceProgress);
+    } else if (variant == FolderVariant.open) {
+      _drawPath(c, p, _open(), _traceProgress);
+    } else if (variant == FolderVariant.openDot) {
+      _drawPath(c, p, _open(dot: true), _phase(_traceProgress, 0, .82));
+    } else if (variant == FolderVariant.root) {
+      _drawPath(
+        c,
+        p,
+        _closed(0, compact: true),
+        _phase(_traceProgress, 0, .7),
+      );
+    } else if (standard.contains(variant)) {
       c.drawPath(_closed(t), p);
     } else if (compact.contains(variant)) {
       c.drawPath(_closed(t, compact: true), p);
@@ -145,10 +157,6 @@ class _FolderPainter extends CustomPainter {
       c.drawPath(_partial(9, 8.5), p);
     } else if (variant == FolderVariant.input) {
       c.drawPath(_input(), p);
-    } else if (variant == FolderVariant.open) {
-      c.drawPath(_open(t), p);
-    } else if (variant == FolderVariant.openDot) {
-      c.drawPath(_open(t, dot: true), p);
     } else if (variant == FolderVariant.output) {
       c.drawPath(_output(), p);
     } else if (variant == FolderVariant.pen) {
@@ -361,7 +369,13 @@ class _FolderPainter extends CustomPainter {
         c.drawLine(Offset(9 + t, 13), Offset(15 - t, 13), p);
         break;
       case FolderVariant.openDot:
-        c.drawCircle(const Offset(14, 15), 1 + t * .3, p);
+        _drawPath(
+          c,
+          p,
+          Path()
+            ..addOval(Rect.fromCircle(center: const Offset(14, 15), radius: 1)),
+          _phase(_traceProgress, .78, 1),
+        );
         break;
       case FolderVariant.output:
         c.save();
@@ -396,8 +410,21 @@ class _FolderPainter extends CustomPainter {
         c.restore();
         break;
       case FolderVariant.root:
-        c.drawCircle(const Offset(12, 13), 2 + t * .18, p);
-        c.drawLine(const Offset(12, 15), Offset(12, 20 + t), p);
+        _drawPath(
+          c,
+          p,
+          Path()
+            ..addOval(Rect.fromCircle(center: const Offset(12, 13), radius: 2)),
+          _phase(_traceProgress, .62, .86),
+        );
+        _drawPath(
+          c,
+          p,
+          Path()
+            ..moveTo(12, 15)
+            ..lineTo(12, 20),
+          _phase(_traceProgress, .82, 1),
+        );
         break;
       case FolderVariant.search:
         c.save();
@@ -464,6 +491,26 @@ class _FolderPainter extends CustomPainter {
       case FolderVariant.tree:
       case FolderVariant.folders:
         break;
+    }
+  }
+
+  double get _traceProgress {
+    if (animationValue == 0) return 1;
+    return animationValue < .2
+        ? 1 - animationValue / .2
+        : (animationValue - .2) / .8;
+  }
+
+  double _phase(double progress, double start, double end) =>
+      ((progress - start) / (end - start)).clamp(0, 1);
+
+  void _drawPath(Canvas c, Paint p, Path path, double progress) {
+    if (progress >= 1) {
+      c.drawPath(path, p);
+      return;
+    }
+    for (final metric in path.computeMetrics()) {
+      c.drawPath(metric.extractPath(0, metric.length * progress), p);
     }
   }
 
@@ -589,8 +636,8 @@ class _FolderPainter extends CustomPainter {
     return path;
   }
 
-  Path _open(double t, {bool dot = false}) => Path()
-    ..moveTo(6, 14 - t * .45)
+  Path _open({bool dot = false}) => Path()
+    ..moveTo(6, 14)
     ..lineTo(7.5 - (dot ? .05 : 0), 11.1)
     ..arcToPoint(const Offset(9.24, 10), radius: const Radius.circular(2))
     ..lineTo(20, 10)
