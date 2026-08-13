@@ -1,3 +1,8 @@
+## 0.51.0
+
+#### New icons
+* Added 10 icons with individual animations: `footprints`, `forklift`, `form`, `forward`, `frame`, `fuel`, `fullscreen`, `funnel`, `funnel-plus`, and `funnel-x`
+
 ## 0.50.0
 
 #### New icons
