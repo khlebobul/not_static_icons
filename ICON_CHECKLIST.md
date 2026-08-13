@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-08-11T05:48:29.703124Z UTC.
+Generated on 2026-08-13T06:00:53.258844Z UTC.
 
-## ✅ Existing Icons (747)
+## ✅ Existing Icons (755)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -44,8 +44,6 @@ Generated on 2026-08-11T05:48:29.703124Z UTC.
 - [x] `ampersands`
 - [x] `amphora`
 - [x] `anchor`
-- [x] `angry`
-- [x] `annoyed`
 - [x] `antenna`
 - [x] `anvil`
 - [x] `aperture`
@@ -715,6 +713,16 @@ Generated on 2026-08-11T05:48:29.703124Z UTC.
 - [x] `folder-up`
 - [x] `folder-x`
 - [x] `folders`
+- [x] `footprints`
+- [x] `forklift`
+- [x] `form`
+- [x] `forward`
+- [x] `frame`
+- [x] `fuel`
+- [x] `fullscreen`
+- [x] `funnel`
+- [x] `funnel-plus`
+- [x] `funnel-x`
 - [x] `grid-2x2`
 - [x] `hash`
 - [x] `heart`
@@ -750,18 +758,20 @@ Generated on 2026-08-11T05:48:29.703124Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1009)
-- [ ] `footprints`
-- [ ] `forklift`
-- [ ] `form`
-- [ ] `forward`
-- [ ] `frame`
-- [ ] `frown`
-- [ ] `fuel`
-- [ ] `fullscreen`
-- [ ] `funnel`
-- [ ] `funnel-plus`
-- [ ] `funnel-x`
+## ➕ New Icons to Add (1013)
+- [ ] `angle`
+- [ ] `audio-lines-x`
+- [ ] `broom`
+- [ ] `broom-sparkles`
+- [ ] `car-battery`
+- [ ] `eject`
+- [ ] `face-angry`
+- [ ] `face-expressionless`
+- [ ] `face-grinning`
+- [ ] `face-neutral`
+- [ ] `face-slightly-frowning`
+- [ ] `face-slightly-smiling`
+- [ ] `face-slightly-smiling-plus`
 - [ ] `gallery-horizontal`
 - [ ] `gallery-horizontal-end`
 - [ ] `gallery-thumbnails`
@@ -910,8 +920,11 @@ Generated on 2026-08-11T05:48:29.703124Z UTC.
 - [ ] `laptop-minimal-check`
 - [ ] `lasso`
 - [ ] `lasso-select`
-- [ ] `laugh`
+- [ ] `layer-arrow-down`
+- [ ] `layer-arrow-up`
 - [ ] `layers-2`
+- [ ] `layers-arrow-down`
+- [ ] `layers-arrow-up`
 - [ ] `layers-minus`
 - [ ] `layers-plus`
 - [ ] `layout-dashboard`
@@ -978,6 +991,7 @@ Generated on 2026-08-11T05:48:29.703124Z UTC.
 - [ ] `luggage`
 - [ ] `magnet`
 - [ ] `mail`
+- [ ] `mail-badge`
 - [ ] `mail-check`
 - [ ] `mail-minus`
 - [ ] `mail-open`
@@ -1009,7 +1023,6 @@ Generated on 2026-08-11T05:48:29.703124Z UTC.
 - [ ] `medal`
 - [ ] `megaphone`
 - [ ] `megaphone-off`
-- [ ] `meh`
 - [ ] `memory-stick`
 - [ ] `menu`
 - [ ] `merge`
@@ -1366,6 +1379,7 @@ Generated on 2026-08-11T05:48:29.703124Z UTC.
 - [ ] `shield-ellipsis`
 - [ ] `shield-half`
 - [ ] `shield-keyhole`
+- [ ] `shield-lock`
 - [ ] `shield-minus`
 - [ ] `shield-off`
 - [ ] `shield-plus`
@@ -1403,8 +1417,6 @@ Generated on 2026-08-11T05:48:29.703124Z UTC.
 - [ ] `smartphone`
 - [ ] `smartphone-charging`
 - [ ] `smartphone-nfc`
-- [ ] `smile`
-- [ ] `smile-plus`
 - [ ] `snail`
 - [ ] `snowflake`
 - [ ] `soap-dispenser-droplet`
@@ -1761,11 +1773,13 @@ Generated on 2026-08-11T05:48:29.703124Z UTC.
 - [ ] `zoom-in`
 - [ ] `zoom-out`
 
-## ➖ Potentially Removed Icons (7)
+## ➖ Potentially Removed Icons (9)
 - [ ] `align-center`
 - [ ] `align-justify`
 - [ ] `align-left`
 - [ ] `align-right`
+- [ ] `angry`
+- [ ] `annoyed`
 - [ ] `chromium`
 - [ ] `crab`
 - [ ] `shark`
