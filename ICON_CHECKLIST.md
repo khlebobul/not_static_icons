@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-08-13T06:00:53.258844Z UTC.
+Generated on 2026-08-14T07:10:36.762843Z UTC.
 
-## ✅ Existing Icons (755)
+## ✅ Existing Icons (768)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -44,6 +44,7 @@ Generated on 2026-08-13T06:00:53.258844Z UTC.
 - [x] `ampersands`
 - [x] `amphora`
 - [x] `anchor`
+- [x] `angle`
 - [x] `antenna`
 - [x] `anvil`
 - [x] `aperture`
@@ -102,6 +103,7 @@ Generated on 2026-08-13T06:00:53.258844Z UTC.
 - [x] `at-sign`
 - [x] `atom`
 - [x] `audio-lines`
+- [x] `audio-lines-x`
 - [x] `audio-waveform`
 - [x] `award`
 - [x] `axe`
@@ -244,6 +246,8 @@ Generated on 2026-08-13T06:00:53.258844Z UTC.
 - [x] `briefcase-medical`
 - [x] `bring-to-front`
 - [x] `broccoli`
+- [x] `broom`
+- [x] `broom-sparkles`
 - [x] `brush`
 - [x] `brush-cleaning`
 - [x] `bubbles`
@@ -291,6 +295,7 @@ Generated on 2026-08-13T06:00:53.258844Z UTC.
 - [x] `captions`
 - [x] `captions-off`
 - [x] `car`
+- [x] `car-battery`
 - [x] `car-front`
 - [x] `car-taxi-front`
 - [x] `caravan`
@@ -577,6 +582,7 @@ Generated on 2026-08-13T06:00:53.258844Z UTC.
 - [x] `egg`
 - [x] `egg-fried`
 - [x] `egg-off`
+- [x] `eject`
 - [x] `ellipse`
 - [x] `ellipsis`
 - [x] `ellipsis-vertical`
@@ -593,6 +599,13 @@ Generated on 2026-08-13T06:00:53.258844Z UTC.
 - [x] `eye-closed`
 - [x] `eye-dashed`
 - [x] `eye-off`
+- [x] `face-angry`
+- [x] `face-expressionless`
+- [x] `face-grinning`
+- [x] `face-neutral`
+- [x] `face-slightly-frowning`
+- [x] `face-slightly-smiling`
+- [x] `face-slightly-smiling-plus`
 - [x] `factory`
 - [x] `fan`
 - [x] `fast-forward`
@@ -758,20 +771,7 @@ Generated on 2026-08-13T06:00:53.258844Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1013)
-- [ ] `angle`
-- [ ] `audio-lines-x`
-- [ ] `broom`
-- [ ] `broom-sparkles`
-- [ ] `car-battery`
-- [ ] `eject`
-- [ ] `face-angry`
-- [ ] `face-expressionless`
-- [ ] `face-grinning`
-- [ ] `face-neutral`
-- [ ] `face-slightly-frowning`
-- [ ] `face-slightly-smiling`
-- [ ] `face-slightly-smiling-plus`
+## ➕ New Icons to Add (1000)
 - [ ] `gallery-horizontal`
 - [ ] `gallery-horizontal-end`
 - [ ] `gallery-thumbnails`

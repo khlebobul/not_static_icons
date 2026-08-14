@@ -1,3 +1,8 @@
+## 0.52.0
+
+#### New icons
+* Added 13 animated icons: `angle`, `audio-lines-x`, `broom`, `broom-sparkles`, `car-battery`, `eject`, `face-angry`, `face-expressionless`, `face-grinning`, `face-neutral`, `face-slightly-frowning`, `face-slightly-smiling`, and `face-slightly-smiling-plus`.
+
 ## 0.51.0
 
 #### New icons
