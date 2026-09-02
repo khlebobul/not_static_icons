@@ -6,6 +6,23 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:not_static_icons/not_static_icons.dart';
 
 void main() {
+  test('water stays inside glass', () async {
+    final water = await _render(const GlassWaterIcon(), .25);
+    expect(_alphaAt(water, 38, 25), 0);
+  });
+
+  test('grip dots are filled', () async {
+    expect(_alphaAt(await _render(const GripIcon(), 0), 24, 24), 255);
+    expect(
+      _alphaAt(await _render(const GripHorizontalIcon(), 0), 24, 18),
+      255,
+    );
+    expect(
+      _alphaAt(await _render(const GripVerticalIcon(), 0), 18, 24),
+      255,
+    );
+  });
+
   test('rounded corners follow source path direction', () {
     final angleTangent = const AngleIcon()
         .paths
@@ -53,6 +70,59 @@ void main() {
       FunnelIcon(),
       FunnelPlusIcon(),
       FunnelXIcon(),
+      GalaxyIcon(),
+      GalleryHorizontalEndIcon(),
+      GalleryHorizontalIcon(),
+      GalleryThumbnailsIcon(),
+      GalleryVerticalEndIcon(),
+      GalleryVerticalIcon(),
+      Gamepad2Icon(),
+      GamepadDirectionalIcon(),
+      GamepadIcon(),
+      GaugeIcon(),
+      GavelIcon(),
+      GemIcon(),
+      GeorgianLariIcon(),
+      GhostIcon(),
+      GiftIcon(),
+      GitBranchIcon(),
+      GitBranchMinusIcon(),
+      GitBranchPlusIcon(),
+      GitCommitHorizontalIcon(),
+      GitCommitVerticalIcon(),
+      GitCompareArrowsIcon(),
+      GitCompareIcon(),
+      GitForkIcon(),
+      GitGraphIcon(),
+      GitMergeConflictIcon(),
+      GitMergeIcon(),
+      GitPullRequestArrowIcon(),
+      GitPullRequestClosedIcon(),
+      GitPullRequestCreateArrowIcon(),
+      GitPullRequestCreateIcon(),
+      GitPullRequestDraftIcon(),
+      GitPullRequestIcon(),
+      GlassWaterIcon(),
+      GlassesIcon(),
+      GlobeCheckIcon(),
+      GlobeIcon(),
+      GlobeLockIcon(),
+      GlobeOffIcon(),
+      GlobeXIcon(),
+      GoalIcon(),
+      GpuIcon(),
+      GraduationCapIcon(),
+      GrapeIcon(),
+      Grid2x2CheckIcon(),
+      Grid2x2PlusIcon(),
+      Grid2x2XIcon(),
+      Grid3x2Icon(),
+      Grid3x3Icon(),
+      GripHorizontalIcon(),
+      GripIcon(),
+      GripVerticalIcon(),
+      GroupIcon(),
+      GuitarIcon(),
     ];
 
     for (final icon in icons) {
@@ -70,6 +140,8 @@ void main() {
     }
   });
 }
+
+int _alphaAt(Uint8List pixels, int x, int y) => pixels[(y * 48 + x) * 4 + 3];
 
 Future<Uint8List> _render(AnimatedSVGIcon icon, double value) async {
   final recorder = ui.PictureRecorder();
