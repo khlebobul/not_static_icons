@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-08-14T07:10:36.762843Z UTC.
+Generated on 2026-09-02T04:47:31.870741Z UTC.
 
-## ✅ Existing Icons (768)
+## ✅ Existing Icons (821)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -736,7 +736,60 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [x] `funnel`
 - [x] `funnel-plus`
 - [x] `funnel-x`
+- [x] `galaxy`
+- [x] `gallery-horizontal`
+- [x] `gallery-horizontal-end`
+- [x] `gallery-thumbnails`
+- [x] `gallery-vertical`
+- [x] `gallery-vertical-end`
+- [x] `gamepad`
+- [x] `gamepad-2`
+- [x] `gamepad-directional`
+- [x] `gauge`
+- [x] `gavel`
+- [x] `gem`
+- [x] `georgian-lari`
+- [x] `ghost`
+- [x] `gift`
+- [x] `git-branch`
+- [x] `git-branch-minus`
+- [x] `git-branch-plus`
+- [x] `git-commit-horizontal`
+- [x] `git-commit-vertical`
+- [x] `git-compare`
+- [x] `git-compare-arrows`
+- [x] `git-fork`
+- [x] `git-graph`
+- [x] `git-merge`
+- [x] `git-merge-conflict`
+- [x] `git-pull-request`
+- [x] `git-pull-request-arrow`
+- [x] `git-pull-request-closed`
+- [x] `git-pull-request-create`
+- [x] `git-pull-request-create-arrow`
+- [x] `git-pull-request-draft`
+- [x] `glass-water`
+- [x] `glasses`
+- [x] `globe`
+- [x] `globe-check`
+- [x] `globe-lock`
+- [x] `globe-off`
+- [x] `globe-x`
+- [x] `goal`
+- [x] `gpu`
+- [x] `graduation-cap`
+- [x] `grape`
 - [x] `grid-2x2`
+- [x] `grid-2x2-check`
+- [x] `grid-2x2-plus`
+- [x] `grid-2x2-x`
+- [x] `grid-3x2`
+- [x] `grid-3x3`
+- [x] `grip`
+- [x] `grip-horizontal`
+- [x] `grip-vertical`
+- [x] `group`
+- [x] `guitar`
 - [x] `hash`
 - [x] `heart`
 - [x] `house`
@@ -771,59 +824,12 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (1000)
-- [ ] `gallery-horizontal`
-- [ ] `gallery-horizontal-end`
-- [ ] `gallery-thumbnails`
-- [ ] `gallery-vertical`
-- [ ] `gallery-vertical-end`
-- [ ] `gamepad`
-- [ ] `gamepad-2`
-- [ ] `gamepad-directional`
-- [ ] `gauge`
-- [ ] `gavel`
-- [ ] `gem`
-- [ ] `georgian-lari`
-- [ ] `ghost`
-- [ ] `gift`
-- [ ] `git-branch`
-- [ ] `git-branch-minus`
-- [ ] `git-branch-plus`
-- [ ] `git-commit-horizontal`
-- [ ] `git-commit-vertical`
-- [ ] `git-compare`
-- [ ] `git-compare-arrows`
-- [ ] `git-fork`
-- [ ] `git-graph`
-- [ ] `git-merge`
-- [ ] `git-merge-conflict`
-- [ ] `git-pull-request`
-- [ ] `git-pull-request-arrow`
-- [ ] `git-pull-request-closed`
-- [ ] `git-pull-request-create`
-- [ ] `git-pull-request-create-arrow`
-- [ ] `git-pull-request-draft`
-- [ ] `glass-water`
-- [ ] `glasses`
-- [ ] `globe`
-- [ ] `globe-check`
-- [ ] `globe-lock`
-- [ ] `globe-off`
-- [ ] `globe-x`
-- [ ] `goal`
-- [ ] `gpu`
-- [ ] `graduation-cap`
-- [ ] `grape`
-- [ ] `grid-2x2-check`
-- [ ] `grid-2x2-plus`
-- [ ] `grid-2x2-x`
-- [ ] `grid-3x2`
-- [ ] `grid-3x3`
-- [ ] `grip`
-- [ ] `grip-horizontal`
-- [ ] `grip-vertical`
-- [ ] `group`
-- [ ] `guitar`
+## ➕ New Icons to Add (970)
+- [ ] `audio-lines-off`
+- [ ] `credit-card-check`
+- [ ] `credit-card-minus`
+- [ ] `credit-card-plus`
+- [ ] `credit-card-x`
 - [ ] `ham`
 - [ ] `hamburger`
 - [ ] `hammer`
@@ -956,6 +962,7 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `list-checks`
 - [ ] `list-chevrons-down-up`
 - [ ] `list-chevrons-up-down`
+- [ ] `list-clock`
 - [ ] `list-collapse`
 - [ ] `list-end`
 - [ ] `list-filter`
@@ -993,6 +1000,7 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `mail`
 - [ ] `mail-badge`
 - [ ] `mail-check`
+- [ ] `mail-clock`
 - [ ] `mail-minus`
 - [ ] `mail-open`
 - [ ] `mail-plus`
@@ -1030,6 +1038,7 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `message-circle-check`
 - [ ] `message-circle-code`
 - [ ] `message-circle-dashed`
+- [ ] `message-circle-dashed-check`
 - [ ] `message-circle-heart`
 - [ ] `message-circle-more`
 - [ ] `message-circle-off`
@@ -1065,6 +1074,7 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `microchip`
 - [ ] `microscope`
 - [ ] `microwave`
+- [ ] `midi-port`
 - [ ] `milestone`
 - [ ] `milk`
 - [ ] `milk-off`
@@ -1087,6 +1097,8 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `monitor-up`
 - [ ] `monitor-x`
 - [ ] `moon-star`
+- [ ] `mop`
+- [ ] `mop-sparkles`
 - [ ] `mosque`
 - [ ] `motorbike`
 - [ ] `mountain`
@@ -1225,6 +1237,9 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `plane-landing`
 - [ ] `plane-takeoff`
 - [ ] `play-off`
+- [ ] `playing-card`
+- [ ] `playing-cards`
+- [ ] `playing-cards-fan`
 - [ ] `plug`
 - [ ] `plug-2`
 - [ ] `plug-zap`
@@ -1293,6 +1308,8 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `rewind`
 - [ ] `ribbon`
 - [ ] `road`
+- [ ] `robot-arm`
+- [ ] `robot-vacuum`
 - [ ] `rocket`
 - [ ] `rocking-chair`
 - [ ] `roller-coaster`
@@ -1386,6 +1403,7 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `shield-question-mark`
 - [ ] `shield-user`
 - [ ] `shield-x`
+- [ ] `ship-cargo`
 - [ ] `ship-wheel`
 - [ ] `shirt`
 - [ ] `shopping-bag`
@@ -1473,6 +1491,7 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `square-dashed-mouse-pointer`
 - [ ] `square-dashed-text`
 - [ ] `square-dashed-top-solid`
+- [ ] `square-dimensions`
 - [ ] `square-divide`
 - [ ] `square-dot`
 - [ ] `square-equal`
@@ -1506,6 +1525,7 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `square-star`
 - [ ] `square-stop`
 - [ ] `square-terminal`
+- [ ] `square-text`
 - [ ] `square-user`
 - [ ] `square-user-round`
 - [ ] `square-x`
@@ -1625,6 +1645,7 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `toy-brick`
 - [ ] `tractor`
 - [ ] `traffic-cone`
+- [ ] `trailer`
 - [ ] `train-front`
 - [ ] `train-front-tunnel`
 - [ ] `train-track`
@@ -1666,6 +1687,7 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `unplug`
 - [ ] `upload`
 - [ ] `usb`
+- [ ] `usb-c-port`
 - [ ] `user`
 - [ ] `user-check`
 - [ ] `user-cog`
@@ -1696,6 +1718,7 @@ Generated on 2026-08-14T07:10:36.762843Z UTC.
 - [ ] `van`
 - [ ] `variable`
 - [ ] `vault`
+- [ ] `vector-polygon`
 - [ ] `vector-square`
 - [ ] `vegan`
 - [ ] `venetian-mask`

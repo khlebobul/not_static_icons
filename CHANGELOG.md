@@ -1,3 +1,8 @@
+## 0.53.0
+
+#### New icons
+* Added 53 icons with individual animations from `galaxy` through `guitar`, including gallery, gamepad, Git, globe, grid, and grip families.
+
 ## 0.52.0
 
 #### New icons
