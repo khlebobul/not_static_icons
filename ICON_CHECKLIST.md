@@ -1,7 +1,7 @@
 # Lucide Icons Checklist
-Generated on 2026-09-02T04:47:31.870741Z UTC.
+Generated on 2026-09-05T05:20:19.002454Z UTC.
 
-## ✅ Existing Icons (821)
+## ✅ Existing Icons (827)
 - [x] `a-arrow-down`
 - [x] `a-arrow-up`
 - [x] `a-large-small`
@@ -103,6 +103,7 @@ Generated on 2026-09-02T04:47:31.870741Z UTC.
 - [x] `at-sign`
 - [x] `atom`
 - [x] `audio-lines`
+- [x] `audio-lines-off`
 - [x] `audio-lines-x`
 - [x] `audio-waveform`
 - [x] `award`
@@ -511,6 +512,10 @@ Generated on 2026-09-02T04:47:31.870741Z UTC.
 - [x] `cpu`
 - [x] `creative-commons`
 - [x] `credit-card`
+- [x] `credit-card-check`
+- [x] `credit-card-minus`
+- [x] `credit-card-plus`
+- [x] `credit-card-x`
 - [x] `croissant`
 - [x] `crop`
 - [x] `cross`
@@ -811,6 +816,7 @@ Generated on 2026-09-02T04:47:31.870741Z UTC.
 - [x] `rotate-ccw`
 - [x] `rotate-cw`
 - [x] `sailboat`
+- [x] `search`
 - [x] `shell`
 - [x] `ship`
 - [x] `slash`
@@ -824,12 +830,7 @@ Generated on 2026-09-02T04:47:31.870741Z UTC.
 - [x] `venus`
 - [x] `x`
 
-## ➕ New Icons to Add (970)
-- [ ] `audio-lines-off`
-- [ ] `credit-card-check`
-- [ ] `credit-card-minus`
-- [ ] `credit-card-plus`
-- [ ] `credit-card-x`
+## ➕ New Icons to Add (964)
 - [ ] `ham`
 - [ ] `hamburger`
 - [ ] `hammer`
@@ -1363,7 +1364,6 @@ Generated on 2026-09-02T04:47:31.870741Z UTC.
 - [ ] `screen-share-off`
 - [ ] `scroll`
 - [ ] `scroll-text`
-- [ ] `search`
 - [ ] `search-alert`
 - [ ] `search-check`
 - [ ] `search-code`
@@ -1796,7 +1796,7 @@ Generated on 2026-09-02T04:47:31.870741Z UTC.
 - [ ] `zoom-in`
 - [ ] `zoom-out`
 
-## ➖ Potentially Removed Icons (9)
+## ➖ Potentially Removed Icons (10)
 - [ ] `align-center`
 - [ ] `align-justify`
 - [ ] `align-left`
@@ -1805,6 +1805,7 @@ Generated on 2026-09-02T04:47:31.870741Z UTC.
 - [ ] `annoyed`
 - [ ] `chromium`
 - [ ] `crab`
+- [ ] `github`
 - [ ] `shark`
 
 ## 🎨 Custom Icons (6)
