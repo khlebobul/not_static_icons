@@ -1,3 +1,15 @@
+## 0.54.0
+
+#### New icons
+* Added 5 icons with individual animations: `audio-lines-off`, `credit-card-check`, `credit-card-minus`, `credit-card-plus`, `credit-card-x`.
+
+#### Demo
+* Replaced static GitHub, search, copy, and code SVGs with thinner animated package icons.
+* Added a donation link to support the project.
+
+#### Fixes
+* Fixed external links not opening in Safari in the web demo.
+
 ## 0.53.0
 
 #### New icons

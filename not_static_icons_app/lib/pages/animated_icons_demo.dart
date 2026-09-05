@@ -179,6 +179,10 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
                 AnimatedIconsStrings.pubDevLabel,
                 AnimatedIconsStrings.pubDevUrl,
               ),
+              _buildTextLinkContainer(
+                AnimatedIconsStrings.supportLabel,
+                AnimatedIconsStrings.supportUrl,
+              ),
             ],
           ),
         ),

@@ -4,6 +4,9 @@ class AnimatedIconsStrings {
   static const pubDevLabel = 'pub.dev';
   static const pubDevUrl = 'https://pub.dev/packages/not_static_icons';
 
+  static const supportLabel = 'tip jar';
+  static const supportUrl = 'https://web.tribute.tg/d/PM3';
+
   static const githubLabel = 'github';
   static const githubUrl = 'https://github.com/khlebobul/not_static_icons';
 
