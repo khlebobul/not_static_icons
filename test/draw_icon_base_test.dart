@@ -48,10 +48,15 @@ void main() {
   test('icons animate and return exactly to idle', () async {
     const icons = [
       AngleIcon(),
+      AudioLinesOffIcon(),
       AudioLinesXIcon(),
       BroomIcon(),
       BroomSparklesIcon(),
       CarBatteryIcon(),
+      CreditCardCheckIcon(),
+      CreditCardMinusIcon(),
+      CreditCardPlusIcon(),
+      CreditCardXIcon(),
       EjectIcon(),
       FaceAngryIcon(),
       FaceExpressionlessIcon(),
@@ -102,6 +107,7 @@ void main() {
       GitPullRequestCreateIcon(),
       GitPullRequestDraftIcon(),
       GitPullRequestIcon(),
+      GithubIcon(),
       GlassWaterIcon(),
       GlassesIcon(),
       GlobeCheckIcon(),
@@ -123,6 +129,7 @@ void main() {
       GripVerticalIcon(),
       GroupIcon(),
       GuitarIcon(),
+      SearchIcon(),
     ];
 
     for (final icon in icons) {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:not_static_icons/not_static_icons.dart';
 import 'package:not_static_icons_app/data/app_consts.dart';
 
 class IconCard extends StatelessWidget {
@@ -51,20 +51,13 @@ class IconCard extends StatelessWidget {
               Tooltip(
                 message: 'Copy',
                 child: _buildActionButton(
-                  icon: SvgPicture.asset(
-                    AnimatedIconsStrings.copyIconPath,
-                    width: 16,
-                    height: 16,
-                    colorFilter: ColorFilter.mode(
-                      Colors.grey.shade700,
-                      BlendMode.srcIn,
-                    ),
+                  icon: CopyIcon(
+                    size: 16,
+                    strokeWidth: 1.5,
+                    color: Colors.grey.shade700,
+                    hoverColor: Colors.black,
+                    onTap: onCopy,
                   ),
-                  onTap: () {
-                    if (onCopy != null) {
-                      onCopy!();
-                    }
-                  },
                 ),
               ),
 
@@ -72,22 +65,14 @@ class IconCard extends StatelessWidget {
               Tooltip(
                 message: 'View code',
                 child: _buildActionButton(
-                  icon: SvgPicture.asset(
-                    AnimatedIconsStrings.codeIconPath,
-                    width: 16,
-                    height: 16,
-                    colorFilter: ColorFilter.mode(
-                      Colors.grey.shade700,
-                      BlendMode.srcIn,
-                    ),
+                  icon: CodeIcon(
+                    size: 16,
+                    strokeWidth: 1.5,
+                    color: Colors.grey.shade700,
+                    hoverColor: Colors.black,
+                    onTap:
+                        onViewCode ?? () => debugPrint('View code for $name'),
                   ),
-                  onTap: () {
-                    if (onViewCode != null) {
-                      onViewCode!();
-                    } else {
-                      debugPrint('View code for $name');
-                    }
-                  },
                 ),
               ),
             ],
@@ -97,14 +82,6 @@ class IconCard extends StatelessWidget {
     );
   }
 
-  Widget _buildActionButton({
-    required Widget icon,
-    required VoidCallback onTap,
-  }) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(6),
-      child: Container(padding: const EdgeInsets.all(6), child: icon),
-    );
-  }
+  Widget _buildActionButton({required Widget icon}) =>
+      Padding(padding: const EdgeInsets.all(6), child: icon);
 }
