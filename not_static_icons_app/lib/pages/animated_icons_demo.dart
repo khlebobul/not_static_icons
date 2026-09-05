@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:not_static_icons/not_static_icons.dart';
 import 'package:not_static_icons_app/data/app_consts.dart';
 import 'package:not_static_icons_app/data/icons_data.dart' as icons_data;
 import 'package:url_launcher/url_launcher.dart';
@@ -51,9 +51,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
 
   Future<void> _launchUrl(String url) async {
     final Uri uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri, mode: LaunchMode.externalApplication);
-    } else {
+    if (!await launchUrl(uri)) {
       debugPrint('Could not launch $url');
     }
   }
@@ -169,7 +167,13 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
               _buildTextLinkContainer(
                 AnimatedIconsStrings.githubLabel,
                 AnimatedIconsStrings.githubUrl,
-                iconPath: AnimatedIconsStrings.githubIconPath,
+                icon: GithubIcon(
+                  size: 19,
+                  strokeWidth: 1.5,
+                  color: Colors.grey.shade700,
+                  hoverColor: Colors.black,
+                  onTap: () => _launchUrl(AnimatedIconsStrings.githubUrl),
+                ),
               ),
               _buildTextLinkContainer(
                 AnimatedIconsStrings.pubDevLabel,
@@ -241,17 +245,12 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       ),
       child: Row(
         children: [
-          InkWell(
+          CopyIcon(
+            size: 16,
+            strokeWidth: 1.5,
+            color: Colors.grey.shade700,
+            hoverColor: Colors.black,
             onTap: () => _copyToClipboard(AnimatedIconsStrings.installCommand),
-            child: SvgPicture.asset(
-              AnimatedIconsStrings.copyIconPath,
-              width: 16,
-              height: 16,
-              colorFilter: ColorFilter.mode(
-                Colors.grey.shade700,
-                BlendMode.srcIn,
-              ),
-            ),
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -279,14 +278,11 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
       ),
       child: Row(
         children: [
-          SvgPicture.asset(
-            AnimatedIconsStrings.searchIconPath,
-            width: 16,
-            height: 16,
-            colorFilter: ColorFilter.mode(
-              Colors.grey.shade700,
-              BlendMode.srcIn,
-            ),
+          SearchIcon(
+            size: 16,
+            strokeWidth: 1.5,
+            color: Colors.grey.shade700,
+            hoverColor: Colors.black,
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -376,7 +372,7 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
     );
   }
 
-  Widget _buildTextLinkContainer(String text, String url, {String? iconPath}) {
+  Widget _buildTextLinkContainer(String text, String url, {Widget? icon}) {
     return InkWell(
       onTap: () => _launchUrl(url),
       borderRadius: BorderRadius.circular(6),
@@ -396,24 +392,15 @@ class _AnimatedIconsDemoState extends State<AnimatedIconsDemo> {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            iconPath != null
-                ? SvgPicture.asset(
-                    iconPath,
-                    width: 19,
-                    height: 19,
-                    colorFilter: ColorFilter.mode(
-                      Colors.grey.shade700,
-                      BlendMode.srcIn,
-                    ),
-                  )
-                : Text(
-                    text,
-                    style: const TextStyle(
-                      fontSize: 14,
-                      color: Colors.black,
-                      fontFamily: AnimatedIconsStrings.fontFamily,
-                    ),
+            icon ??
+                Text(
+                  text,
+                  style: const TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                    fontFamily: AnimatedIconsStrings.fontFamily,
                   ),
+                ),
           ],
         ),
       ),
